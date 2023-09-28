@@ -1,0 +1,12 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_Store_Fill_Rate,WM_ORDERS,ALL,legacy,no,legacy
+wf_Store_Fill_Rate,WM_ORDER_LINE_ITEM,ALL,legacy,no,legacy
+wf_Store_Fill_Rate,WM_LPN,ALL,legacy,no,legacy
+wf_Store_Fill_Rate,PO_HDR_FACT,EDW_PRD,legacy,no,legacy
+wf_Store_Fill_Rate,SKU_PROFILE,EDW_PRD,legacy,no,legacy
+wf_Store_Fill_Rate,SITE_PROFILE,EDW_PRD,legacy,no,legacy
+wf_Store_Fill_Rate,DP_ORDER_PROJ_DAY,EDW_PRD,legacy,no,legacy
+wf_Store_Fill_Rate,DP_DEMAND_DAY,EDW_PRD,legacy,no,legacy
+wf_Store_Fill_Rate,WM_2009_PO_ORDER_DTL,EDW_PRD,legacy,no,legacy
+wf_Store_Fill_Rate,WM_2018_PO_ORDER_DTL,EDW_PRD,legacy,no,legacy
+wf_Store_Fill_Rate,STORE_FILL_RATE,EDW_PRD,legacy,no,legacy

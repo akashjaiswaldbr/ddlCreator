@@ -1,0 +1,505 @@
+8.1.0
+?http://www.informatica.com/pcsf/logservice:LogCallContext:1.0.2
+IS_GRID_ASCII
+node04_DRT-ETLAPP-P04
+DM_ETL_PROD101
+RS_PROD_INFA101
+BA_Services
+wf_Prism_Daily
+wl_sds_pre
+s_sds_profile_pre
+168693
+23333345
+23333346
+95997
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wcRk
+VAR_27028
+]Use override value [YESTERDAY] for user-defined workflow/worklet variable:[$$DeltaTimeframe].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wcRl
+TM_6014
+GInitializing session [s_sds_profile_pre] at [Fri Jul 21 00:39:05 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wcRl
+TM_6683
+"Repository Name: [RS_PROD_INFA101]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wcRm
+TM_6684
+Server Name: [IS_GRID_ASCII]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wcRm
+TM_6686
+Folder: [BA_Services]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wcRn
+TM_6685
+CWorkflow: [wf_Prism_Daily] Run Instance Name: [] Run Id: [23333345]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wcRn
+TM_6992
+Operating System Type [NT]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wcRo
+TM_6101
+-Mapping name: m_sds_profile_pre [version 13].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6964
+9Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6827
+{[D:\etlsw\Informatica\10.4.1\server\infa_shared\Storage] will be used as storage directory for session [s_sds_profile_pre].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1802
+2Session recovery cache initialization is complete.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+6Using configuration property [EnableDataEncryption,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+8Using configuration property [StoreHAPersistenceInDB,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+@Using configuration property [MasterDTMListenOnAllInterface,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [NetezzaLoginTimeout,60]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [RunCmdInNewConsole,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+NUsing configuration property [SMTPFromAddress,ETL_PRODUCTION@ssg.petsmart.com]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+0Using configuration property [SMTPPortNumber,25]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [SMTPServerAddress,SSGEXCHANGE]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+3Using configuration property [SMTPServerTimeout,30]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [syncNetezzanullwithPCNull,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+=Using configuration property [TransferLogFileBlockSize,32768]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+:Using configuration property [treatNoDataAsEmptyString,No]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+CUsing configuration property [netezzaDisableUseridAsSchemaName,yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+>Using configuration property [SalesForceConnectionTimeout,120]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6703
+zSession [s_sds_profile_pre] is run by 64-bit Integration Service  [node04_DRT-ETLAPP-P04], version [10.4.1], build [0614].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MANAGER] has the ID [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24058
+Running Partition Group [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24000
+&Parallel Pipeline Engine initializing.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MONITOR] has the ID [2].
+MONITOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24001
+!Parallel Pipeline Engine running.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24003
+Initializing session run.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MAPPING] has the ID [3].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1569
+Server Mode: [ASCII]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1570
+AServer Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6151
+#The session sort order is [Binary].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65111
+Current Timezone:[UTC -7:0]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65112
+Current Process ID:[7364]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6156
+Using low precision processing.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6180
+-Deadlock retry logic will not be implemented.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6187
+0Session target-based commit interval is [10000].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42020
+P[INFO] Loaded library : D:\etlsw\Informatica\10.4.1\java\jre\bin\server\jvm.dll.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wcSR
+PMJVM_42009
+$[INFO] Created Java VM successfully.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38029
+=Loaded plug-in 310600: [PowerExchange for Salesforce 10.4.1].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38024
+'Plug-in 310600 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38016
++Reader SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38024
+'Plug-in 405050 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38017
++Writer SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38509
+-SDK target and group initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6307
+DTM error log disabled. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TE_7022
+TShmWriter: Initialized
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6007
+<DTM initialized successfully for session [s_sds_profile_pre]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24033
+"All DTM Connection Info: [<NONE>].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24004
+CPETL_24004 Starting pre-session tasks. : (Fri Jul 21 00:39:05 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+!Thread [PRE-SESS] has the ID [4].
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24027
+PPETL_24027 Pre-session task completed successfully. : (Fri Jul 21 00:39:06 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24006
+Starting data movement.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6660
+GTotal Buffer Pool size is 3738784 bytes and Block size is 205488 bytes.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10057
+ [INFO] No proxy information set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10048
+[INFO] Account[svc-informatica@petsmart.com] logged on salesforce.com at [https://prism-petsmart.my.salesforce.com/services/Soap/u/41.0].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [TRANSF_1_1_1] has the ID [6].
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+K[INFO] Initializing Target [0] ([SDS_PROFILE_PRE]) Group [0] Partition [0].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+C[INFO] Connection Info:  DSN=[NZ_SDS_STAGE], User name=[srvsloader]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Connection successfully established
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+;[INFO] Executed query : [TRUNCATE TABLE  "SDS_PROFILE_PRE"]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+A[INFO] The Operation Selected [Insert]and Update is set as [None]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Auto-commit is disabled.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+ [INFO] Pipe created successfully
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+\[INFO] Stop on errors is set to [1]. Session will fail after encountering [1] bad input rows
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+#C[INFO] Executed query : [CREATE TABLE "pcn_temp_Shortcut_to_SDS_PROFILE_PRE1_7364_1689925145" (  "ID" varchar(18), "NAME" varchar(255), "PERMISSIONS_EMAIL_SINGLE" integer, "PERMISSIONS_EMAIL_MASS" integer, "PERMISSIONS_EDIT_TASK" integer, "PERMISSIONS_EDIT_EVENT" integer, "PERMISSIONS_EXPORT_REPORT" integer, "PERMISSIONS_IMPORT_PERSONAL" integer, "PERMISSIONS_DATA_EXPORT" integer, "PERMISSIONS_MANAGE_USERS" integer, "PERMISSIONS_EDIT_PUBLIC_FILTERS" integer, "PERMISSIONS_EDIT_PUBLIC_TEMPLATES" integer, "PERMISSIONS_MODIFY_ALL_DATA" integer, "PERMISSIONS_MANAGE_CASES" integer, "PERMISSIONS_MASS_INLINE_EDIT" integer, "PERMISSIONS_EDIT_KNOWLEDGE" integer, "PERMISSIONS_MANAGE_KNOWLEDGE" integer, "PERMISSIONS_MANAGE_SOLUTIONS" integer, "PERMISSIONS_CUSTOMIZE_APPLICATION" integer, "PERMISSIONS_EDIT_READ_ONLY_FIELDS" integer, "PERMISSIONS_RUN_REPORTS" integer, "PERMISSIONS_VIEW_SETUP" integer, "PERMISSIONS_TRANSFER_ANY_ENTITY" integer, "PERMISSIONS_NEW_REPORT_BUILDER" integer, "PERMISSIONS_ACTIVATE_CONTRACT" integer, "PERMISSIONS_ACTIVATE_ORDER" integer, "PERMISSIONS_IMPORT_LEADS" integer, "PERMISSIONS_MANAGE_LEADS" integer, "PERMISSIONS_TRANSFER_ANY_LEAD" integer, "PERMISSIONS_VIEW_ALL_DATA" integer, "PERMISSIONS_EDIT_PUBLIC_DOCUMENTS" integer, "PERMISSIONS_VIEW_ENCRYPTED_DATA" integer, "PERMISSIONS_EDIT_BRAND_TEMPLATES" integer, "PERMISSIONS_EDIT_HTML_TEMPLATES" integer, "PERMISSIONS_CHATTER_INTERNAL_USER" integer, "PERMISSIONS_MANAGE_TRANSLATION" integer, "PERMISSIONS_DELETE_ACTIVATED_CONTRACT" integer, "PERMISSIONS_CHATTER_INVITE_EXTERNAL_USERS" integer, "PERMISSIONS_SEND_SIT_REQUESTS" integer, "PERMISSIONS_OVERRIDE_FORECASTS" integer, "PERMISSIONS_VIEW_ALL_FORECASTS" integer, "PERMISSIONS_API_USER_ONLY" integer, "PERMISSIONS_MANAGE_REMOTE_ACCESS" integer, "PERMISSIONS_CAN_USE_NEW_DASHBOARD_BUILDER" integer, "PERMISSIONS_MANAGE_CATEGORIES" integer, "PERMISSIONS_CONVERT_LEADS" integer, "PERMISSIONS_PASSWORD_NEVER_EXPIRES" integer, "PERMISSIONS_USE_TEAM_REASSIGN_WIZARDS" integer, "PERMISSIONS_EDIT_ACTIVATED_ORDERS" integer, "PERMISSIONS_INSTALL_MULTIFORCE" integer, "PERMISSIONS_PUBLISH_MULTIFORCE" integer, "PERMISSIONS_CHATTER_OWN_GROUPS" integer, "PERMISSIONS_EDIT_OPP_LINE_ITEM_UNIT_PRICE" integer, "PERMISSIONS_CREAT_EMULTIFORCE" integer, "PERMISSIONS_BULKAPI_HARD_DELETE" integer, "PERMISSIONS_INBOUND_MIGRATION_TOOLS_USER" integer, "PERMISSIONS_SOLUTION_IMPORT" integer, "PERMISSIONS_MANAGE_CALL_CENTERS" integer, "PERMISSIONS_MANAGE_SYNONYMS" integer, "PERMISSIONS_OUTBOUND_MIGRATION_TOOLS_USER" integer, "PERMISSIONS_VIEW_CONTENT" integer, "PERMISSIONS_MANAGE_EMAIL_CLIENT_CONFIG" integer, "PERMISSIONS_ENABLE_NOTIFICATIONS" integer, "PERMISSIONS_MANAGE_DATA_INTEGRATIONS" integer, "PERMISSIONS_DISTRIBUTE_FROM_PERSWKSP" integer, "PERMISSIONS_VIEW_DATA_CATEGORIES" integer, "PERMISSIONS_MANAGE_DATA_CATEGORIES" integer, "PERMISSIONS_AUTHOR_APEX" integer, "PERMISSIONS_MANAGE_MOBILE" integer, "PERMISSIONS_API_ENABLED" integer, "PERMISSIONS_MANAGE_CUSTOM_REPORT_TYPES" integer, "PERMISSIONS_EDIT_CASE_COMMENTS" integer, "PERMISSIONS_TRANSFER_ANY_CASE" integer, "PERMISSIONS_CONTENT_ADMINISTRATOR" integer, "PERMISSIONS_CREATE_WORKSPACES" integer, "PERMISSIONS_MANAGE_CONTENT_PERMISSIONS" integer, "PERMISSIONS_MANAGE_CONTENT_PROPERTIES" integer, "PERMISSIONS_MANAGE_CONTENT_TYPES" integer, "PERMISSIONS_SCHEDULE_JOB" integer, "PERMISSIONS_MANAGE_EXCHANGE_CONFIG" integer, "PERMISSIONS_MANAGE_ANALYTIC_SNAPSHOTS" integer, "PERMISSIONS_SCHEDULE_REPORTS" integer, "PERMISSIONS_MANAGE_BUSINESS_HOUR_HOLIDAYS" integer, "PERMISSIONS_MANAGE_DYNAMIC_DASHBOARDS" integer, "PERMISSIONS_CUSTOM_SIDEBAR_ON_ALL_PAGES" integer, "PERMISSIONS_MANAGE_INTERACTION" integer, "PERMISSIONS_VIEW_MY_TEAMS_DASHBOARDS" integer, "PERMISSIONS_MODERATE_CHATTER" integer, "PERMISSIONS_RESET_PASSWORDS" integer, "PERMISSIONS_FLOW_UFL_REQUIRED" integer, "PERMISSIONS_CAN_INSERT_FEED_SYSTEM_FIELDS" integer, "PERMISSIONS_MANAGE_KNOWLEDGE_IMPOR_TEXPORT" integer, "PERMISSIONS_EMAIL_TEMPLATE_MANAGEMENT" integer, "PERMISSIONS_EMAIL_ADMINISTRATION" integer, "PERMISSIONS_MANAGE_CHATTER_MESSAGES" integer, "PERMISSIONS_ALLOW_EMAIL_IC" integer, "PERMISSIONS_CHATTER_FILE_LINK" integer, "PERMISSIONS_FORCE_TWO_FACTOR" integer, "PERMISSIONS_VIEW_EVENT_LOG_FILES" integer, "PERMISSIONS_MANAGE_NETWORKS" integer, "PERMISSIONS_VIEW_CASE_INTERACTION" integer, "PERMISSIONS_MANAGE_AUTH_PROVIDERS" integer, "PERMISSIONS_RUN_FLOW" integer, "PERMISSIONS_MANAGE_QUOTAS" integer, "PERMISSIONS_CREATE_CUSTOMIZE_DASHBOARDS" integer, "PERMISSIONS_CREATE_DASHBOARD_FOLDERS" integer, "PERMISSIONS_VIEW_PUBLIC_DASHBOARDS" integer, "PERMISSIONS_MANAGE_DASHBDS_IN_PUB_FOLDERS" integer, "PERMISSIONS_CREATE_CUSTOMIZE_REPORTS" integer, "PERMISSIONS_CREATE_REPORT_FOLDERS" integer, "PERMISSIONS_VIEW_PUBLIC_REPORTS" integer, "PERMISSIONS_MANAGE_REPORTS_IN_PUB_FOLDERS" integer, "PERMISSIONS_EDIT_MY_DASHBOARDS" integer, "PERMISSIONS_EDIT_MY_REPORTS" integer, "PERMISSIONS_VIEW_ALL_USERS" integer, "PERMISSIONS_ALLOW_UNIVERSAL_SEARCH" integer, "PERMISSIONS_CONNECT_ORG_T_OENVIRONMENT_HUB" integer, "PERMISSIONS_CREATE_CUSTOMIZE_FILTERS" integer, "PERMISSIONS_GOVERN_NETWORKS" integer, "PERMISSIONS_SALES_CONSOLE" integer, "PERMISSIONS_TWO_FACTOR_API" integer, "PERMISSIONS_DELETE_TOPICS" integer, "PERMISSIONS_EDIT_TOPICS" integer, "PERMISSIONS_CREATE_TOPICS" integer, "PERMISSIONS_ASSIGN_TOPICS" integer, "PERMISSIONS_IDENTITY_ENABLED" integer, "PERMISSIONS_IDENTITY_CONNECT" integer, "PERMISSIONS_ALLOW_VIEW_KNOWLEDGE" integer, "PERMISSIONS_CONTENT_WORKSPACES" integer, "PERMISSIONS_CREATE_WORK_BADGE_DEFINITION" integer, "PERMISSIONS_MANAGE_SEARCH_PROMOTION_RULES" integer, "PERMISSIONS_CUSTOM_MOBILE_APPS_ACCESS" integer, "PERMISSIONS_VIEW_HELPLINK" integer, "PERMISSIONS_MANAGE_PROFILES_PERMISSIONSETS" integer, "PERMISSIONS_ASSIGN_PERMISSION_SETS" integer, "PERMISSIONS_MANAGE_ROLES" integer, "PERMISSIONS_MANAGE_IP_ADDRESSES" integer, "PERMISSIONS_MANAGE_SHARING" integer, "PERMISSIONS_MANAGE_INTERNAL_USERS" integer, "PERMISSIONS_MANAGE_PASSWORD_POLICIES" integer, "PERMISSIONS_MANAGE_LOGIN_ACCESS_POLICIES" integer, "PERMISSIONS_MANAGE_CUSTOM_PERMISSIONS" integer, "PERMISSIONS_CAN_VERIFY_COMMENT" integer, "PERMISSIONS_MANAGE_UNLISTED_GROUPS" integer, "PERMISSIONS_MANAGE_TWO_FACTOR" integer, "PERMISSIONS_DEBUG_APEX" integer, "PERMISSIONS_LIGHTNING_EXPERIENCE_USER" integer, "PERMISSIONS_CONFIG_CUSTOM_RECS" integer, "PERMISSIONS_SUBMIT_MACROS_ALL_OWED" integer, "PERMISSIONS_BULK_MACROS_ALL_OWED" integer, "PERMISSIONS_SHARE_INTERNAL_ARTICLES" integer, "PERMISSIONS_MANAGE_SESSIO_NPERMISSION_SETS" integer, "PERMISSIONS_SEND_ANNOUNCEMENT_EMAILS" integer, "PERMISSIONS_CHATTER_EDIT_OWN_POST" integer, "PERMISSIONS_CHATTER_EDIT_OWN_RECORD_POST" integer, "PERMISSIONS_CREATE_AUDIT_FIELDS" integer, "PERMISSIONS_UPDATE_WITH_INACTIVE_OWNER" integer, "PERMISSIONS_AUTOMATIC_ACTIVITY_CAPTURE" integer, "PERMISSIONS_IMPORT_CUSTOM_OBJECTS" integer, "PERMISSIONS_DELEGATED_TWO_FACTOR" integer, "PERMISSIONS_CHATTER_COMPOSE_UI_CODE_SNIPPET" integer, "PERMISSIONS_SELECT_FILES_FROM_SALESFORCE" integer, "PERMISSIONS_MODERATE_NETWORK_USERS" integer, "PERMISSIONS_MERGE_TOPICS" integer, "PERMISSIONS_SUBSCRIBE_TO_LIGHTNING_REPORTS" integer, "PERMISSIONS_MANAGE_PVT_RPTS_AND_DASHBDS" integer, "PERMISSIONS_ALLOW_LIGHTNING_LOGIN" integer, "PERMISSIONS_CAMPAIGN_INFLUENCE2" integer, "PERMISSIONS_VIEW_DATA_ASSESSMENT" integer, "PERMISSIONS_REMOVE_DIRECT_MESSAGE_MEMBERS" integer, "PERMISSIONS_CAN_APPROVE_FEED_POST" integer, "PERMISSIONS_ADD_DIRECT_MESSAGE_MEMBERS" integer, "PERMISSIONS_ALLOW_VIEW_EDIT_CONVERTED_LEADS" integer, "PERMISSIONS_SOCIAL_INSIGHTS_LOGO_ADMIN" integer, "PERMISSIONS_FIELD_SERVICE_ACCESS" integer, "PERMISSIONS_FIELD_SERVICE_SCHEDULING" integer, "PERMISSIONS_FIELD_SERVICE_DISPATCHER" integer, "PERMISSIONS_FIELD_SERVICE_MOBILEAPP" integer, "PERMISSIONS_SHOW_COMPANY_NAME_AS_USER_BADGE" integer, "PERMISSIONS_ACCESS_CMC" integer, "PERMISSIONS_OPT_OUT_GEOLOCATION_TRACKING" integer, "PERMISSIONS_VIEW_HEALTH_CHECK" integer, "PERMISSIONS_MANAGE_HEALTH_CHECK" integer, "PERMISSIONS_PACKAGING2" integer, "PERMISSIONS_MANAGE_CERTIFICATES" integer, "PERMISSIONS_CREATE_REPORT_IN_LIGHTNING" integer, "PERMISSIONS_PREVENT_CLASSIC_EXPERIENCE" integer, "PERMISSIONS_HIDE_READ_BY_LIST" integer, "PERMISSIONS_LIST_EMAIL_SEND" integer, "PERMISSIONS_FEED_PINNING" integer, "PERMISSIONS_USE_WEB_LINK" integer, "PERMISSIONS_VIEW_ALL_ACTIVITIES" integer, "PERMISSIONS_SUBSCRIBE_REPORT_TO_OTHER_USERS" integer, "PERMISSIONS_LIGHTNING_CONSOLE_ALLOWED_FOR_USER" integer, "PERMISSIONS_SUBSCRIBE_REPORTS_RUN_AS_USER" integer, "PERMISSIONS_SUBSCRIBE_TO_LIGHTNING_DASHBOARDS" integer, "PERMISSIONS_APEX_REST_SERVICES" integer, "USER_LICENSE_ID" varchar(18), "USER_TYPE" varchar(40), "CREATED_DATE" timestamp, "CREATED_BY_ID" varchar(18), "LAST_MODIFIED_DATE" timestamp, "LAST_MODIFIED_BY_ID" varchar(18), "SYSTEM_MODSTAMP" timestamp, "DESCRIPTION" varchar(255), "LAST_VIEWED_DATE" timestamp, "LAST_REFERENCED_DATE" timestamp, "LOAD_TSTMP" timestamp )]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [CREATE EXTERNAL TABLE "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180" SAMEAS "pcn_temp_Shortcut_to_SDS_PROFILE_PRE1_7364_1689925145" USING (  DATAOBJECT ('\\.\pipe\PCN_PipeWRT7364_0_0_216123_03940')  DELIMITER 124 SOCKETBUFSIZE 8388608 MAXERRORS 1 CTRLCHARS TRUE CRINSTRING TRUE FILLRECORD TRUE  NULLVALUE ''  ESCAPECHAR '/'  REMOTESOURCE 'ODBC' ENCODING 'internal')]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8270
+OTarget connection group #1 consists of target(s) [SDS_PROFILE_PRE: Partition 1]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8003
+Writer initialization complete.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8005
+Writer run started.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8158
+*****START LOAD SESSION*****
+Load Start Time: Fri Jul 21 00:39:42 2023
+Target tables:
+     SDS_PROFILE_PRE: Partition 1
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10045
+[INFO] SOQL is [SELECT Id ,Name ,PermissionsEmailSingle ,PermissionsEmailMass ,PermissionsEditTask ,PermissionsEditEvent ,PermissionsExportReport ,PermissionsImportPersonal ,PermissionsDataExport ,PermissionsManageUsers ,PermissionsEditPublicFilters ,PermissionsEditPublicTemplates ,PermissionsModifyAllData ,PermissionsManageCases ,PermissionsMassInlineEdit ,PermissionsEditKnowledge ,PermissionsManageKnowledge ,PermissionsManageSolutions ,PermissionsCustomizeApplication ,PermissionsEditReadonlyFields ,PermissionsRunReports ,PermissionsViewSetup ,PermissionsTransferAnyEntity ,PermissionsNewReportBuilder ,PermissionsActivateContract ,PermissionsActivateOrder ,PermissionsImportLeads ,PermissionsManageLeads ,PermissionsTransferAnyLead ,PermissionsViewAllData ,PermissionsEditPublicDocuments ,PermissionsViewEncryptedData ,PermissionsEditBrandTemplates ,PermissionsEditHtmlTemplates ,PermissionsChatterInternalUser ,PermissionsManageTranslation ,PermissionsDeleteActivatedContract ,PermissionsChatterInviteExternalUsers ,PermissionsSendSitRequests ,PermissionsOverrideForecasts ,PermissionsViewAllForecasts ,PermissionsApiUserOnly ,PermissionsManageRemoteAccess ,PermissionsCanUseNewDashboardBuilder ,PermissionsManageCategories ,PermissionsConvertLeads ,PermissionsPasswordNeverExpires ,PermissionsUseTeamReassignWizards ,PermissionsEditActivatedOrders ,PermissionsInstallMultiforce ,PermissionsPublishMultiforce ,PermissionsChatterOwnGroups ,PermissionsEditOppLineItemUnitPrice ,PermissionsCreateMultiforce ,PermissionsBulkApiHardDelete ,PermissionsInboundMigrationToolsUser ,PermissionsSolutionImport ,PermissionsManageCallCenters ,PermissionsManageSynonyms ,PermissionsOutboundMigrationToolsUser ,PermissionsViewContent ,PermissionsManageEmailClientConfig ,PermissionsEnableNotifications ,PermissionsManageDataIntegrations ,PermissionsDistributeFromPersWksp ,PermissionsViewDataCategories ,PermissionsManageDataCategories ,PermissionsAuthorApex ,PermissionsManageMobile ,PermissionsApiEnabled ,PermissionsManageCustomReportTypes ,PermissionsEditCaseComments ,PermissionsTransferAnyCase ,PermissionsContentAdministrator ,PermissionsCreateWorkspaces ,PermissionsManageContentPermissions ,PermissionsManageContentProperties ,PermissionsManageContentTypes ,PermissionsScheduleJob ,PermissionsManageExchangeConfig ,PermissionsManageAnalyticSnapshots ,PermissionsScheduleReports ,PermissionsManageBusinessHourHolidays ,PermissionsManageDynamicDashboards ,PermissionsCustomSidebarOnAllPages ,PermissionsManageInteraction ,PermissionsViewMyTeamsDashboards ,PermissionsModerateChatter ,PermissionsResetPasswords ,PermissionsFlowUFLRequired ,PermissionsCanInsertFeedSystemFields ,PermissionsManageKnowledgeImportExport ,PermissionsEmailTemplateManagement ,PermissionsEmailAdministration ,PermissionsManageChatterMessages ,PermissionsAllowEmailIC ,PermissionsChatterFileLink ,PermissionsForceTwoFactor ,PermissionsViewEventLogFiles ,PermissionsManageNetworks ,PermissionsViewCaseInteraction ,PermissionsManageAuthProviders ,PermissionsRunFlow ,PermissionsManageQuotas ,PermissionsCreateCustomizeDashboards ,PermissionsCreateDashboardFolders ,PermissionsViewPublicDashboards ,PermissionsManageDashbdsInPubFolders ,PermissionsCreateCustomizeReports ,PermissionsCreateReportFolders ,PermissionsViewPublicReports ,PermissionsManageReportsInPubFolders ,PermissionsEditMyDashboards ,PermissionsEditMyReports ,PermissionsViewAllUsers ,PermissionsAllowUniversalSearch ,PermissionsConnectOrgToEnvironmentHub ,PermissionsCreateCustomizeFilters ,PermissionsGovernNetworks ,PermissionsSalesConsole ,PermissionsTwoFactorApi ,PermissionsDeleteTopics ,PermissionsEditTopics ,PermissionsCreateTopics ,PermissionsAssignTopics ,PermissionsIdentityEnabled ,PermissionsIdentityConnect ,PermissionsAllowViewKnowledge ,PermissionsContentWorkspaces ,PermissionsCreateWorkBadgeDefinition ,PermissionsManageSearchPromotionRules ,PermissionsCustomMobileAppsAccess ,PermissionsViewHelpLink ,PermissionsManageProfilesPermissionsets ,PermissionsAssignPermissionSets ,PermissionsManageRoles ,PermissionsManageIpAddresses ,PermissionsManageSharing ,PermissionsManageInternalUsers ,PermissionsManagePasswordPolicies ,PermissionsManageLoginAccessPolicies ,PermissionsManageCustomPermissions ,PermissionsCanVerifyComment ,PermissionsManageUnlistedGroups ,PermissionsManageTwoFactor ,PermissionsDebugApex ,PermissionsLightningExperienceUser ,PermissionsConfigCustomRecs ,PermissionsSubmitMacrosAllowed ,PermissionsBulkMacrosAllowed ,PermissionsShareInternalArticles ,PermissionsManageSessionPermissionSets ,PermissionsSendAnnouncementEmails ,PermissionsChatterEditOwnPost ,PermissionsChatterEditOwnRecordPost ,PermissionsCreateAuditFields ,PermissionsUpdateWithInactiveOwner ,PermissionsAutomaticActivityCapture ,PermissionsImportCustomObjects ,PermissionsDelegatedTwoFactor ,PermissionsChatterComposeUiCodesnippet ,PermissionsSelectFilesFromSalesforce ,PermissionsModerateNetworkUsers ,PermissionsMergeTopics ,PermissionsSubscribeToLightningReports ,PermissionsManagePvtRptsAndDashbds ,PermissionsAllowLightningLogin ,PermissionsCampaignInfluence2 ,PermissionsViewDataAssessment ,PermissionsRemoveDirectMessageMembers ,PermissionsCanApproveFeedPost ,PermissionsAddDirectMessageMembers ,PermissionsAllowViewEditConvertedLeads ,PermissionsSocialInsightsLogoAdmin ,PermissionsFieldServiceAccess ,PermissionsFieldServiceScheduling ,PermissionsFieldServiceDispatcher ,PermissionsFieldServiceMobileApp ,PermissionsShowCompanyNameAsUserBadge ,PermissionsAccessCMC ,PermissionsOptOutGeoLocationTracking ,PermissionsViewHealthCheck ,PermissionsManageHealthCheck ,PermissionsPackaging2 ,PermissionsManageCertificates ,PermissionsCreateReportInLightning ,PermissionsPreventClassicExperience ,PermissionsHideReadByList ,PermissionsListEmailSend ,PermissionsFeedPinning ,PermissionsUseWebLink ,PermissionsViewAllActivities ,PermissionsSubscribeReportToOtherUsers ,PermissionsLightningConsoleAllowedForUser ,PermissionsSubscribeReportsRunAsUser ,PermissionsSubscribeToLightningDashboards ,PermissionsApexRestServices ,UserLicenseId ,UserType ,CreatedDate ,CreatedById ,LastModifiedDate ,LastModifiedById ,SystemModstamp ,Description ,LastViewedDate ,LastReferencedDate 
+ FROM Profile Where CreatedDate >= YESTERDAY OR LastModifiedDate >= YESTERDAY].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+DBG_21216
+YFinished transformations for Source Qualifier [SQ_Shortcut_to_Profile]. Total errors [0] 
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8167
+OStart loading table [SDS_PROFILE_PRE: Partition 1] at: Fri Jul 21 00:39:42 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8168
+MEnd loading table [SDS_PROFILE_PRE: Partition 1] at: Fri Jul 21 00:39:42 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+4[INFO] No data available: Failed to write into pipe.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+?[INFO] Opening Pipe [\\.\pipe\PCN_PipeWRT7364_0_0_216123_03940]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+M[INFO] Opened pipe([\\.\pipe\PCN_PipeWRT7364_0_0_216123_03940]) in write mode
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+A[INFO] Closing pipe ([\\.\pipe\PCN_PipeWRT7364_0_0_216123_03940])
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Closed Pipe
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [INSERT INTO "SDS_PROFILE_PRE"("ID", "NAME", "PERMISSIONS_EMAIL_SINGLE", "PERMISSIONS_EMAIL_MASS", "PERMISSIONS_EDIT_TASK", "PERMISSIONS_EDIT_EVENT", "PERMISSIONS_EXPORT_REPORT", "PERMISSIONS_IMPORT_PERSONAL", "PERMISSIONS_DATA_EXPORT", "PERMISSIONS_MANAGE_USERS", "PERMISSIONS_EDIT_PUBLIC_FILTERS", "PERMISSIONS_EDIT_PUBLIC_TEMPLATES", "PERMISSIONS_MODIFY_ALL_DATA", "PERMISSIONS_MANAGE_CASES", "PERMISSIONS_MASS_INLINE_EDIT", "PERMISSIONS_EDIT_KNOWLEDGE", "PERMISSIONS_MANAGE_KNOWLEDGE", "PERMISSIONS_MANAGE_SOLUTIONS", "PERMISSIONS_CUSTOMIZE_APPLICATION", "PERMISSIONS_EDIT_READ_ONLY_FIELDS", "PERMISSIONS_RUN_REPORTS", "PERMISSIONS_VIEW_SETUP", "PERMISSIONS_TRANSFER_ANY_ENTITY", "PERMISSIONS_NEW_REPORT_BUILDER", "PERMISSIONS_ACTIVATE_CONTRACT", "PERMISSIONS_ACTIVATE_ORDER", "PERMISSIONS_IMPORT_LEADS", "PERMISSIONS_MANAGE_LEADS", "PERMISSIONS_TRANSFER_ANY_LEAD", "PERMISSIONS_VIEW_ALL_DATA", "PERMISSIONS_EDIT_PUBLIC_DOCUMENTS", "PERMISSIONS_VIEW_ENCRYPTED_DATA", "PERMISSIONS_EDIT_BRAND_TEMPLATES", "PERMISSIONS_EDIT_HTML_TEMPLATES", "PERMISSIONS_CHATTER_INTERNAL_USER", "PERMISSIONS_MANAGE_TRANSLATION", "PERMISSIONS_DELETE_ACTIVATED_CONTRACT", "PERMISSIONS_CHATTER_INVITE_EXTERNAL_USERS", "PERMISSIONS_SEND_SIT_REQUESTS", "PERMISSIONS_OVERRIDE_FORECASTS", "PERMISSIONS_VIEW_ALL_FORECASTS", "PERMISSIONS_API_USER_ONLY", "PERMISSIONS_MANAGE_REMOTE_ACCESS", "PERMISSIONS_CAN_USE_NEW_DASHBOARD_BUILDER", "PERMISSIONS_MANAGE_CATEGORIES", "PERMISSIONS_CONVERT_LEADS", "PERMISSIONS_PASSWORD_NEVER_EXPIRES", "PERMISSIONS_USE_TEAM_REASSIGN_WIZARDS", "PERMISSIONS_EDIT_ACTIVATED_ORDERS", "PERMISSIONS_INSTALL_MULTIFORCE", "PERMISSIONS_PUBLISH_MULTIFORCE", "PERMISSIONS_CHATTER_OWN_GROUPS", "PERMISSIONS_EDIT_OPP_LINE_ITEM_UNIT_PRICE", "PERMISSIONS_CREAT_EMULTIFORCE", "PERMISSIONS_BULKAPI_HARD_DELETE", "PERMISSIONS_INBOUND_MIGRATION_TOOLS_USER", "PERMISSIONS_SOLUTION_IMPORT", "PERMISSIONS_MANAGE_CALL_CENTERS", "PERMISSIONS_MANAGE_SYNONYMS", "PERMISSIONS_OUTBOUND_MIGRATION_TOOLS_USER", "PERMISSIONS_VIEW_CONTENT", "PERMISSIONS_MANAGE_EMAIL_CLIENT_CONFIG", "PERMISSIONS_ENABLE_NOTIFICATIONS", "PERMISSIONS_MANAGE_DATA_INTEGRATIONS", "PERMISSIONS_DISTRIBUTE_FROM_PERSWKSP", "PERMISSIONS_VIEW_DATA_CATEGORIES", "PERMISSIONS_MANAGE_DATA_CATEGORIES", "PERMISSIONS_AUTHOR_APEX", "PERMISSIONS_MANAGE_MOBILE", "PERMISSIONS_API_ENABLED", "PERMISSIONS_MANAGE_CUSTOM_REPORT_TYPES", "PERMISSIONS_EDIT_CASE_COMMENTS", "PERMISSIONS_TRANSFER_ANY_CASE", "PERMISSIONS_CONTENT_ADMINISTRATOR", "PERMISSIONS_CREATE_WORKSPACES", "PERMISSIONS_MANAGE_CONTENT_PERMISSIONS", "PERMISSIONS_MANAGE_CONTENT_PROPERTIES", "PERMISSIONS_MANAGE_CONTENT_TYPES", "PERMISSIONS_SCHEDULE_JOB", "PERMISSIONS_MANAGE_EXCHANGE_CONFIG", "PERMISSIONS_MANAGE_ANALYTIC_SNAPSHOTS", "PERMISSIONS_SCHEDULE_REPORTS", "PERMISSIONS_MANAGE_BUSINESS_HOUR_HOLIDAYS", "PERMISSIONS_MANAGE_DYNAMIC_DASHBOARDS", "PERMISSIONS_CUSTOM_SIDEBAR_ON_ALL_PAGES", "PERMISSIONS_MANAGE_INTERACTION", "PERMISSIONS_VIEW_MY_TEAMS_DASHBOARDS", "PERMISSIONS_MODERATE_CHATTER", "PERMISSIONS_RESET_PASSWORDS", "PERMISSIONS_FLOW_UFL_REQUIRED", "PERMISSIONS_CAN_INSERT_FEED_SYSTEM_FIELDS", "PERMISSIONS_MANAGE_KNOWLEDGE_IMPOR_TEXPORT", "PERMISSIONS_EMAIL_TEMPLATE_MANAGEMENT", "PERMISSIONS_EMAIL_ADMINISTRATION", "PERMISSIONS_MANAGE_CHATTER_MESSAGES", "PERMISSIONS_ALLOW_EMAIL_IC", "PERMISSIONS_CHATTER_FILE_LINK", "PERMISSIONS_FORCE_TWO_FACTOR", "PERMISSIONS_VIEW_EVENT_LOG_FILES", "PERMISSIONS_MANAGE_NETWORKS", "PERMISSIONS_VIEW_CASE_INTERACTION", "PERMISSIONS_MANAGE_AUTH_PROVIDERS", "PERMISSIONS_RUN_FLOW", "PERMISSIONS_MANAGE_QUOTAS", "PERMISSIONS_CREATE_CUSTOMIZE_DASHBOARDS", "PERMISSIONS_CREATE_DASHBOARD_FOLDERS", "PERMISSIONS_VIEW_PUBLIC_DASHBOARDS", "PERMISSIONS_MANAGE_DASHBDS_IN_PUB_FOLDERS", "PERMISSIONS_CREATE_CUSTOMIZE_REPORTS", "PERMISSIONS_CREATE_REPORT_FOLDERS", "PERMISSIONS_VIEW_PUBLIC_REPORTS", "PERMISSIONS_MANAGE_REPORTS_IN_PUB_FOLDERS", "PERMISSIONS_EDIT_MY_DASHBOARDS", "PERMISSIONS_EDIT_MY_REPORTS", "PERMISSIONS_VIEW_ALL_USERS", "PERMISSIONS_ALLOW_UNIVERSAL_SEARCH", "PERMISSIONS_CONNECT_ORG_T_OENVIRONMENT_HUB", "PERMISSIONS_CREATE_CUSTOMIZE_FILTERS", "PERMISSIONS_GOVERN_NETWORKS", "PERMISSIONS_SALES_CONSOLE", "PERMISSIONS_TWO_FACTOR_API", "PERMISSIONS_DELETE_TOPICS", "PERMISSIONS_EDIT_TOPICS", "PERMISSIONS_CREATE_TOPICS", "PERMISSIONS_ASSIGN_TOPICS", "PERMISSIONS_IDENTITY_ENABLED", "PERMISSIONS_IDENTITY_CONNECT", "PERMISSIONS_ALLOW_VIEW_KNOWLEDGE", "PERMISSIONS_CONTENT_WORKSPACES", "PERMISSIONS_CREATE_WORK_BADGE_DEFINITION", "PERMISSIONS_MANAGE_SEARCH_PROMOTION_RULES", "PERMISSIONS_CUSTOM_MOBILE_APPS_ACCESS", "PERMISSIONS_VIEW_HELPLINK", "PERMISSIONS_MANAGE_PROFILES_PERMISSIONSETS", "PERMISSIONS_ASSIGN_PERMISSION_SETS", "PERMISSIONS_MANAGE_ROLES", "PERMISSIONS_MANAGE_IP_ADDRESSES", "PERMISSIONS_MANAGE_SHARING", "PERMISSIONS_MANAGE_INTERNAL_USERS", "PERMISSIONS_MANAGE_PASSWORD_POLICIES", "PERMISSIONS_MANAGE_LOGIN_ACCESS_POLICIES", "PERMISSIONS_MANAGE_CUSTOM_PERMISSIONS", "PERMISSIONS_CAN_VERIFY_COMMENT", "PERMISSIONS_MANAGE_UNLISTED_GROUPS", "PERMISSIONS_MANAGE_TWO_FACTOR", "PERMISSIONS_DEBUG_APEX", "PERMISSIONS_LIGHTNING_EXPERIENCE_USER", "PERMISSIONS_CONFIG_CUSTOM_RECS", "PERMISSIONS_SUBMIT_MACROS_ALL_OWED", "PERMISSIONS_BULK_MACROS_ALL_OWED", "PERMISSIONS_SHARE_INTERNAL_ARTICLES", "PERMISSIONS_MANAGE_SESSIO_NPERMISSION_SETS", "PERMISSIONS_SEND_ANNOUNCEMENT_EMAILS", "PERMISSIONS_CHATTER_EDIT_OWN_POST", "PERMISSIONS_CHATTER_EDIT_OWN_RECORD_POST", "PERMISSIONS_CREATE_AUDIT_FIELDS", "PERMISSIONS_UPDATE_WITH_INACTIVE_OWNER", "PERMISSIONS_AUTOMATIC_ACTIVITY_CAPTURE", "PERMISSIONS_IMPORT_CUSTOM_OBJECTS", "PERMISSIONS_DELEGATED_TWO_FACTOR", "PERMISSIONS_CHATTER_COMPOSE_UI_CODE_SNIPPET", "PERMISSIONS_SELECT_FILES_FROM_SALESFORCE", "PERMISSIONS_MODERATE_NETWORK_USERS", "PERMISSIONS_MERGE_TOPICS", "PERMISSIONS_SUBSCRIBE_TO_LIGHTNING_REPORTS", "PERMISSIONS_MANAGE_PVT_RPTS_AND_DASHBDS", "PERMISSIONS_ALLOW_LIGHTNING_LOGIN", "PERMISSIONS_CAMPAIGN_INFLUENCE2", "PERMISSIONS_VIEW_DATA_ASSESSMENT", "PERMISSIONS_REMOVE_DIRECT_MESSAGE_MEMBERS", "PERMISSIONS_CAN_APPROVE_FEED_POST", "PERMISSIONS_ADD_DIRECT_MESSAGE_MEMBERS", "PERMISSIONS_ALLOW_VIEW_EDIT_CONVERTED_LEADS", "PERMISSIONS_SOCIAL_INSIGHTS_LOGO_ADMIN", "PERMISSIONS_FIELD_SERVICE_ACCESS", "PERMISSIONS_FIELD_SERVICE_SCHEDULING", "PERMISSIONS_FIELD_SERVICE_DISPATCHER", "PERMISSIONS_FIELD_SERVICE_MOBILEAPP", "PERMISSIONS_SHOW_COMPANY_NAME_AS_USER_BADGE", "PERMISSIONS_ACCESS_CMC", "PERMISSIONS_OPT_OUT_GEOLOCATION_TRACKING", "PERMISSIONS_VIEW_HEALTH_CHECK", "PERMISSIONS_MANAGE_HEALTH_CHECK", "PERMISSIONS_PACKAGING2", "PERMISSIONS_MANAGE_CERTIFICATES", "PERMISSIONS_CREATE_REPORT_IN_LIGHTNING", "PERMISSIONS_PREVENT_CLASSIC_EXPERIENCE", "PERMISSIONS_HIDE_READ_BY_LIST", "PERMISSIONS_LIST_EMAIL_SEND", "PERMISSIONS_FEED_PINNING", "PERMISSIONS_USE_WEB_LINK", "PERMISSIONS_VIEW_ALL_ACTIVITIES", "PERMISSIONS_SUBSCRIBE_REPORT_TO_OTHER_USERS", "PERMISSIONS_LIGHTNING_CONSOLE_ALLOWED_FOR_USER", "PERMISSIONS_SUBSCRIBE_REPORTS_RUN_AS_USER", "PERMISSIONS_SUBSCRIBE_TO_LIGHTNING_DASHBOARDS", "PERMISSIONS_APEX_REST_SERVICES", "USER_LICENSE_ID", "USER_TYPE", "CREATED_DATE", "CREATED_BY_ID", "LAST_MODIFIED_DATE", "LAST_MODIFIED_BY_ID", "SYSTEM_MODSTAMP", "DESCRIPTION", "LAST_VIEWED_DATE", "LAST_REFERENCED_DATE", "LOAD_TSTMP") SELECT "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."ID" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."NAME" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EMAIL_SINGLE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EMAIL_MASS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_TASK" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_EVENT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EXPORT_REPORT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_IMPORT_PERSONAL" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_DATA_EXPORT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_USERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_PUBLIC_FILTERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_PUBLIC_TEMPLATES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MODIFY_ALL_DATA" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CASES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MASS_INLINE_EDIT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_KNOWLEDGE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_KNOWLEDGE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_SOLUTIONS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CUSTOMIZE_APPLICATION" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_READ_ONLY_FIELDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_RUN_REPORTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_SETUP" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_TRANSFER_ANY_ENTITY" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_NEW_REPORT_BUILDER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ACTIVATE_CONTRACT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ACTIVATE_ORDER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_IMPORT_LEADS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_LEADS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_TRANSFER_ANY_LEAD" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_ALL_DATA" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_PUBLIC_DOCUMENTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_ENCRYPTED_DATA" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_BRAND_TEMPLATES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_HTML_TEMPLATES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CHATTER_INTERNAL_USER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_TRANSLATION" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_DELETE_ACTIVATED_CONTRACT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CHATTER_INVITE_EXTERNAL_USERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SEND_SIT_REQUESTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_OVERRIDE_FORECASTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_ALL_FORECASTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_API_USER_ONLY" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_REMOTE_ACCESS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CAN_USE_NEW_DASHBOARD_BUILDER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CATEGORIES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CONVERT_LEADS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_PASSWORD_NEVER_EXPIRES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_USE_TEAM_REASSIGN_WIZARDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_ACTIVATED_ORDERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_INSTALL_MULTIFORCE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_PUBLISH_MULTIFORCE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CHATTER_OWN_GROUPS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_OPP_LINE_ITEM_UNIT_PRICE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREAT_EMULTIFORCE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_BULKAPI_HARD_DELETE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_INBOUND_MIGRATION_TOOLS_USER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SOLUTION_IMPORT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CALL_CENTERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_SYNONYMS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_OUTBOUND_MIGRATION_TOOLS_USER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_CONTENT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_EMAIL_CLIENT_CONFIG" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ENABLE_NOTIFICATIONS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_DATA_INTEGRATIONS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_DISTRIBUTE_FROM_PERSWKSP" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_DATA_CATEGORIES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_DATA_CATEGORIES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_AUTHOR_APEX" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_MOBILE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_API_ENABLED" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CUSTOM_REPORT_TYPES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_CASE_COMMENTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_TRANSFER_ANY_CASE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CONTENT_ADMINISTRATOR" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_WORKSPACES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CONTENT_PERMISSIONS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CONTENT_PROPERTIES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CONTENT_TYPES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SCHEDULE_JOB" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_EXCHANGE_CONFIG" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_ANALYTIC_SNAPSHOTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SCHEDULE_REPORTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_BUSINESS_HOUR_HOLIDAYS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_DYNAMIC_DASHBOARDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CUSTOM_SIDEBAR_ON_ALL_PAGES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_INTERACTION" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_MY_TEAMS_DASHBOARDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MODERATE_CHATTER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_RESET_PASSWORDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_FLOW_UFL_REQUIRED" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CAN_INSERT_FEED_SYSTEM_FIELDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_KNOWLEDGE_IMPOR_TEXPORT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EMAIL_TEMPLATE_MANAGEMENT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EMAIL_ADMINISTRATION" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CHATTER_MESSAGES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ALLOW_EMAIL_IC" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CHATTER_FILE_LINK" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_FORCE_TWO_FACTOR" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_EVENT_LOG_FILES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_NETWORKS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_CASE_INTERACTION" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_AUTH_PROVIDERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_RUN_FLOW" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_QUOTAS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_CUSTOMIZE_DASHBOARDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_DASHBOARD_FOLDERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_PUBLIC_DASHBOARDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_DASHBDS_IN_PUB_FOLDERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_CUSTOMIZE_REPORTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_REPORT_FOLDERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_PUBLIC_REPORTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_REPORTS_IN_PUB_FOLDERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_MY_DASHBOARDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_MY_REPORTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_ALL_USERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ALLOW_UNIVERSAL_SEARCH" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CONNECT_ORG_T_OENVIRONMENT_HUB" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_CUSTOMIZE_FILTERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_GOVERN_NETWORKS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SALES_CONSOLE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_TWO_FACTOR_API" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_DELETE_TOPICS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_EDIT_TOPICS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_TOPICS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ASSIGN_TOPICS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_IDENTITY_ENABLED" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_IDENTITY_CONNECT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ALLOW_VIEW_KNOWLEDGE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CONTENT_WORKSPACES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_WORK_BADGE_DEFINITION" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_SEARCH_PROMOTION_RULES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CUSTOM_MOBILE_APPS_ACCESS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_HELPLINK" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_PROFILES_PERMISSIONSETS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ASSIGN_PERMISSION_SETS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_ROLES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_IP_ADDRESSES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_SHARING" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_INTERNAL_USERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_PASSWORD_POLICIES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_LOGIN_ACCESS_POLICIES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CUSTOM_PERMISSIONS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CAN_VERIFY_COMMENT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_UNLISTED_GROUPS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_TWO_FACTOR" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_DEBUG_APEX" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_LIGHTNING_EXPERIENCE_USER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CONFIG_CUSTOM_RECS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SUBMIT_MACROS_ALL_OWED" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_BULK_MACROS_ALL_OWED" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SHARE_INTERNAL_ARTICLES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_SESSIO_NPERMISSION_SETS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SEND_ANNOUNCEMENT_EMAILS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CHATTER_EDIT_OWN_POST" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CHATTER_EDIT_OWN_RECORD_POST" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_AUDIT_FIELDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_UPDATE_WITH_INACTIVE_OWNER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_AUTOMATIC_ACTIVITY_CAPTURE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_IMPORT_CUSTOM_OBJECTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_DELEGATED_TWO_FACTOR" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CHATTER_COMPOSE_UI_CODE_SNIPPET" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SELECT_FILES_FROM_SALESFORCE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MODERATE_NETWORK_USERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MERGE_TOPICS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SUBSCRIBE_TO_LIGHTNING_REPORTS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_PVT_RPTS_AND_DASHBDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ALLOW_LIGHTNING_LOGIN" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CAMPAIGN_INFLUENCE2" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_DATA_ASSESSMENT" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_REMOVE_DIRECT_MESSAGE_MEMBERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CAN_APPROVE_FEED_POST" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ADD_DIRECT_MESSAGE_MEMBERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ALLOW_VIEW_EDIT_CONVERTED_LEADS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SOCIAL_INSIGHTS_LOGO_ADMIN" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_FIELD_SERVICE_ACCESS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_FIELD_SERVICE_SCHEDULING" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_FIELD_SERVICE_DISPATCHER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_FIELD_SERVICE_MOBILEAPP" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SHOW_COMPANY_NAME_AS_USER_BADGE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_ACCESS_CMC" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_OPT_OUT_GEOLOCATION_TRACKING" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_HEALTH_CHECK" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_HEALTH_CHECK" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_PACKAGING2" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_MANAGE_CERTIFICATES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_CREATE_REPORT_IN_LIGHTNING" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_PREVENT_CLASSIC_EXPERIENCE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_HIDE_READ_BY_LIST" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_LIST_EMAIL_SEND" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_FEED_PINNING" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_USE_WEB_LINK" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_VIEW_ALL_ACTIVITIES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SUBSCRIBE_REPORT_TO_OTHER_USERS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_LIGHTNING_CONSOLE_ALLOWED_FOR_USER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SUBSCRIBE_REPORTS_RUN_AS_USER" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_SUBSCRIBE_TO_LIGHTNING_DASHBOARDS" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."PERMISSIONS_APEX_REST_SERVICES" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."USER_LICENSE_ID" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."USER_TYPE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."CREATED_DATE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."CREATED_BY_ID" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."LAST_MODIFIED_DATE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."LAST_MODIFIED_BY_ID" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."SYSTEM_MODSTAMP" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."DESCRIPTION" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."LAST_VIEWED_DATE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."LAST_REFERENCED_DATE" , "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"."LOAD_TSTMP" FROM "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+\[INFO] Executed query : [DROP TABLE "pcn_temp_Shortcut_to_SDS_PROFILE_PRE1_7364_1689925145"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+R[INFO] Executed query : [DROP TABLE "pcn_ext_SDS_PROFILE_PRE_7364_0_0_1689925180"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+F[INFO] The Integration Service successfully committed the transaction.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+2[INFO] Deinitializing Target = [0] Partition = [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Insert [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Delete [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Update [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8035
+Load complete time: Fri Jul 21 00:39:42 2023
+LOAD SUMMARY
+============
+WRT_8036 Target: SDS_PROFILE_PRE: Partition 1 (Instance Name: [Shortcut_to_SDS_PROFILE_PRE1])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8043
+*****END LOAD SESSION*****
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8006
+Writer run completed.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24031
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [SQ_Shortcut_to_Profile] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [SQ_Shortcut_to_Profile] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Shortcut_to_SDS_PROFILE_PRE1] has completed. The total run time was insufficient for any meaningful statistics.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24005
+DPETL_24005 Starting post-session tasks. : (Fri Jul 21 00:39:43 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+"Thread [POST-SESS] has the ID [8].
+POST-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24029
+QPETL_24029 Post-session task completed successfully. : (Fri Jul 21 00:39:43 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38510
+3SDK target and group deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 405050 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38019
+2Writer SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 310600 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38018
+2Reader SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6018
+:The session completed with [0] row transformation errors. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24002
+"Parallel Pipeline Engine finished.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24012
+#Session run completed successfully.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6022
+SESSION LOAD SUMMARY
+================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6252
+Source Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SQ_Shortcut_to_Profile] (Instance Name: [SQ_Shortcut_to_Profile])
+ Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6253
+Target Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SDS_PROFILE_PRE] (Instance Name: [Shortcut_to_SDS_PROFILE_PRE1])
+ Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6023
+===================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6020
+DSession [s_sds_profile_pre] completed at [Fri Jul 21 00:39:43 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1803
+"Files removed from recovery cache.
+DIRECTOR

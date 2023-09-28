@@ -1,0 +1,525 @@
+8.1.0
+?http://www.informatica.com/pcsf/logservice:LogCallContext:1.0.2
+IS_GRID_ASCII
+node03_DRT-ETLAPP-P03
+DM_ETL_PROD101
+RS_PROD_INFA101
+BA_Services
+wf_Prism_Daily
+wl_sds_pre
+s_sds_assigned_resource_pre
+168693
+23333345
+23333346
+95962
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j"
+VAR_27028
+]Use override value [YESTERDAY] for user-defined workflow/worklet variable:[$$DeltaTimeframe].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j"
+TM_6014
+QInitializing session [s_sds_assigned_resource_pre] at [Fri Jul 21 00:31:32 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j#
+TM_6683
+"Repository Name: [RS_PROD_INFA101]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j#
+TM_6684
+Server Name: [IS_GRID_ASCII]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j$
+TM_6686
+Folder: [BA_Services]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j$
+TM_6685
+CWorkflow: [wf_Prism_Daily] Run Instance Name: [] Run Id: [23333345]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j%
+TM_6992
+Operating System Type [NT]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j%
+TM_6101
+7Mapping name: m_sds_assigned_resource_pre [version 13].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j;
+TM_6964
+9Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\j;
+TM_6827
+[D:\etlsw\Informatica\10.4.1\server\infa_shared\Storage] will be used as storage directory for session [s_sds_assigned_resource_pre].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jP
+CMN_1802
+2Session recovery cache initialization is complete.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jc
+TM_6708
+6Using configuration property [EnableDataEncryption,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jd
+TM_6708
+8Using configuration property [StoreHAPersistenceInDB,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\je
+TM_6708
+@Using configuration property [MasterDTMListenOnAllInterface,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\je
+TM_6708
+5Using configuration property [NetezzaLoginTimeout,60]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\je
+TM_6708
+5Using configuration property [RunCmdInNewConsole,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jf
+TM_6708
+NUsing configuration property [SMTPFromAddress,ETL_PRODUCTION@ssg.petsmart.com]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jf
+TM_6708
+0Using configuration property [SMTPPortNumber,25]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jg
+TM_6708
+<Using configuration property [SMTPServerAddress,SSGEXCHANGE]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jg
+TM_6708
+3Using configuration property [SMTPServerTimeout,30]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jh
+TM_6708
+<Using configuration property [syncNetezzanullwithPCNull,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\ji
+TM_6708
+=Using configuration property [TransferLogFileBlockSize,32768]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\ji
+TM_6708
+:Using configuration property [treatNoDataAsEmptyString,No]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\ji
+TM_6708
+CUsing configuration property [netezzaDisableUseridAsSchemaName,yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jj
+TM_6708
+>Using configuration property [SalesForceConnectionTimeout,120]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jk
+TM_6703
+Session [s_sds_assigned_resource_pre] is run by 64-bit Integration Service  [node03_DRT-ETLAPP-P03], version [10.4.1], build [0614].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jl
+PETL_24091
+ Thread [MANAGER] has the ID [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jm
+PETL_24058
+Running Partition Group [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jm
+PETL_24000
+&Parallel Pipeline Engine initializing.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jn
+PETL_24091
+ Thread [MONITOR] has the ID [2].
+MONITOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jo
+PETL_24001
+!Parallel Pipeline Engine running.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jp
+PETL_24003
+Initializing session run.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jp
+PETL_24091
+ Thread [MAPPING] has the ID [3].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jq
+CMN_1569
+Server Mode: [ASCII]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jq
+CMN_1570
+AServer Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jr
+TM_6151
+#The session sort order is [Binary].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jr
+CMN_65111
+Current Timezone:[UTC -7:0]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\js
+CMN_65112
+Current Process ID:[2244]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\js
+TM_6156
+Using low precision processing.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jt
+TM_6180
+-Deadlock retry logic will not be implemented.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\jt
+TM_6187
+0Session target-based commit interval is [10000].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42020
+P[INFO] Loaded library : D:\etlsw\Informatica\10.4.1\java\jre\bin\server\jvm.dll.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42009
+$[INFO] Created Java VM successfully.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38029
+=Loaded plug-in 310600: [PowerExchange for Salesforce 10.4.1].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\m6
+SDKS_38024
+'Plug-in 310600 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\m7
+SDKS_38016
++Reader SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\m8
+TM_6307
+DTM error log disabled. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\m8
+TE_7022
+TShmWriter: Initialized
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6007
+FDTM initialized successfully for session [s_sds_assigned_resource_pre]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24033
+"All DTM Connection Info: [<NONE>].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24004
+CPETL_24004 Starting pre-session tasks. : (Fri Jul 21 00:31:33 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+!Thread [PRE-SESS] has the ID [4].
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+DBG_21349
+No load constraints for Target [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE]. It does not reference any primary table from the same active source or transaction generator.
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+DBG_21104
+JDetermining truncate order for [SDS_ASSIGNED_RESOURCE_PRE] [instance id:1]
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+DBG_21531
+Z    Truncate order for [SDS_ASSIGNED_RESOURCE_PRE] [instance id:1] determined successfully
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1021
+Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Array Inserts. connect string = [NZ_SDS_STAGE]. userid = [srvsloader]]
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8365
+eWRT_8365 Starting truncate for target table [SDS_ASSIGNED_RESOURCE_PRE]. : (Fri Jul 21 00:31:33 2023)
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8451
+HQuery used for Truncate table [TRUNCATE TABLE SDS_ASSIGNED_RESOURCE_PRE]
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8022
+eWRT_8022 Truncate table for table [SDS_ASSIGNED_RESOURCE_PRE] succeeded. : (Fri Jul 21 00:31:33 2023)
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\oF
+PETL_24027
+PPETL_24027 Pre-session task completed successfully. : (Fri Jul 21 00:31:33 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\oF
+PETL_24006
+Starting data movement.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\oG
+TM_6660
+GTotal Buffer Pool size is 2313760 bytes and Block size is 126320 bytes.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10057
+ [INFO] No proxy information set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10048
+[INFO] Account[svc-informatica@petsmart.com] logged on salesforce.com at [https://prism-petsmart.my.salesforce.com/services/Soap/u/41.0].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [TRANSF_1_1_1] has the ID [6].
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8148
+]Writer: Target is Database [NZ_SDS_STAGE], Type [Netezza], User [srvsloader], Bulk Mode [N/A]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1021
+Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Array Inserts. connect string = [NZ_SDS_STAGE]. userid = [srvsloader]]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8124
+Target Table SDS_ASSIGNED_RESOURCE_PRE :SQL INSERT statement:
+INSERT INTO SDS_ASSIGNED_RESOURCE_PRE(ID,IS_DELETED,ASSIGNED_RESOURCE_NUMBER,CREATED_DATE,CREATED_BY_ID,LAST_MODIFIED_DATE,LAST_MODIFIED_BY_ID,SYSTEM_MOD_STAMP,SERVICE_APPOINTMENT_ID,SERVICE_RESOURCE_ID,ESTIMATED_TRAVEL_TIME,ACTUAL_TRAVEL_TIME,SERVICE_CREW_ID,FSL_ESTIMATED_TRAVEL_DISTANCE_FROM_C,FSL_ESTIMATED_TRAVEL_DISTANCE_TO_C,FSL_ESTIMATED_TRAVEL_TIME_FROM_C,FSL_LAST_UPDATED_EPOCH_C,FSL_UPDATED_BY_OPTIMIZATION_C,FSL_CALCULATED_DURATION_C,FSL_ESTIMATED_TRAVEL_TIME_FROM_SOURCE_C,FSL_ESTIMATED_TRAVEL_TIME_TO_SOURCE_C,PSVC_FOR_MIGRATION_C,PSVC_APPOINTMENT_SMS_ID_C,LOAD_TSTMP)  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8270
+LTarget connection group #1 consists of target(s) [SDS_ASSIGNED_RESOURCE_PRE]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8003
+Writer initialization complete.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8005
+Writer run started.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8158
+*****START LOAD SESSION*****
+Load Start Time: Fri Jul 21 00:32:09 2023
+Target tables:
+     SDS_ASSIGNED_RESOURCE_PRE
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10045
+[INFO] SOQL is [SELECT Id ,IsDeleted ,AssignedResourceNumber ,CreatedDate ,CreatedById ,LastModifiedDate ,LastModifiedById ,SystemModstamp ,ServiceAppointmentId ,ServiceResourceId ,EstimatedTravelTime ,ActualTravelTime ,ServiceCrewId ,FSL__EstimatedTravelDistanceFrom__c ,FSL__EstimatedTravelDistanceTo__c ,FSL__EstimatedTravelTimeFrom__c ,FSL__Last_Updated_Epoch__c ,FSL__UpdatedByOptimization__c ,FSL__calculated_duration__c ,FSL__Estimated_Travel_Time_From_Source__c ,FSL__Estimated_Travel_Time_To_Source__c ,PSVC_For_Migration__c ,PSVC_Appointment_SMS_ID__c 
+ FROM AssignedResource Where (CreatedDate  >= YESTERDAY OR LastModifiedDate  >= YESTERDAY) AND (PSVC_Appointment_SMS_ID__c like 'F%' OR PSVC_Appointment_SMS_ID__c = '')].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8167
+LStart loading table [SDS_ASSIGNED_RESOURCE_PRE] at: Fri Jul 21 00:32:12 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:32:35 2023
+===================================================
+WRT_8036 Target: SDS_ASSIGNED_RESOURCE_PRE (Instance Name: [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE])
+WRT_8038 Inserted rows - Requested: 10080      Applied: 10080      Rejected: 0          Affected: 10080     
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:33:00 2023
+===================================================
+WRT_8036 Target: SDS_ASSIGNED_RESOURCE_PRE (Instance Name: [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE])
+WRT_8038 Inserted rows - Requested: 20160      Applied: 20160      Rejected: 0          Affected: 20160     
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:33:19 2023
+===================================================
+WRT_8036 Target: SDS_ASSIGNED_RESOURCE_PRE (Instance Name: [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE])
+WRT_8038 Inserted rows - Requested: 30240      Applied: 30240      Rejected: 0          Affected: 30240     
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:33:44 2023
+===================================================
+WRT_8036 Target: SDS_ASSIGNED_RESOURCE_PRE (Instance Name: [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE])
+WRT_8038 Inserted rows - Requested: 40320      Applied: 40320      Rejected: 0          Affected: 40320     
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:34:02 2023
+===================================================
+WRT_8036 Target: SDS_ASSIGNED_RESOURCE_PRE (Instance Name: [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE])
+WRT_8038 Inserted rows - Requested: 50400      Applied: 50400      Rejected: 0          Affected: 50400     
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+DBG_21216
+bFinished transformations for Source Qualifier [SQ_Shortcut_to_AssignedResource]. Total errors [0] 
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8168
+JEnd loading table [SDS_ASSIGNED_RESOURCE_PRE] at: Fri Jul 21 00:34:04 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8141
+Commit on end-of-data  Fri Jul 21 00:34:05 2023
+===================================================
+WRT_8036 Target: SDS_ASSIGNED_RESOURCE_PRE (Instance Name: [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE])
+WRT_8038 Inserted rows - Requested: 53264      Applied: 53264      Rejected: 0          Affected: 53264     
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8035
+Load complete time: Fri Jul 21 00:34:05 2023
+LOAD SUMMARY
+============
+WRT_8036 Target: SDS_ASSIGNED_RESOURCE_PRE (Instance Name: [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE])
+WRT_8038 Inserted rows - Requested: 53264      Applied: 53264      Rejected: 0          Affected: 53264     
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8043
+*****END LOAD SESSION*****
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8006
+Writer run completed.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24031
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [SQ_Shortcut_to_AssignedResource] has completed.
+Total Run Time = [115.955088] secs
+Total Idle Time = [96.334528] secs
+Busy Percentage = [16.920827]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [SQ_Shortcut_to_AssignedResource] has completed.
+Total Run Time = [112.540661] secs
+Total Idle Time = [112.441685] secs
+Busy Percentage = [0.087947]
+Transformation-specific statistics for this thread were not accurate enough to report.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE] has completed.
+Total Run Time = [113.475719] secs
+Total Idle Time = [13.434622] secs
+Busy Percentage = [88.160796]
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24005
+DPETL_24005 Starting post-session tasks. : (Fri Jul 21 00:34:06 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+"Thread [POST-SESS] has the ID [8].
+POST-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24029
+QPETL_24029 Post-session task completed successfully. : (Fri Jul 21 00:34:06 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 310600 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38018
+2Reader SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6018
+:The session completed with [0] row transformation errors. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24002
+"Parallel Pipeline Engine finished.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24012
+#Session run completed successfully.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6022
+SESSION LOAD SUMMARY
+================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6252
+Source Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SQ_Shortcut_to_AssignedResource] (Instance Name: [SQ_Shortcut_to_AssignedResource])
+ Output Rows [53264], Affected Rows [53264], Applied Rows [53264], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6253
+Target Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SDS_ASSIGNED_RESOURCE_PRE] (Instance Name: [Shortcut_to_SDS_ASSIGNED_RESOURCE_PRE])
+ Output Rows [53264], Affected Rows [53264], Applied Rows [53264], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6023
+===================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6020
+NSession [s_sds_assigned_resource_pre] completed at [Fri Jul 21 00:34:07 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1803
+"Files removed from recovery cache.
+DIRECTOR

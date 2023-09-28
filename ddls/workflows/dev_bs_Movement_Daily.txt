@@ -1,0 +1,1456 @@
+
+
+
+
+
+--*****  Creating table:  "BAL_FILE_INTRFACE" , ***** Creating table: "BAL_FILE_INTRFACE"
+
+
+use dev_legacy;
+ CREATE TABLE BAL_FILE_INTRFACE 
+(  DAY_DT                                DATE                              not null
+
+, BAL_FILE_ID                            INT                       not null
+
+, BAL_SEQ_NBR                            INT                       not null
+
+, BAL_FAIL_FLAG                          TINYINT                       not null
+
+, TRAIL_REC_CNT                          BIGINT 
+
+, INTRFACE_REC_CNT                       BIGINT 
+
+, BAL_FILENAME_TX                        STRING 
+
+, LOAD_DT                                TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/bal_file_intrface';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "CURRENCY_DAY" , ***** Creating table: "CURRENCY_DAY"
+
+
+use dev_legacy;
+ CREATE TABLE CURRENCY_DAY 
+(  DAY_DT                                    TIMESTAMP                            not null
+
+, CURRENCY_ID                               STRING                         not null
+
+, DATE_RATE_START                           TIMESTAMP                            not null
+
+, CURRENCY_TYPE                             STRING                        not null
+
+, DATE_RATE_ENDED                           TIMESTAMP 
+
+, EXCHANGE_RATE_PCNT                        DECIMAL(9,6) 
+
+, RATIO_TO                                  DOUBLE 
+
+, RATIO_FROM                                DOUBLE 
+
+, STORE_CTRY_ABBR                           STRING 
+
+, CURRENCY_NBR SMALLINT not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/currency_day';
+
+--DISTRIBUTE ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "DEMAND_DAY" , ***** Creating table: "DEMAND_DAY"
+
+
+use dev_legacy;
+ CREATE TABLE DEMAND_DAY 
+(  PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, LAST_INV_ADJ_DT                           TIMESTAMP 
+
+, LAST_INV_ADJ_QTY                          INT 
+
+, LAST_PICK_DT                              TIMESTAMP 
+
+, LAST_RECPT_DT                             TIMESTAMP 
+
+, LAST_RECPT_QTY                            INT 
+
+, NEXT_PO_DUE_DT                            TIMESTAMP 
+
+, NEXT_PO_NBR BIGINT
+
+, NEXT_PO_QTY                               INT 
+
+, NEXT_PO_TYPE_ID                           STRING 
+
+, DC_NEXT_PO_DUE_DT                         TIMESTAMP 
+
+, DC_NEXT_PO_NBR BIGINT
+
+, DC_NEXT_PO_QTY                            INT 
+
+, LAST_SALES_DT                             TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/demand_day';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "DEMAND_NEXT_PO_PRE" , ***** Creating table: "DEMAND_NEXT_PO_PRE"
+
+
+use dev_raw;
+ CREATE TABLE DEMAND_NEXT_PO_PRE 
+(  PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, NEXT_PO_DUE_DT                              TIMESTAMP 
+
+, NEXT_PO_NBR BIGINT
+
+, NEXT_PO_QTY                                 INT 
+
+, NEXT_PO_TYPE_ID                             STRING 
+
+, DC_NEXT_PO_DUE_DT                           TIMESTAMP 
+
+, DC_NEXT_PO_NBR BIGINT
+
+, DC_NEXT_PO_QTY                              INT 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/BA_Mvmt_Purch/demand_next_po_pre';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "HOLIDAY_STO" , ***** Creating table: "HOLIDAY_STO"
+
+
+use dev_legacy;
+ CREATE TABLE HOLIDAY_STO 
+(  PO_NBR BIGINT not null
+
+, VENDOR_ID BIGINT
+
+, LOCATION_ID INT
+
+, PURCH_GROUP_ID INT not null
+
+, STO_TYPE_ID INT not null
+
+, DELIVERY_DATE                               TIMESTAMP 
+
+, EXE_SENT_DATE                               TIMESTAMP 
+
+, TMS_SENT_DATE                               TIMESTAMP 
+
+, TMS_PROCESSED TINYINT not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/holiday_sto';
+
+--DISTRIBUTE ON (PO_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "INV_SKU_STORE" , ***** Creating table: "INV_SKU_STORE"
+
+
+use dev_legacy;
+ CREATE TABLE INV_SKU_STORE 
+(  PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, FIRST_ON_HAND_DT                                  TIMESTAMP 
+
+, LAST_ON_HAND_DT                                   TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP                            not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/inv_sku_store';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "INVENTORY_PRE" , ***** Creating table: "INVENTORY_PRE"
+
+
+use dev_raw;
+ CREATE TABLE INVENTORY_PRE 
+(  DAY_DT        TIMESTAMP                            not null
+
+, SKU_NBR INT not null
+
+, STORE_NBR INT not null
+
+, ON_HAND_QTY                                       INT 
+
+, XFER_IN_TRANS_QTY                                 INT 
+
+, MAP_AMT       DECIMAL(9,3) 
+
+, PRICE_CHANGE_DT                                   TIMESTAMP 
+
+, VALUATED_STOCK_QTY INT
+
+, VALUATED_STOCK_AMT                                DECIMAL(11,3) 
+
+, PREV_PRICE_AMT                                    DECIMAL(9,3) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/BA_Mvmt_Purch/inventory_pre';
+
+--DISTRIBUTE ON (SKU_NBR, STORE_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "MOVE_CLASS" , ***** Creating table: "MOVE_CLASS"
+
+
+use dev_legacy;
+ CREATE TABLE MOVE_CLASS 
+(  MOVE_CLASS_ID SMALLINT not null
+
+, MOVE_CLASS_DESC                                   STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/move_class';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "MOVE_REASON" , ***** Creating table: "MOVE_REASON"
+
+
+use dev_legacy;
+ CREATE TABLE MOVE_REASON 
+(  MOVE_REASON_ID SMALLINT not null
+
+, MOVE_REASON_DESC                                  STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/move_reason';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "MOVE_TYPE" , ***** Creating table: "MOVE_TYPE"
+
+
+use dev_legacy;
+ CREATE TABLE MOVE_TYPE 
+(  MOVE_TYPE_ID SMALLINT not null
+
+, MOVE_TYPE_DESC                                    STRING 
+
+, MOVE_TYPE_CD                                      STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/move_type';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "MOVEMENT_DAY" , ***** Creating table: "MOVEMENT_DAY"
+
+
+use dev_legacy;
+ CREATE TABLE MOVEMENT_DAY 
+(  DAY_DT        TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, MOVEMENT_ID INT not null
+
+, PO_NBR BIGINT not null
+
+, PO_LINE_NBR INT not null
+
+, STO_TYPE_ID INT not null
+
+, SKU_STATUS_ID                                     STRING 
+
+, MOVE_CLASS_ID SMALLINT
+
+, SOURCE_VENDOR_ID BIGINT
+
+, FROM_LOCATION_ID INT
+
+, TRANS_AMT     DECIMAL(12,3) 
+
+, TRANS_COST                                        DECIMAL(12,3) 
+
+, TRANS_QTY     INT 
+
+, FREIGHT_COST                                      DECIMAL(9,3) 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, PLAN_DELIV_DAYS SMALLINT
+
+, ROUND_VALUE_QTY                                   INT 
+
+, ROUND_PROFILE_CD                                  STRING 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/movement_day';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "MOVEMENT_INFO" , ***** Creating table: "MOVEMENT_INFO"
+
+
+use dev_legacy;
+ CREATE TABLE MOVEMENT_INFO 
+(  MOVEMENT_ID INT not null
+
+, MOVE_CLASS_DESC                                   STRING 
+
+, MOVE_CLASS_ID SMALLINT
+
+, MOVE_REASON_DESC                                  STRING 
+
+, MOVE_REASON_ID SMALLINT
+
+, MOVE_TYPE_DESC                                    STRING 
+
+, MOVE_TYPE_ID SMALLINT
+
+, MOVE_TYPE_CD                                      STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/movement_info';
+
+--DISTRIBUTE ON (MOVEMENT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "MVMT_DAY_LOC_DEPT" , ***** Creating table: "MVMT_DAY_LOC_DEPT"
+
+
+use dev_legacy;
+ CREATE TABLE MVMT_DAY_LOC_DEPT 
+(  DAY_DT        TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, SAP_DEPT_ID INT not null
+
+, MVMT_DAMAGE_COST_AMT                              DECIMAL(13,3) 
+
+, MVMT_NIJ_COST_AMT                                 DECIMAL(13,3) 
+
+, MVMT_ESA_COST_AMT                                 DECIMAL(13,3) 
+
+, MVMT_RTV_COST_AMT                                 DECIMAL(13,3) 
+
+, MVMT_THEFT_COST_AMT                               DECIMAL(13,3) 
+
+, MVMT_PET_LOSS_COST_AMT                            DECIMAL(13,3) 
+
+, MVMT_DC_OVER_COST_AMT                             DECIMAL(13,3) 
+
+, MVMT_DC_SHORT_COST_AMT                            DECIMAL(13,3) 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/mvmt_day_loc_dept';
+
+--DISTRIBUTE ON (SAP_DEPT_ID, LOCATION_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "MVMT_REPL_DAY" , ***** Creating table: "MVMT_REPL_DAY"
+
+
+use dev_legacy;
+ CREATE TABLE MVMT_REPL_DAY 
+(  DAY_DT        TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, MOVE_CLASS_ID SMALLINT not null
+
+, SOURCE_VENDOR_ID BIGINT
+
+, FROM_LOCATION_ID INT
+
+, TRANS_AMT     DECIMAL(12,3) 
+
+, TRANS_COST                                        DECIMAL(12,3) 
+
+, TRANS_QTY     INT 
+
+, PLAN_DELIV_DAYS SMALLINT
+
+, ROUND_VALUE_QTY                                   INT 
+
+, ROUND_PROFILE_CD                                  STRING 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/mvmt_repl_day';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "MVMT_REPL_SOURCE_VENDOR_ID_UPD" , ***** Creating table: "MVMT_REPL_SOURCE_VENDOR_ID_UPD"
+
+
+use dev_legacy;
+ CREATE TABLE MVMT_REPL_SOURCE_VENDOR_ID_UPD 
+(  SC_PRODUCT_ID INT not null
+
+, SC_LOCATION_ID INT not null
+
+, SC_SOURCE_VENDOR_ID BIGINT
+
+, MVMT_PRODUCT_ID INT not null
+
+, MVMT_LOCATION_ID INT not null
+
+, MVMT_SOURCE_VENDOR_ID BIGINT
+
+, MVMT_MOVE_CLASS_ID SMALLINT not null
+
+, MVMT_DAY_DT                                       TIMESTAMP                             not null
+
+, MVMT_LOAD_DT                                      TIMESTAMP 
+
+, MVMT_UPDATE_DT                                    TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/mvmt_repl_source_vendor_id_upd';
+
+--DISTRIBUTE ON (SC_PRODUCT_ID, SC_LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "MVMT_REPL_WEEK" , ***** Creating table: "MVMT_REPL_WEEK"
+
+
+use dev_legacy;
+ CREATE TABLE MVMT_REPL_WEEK 
+(  WEEK_DT       TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, MOVE_CLASS_ID SMALLINT not null
+
+, SOURCE_VENDOR_ID BIGINT
+
+, FROM_LOCATION_ID INT
+
+, TRANS_AMT     DECIMAL(12,3) 
+
+, TRANS_COST                                        DECIMAL(12,3) 
+
+, TRANS_QTY     INT 
+
+, PLAN_DELIV_DAYS SMALLINT
+
+, ROUND_VALUE_QTY                                   INT 
+
+, ROUND_PROFILE_CD                                  STRING 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/mvmt_repl_week';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+--ORGANIZE   ON (WEEK_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "MVMT_WK_LOC_DEPT" , ***** Creating table: "MVMT_WK_LOC_DEPT"
+
+
+use dev_legacy;
+ CREATE TABLE MVMT_WK_LOC_DEPT 
+(  WEEK_DT       TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, SAP_DEPT_ID INT not null
+
+, MVMT_DAMAGE_COST_AMT                              DECIMAL(13,3) 
+
+, MVMT_NIJ_COST_AMT                                 DECIMAL(13,3) 
+
+, MVMT_ESA_COST_AMT                                 DECIMAL(13,3) 
+
+, MVMT_RTV_COST_AMT                                 DECIMAL(13,3) 
+
+, MVMT_THEFT_COST_AMT                               DECIMAL(13,3) 
+
+, MVMT_PET_LOSS_COST_AMT                            DECIMAL(13,3) 
+
+, MVMT_DC_OVER_COST_AMT                             DECIMAL(13,3) 
+
+, MVMT_DC_SHORT_COST_AMT                            DECIMAL(13,3) 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/mvmt_wk_loc_dept';
+
+--DISTRIBUTE ON (SAP_DEPT_ID, LOCATION_ID)
+
+--ORGANIZE   ON (WEEK_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "OPEN_PO_PRE" , ***** Creating table: "OPEN_PO_PRE"
+
+
+use dev_raw;
+ CREATE TABLE OPEN_PO_PRE 
+(  DAY_DT        TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, VENDOR_ID BIGINT not null
+
+, PO_NBR BIGINT not null
+
+, PO_LINE_NBR INT not null
+
+, LOCATION_ID INT not null
+
+, PO_TYPE_ID                                        STRING 
+
+, DATE_DUE      TIMESTAMP 
+
+, DELETE_FLAG                                       STRING 
+
+, DELIVERY_FLAG                                     STRING 
+
+, ORDER_COST_ACTUAL                                 DECIMAL(9,3) 
+
+, ORDER_COST_GROSS                                  DECIMAL(9,3) 
+
+, ORDER_COST_NET                                    DECIMAL(9,3) 
+
+, ORDER_QTY     INT 
+
+, SCHED_QTY     INT 
+
+, DATE_RECEIVED                                     TIMESTAMP 
+
+, RECEIPTS_QTY                                      INT 
+
+, FREIGHT_COST BIGINT
+
+, PLAN_DELIV_DAYS SMALLINT
+
+, ROUND_VALUE_QTY                                   INT 
+
+, ROUND_PROFILE_CD                                  STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/BA_Mvmt_Purch/open_po_pre';
+
+--DISTRIBUTE ON (PO_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "OPEN_STO_PRE" , ***** Creating table: "OPEN_STO_PRE"
+
+
+use dev_raw;
+ CREATE TABLE OPEN_STO_PRE 
+(  DAY_DT        TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, PO_NBR BIGINT not null
+
+, PO_LINE_NBR INT not null
+
+, LOCATION_ID INT not null
+
+, SUPPLY_LOCATION_ID INT not null
+
+, PO_TYPE_ID                                        STRING 
+
+, DATE_DUE      TIMESTAMP 
+
+, DELETE_FLAG                                       STRING 
+
+, DELIVERY_FLAG                                     STRING 
+
+, ORDER_COST_ACTUAL                                 DECIMAL(9,3) 
+
+, ORDER_COST_GROSS                                  DECIMAL(9,3) 
+
+, ORDER_COST_NET                                    DECIMAL(9,3) 
+
+, ORDER_QTY     INT 
+
+, ISSUED_QTY                                        INT 
+
+, DELIVERED_QTY                                     INT 
+
+, DATE_RECEIVED                                     TIMESTAMP 
+
+, RECEIPTS_QTY                                      INT 
+
+, FREIGHT_COST BIGINT
+
+, SOURCE_VENDOR_ID BIGINT
+
+, PLAN_DELIV_DAYS SMALLINT
+
+, ROUND_VALUE_QTY                                   INT 
+
+, ROUND_PROFILE_CD                                  STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/BA_Mvmt_Purch/open_sto_pre';
+
+--DISTRIBUTE ON (PO_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "REPLENISHMENT_PROFILE" , ***** Creating table: "REPLENISHMENT_PROFILE"
+
+
+use dev_legacy;
+ CREATE TABLE REPLENISHMENT_PROFILE 
+(  PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, ROUND_VALUE_QTY                                   INT 
+
+, SAFETY_QTY                                        INT 
+
+, SERVICE_LVL_RT                                    DECIMAL(3,1) 
+
+, REORDER_POINT_QTY                                 INT 
+
+, PLAN_DELIV_DAYS SMALLINT
+
+, ROUND_PROFILE_CD                                  STRING 
+
+, TARGET_STOCK_QTY                                  INT 
+
+, PRESENT_QTY                                       INT 
+
+, POG_CAPACITY_QTY                                  INT 
+
+, POG_FACINGS_QTY                                   INT 
+
+, PROMO_QTY     INT 
+
+, BASIC_VALUE_QTY                                   DECIMAL(13,3) 
+
+, LAST_FC_DT                                        TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/replenishment_profile';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_DAY_SKU_STORE" , ***** Creating table: "SALES_DAY_SKU_STORE"
+
+
+use dev_legacy;
+ CREATE TABLE SALES_DAY_SKU_STORE 
+(  DAY_DT        TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, SALES_CUST_CAPTURE_CD                             STRING                          not null
+
+, DATE_LOADED                                      DATE                                 not null
+
+, VENDOR_ID BIGINT not null
+
+, PROMO_FLAG TINYINT not null
+
+, WEEK_DT       TIMESTAMP 
+
+, FISCAL_YR SMALLINT
+
+, SKU_VEND_TXN_CNT INT
+
+, SALES_AMT     DECIMAL(8,2) 
+
+, SALES_COST                                        DECIMAL(8,2) 
+
+, SALES_QTY     INT 
+
+, RETURN_AMT                                        DECIMAL(8,2) 
+
+, RETURN_COST                                       DECIMAL(8,2) 
+
+, RETURN_QTY                                        INT 
+
+, DISCOUNT_AMT                                      DECIMAL(9,2) 
+
+, DISCOUNT_QTY                                      INT 
+
+, DISCOUNT_RETURN_AMT                               DECIMAL(9,2) 
+
+, DISCOUNT_RETURN_QTY                               INT 
+
+, POS_COUPON_AMT                                    DECIMAL(8,2) 
+
+, POS_COUPON_QTY                                    INT 
+
+, POS_COUPON_ALLOC_AMT                              DECIMAL(8,2) 
+
+, POS_COUPON_ALLOC_QTY                              INT 
+
+, SPECIAL_SALES_AMT                                 DECIMAL(8,2) 
+
+, SPECIAL_SALES_QTY                                 INT 
+
+, SPECIAL_RETURN_AMT                                DECIMAL(8,2) 
+
+, SPECIAL_RETURN_QTY                                INT 
+
+, SPECIAL_SRVC_AMT                                  DECIMAL(11,2) 
+
+, SPECIAL_SRVC_QTY                                  INT 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/sales_day_sku_store';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "SITE_PROFILE" , ***** Creating table: "SITE_PROFILE"
+
+
+use dev_legacy;
+ CREATE TABLE SITE_PROFILE 
+(  LOCATION_ID INT not null
+
+, LOCATION_TYPE_ID TINYINT
+
+, STORE_NBR INT
+
+, STORE_NAME                                        STRING 
+
+, STORE_TYPE_ID                                     STRING 
+
+, STORE_OPEN_CLOSE_FLAG                             STRING 
+
+, COMPANY_ID INT
+
+, REGION_ID BIGINT
+
+, DISTRICT_ID BIGINT
+
+, PRICE_ZONE_ID                                     STRING 
+
+, PRICE_AD_ZONE_ID                                  STRING 
+
+, REPL_DC_NBR INT
+
+, REPL_FISH_DC_NBR INT
+
+, REPL_FWD_DC_NBR INT
+
+, SQ_FEET_RETAIL                                    DOUBLE 
+
+, SQ_FEET_TOTAL                                     DOUBLE 
+
+, SITE_ADDRESS                                      STRING 
+
+, SITE_CITY     STRING 
+
+, STATE_CD      STRING 
+
+, COUNTRY_CD                                        STRING 
+
+, POSTAL_CD     STRING 
+
+, SITE_MAIN_TELE_NO                                 STRING 
+
+, SITE_GROOM_TELE_NO                                STRING 
+
+, SITE_EMAIL_ADDRESS                                STRING 
+
+, SITE_SALES_FLAG                                   STRING 
+
+, EQUINE_MERCH_ID TINYINT
+
+, EQUINE_SITE_ID TINYINT
+
+, EQUINE_SITE_OPEN_DT                               TIMESTAMP 
+
+, GEO_LATITUDE_NBR                                  DECIMAL(12,6) 
+
+, GEO_LONGITUDE_NBR                                 DECIMAL(12,6) 
+
+, PETSMART_DMA_CD                                   STRING 
+
+, LOYALTY_PGM_TYPE_ID TINYINT
+
+, LOYALTY_PGM_STATUS_ID TINYINT
+
+, LOYALTY_PGM_START_DT                              TIMESTAMP 
+
+, LOYALTY_PGM_CHANGE_DT                             TIMESTAMP 
+
+, BP_COMPANY_NBR SMALLINT
+
+, BP_GL_ACCT SMALLINT
+
+, TP_LOC_FLAG                                       STRING 
+
+, TP_ACTIVE_CNT TINYINT
+
+, PROMO_LABEL_CD                                    STRING 
+
+, PARENT_LOCATION_ID INT
+
+, LOCATION_NBR                                      STRING 
+
+, TIME_ZONE_ID                                      STRING 
+
+, DELV_SERVICE_CLASS_ID                             STRING 
+
+, PICK_SERVICE_CLASS_ID                             STRING 
+
+, SITE_LOGIN_ID                                     STRING 
+
+, SITE_MANAGER_ID INT
+
+, SITE_OPEN_YRS_AMT                                 DECIMAL(5,2) 
+
+, HOTEL_FLAG TINYINT
+
+, DAYCAMP_FLAG TINYINT
+
+, VET_FLAG TINYINT
+
+, DIST_MGR_NAME                                     STRING 
+
+, DIST_SVC_MGR_NAME                                 STRING 
+
+, REGION_VP_NAME                                    STRING 
+
+, REGION_TRAINER_NAME                               STRING 
+
+, ASSET_PROTECT_NAME                                STRING 
+
+, SITE_COUNTY                                       STRING 
+
+, SITE_FAX_NO                                       STRING 
+
+, SFT_OPEN_DT                                       TIMESTAMP 
+
+, DM_EMAIL_ADDRESS                                  STRING 
+
+, DSM_EMAIL_ADDRESS                                 STRING 
+
+, RVP_EMAIL_ADDRESS                                 STRING 
+
+, TRADE_AREA                                        STRING 
+
+, FDLPS_NAME                                        STRING 
+
+, FDLPS_EMAIL                                       STRING 
+
+, OVERSITE_MGR_NAME                                 STRING 
+
+, OVERSITE_MGR_EMAIL                                STRING 
+
+, SAFETY_DIRECTOR_NAME                              STRING 
+
+, SAFETY_DIRECTOR_EMAIL                             STRING 
+
+, RETAIL_MANAGER_SAFETY_NAME                        STRING 
+
+, RETAIL_MANAGER_SAFETY_EMAIL                       STRING 
+
+, AREA_DIRECTOR_NAME                                STRING 
+
+, AREA_DIRECTOR_EMAIL                               STRING 
+
+, DC_GENERAL_MANAGER_NAME                           STRING 
+
+, DC_GENERAL_MANAGER_EMAIL                          STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME1                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL1                    STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME2                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL2                    STRING 
+
+, REGIONAL_DC_SAFETY_MGR_NAME                       STRING 
+
+, REGIONAL_DC_SAFETY_MGR_EMAIL                      STRING 
+
+, DC_PEOPLE_SUPERVISOR_NAME                         STRING 
+
+, DC_PEOPLE_SUPERVISOR_EMAIL                        STRING 
+
+, PEOPLE_MANAGER_NAME                               STRING 
+
+, PEOPLE_MANAGER_EMAIL                              STRING 
+
+, ASSET_PROT_DIR_NAME                               STRING 
+
+, ASSET_PROT_DIR_EMAIL                              STRING 
+
+, SR_REG_ASSET_PROT_MGR_NAME                        STRING 
+
+, SR_REG_ASSET_PROT_MGR_EMAIL                       STRING 
+
+, REG_ASSET_PROT_MGR_NAME                           STRING 
+
+, REG_ASSET_PROT_MGR_EMAIL                          STRING 
+
+, ASSET_PROTECT_EMAIL                               STRING 
+
+, TP_START_DT                                       TIMESTAMP 
+
+, OPEN_DT       TIMESTAMP 
+
+, GR_OPEN_DT                                        TIMESTAMP 
+
+, CLOSE_DT      TIMESTAMP 
+
+, HOTEL_OPEN_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/site_profile';
+
+--DISTRIBUTE ON (LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_PROFILE" , ***** Creating table: "SKU_PROFILE"
+
+
+use dev_legacy;
+ CREATE TABLE SKU_PROFILE 
+(  PRODUCT_ID INT not null
+
+, SKU_NBR INT
+
+, SKU_TYPE      STRING 
+
+, PRIMARY_UPC_ID BIGINT
+
+, STATUS_ID     STRING 
+
+, SUBS_HIST_FLAG                                    STRING 
+
+, SUBS_CURR_FLAG                                    STRING 
+
+, SKU_DESC      STRING 
+
+, ALT_DESC      STRING 
+
+, SAP_CATEGORY_ID INT
+
+, SAP_CLASS_ID INT
+
+, SAP_DEPT_ID INT
+
+, SAP_DIVISION_ID INT
+
+, PRIMARY_VENDOR_ID BIGINT
+
+, PARENT_VENDOR_ID BIGINT
+
+, COUNTRY_CD                                        STRING 
+
+, IMPORT_FLAG                                       STRING 
+
+, HTS_CODE_ID BIGINT
+
+, CONTENTS      DECIMAL(13,3) 
+
+, CONTENTS_UNITS                                    STRING 
+
+, WEIGHT_NET_AMT                                    DECIMAL(9,3) 
+
+, WEIGHT_UOM_CD                                     STRING 
+
+, SIZE_DESC     STRING 
+
+, BUM_QTY       DOUBLE 
+
+, UOM_CD        STRING 
+
+, UNIT_NUMERATOR                                    DOUBLE 
+
+, UNIT_DENOMINATOR                                  DOUBLE 
+
+, BUYER_ID      STRING 
+
+, PURCH_GROUP_ID INT
+
+, PURCH_COST_AMT                                    DECIMAL(8,2) 
+
+, NAT_PRICE_US_AMT                                  DECIMAL(8,2) 
+
+, TAX_CLASS_ID                                      STRING 
+
+, VALUATION_CLASS_CD                                STRING 
+
+, BRAND_CD      STRING 
+
+, BRAND_CLASSIFICATION_ID SMALLINT
+
+, OWNBRAND_FLAG                                     STRING 
+
+, STATELINE_FLAG                                    STRING 
+
+, SIGN_TYPE_CD                                      STRING 
+
+, OLD_ARTICLE_NBR                                   STRING 
+
+, VENDOR_ARTICLE_NBR                                STRING 
+
+, INIT_MKDN_DT                                      TIMESTAMP 
+
+, DISC_START_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, FIRST_SALE_DT                                     TIMESTAMP 
+
+, LAST_SALE_DT                                      TIMESTAMP 
+
+, FIRST_INV_DT                                      TIMESTAMP 
+
+, LAST_INV_DT                                       TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+, BASE_NBR      STRING 
+
+, BP_COLOR_ID                                       STRING 
+
+, BP_SIZE_ID                                        STRING 
+
+, BP_BREED_ID                                       STRING 
+
+, BP_ITEM_CONCATENATED                              STRING 
+
+, BP_AEROSOL_FLAG TINYINT
+
+, BP_HAZMAT_FLAG TINYINT
+
+, CANADIAN_HTS_CD                                   STRING 
+
+, NAT_PRICE_CA_AMT                                  DECIMAL(8,2) 
+
+, NAT_PRICE_PR_AMT                                  DECIMAL(8,2) 
+
+, RTV_DEPT_CD                                       STRING 
+
+, GL_ACCT_NBR INT
+
+, ARTICLE_CATEGORY_ID SMALLINT
+
+, COMPONENT_FLAG                                    STRING 
+
+, ZDISCO_SCHED_TYPE_ID                              STRING                 not null  
+
+, ZDISCO_MKDN_SCHED_ID                              STRING                  not null  
+
+, ZDISCO_PID_DT                                     TIMESTAMP 
+
+, ZDISCO_START_DT                                   TIMESTAMP 
+
+, ZDISCO_INIT_MKDN_DT                               TIMESTAMP 
+
+, ZDISCO_DC_DT                                      TIMESTAMP 
+
+, ZDISCO_STR_DT                                     TIMESTAMP 
+
+, ZDISCO_STR_OWNRSHP_DT                             TIMESTAMP 
+
+, ZDISCO_STR_WRT_OFF_DT                             TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/sku_profile';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_STORE_PRICE_COSTS_PRE" , ***** Creating table: "SKU_STORE_PRICE_COSTS_PRE"
+
+
+use dev_raw;
+ CREATE TABLE SKU_STORE_PRICE_COSTS_PRE 
+(  SKU_NBR INT not null
+
+, STORE_NBR INT not null
+
+, RETAIL_PRICE_AMT                                  DECIMAL(9,2) 
+
+, PETPERKS_AMT                                      DECIMAL(9,2) 
+
+, SUM_COST      DECIMAL(9,2) 
+
+, BUM_COST      DECIMAL(9,2) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/BA_Mvmt_Purch/sku_store_price_costs_pre';
+
+--DISTRIBUTE ON (SKU_NBR, STORE_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "SUPPLY_CHAIN" , ***** Creating table: "SUPPLY_CHAIN"
+
+
+use dev_legacy;
+ CREATE TABLE SUPPLY_CHAIN 
+(  PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, DIRECT_VENDOR_ID BIGINT
+
+, SOURCE_VENDOR_ID BIGINT
+
+, PRIMARY_VENDOR_ID BIGINT
+
+, FROM_LOCATION_ID INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Mvmt_Purch/supply_chain';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "DEMAND_MVMT_SALES_PRE" , ***** Creating table: "DEMAND_MVMT_SALES_PRE"
+
+
+use dev_raw;
+ CREATE TABLE DEMAND_MVMT_SALES_PRE 
+(  PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, LAST_INV_ADJ_DT                           TIMESTAMP 
+
+, LAST_INV_ADJ_QTY                          INT 
+
+, LAST_PICK_DT                              TIMESTAMP 
+
+, LAST_RECPT_DT                             TIMESTAMP 
+
+, LAST_RECPT_QTY                              INT 
+
+, LAST_SALES_DT                               TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/BA_Mvmt_Purch/demand_mvmt_sales_pre';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "MOVE_PRE" , ***** Creating table: "MOVE_PRE"
+
+
+use dev_raw;
+ CREATE TABLE MOVE_PRE 
+(  DAY_DT        TIMESTAMP                             not null
+
+, POST_DAY_DT                                       TIMESTAMP                             not null
+
+, MOVEMENT_ID INT not null
+
+, SKU_NBR INT not null
+
+, STORE_NBR INT not null
+
+, PO_NBR BIGINT not null
+
+, PO_LINE_NBR INT not null
+
+, TRANS_COST                                        DECIMAL(12,3) 
+
+, TRANS_QTY     INT 
+
+, FREIGHT_COST                                      DECIMAL(11,3) 
+
+, WEEK_DT       TIMESTAMP 
+
+, POST_WEEK_DT                                      TIMESTAMP 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6)                          not null  
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/BA_Mvmt_Purch/move_pre';
+
+--DISTRIBUTE ON (SKU_NBR, STORE_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "MOVEMENT_PRE" , ***** Creating table: "MOVEMENT_PRE"
+
+
+use dev_raw;
+ CREATE TABLE MOVEMENT_PRE 
+(  DAY_DT        TIMESTAMP                             not null
+
+, POST_DAY_DT                                       TIMESTAMP                             not null
+
+, MOVEMENT_ID INT not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, PO_NBR BIGINT not null
+
+, PO_LINE_NBR INT not null
+
+, TRANS_AMT     DECIMAL(12,3) 
+
+, TRANS_COST                                        DECIMAL(12,3) 
+
+, TRANS_QTY     INT 
+
+, FREIGHT_COST                                      DECIMAL(9,3) 
+
+, WEEK_DT       TIMESTAMP 
+
+, POST_WEEK_DT                                      TIMESTAMP 
+
+, SOURCE_VENDOR_ID BIGINT
+
+, FROM_LOCATION_ID INT
+
+, MAP_AMT       DECIMAL(9,3) 
+
+, PLAN_DELIV_DAYS SMALLINT
+
+, ROUND_VALUE_QTY                                   INT 
+
+, ROUND_PROFILE_CD                                  STRING 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6)                          not null  
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/BA_Mvmt_Purch/movement_pre';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+

@@ -1,0 +1,7 @@
+wf_name,table_name,nz_database,dl_database,pii,target_schema,table name in delta lake
+wf_pet_hotel,E_RES_ADD_ONS,SDS_PRD,dev_legacy,NO,,E_RES_ADD_ONS
+wf_pet_hotel,E_RES_ADD_ON_CATEGORY,SDS_PRD,dev_legacy,NO,,E_RES_ADD_ON_CATEGORY
+wf_pet_hotel,E_RES_PETS,SDS_PRD,dev_cust_sensitive,YES,legacy,legacy_E_RES_PETS
+wf_pet_hotel,E_RES_REQUESTS,SDS_PRD,dev_cust_sensitive,YES,legacy,legacy_E_RES_REQUESTS
+wf_pet_hotel,E_RES_SELECTED_ADD_ONS,SDS_PRD,dev_legacy,NO,,E_RES_SELECTED_ADD_ONS
+wf_pet_hotel,E_RES_SELECTED_MEDICATIONS,SDS_PRD,dev_legacy,NO,,E_RES_SELECTED_MEDICATIONS

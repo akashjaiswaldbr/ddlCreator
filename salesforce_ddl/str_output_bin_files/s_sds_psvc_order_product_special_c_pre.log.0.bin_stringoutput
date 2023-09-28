@@ -1,0 +1,552 @@
+8.1.0
+?http://www.informatica.com/pcsf/logservice:LogCallContext:1.0.2
+IS_GRID_ASCII
+node04_DRT-ETLAPP-P04
+DM_ETL_PROD101
+RS_PROD_INFA101
+BA_Services
+wf_Prism_Daily
+wl_sds_pre
+&s_sds_psvc_order_product_special_c_pre
+168693
+23333345
+23333346
+95993
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+VAR_27028
+]Use override value [YESTERDAY] for user-defined workflow/worklet variable:[$$DeltaTimeframe].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6014
+\Initializing session [s_sds_psvc_order_product_special_c_pre] at [Fri Jul 21 00:44:58 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6683
+"Repository Name: [RS_PROD_INFA101]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6684
+Server Name: [IS_GRID_ASCII]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6686
+Folder: [BA_Services]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6685
+CWorkflow: [wf_Prism_Daily] Run Instance Name: [] Run Id: [23333345]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6992
+Operating System Type [NT]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6101
+BMapping name: m_sds_psvc_order_product_special_c_pre [version 16].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6964
+9Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6827
+[D:\etlsw\Informatica\10.4.1\server\infa_shared\Storage] will be used as storage directory for session [s_sds_psvc_order_product_special_c_pre].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1802
+2Session recovery cache initialization is complete.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+6Using configuration property [EnableDataEncryption,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+8Using configuration property [StoreHAPersistenceInDB,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+@Using configuration property [MasterDTMListenOnAllInterface,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [NetezzaLoginTimeout,60]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [RunCmdInNewConsole,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+NUsing configuration property [SMTPFromAddress,ETL_PRODUCTION@ssg.petsmart.com]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+0Using configuration property [SMTPPortNumber,25]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [SMTPServerAddress,SSGEXCHANGE]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+3Using configuration property [SMTPServerTimeout,30]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [syncNetezzanullwithPCNull,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+=Using configuration property [TransferLogFileBlockSize,32768]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+:Using configuration property [treatNoDataAsEmptyString,No]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+CUsing configuration property [netezzaDisableUseridAsSchemaName,yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+>Using configuration property [SalesForceConnectionTimeout,120]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6703
+Session [s_sds_psvc_order_product_special_c_pre] is run by 64-bit Integration Service  [node04_DRT-ETLAPP-P04], version [10.4.1], build [0614].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MANAGER] has the ID [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24058
+Running Partition Group [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24000
+&Parallel Pipeline Engine initializing.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MONITOR] has the ID [2].
+MONITOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24001
+!Parallel Pipeline Engine running.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24003
+Initializing session run.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MAPPING] has the ID [3].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1569
+Server Mode: [ASCII]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1570
+AServer Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6151
+#The session sort order is [Binary].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65111
+Current Timezone:[UTC -7:0]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65112
+Current Process ID:[6572]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6156
+Using low precision processing.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6180
+-Deadlock retry logic will not be implemented.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6187
+0Session target-based commit interval is [10000].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42020
+P[INFO] Loaded library : D:\etlsw\Informatica\10.4.1\java\jre\bin\server\jvm.dll.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42009
+$[INFO] Created Java VM successfully.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38029
+=Loaded plug-in 310600: [PowerExchange for Salesforce 10.4.1].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38024
+'Plug-in 310600 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38016
++Reader SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38024
+'Plug-in 405050 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38017
++Writer SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38509
+-SDK target and group initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6307
+DTM error log disabled. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TE_7022
+TShmWriter: Initialized
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6007
+QDTM initialized successfully for session [s_sds_psvc_order_product_special_c_pre]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24033
+"All DTM Connection Info: [<NONE>].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24004
+CPETL_24004 Starting pre-session tasks. : (Fri Jul 21 00:44:59 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+!Thread [PRE-SESS] has the ID [4].
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24027
+PPETL_24027 Pre-session task completed successfully. : (Fri Jul 21 00:44:59 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24006
+Starting data movement.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6660
+GTotal Buffer Pool size is 2810848 bytes and Block size is 153936 bytes.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wi+|
+PETL_24091
+%Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10057
+ [INFO] No proxy information set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10048
+[INFO] Account[svc-informatica@petsmart.com] logged on salesforce.com at [https://prism-petsmart.my.salesforce.com/services/Soap/u/41.0].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [TRANSF_1_1_1] has the ID [6].
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+`[INFO] Initializing Target [0] ([SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE]) Group [0] Partition [0].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+C[INFO] Connection Info:  DSN=[NZ_SDS_STAGE], User name=[srvsloader]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Connection successfully established
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wi@G
+Net_1762
+P[INFO] Executed query : [TRUNCATE TABLE  "SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE"]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wi@G
+Net_1762
+A[INFO] The Operation Selected [Insert]and Update is set as [None]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wi@H
+Net_1762
+[INFO] Auto-commit is disabled.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wi@H
+Net_1762
+ [INFO] Pipe created successfully
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wi@I
+Net_1762
+\[INFO] Stop on errors is set to [1]. Session will fail after encountering [1] bad input rows
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [CREATE TABLE "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499" (  "ID" varchar(18)  NOT NULL, "OWNER_ID" varchar(18), "IS_DELETED" integer, "NAME" varchar(80), "CURRENCY_ISO_CODE" varchar(3), "CREATED_DATE" timestamp, "CREATED_BY_ID" varchar(18), "LAST_MODIFIED_DATE" timestamp, "LAST_MODIFIED_BY_ID" varchar(18), "SYSTEM_MOD_STAMP" timestamp, "PSVC_SPECIAL_C" varchar(18), "PSVC_ADJUSTMENT_AMOUNT_C" numeric(18,3), "PSVC_ADJUSTMENT_PERCENTAGE_C" numeric(18,3), "PSVC_HIDE_FROM_CUSTOMER_ONLINE_INVOICE_C" integer, "PSVC_IS_FOR_QUOTE_C" integer, "PSVC_MANUALLY_ENTERED_CODE_C" varchar(180), "PSVC_ORDER_PRODUCT_C" varchar(18), "PSVC_PREMIUM_DISCOUNT_C" varchar(255), "PSVC_SPECIAL_CODE_C" varchar(180), "PSVC_APPLY_TO_ALL_PRODUCTS_C" integer, "PSVC_DUPLICATION_C" varchar(255), "PSVC_AUTO_CALCULATED_PRICE_C" numeric(18,2), "PSVC_MANUAL_C" numeric(10,0), "PSVC_ORDER_CREATED_DATE_C" timestamp, "PSVC_ORDER_LAST_MODIFIED_DATE_C" timestamp, "PSVC_WORK_ORDER_CREATED_DATE_C" timestamp, "PSVC_WORK_ORDER_LAST_MODIFIED_DATE_C" timestamp, "PSVC_DISCOUNT_APPLIED_FOR_PERCENTAGE_COU_C" numeric(18,3), "PSVC_EVALUATION_ORDER_C" numeric(2,0), "LOAD_TSTMP" timestamp ) DISTRIBUTE ON ("ID")]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [CREATE EXTERNAL TABLE "pcn_ext_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_0_0_1689925533" SAMEAS "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499" USING (  DATAOBJECT ('\\.\pipe\PCN_PipeWRT6572_0_0_216123_04533')  DELIMITER 124 SOCKETBUFSIZE 8388608 MAXERRORS 1 CTRLCHARS TRUE CRINSTRING TRUE FILLRECORD TRUE  NULLVALUE ''  ESCAPECHAR '/'  REMOTESOURCE 'ODBC' ENCODING 'internal')]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8270
+dTarget connection group #1 consists of target(s) [SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE: Partition 1]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8003
+Writer initialization complete.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8005
+Writer run started.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8158
+*****START LOAD SESSION*****
+Load Start Time: Fri Jul 21 00:45:34 2023
+Target tables:
+     SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE: Partition 1
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wiD"
+SalesforceReader_10045
+[INFO] SOQL is [SELECT Id ,OwnerId ,IsDeleted ,Name ,CurrencyIsoCode ,CreatedDate ,CreatedById ,LastModifiedDate ,LastModifiedById ,SystemModstamp ,PSVC_Special__c ,PSVC_Adjustment_Amount__c ,PSVC_Adjustment_Percentage__c ,PSVC_Hide_From_Customer_Online_Invoice__c ,PSVC_Is_For_Quote__c ,PSVC_Manually_Entered_Code__c ,PSVC_Order_Product__c ,PSVC_Premium_Discount__c ,PSVC_Special_Code__c ,PSVC_Apply_to_All_Products__c ,PSVC_Duplication__c ,PSVC_Auto_Calculated_Price__c ,PSVC_Manual__c ,PSVC_Order_CreatedDate__c ,PSVC_Order_LastModifiedDate__c ,PSVC_WorkOrder_CreatedDate__c ,PSVC_WorkOrder_LastModifiedDate__c ,PSVC_Discount_Applied_for_Percentage_Cou__c ,PSVC_Evaluation_Order__c 
+ FROM PSVC_Order_Product_Special__c Where ((PSVC_ORDER_LastModifiedDate__c  >= YESTERDAY)  OR (PSVC_ORDER_CreatedDate__c>=YESTERDAY) 
+OR (PSVC_WORKORDER_LastModifiedDate__c  >=  YESTERDAY)  OR (PSVC_WORKORDER_CreatedDate__c>= YESTERDAY) 
+OR (CreatedDate >= YESTERDAY) OR (LastModifiedDate >= YESTERDAY))].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8167
+dStart loading table [SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE: Partition 1] at: Fri Jul 21 00:45:43 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+?[INFO] Opening Pipe [\\.\pipe\PCN_PipeWRT6572_0_0_216123_04533]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+M[INFO] Opened pipe([\\.\pipe\PCN_PipeWRT6572_0_0_216123_04533]) in write mode
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wiyx
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:45:47 2023
+===================================================
+WRT_8036 Target: SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE: Partition 1 (Instance Name: [Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:45:51 2023
+===================================================
+WRT_8036 Target: SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE: Partition 1 (Instance Name: [Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:45:55 2023
+===================================================
+WRT_8036 Target: SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE: Partition 1 (Instance Name: [Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+DBG_21216
+oFinished transformations for Source Qualifier [SQ_Shortcut_to_PSVC_Order_Product_Special__c]. Total errors [0] 
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8168
+bEnd loading table [SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE: Partition 1] at: Fri Jul 21 00:45:58 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8141
+Commit on end-of-data  Fri Jul 21 00:45:58 2023
+===================================================
+WRT_8036 Target: SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE: Partition 1 (Instance Name: [Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+A[INFO] Closing pipe ([\\.\pipe\PCN_PipeWRT6572_0_0_216123_04533])
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Closed Pipe
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [INSERT INTO "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499" SELECT * FROM "pcn_ext_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_0_0_1689925533"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [INSERT INTO "SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE"("ID", "OWNER_ID", "IS_DELETED", "NAME", "CURRENCY_ISO_CODE", "CREATED_DATE", "CREATED_BY_ID", "LAST_MODIFIED_DATE", "LAST_MODIFIED_BY_ID", "SYSTEM_MOD_STAMP", "PSVC_SPECIAL_C", "PSVC_ADJUSTMENT_AMOUNT_C", "PSVC_ADJUSTMENT_PERCENTAGE_C", "PSVC_HIDE_FROM_CUSTOMER_ONLINE_INVOICE_C", "PSVC_IS_FOR_QUOTE_C", "PSVC_MANUALLY_ENTERED_CODE_C", "PSVC_ORDER_PRODUCT_C", "PSVC_PREMIUM_DISCOUNT_C", "PSVC_SPECIAL_CODE_C", "PSVC_APPLY_TO_ALL_PRODUCTS_C", "PSVC_DUPLICATION_C", "PSVC_AUTO_CALCULATED_PRICE_C", "PSVC_MANUAL_C", "PSVC_ORDER_CREATED_DATE_C", "PSVC_ORDER_LAST_MODIFIED_DATE_C", "PSVC_WORK_ORDER_CREATED_DATE_C", "PSVC_WORK_ORDER_LAST_MODIFIED_DATE_C", "PSVC_DISCOUNT_APPLIED_FOR_PERCENTAGE_COU_C", "PSVC_EVALUATION_ORDER_C", "LOAD_TSTMP") SELECT "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."ID" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."OWNER_ID" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."IS_DELETED" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."NAME" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."CURRENCY_ISO_CODE" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."CREATED_DATE" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."CREATED_BY_ID" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."LAST_MODIFIED_DATE" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."LAST_MODIFIED_BY_ID" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."SYSTEM_MOD_STAMP" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_SPECIAL_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_ADJUSTMENT_AMOUNT_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_ADJUSTMENT_PERCENTAGE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_HIDE_FROM_CUSTOMER_ONLINE_INVOICE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_IS_FOR_QUOTE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_MANUALLY_ENTERED_CODE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_ORDER_PRODUCT_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_PREMIUM_DISCOUNT_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_SPECIAL_CODE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_APPLY_TO_ALL_PRODUCTS_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_DUPLICATION_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_AUTO_CALCULATED_PRICE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_MANUAL_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_ORDER_CREATED_DATE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_ORDER_LAST_MODIFIED_DATE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_WORK_ORDER_CREATED_DATE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_WORK_ORDER_LAST_MODIFIED_DATE_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_DISCOUNT_APPLIED_FOR_PERCENTAGE_COU_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."PSVC_EVALUATION_ORDER_C" , "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."LOAD_TSTMP" FROM "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499" WHERE  ( "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."ID")  NOT IN  ( SELECT "SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE"."ID" FROM "SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE" )  AND "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."rowid" IN  (SELECT min("pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."rowid") FROM "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499" GROUP BY "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"."ID")]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+p[INFO] Executed query : [DROP TABLE "pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+g[INFO] Executed query : [DROP TABLE "pcn_ext_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_0_0_1689925533"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+F[INFO] The Integration Service successfully committed the transaction.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+2[INFO] Deinitializing Target = [0] Partition = [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+.[INFO] Number of rows marked as Insert [38597]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Delete [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Update [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+R[INFO] 
+NETEZZA TEMP TABLE LOAD SUMMARY
+===============================
+TempTable: [pcn_temp_Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE_6572_1689925499]: Partition [1] (Target Instance Name: [[Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE]])  
+Number of Rows processed by this partition and loaded in to the Temp Table: 38597
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8035
+>Load complete time: Fri Jul 21 00:46:01 2023
+LOAD SUMMARY
+============
+WRT_8036 Target: SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE: Partition 1 (Instance Name: [Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE])
+WRT_8038 Inserted rows - Requested: 38597      Applied: 38597      Rejected: 0          Affected: 38597     
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8043
+*****END LOAD SESSION*****
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8006
+Writer run completed.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24031
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [SQ_Shortcut_to_PSVC_Order_Product_Special__c] has completed.
+Total Run Time = [24.620914] secs
+Total Idle Time = [0.000000] secs
+Busy Percentage = [100.000000]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [SQ_Shortcut_to_PSVC_Order_Product_Special__c] has completed.
+Total Run Time = [15.445503] secs
+Total Idle Time = [15.383522] secs
+Busy Percentage = [0.401290]
+Transformation-specific statistics for this thread were not accurate enough to report.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE] has completed.
+Total Run Time = [18.553684] secs
+Total Idle Time = [15.245504] secs
+Busy Percentage = [17.830312]
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24005
+DPETL_24005 Starting post-session tasks. : (Fri Jul 21 00:46:02 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+"Thread [POST-SESS] has the ID [8].
+POST-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24029
+QPETL_24029 Post-session task completed successfully. : (Fri Jul 21 00:46:02 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38510
+3SDK target and group deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 405050 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38019
+2Writer SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 310600 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38018
+2Reader SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6018
+:The session completed with [0] row transformation errors. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24002
+"Parallel Pipeline Engine finished.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24012
+#Session run completed successfully.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6022
+SESSION LOAD SUMMARY
+================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6252
+Source Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SQ_Shortcut_to_PSVC_Order_Product_Special__c] (Instance Name: [SQ_Shortcut_to_PSVC_Order_Product_Special__c])
+ Output Rows [38597], Affected Rows [38597], Applied Rows [38597], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6253
+Target Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE] (Instance Name: [Shortcut_to_SDS_PSVC_ORDER_PRODUCT_SPECIAL_C_PRE])
+ Output Rows [38597], Affected Rows [38597], Applied Rows [38597], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6023
+===================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6020
+YSession [s_sds_psvc_order_product_special_c_pre] completed at [Fri Jul 21 00:46:02 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1803
+"Files removed from recovery cache.
+DIRECTOR

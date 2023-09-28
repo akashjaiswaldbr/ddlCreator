@@ -1,0 +1,460 @@
+
+
+
+
+
+--*****  Creating table:  "GS_TRAINING" , ***** Creating table: "GS_TRAINING"
+
+
+use qa_legacy;
+ CREATE TABLE GS_TRAINING 
+(  GS_TRAINING_ID BIGINT not null
+
+, GS_TRAVEL_ID BIGINT
+
+, HOME_LOCATION_ID INT
+
+, HOME_STORE_NBR INT
+
+, EMPLOYEE_ID INT
+
+, EMPLOYEE_FIRST_NAME                         STRING 
+
+, EMPLOYEE_LAST_NAME                          STRING 
+
+, NEW_GS_POSITION_ID INT
+
+, PREV_GS_POSITION_ID INT
+
+, GS_SALON_ACADEMY_ID BIGINT
+
+, DISTRICT_MANAGER_NAME                       STRING 
+
+, SALON_SAFETY_CERT_DT                        TIMESTAMP 
+
+, SPLASH_DT                                   TIMESTAMP 
+
+, TRAINING_LOCATION_ID INT
+
+, TRAINING_STORE_NBR INT
+
+, HS_TRAINING_START_DT                        TIMESTAMP 
+
+, HS_TRAINING_END_DT                          TIMESTAMP 
+
+, TRAINING_START_DT                           TIMESTAMP 
+
+, TRAINING_END_DT                             TIMESTAMP 
+
+, GROOMING_TOOL_KIT INT
+
+, HOTEL_PARTNER_LOCATION_ID INT
+
+, HOTEL_PARTNER_STORE_NBR INT
+
+, HOTEL_PARTNER_TRAINING_START_DT             TIMESTAMP 
+
+, HOTEL_PARTNER_TRAINING_END_DT               TIMESTAMP 
+
+, GS_TRAINING_STATUS_ID INT
+
+, GS_TRAINING_TYPE_ID INT
+
+, SYS_CREATED_TSTMP                           TIMESTAMP 
+
+, SYS_CREATED_BY                              STRING 
+
+, SYS_MODIFIED_TSTMP                          TIMESTAMP 
+
+, SYS_MODIFIED_BY                             STRING 
+
+, UPDATE_DT                                   TIMESTAMP 
+
+, LOAD_DT                                     TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Education/gs_training';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "GS_TRAVEL" , ***** Creating table: "GS_TRAVEL"
+
+
+use qa_empl_sensitive;
+ CREATE TABLE legacy_GS_TRAVEL 
+(  GS_TRAVEL_ID BIGINT not null
+
+, ASSOC_CONTACT_PHN                           STRING 
+
+, HOTEL_PARTNER_STORE_CITY_TO                 STRING 
+
+, AIRLINE_DEPART_DT                           TIMESTAMP 
+
+, ARILINE_DEPART_TM                           STRING 
+
+, AIRLINE_RETURN_DT                           TIMESTAMP 
+
+, ARILINE_RETURN_TM                           STRING 
+
+, AIRLINE_SEAT_PREFERENCE                     STRING 
+
+, HOTEL_CHECKIN_DT                            TIMESTAMP 
+
+, HOTEL_CHECKOUT_DT                           TIMESTAMP 
+
+, HOTEL_SMOKING_TEXT                          STRING 
+
+, CAR_PICKUP_DT                               TIMESTAMP 
+
+, CAR_PICKUP_TM                               TIMESTAMP 
+
+, CAR_RETURN_DT                               TIMESTAMP 
+
+, DRIVERS_LICENSE                             STRING 
+
+, LEGAL_NAME                                  STRING 
+
+, BIRTH_DT                                    TIMESTAMP 
+
+, GENDER TINYINT
+
+, PREFERRED_HOTEL                             STRING 
+
+, PREFERRED_HOTEL_ADDRESS                     STRING 
+
+, PREFERRED_HOTEL_PHONE                       STRING 
+
+, PREFERRED_HOTEL_CONTACT                     STRING 
+
+, PREFERRED_HOTEL_RATE                        STRING 
+
+, PREFERRED_ROOMMATE                          STRING 
+
+, HOME_STORE_CITY_TO                          STRING 
+
+, TRAINING_STORE_CITY_TO                      STRING 
+
+, SYS_MODIFIED_TSTMP                          TIMESTAMP 
+
+, SYS_MODIFIED_BY                             STRING 
+
+, UPDATE_DT                                   TIMESTAMP 
+
+, LOAD_DT                                     TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-empl-sensitive-nzlegacy-p1-gcs-gbl/BA_Education/gs_travel';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "GS_POSITION" , ***** Creating table: "GS_POSITION"
+
+
+use qa_legacy;
+ CREATE TABLE GS_POSITION 
+(  GS_POSITION_ID INT not null
+
+, GS_POSITION_NAME                            STRING 
+
+, GS_TRAINING_TYPE_ID INT
+
+, GS_POSITION_TYPE                            STRING 
+
+, UPDATE_DT                                   TIMESTAMP 
+
+, LOAD_DT                                     TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Education/gs_position';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "GS_TRAINING_TYPE" , ***** Creating table: "GS_TRAINING_TYPE"
+
+
+use qa_legacy;
+ CREATE TABLE GS_TRAINING_TYPE 
+(  GS_TRAINING_TYPE_ID INT not null
+
+, GS_TRAINING_TYPE_NAME                       STRING 
+
+, CUT_OFF_DAYS INT
+
+, IS_ACTIVE TINYINT
+
+, UPDATE_DT                                   TIMESTAMP 
+
+, LOAD_DT                                     TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Education/gs_training_type';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "GS_TRAINING_STATUS" , ***** Creating table: "GS_TRAINING_STATUS"
+
+
+use qa_legacy;
+ CREATE TABLE GS_TRAINING_STATUS 
+(  GS_TRAINING_STATUS_ID INT not null
+
+, GS_TRAINING_STATUS_NAME                     STRING 
+
+, UPDATE_DT                                   TIMESTAMP 
+
+, LOAD_DT                                     TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Education/gs_training_status';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "SITE_PROFILE" , ***** Creating table: "SITE_PROFILE"
+
+
+use qa_legacy;
+ CREATE TABLE SITE_PROFILE 
+(  LOCATION_ID INT not null
+
+, LOCATION_TYPE_ID TINYINT
+
+, STORE_NBR INT
+
+, STORE_NAME                                        STRING 
+
+, STORE_TYPE_ID                                     STRING 
+
+, STORE_OPEN_CLOSE_FLAG                             STRING 
+
+, COMPANY_ID INT
+
+, REGION_ID BIGINT
+
+, DISTRICT_ID BIGINT
+
+, PRICE_ZONE_ID                                     STRING 
+
+, PRICE_AD_ZONE_ID                                  STRING 
+
+, REPL_DC_NBR INT
+
+, REPL_FISH_DC_NBR INT
+
+, REPL_FWD_DC_NBR INT
+
+, SQ_FEET_RETAIL                                    DOUBLE 
+
+, SQ_FEET_TOTAL                                     DOUBLE 
+
+, SITE_ADDRESS                                      STRING 
+
+, SITE_CITY     STRING 
+
+, STATE_CD      STRING 
+
+, COUNTRY_CD                                        STRING 
+
+, POSTAL_CD     STRING 
+
+, SITE_MAIN_TELE_NO                                 STRING 
+
+, SITE_GROOM_TELE_NO                                STRING 
+
+, SITE_EMAIL_ADDRESS                                STRING 
+
+, SITE_SALES_FLAG                                   STRING 
+
+, EQUINE_MERCH_ID TINYINT
+
+, EQUINE_SITE_ID TINYINT
+
+, EQUINE_SITE_OPEN_DT                               TIMESTAMP 
+
+, GEO_LATITUDE_NBR                                  DECIMAL(12,6) 
+
+, GEO_LONGITUDE_NBR                                 DECIMAL(12,6) 
+
+, PETSMART_DMA_CD                                   STRING 
+
+, LOYALTY_PGM_TYPE_ID TINYINT
+
+, LOYALTY_PGM_STATUS_ID TINYINT
+
+, LOYALTY_PGM_START_DT                              TIMESTAMP 
+
+, LOYALTY_PGM_CHANGE_DT                             TIMESTAMP 
+
+, BP_COMPANY_NBR SMALLINT
+
+, BP_GL_ACCT SMALLINT
+
+, TP_LOC_FLAG                                       STRING 
+
+, TP_ACTIVE_CNT TINYINT
+
+, PROMO_LABEL_CD                                    STRING 
+
+, PARENT_LOCATION_ID INT
+
+, LOCATION_NBR                                      STRING 
+
+, TIME_ZONE_ID                                      STRING 
+
+, DELV_SERVICE_CLASS_ID                             STRING 
+
+, PICK_SERVICE_CLASS_ID                             STRING 
+
+, SITE_LOGIN_ID                                     STRING 
+
+, SITE_MANAGER_ID INT
+
+, SITE_OPEN_YRS_AMT                                 DECIMAL(5,2) 
+
+, HOTEL_FLAG TINYINT
+
+, DAYCAMP_FLAG TINYINT
+
+, VET_FLAG TINYINT
+
+, DIST_MGR_NAME                                     STRING 
+
+, DIST_SVC_MGR_NAME                                 STRING 
+
+, REGION_VP_NAME                                    STRING 
+
+, REGION_TRAINER_NAME                               STRING 
+
+, ASSET_PROTECT_NAME                                STRING 
+
+, SITE_COUNTY                                       STRING 
+
+, SITE_FAX_NO                                       STRING 
+
+, SFT_OPEN_DT                                       TIMESTAMP 
+
+, DM_EMAIL_ADDRESS                                  STRING 
+
+, DSM_EMAIL_ADDRESS                                 STRING 
+
+, RVP_EMAIL_ADDRESS                                 STRING 
+
+, TRADE_AREA                                        STRING 
+
+, FDLPS_NAME                                        STRING 
+
+, FDLPS_EMAIL                                       STRING 
+
+, OVERSITE_MGR_NAME                                 STRING 
+
+, OVERSITE_MGR_EMAIL                                STRING 
+
+, SAFETY_DIRECTOR_NAME                              STRING 
+
+, SAFETY_DIRECTOR_EMAIL                             STRING 
+
+, RETAIL_MANAGER_SAFETY_NAME                        STRING 
+
+, RETAIL_MANAGER_SAFETY_EMAIL                       STRING 
+
+, AREA_DIRECTOR_NAME                                STRING 
+
+, AREA_DIRECTOR_EMAIL                               STRING 
+
+, DC_GENERAL_MANAGER_NAME                           STRING 
+
+, DC_GENERAL_MANAGER_EMAIL                          STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME1                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL1                    STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME2                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL2                    STRING 
+
+, REGIONAL_DC_SAFETY_MGR_NAME                       STRING 
+
+, REGIONAL_DC_SAFETY_MGR_EMAIL                      STRING 
+
+, DC_PEOPLE_SUPERVISOR_NAME                         STRING 
+
+, DC_PEOPLE_SUPERVISOR_EMAIL                        STRING 
+
+, PEOPLE_MANAGER_NAME                               STRING 
+
+, PEOPLE_MANAGER_EMAIL                              STRING 
+
+, ASSET_PROT_DIR_NAME                               STRING 
+
+, ASSET_PROT_DIR_EMAIL                              STRING 
+
+, SR_REG_ASSET_PROT_MGR_NAME                        STRING 
+
+, SR_REG_ASSET_PROT_MGR_EMAIL                       STRING 
+
+, REG_ASSET_PROT_MGR_NAME                           STRING 
+
+, REG_ASSET_PROT_MGR_EMAIL                          STRING 
+
+, ASSET_PROTECT_EMAIL                               STRING 
+
+, TP_START_DT                                       TIMESTAMP 
+
+, OPEN_DT       TIMESTAMP 
+
+, GR_OPEN_DT                                        TIMESTAMP 
+
+, CLOSE_DT      TIMESTAMP 
+
+, HOTEL_OPEN_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Education/site_profile';
+
+--DISTRIBUTE ON (LOCATION_ID)
+
+

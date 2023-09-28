@@ -1,0 +1,76 @@
+subj_name,wf_wl_name,session_name,mapping_name,attr_value
+BA_Services,wl_sds_pre,s_sds_account_history_pre,m_sds_account_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_account_pre,m_sds_account_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_asset_history_pre,m_sds_asset_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_asset_pre,m_sds_asset_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_assigned_resource_pre,m_sds_assigned_resource_pre,(CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe) AND (PSVC_Appointment_SMS_ID__c like 'F%' OR PSVC_Appointment_SMS_ID__c = '')
+BA_Services,wl_sds_pre,s_sds_fsl_user_territory_c_pre,m_sds_fsl_user_territory_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_operating_hours_pre,m_sds_operating_hours_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_order_history_pre,m_sds_order_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_order_item_history_pre,m_sds_order_item_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_order_item_pre,m_sds_order_item_pre,((Order.LastModifiedDate>=$$DeltaTimeframe ) OR (PSVC_Work_Order__r.LastModifiedDate  >=$$DeltaTimeframe ) OR (LastModifiedDate >=$$DeltaTimeframe))
+BA_Services,wl_sds_pre,s_sds_order_pre,m_sds_order_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_outgoing_message_c_pre,m_sds_outgoing_message_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_picklist_value_info_pre,m_sds_picklist_value_info_pre,"EntityParticleId IN ('Order.Status', 'ServiceAppointment.Status','Product2.Family','WorkOrder.Status')"
+BA_Services,wl_sds_pre,s_sds_Pricebook2_Entry_PRE,m_sds_pricebook2_entry_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_pricebook2_history_pre,m_sds_pricebook2_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_Pricebook2_PRE,m_sds_Pricebook2_PRE,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_product2_history_pre,m_sds_product2_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_product2_pre,m_sds_product2_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_profile_pre,m_sds_profile_pre,CreatedDate >= $$DeltaTimeframe OR LastModifiedDate >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_bundle_add_on_c_pre,m_sds_psvc_bundle_add_on_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_bundle_c_pre,m_sds_psvc_bundle_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_bundle_configuration_c_pre,m_sds_psvc_bundle_configuration_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_class_session_c_pre,m_sds_psvc_class_session_c_pre,CreatedDate  >= YESTERDAY  OR LastModifiedDate  >= YESTERDAY
+BA_Services,wl_sds_pre,s_sds_PSVC_Customer_Pet_c_PRE,m_sds_PSVC_Customer_Pet_c_PRE,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_daily_activity_c_pre,m_sds_psvc_daily_activity_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_PSVC_Employee_Group_c_PRE,m_sds_PSVC_Employee_Group_c_PRE,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_PSVC_Employee_Group_Service_Types_c_PRE,m_sds_PSVC_Employee_Group_Service_Types_c_PRE,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_exception_hours_pre,m_sds_psvc_exception_hours_c_pre,PSVC_Exception_Open_Date_Time__c >= $$DeltaTimeframe AND PSVC_Exception_Open_Date_Time__c <= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_invoice_c_pre,m_sds_psvc_invoice_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_PSVC_Invoice_History_pre,m_sds_PSVC_Invoice_History_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_note_c_pre,m_sds_psvc_note_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_note_history_pre,m_sds_psvc_note_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_order_product_special_c_pre,m_sds_psvc_order_product_special_c_pre,((PSVC_ORDER_LastModifiedDate__c  >= $$DeltaTimeframe)  OR (PSVC_ORDER_CreatedDate__c>=$$DeltaTimeframe)   OR (PSVC_WORKORDER_LastModifiedDate__c  >=  $$DeltaTimeframe)  OR (PSVC_WORKORDER_CreatedDate__c>= $$DeltaTimeframe)   OR (CreatedDate >= $$DeltaTimeframe) OR (LastModifiedDate >= $$DeltaTimeframe))
+BA_Services,wl_sds_pre,s_sds_PSVC_Order_Product_Special_History_Pre,m_sds_PSVC_order_product_special_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_package_product_c_pre,m_sds_psvc_package_product_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_pet_vaccination_c_pre,m_sds_psvc_pet_vaccination_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_product_bundle_configuration_c_pre,m_sds_psvc_product_bundle_configuration_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_product_special_c_pre,m_sds_psvc_product_special_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_redemption_c_pre,m_sds_psvc_redemption_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_schedule_template_c_pre,m_sds_psvc_schedule_template_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_service_contract_c_pre,m_sds_psvc_service_contract_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_service_location_special_c_pre,m_sds_psvc_service_location_special_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_service_text_c_pre,m_sds_psvc_service_text_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_service_type_group_c_pre,m_sds_psvc_service_type_group_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_service_type_group_special_c_pre,m_sds_psvc_service_type_group_special_c_pre,CreatedDate  >= $$DeltaTimeframe  OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_service_type_product_c_pre,m_sds_psvc_service_type_product_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_psvc_special_c_pre,m_sds_psvc_special_c_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_PSVC_Special_History_PRE,m_sds_PSVC_Special_History_PRE,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_record_type_pre,m_sds_record_type_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_resource_absence_history_PRE,m_sds_resource_absence_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_resource_absence_pre,m_sds_resource_absence_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_Resource_Preference_History_PRE,m_sds_resource_preference_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_resource_preference_pre,m_sds_resource_preference_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_service_appointment_history_pre,m_sds_service_appointment_history_pre,CreatedDate  >=$$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_service_appointment_pre,m_sds_service_appointment_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_service_contract_component_pre,m_sds_service_contract_component_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_Service_Resource_History_PRE,m_sds_service_resource_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_service_resource_pre,m_sds_service_resource_pre,CreatedDate  >= YESTERDAY  OR LastModifiedDate  >= YESTERDAY OR SystemModStamp  >= YESTERDAY
+BA_Services,wl_sds_pre,s_sds_Service_Resource_Skill_History_PRE,m_sds_service_resource_skill_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_service_resource_skill_pre,m_sds_service_resource_skill_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_Service_Territory_History_PRE,m_sds_service_territory_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_service_territory_member_history_PRE,m_sds_service_territory_member_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_service_territory_member_pre,m_sds_service_territory_member_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_service_territory_pre,m_sds_service_territory_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_skill_pre,m_sds_skill_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_Skill_Requirement_History_PRE,m_sds_skill_requirement_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_skill_requirement_pre,m_sds_skill_requirement_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_timeslot_pre,m_sds_timeslot_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_user_pre,m_sds_user_pre,CreatedDate  >= $$DeltaTimeframe  OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_Work_Order_History_PRE,m_sds_work_order_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_Work_Order_Line_Item_History_PRE,m_sds_work_order_line_item_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_work_order_line_item_pre,m_sds_work_order_line_item_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_work_order_pre,m_sds_work_order_pre,CreatedDate  >= $$DeltaTimeframe OR LastModifiedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_Work_Type_History_PRE,m_sds_work_type_history_pre,CreatedDate  >= $$DeltaTimeframe
+BA_Services,wl_sds_pre,s_sds_work_type_pre,m_sds_work_type_pre,CreatedDate  >= YESTERDAY  OR LastModifiedDate  >= YESTERDAY OR SystemModStamp  >= YESTERDAY

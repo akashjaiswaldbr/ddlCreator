@@ -1,0 +1,612 @@
+8.1.0
+?http://www.informatica.com/pcsf/logservice:LogCallContext:1.0.2
+IS_GRID_ASCII
+node01_DRT-ETLAPP-P01
+DM_ETL_PROD101
+RS_PROD_INFA101
+BA_Services
+wf_Prism_Daily
+wl_sds_pre
+s_sds_order_pre
+168693
+23333345
+23333346
+95944
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+VAR_27028
+]Use override value [YESTERDAY] for user-defined workflow/worklet variable:[$$DeltaTimeframe].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6014
+EInitializing session [s_sds_order_pre] at [Fri Jul 21 00:42:01 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6683
+"Repository Name: [RS_PROD_INFA101]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6684
+Server Name: [IS_GRID_ASCII]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6686
+Folder: [BA_Services]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6685
+CWorkflow: [wf_Prism_Daily] Run Instance Name: [] Run Id: [23333345]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6992
+Operating System Type [NT]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6101
++Mapping name: m_sds_order_pre [version 17].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6964
+9Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6827
+y[D:\etlsw\Informatica\10.4.1\server\infa_shared\Storage] will be used as storage directory for session [s_sds_order_pre].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1802
+2Session recovery cache initialization is complete.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+6Using configuration property [EnableDataEncryption,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+8Using configuration property [StoreHAPersistenceInDB,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+@Using configuration property [MasterDTMListenOnAllInterface,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [NetezzaLoginTimeout,60]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [RunCmdInNewConsole,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+NUsing configuration property [SMTPFromAddress,ETL_PRODUCTION@ssg.petsmart.com]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+0Using configuration property [SMTPPortNumber,25]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [SMTPServerAddress,SSGEXCHANGE]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+3Using configuration property [SMTPServerTimeout,30]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [syncNetezzanullwithPCNull,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+=Using configuration property [TransferLogFileBlockSize,32768]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+:Using configuration property [treatNoDataAsEmptyString,No]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+CUsing configuration property [netezzaDisableUseridAsSchemaName,yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+>Using configuration property [SalesForceConnectionTimeout,120]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6703
+xSession [s_sds_order_pre] is run by 64-bit Integration Service  [node01_DRT-ETLAPP-P01], version [10.4.1], build [0614].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MANAGER] has the ID [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24058
+Running Partition Group [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24000
+&Parallel Pipeline Engine initializing.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MONITOR] has the ID [2].
+MONITOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24001
+!Parallel Pipeline Engine running.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24003
+Initializing session run.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MAPPING] has the ID [3].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1569
+Server Mode: [ASCII]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1570
+AServer Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6151
+#The session sort order is [Binary].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65111
+Current Timezone:[UTC -7:0]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65112
+Current Process ID:[14164]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6156
+Using low precision processing.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6180
+-Deadlock retry logic will not be implemented.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6187
+0Session target-based commit interval is [10000].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42020
+P[INFO] Loaded library : D:\etlsw\Informatica\10.4.1\java\jre\bin\server\jvm.dll.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42009
+$[INFO] Created Java VM successfully.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38029
+=Loaded plug-in 310600: [PowerExchange for Salesforce 10.4.1].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38024
+'Plug-in 310600 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38016
++Reader SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38024
+'Plug-in 405050 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38017
++Writer SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38509
+-SDK target and group initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6307
+DTM error log disabled. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TE_7022
+TShmWriter: Initialized
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6007
+:DTM initialized successfully for session [s_sds_order_pre]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24033
+"All DTM Connection Info: [<NONE>].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24004
+CPETL_24004 Starting pre-session tasks. : (Fri Jul 21 00:42:02 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+!Thread [PRE-SESS] has the ID [4].
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24027
+PPETL_24027 Pre-session task completed successfully. : (Fri Jul 21 00:42:02 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24006
+Starting data movement.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6660
+ITotal Buffer Pool size is 37788736 bytes and Block size is 2097152 bytes.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10057
+ [INFO] No proxy information set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10048
+[INFO] Account[svc-informatica@petsmart.com] logged on salesforce.com at [https://prism-petsmart.my.salesforce.com/services/Soap/u/41.0].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10060
+d[INFO] 'Enable Bulk Query' option is set. Reader will use BULK mode to read the data from Salesforce
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10064
+.[INFO] 'Enable PK Chunking' option is not set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10040
+)[INFO] The use QueryAll attribute is set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [TRANSF_1_1_1] has the ID [6].
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+I[INFO] Initializing Target [0] ([SDS_ORDER_PRE]) Group [0] Partition [0].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+C[INFO] Connection Info:  DSN=[NZ_SDS_STAGE], User name=[srvsloader]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Connection successfully established
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+9[INFO] Executed query : [TRUNCATE TABLE  "SDS_ORDER_PRE"]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+M[INFO] The Operation Selected [Insert]and Update is set as [Update as Insert]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Auto-commit is disabled.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+ [INFO] Pipe created successfully
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+\[INFO] Stop on errors is set to [1]. Session will fail after encountering [1] bad input rows
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+l[INFO] Executed query : [CREATE TABLE "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322" (  "ID" varchar(18)  NOT NULL, "OWNER_ID" varchar(18), "CONTRACT_ID" varchar(18), "ACCOUNT_ID" varchar(18), "PRICEBOOK2_ID" varchar(18), "ORIGINAL_ORDER_ID" varchar(18), "OPPORTUNITY_ID" varchar(18), "QUOTE_ID" varchar(18), "EFFECTIVE_DATE" timestamp, "END_DATE" timestamp, "IS_REDUCTION_ORDER" numeric(10,0), "STATUS" varchar(40), "DESCRIPTION" varchar(15000), "CUSTOMER_AUTHORIZED_BY_ID" varchar(18), "CUSTOMER_AUTHORIZED_DATE" timestamp, "COMPANY_AUTHORIZED_BY_ID" varchar(18), "COMPANY_AUTHORIZED_DATE" timestamp, "TYPE" varchar(40), "BILLING_STREET" varchar(255), "BILLING_CITY" varchar(40), "BILLING_STATE" varchar(80), "BILLING_POSTAL_CODE" varchar(20), "BILLING_COUNTRY" varchar(80), "BILLING_LATITUDE" numeric(18,15), "BILLING_LONGITUDE" numeric(18,15), "BILLING_GEOCODE_ACCURACY" varchar(40), "SHIPPING_STREET" varchar(255), "SHIPPING_CITY" varchar(40), "SHIPPING_STATE" varchar(80), "SHIPPING_POSTAL_CODE" varchar(20), "SHIPPING_COUNTRY" varchar(80), "SHIPPING_LATITUDE" numeric(18,15), "SHIPPING_LONGITUDE" numeric(18,15), "SHIPPING_GEOCODE_ACCURACY" varchar(40), "NAME" varchar(80), "PO_DATE" timestamp, "PO_NUMBER" varchar(80), "ORDER_REFERENCE_NUMBER" varchar(80), "BILL_TO_CONTACT_ID" varchar(18), "SHIP_TO_CONTACT_ID" varchar(18), "ACTIVATED_DATE" timestamp, "ACTIVATED_BY_ID" varchar(18), "STATUS_CODE" varchar(40), "CURRENCY_ISO_CODE" varchar(3), "ORDER_NUMBER" varchar(30), "TOTAL_AMOUNT" numeric(18,2), "CREATED_DATE" timestamp, "CREATED_BY_ID" varchar(18), "LAST_MODIFIED_DATE" timestamp, "LAST_MODIFIED_BY_ID" varchar(18), "IS_DELETED" numeric(10,0), "SYSTEM_MOD_STAMP" timestamp, "LAST_VIEWED_DATE" timestamp, "LAST_REFERENCED_DATE" timestamp, "PSVC_PAYMENT_METHOD_C" varchar(255), "PSVC_STORE_NUMBER_C" varchar(1300), "PSVC_MANUAL_ADJUSTMENT_UPDATED_PRICE_C" numeric(18,2), "PSVC_USER_WHO_VOIDED_C" varchar(18), "PSVC_VOID_REASON_C" varchar(255), "PSVC_INVOICE_C" varchar(18), "PSVC_AVAILABLE_FOR_VOID_C" numeric(10,0), "PSVC_ORDER_SMS_ID_C" varchar(18), "PSVC_VOID_DATE_TIME_C" timestamp, "PSVC_ORDERNUMBER_C" varchar(30), "PSVC_NEW_GROOMING_CUSTOMER_C" numeric(10,0), "PSVC_TOTAL_AMOUNT_FOR_POS_C" numeric(18,2), "PSVC_IS_DUMMY_APPOINTMENT_C" numeric(10,0), "CREATION_CHANNEL_C" varchar(30), "TOTAL_TAX_C" numeric(18,5), "RECORD_TYPE_ID" varchar(18), "LOAD_TSTMP" timestamp ) DISTRIBUTE ON ("ID")]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [CREATE EXTERNAL TABLE "pcn_ext_SDS_ORDER_PRE_14164_0_0_1689925358" SAMEAS "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322" USING (  DATAOBJECT ('\\.\pipe\PCN_PipeWRT14164_0_0_216123_04238')  DELIMITER 124 SOCKETBUFSIZE 8388608 MAXERRORS 1 CTRLCHARS TRUE CRINSTRING TRUE FILLRECORD TRUE  NULLVALUE ''  ESCAPECHAR '/'  REMOTESOURCE 'ODBC' ENCODING 'internal')]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8270
+MTarget connection group #1 consists of target(s) [SDS_ORDER_PRE: Partition 1]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8003
+Writer initialization complete.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8005
+Writer run started.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8158
+*****START LOAD SESSION*****
+Load Start Time: Fri Jul 21 00:42:38 2023
+Target tables:
+     SDS_ORDER_PRE: Partition 1
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10045
+[INFO] SOQL is [SELECT Id ,OwnerId ,ContractId ,AccountId ,Pricebook2Id ,OriginalOrderId ,OpportunityId ,QuoteId ,EffectiveDate ,EndDate ,IsReductionOrder ,Status ,Description ,CustomerAuthorizedById ,CustomerAuthorizedDate ,CompanyAuthorizedById ,CompanyAuthorizedDate ,Type ,BillingStreet ,BillingCity ,BillingState ,BillingPostalCode ,BillingCountry ,BillingLatitude ,BillingLongitude ,BillingGeocodeAccuracy ,ShippingStreet ,ShippingCity ,ShippingState ,ShippingPostalCode ,ShippingCountry ,ShippingLatitude ,ShippingLongitude ,ShippingGeocodeAccuracy ,Name ,PoDate ,PoNumber ,OrderReferenceNumber ,BillToContactId ,ShipToContactId ,ActivatedDate ,ActivatedById ,StatusCode ,CurrencyIsoCode ,OrderNumber ,TotalAmount ,CreatedDate ,CreatedById ,LastModifiedDate ,LastModifiedById ,IsDeleted ,SystemModstamp ,LastViewedDate ,LastReferencedDate ,PSVC_Payment_Method__c ,PSVC_Store_Number__c ,PSVC_Manual_Adjustment_Updated_Price__c ,PSVC_User_Who_Voided__c ,PSVC_Void_Reason__c ,PSVC_Invoice__c ,PSVC_Available_for_Void__c ,PSVC_Order_SMS_ID__c ,PSVC_Void_Date_Time__c ,PSVC_OrderNumber__c ,PSVC_New_Grooming_Customer__c ,RecordTypeId ,PSVC_Total_Amount_for_POS__c ,PSVC_is_Dummy_Appointment__c ,Creation_Channel__c ,TotalTax__c 
+ FROM Order Where CreatedDate  >= YESTERDAY OR LastModifiedDate  >= YESTERDAY].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10093
+X[INFO] Status of batch [7512K00000iZGRTQA4] of job Id [7502K00000OcHk4QAF]: [Completed].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10132
+[INFO] Salesforce Bulk API Batch Result Details  :: GETQUERYSTREAM : JOBINFO- 7502K00000OcHk4QAF ,BatchInfo- 7512K00000iZGRTQA4 ,ResultId - 7522K00000NNKKJ
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8167
+MStart loading table [SDS_ORDER_PRE: Partition 1] at: Fri Jul 21 00:43:04 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+@[INFO] Opening Pipe [\\.\pipe\PCN_PipeWRT14164_0_0_216123_04238]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+N[INFO] Opened pipe([\\.\pipe\PCN_PipeWRT14164_0_0_216123_04238]) in write mode
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:43:05 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:43:06 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:43:07 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:43:07 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:43:08 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:43:09 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:43:10 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:43:10 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8161
+TARGET BASED COMMIT POINT  Fri Jul 21 00:43:11 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+DBG_21216
+WFinished transformations for Source Qualifier [SQ_Shortcut_to_Order]. Total errors [0] 
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8168
+KEnd loading table [SDS_ORDER_PRE: Partition 1] at: Fri Jul 21 00:43:11 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8141
+Commit on end-of-data  Fri Jul 21 00:43:11 2023
+===================================================
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+B[INFO] Closing pipe ([\\.\pipe\PCN_PipeWRT14164_0_0_216123_04238])
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Closed Pipe
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [INSERT INTO "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322" SELECT * FROM "pcn_ext_SDS_ORDER_PRE_14164_0_0_1689925358"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [ create EXTERNAL TABLE 'D:\etlsw\Informatica\10.4.1\server\infa_shared\BadFiles\sds_order_pre.txt' USING (  DELIMITER 124 NULLVALUE ''  ESCAPECHAR '/'  REMOTESOURCE 'ODBC'  ENCODING 'internal' ) AS  select "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."OWNER_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CONTRACT_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ACCOUNT_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PRICEBOOK2_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ORIGINAL_ORDER_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."OPPORTUNITY_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."QUOTE_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."EFFECTIVE_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."END_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."IS_REDUCTION_ORDER","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."STATUS","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."DESCRIPTION","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CUSTOMER_AUTHORIZED_BY_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CUSTOMER_AUTHORIZED_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."COMPANY_AUTHORIZED_BY_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."COMPANY_AUTHORIZED_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."TYPE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_STREET","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_CITY","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_STATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_POSTAL_CODE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_COUNTRY","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_LATITUDE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_LONGITUDE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_GEOCODE_ACCURACY","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_STREET","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_CITY","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_STATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_POSTAL_CODE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_COUNTRY","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_LATITUDE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_LONGITUDE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_GEOCODE_ACCURACY","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."NAME","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PO_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PO_NUMBER","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ORDER_REFERENCE_NUMBER","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILL_TO_CONTACT_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIP_TO_CONTACT_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ACTIVATED_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ACTIVATED_BY_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."STATUS_CODE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CURRENCY_ISO_CODE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ORDER_NUMBER","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."TOTAL_AMOUNT","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CREATED_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CREATED_BY_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LAST_MODIFIED_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LAST_MODIFIED_BY_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."IS_DELETED","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SYSTEM_MOD_STAMP","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LAST_VIEWED_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LAST_REFERENCED_DATE","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_PAYMENT_METHOD_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_STORE_NUMBER_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_MANUAL_ADJUSTMENT_UPDATED_PRICE_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_USER_WHO_VOIDED_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_VOID_REASON_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_INVOICE_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_AVAILABLE_FOR_VOID_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_ORDER_SMS_ID_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_VOID_DATE_TIME_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_ORDERNUMBER_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_NEW_GROOMING_CUSTOMER_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_TOTAL_AMOUNT_FOR_POS_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_IS_DUMMY_APPOINTMENT_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CREATION_CHANNEL_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."TOTAL_TAX_C","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."RECORD_TYPE_ID","pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LOAD_TSTMP" from "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322" where "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."rowid" IN (  ( select "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."rowid" from "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322" where "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."rowid" NOT IN  (SELECT min("pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."rowid") FROM "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322" GROUP BY "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ID") ) UNION (  select "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."rowid" from "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322" where ( "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ID")  IN  ( SELECT "SDS_ORDER_PRE"."ID" FROM "SDS_ORDER_PRE" )  ))]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wg=G
+Net_1762
+9[INFO] Executed query : [INSERT INTO "SDS_ORDER_PRE"("ID", "OWNER_ID", "CONTRACT_ID", "ACCOUNT_ID", "PRICEBOOK2_ID", "ORIGINAL_ORDER_ID", "OPPORTUNITY_ID", "QUOTE_ID", "EFFECTIVE_DATE", "END_DATE", "IS_REDUCTION_ORDER", "STATUS", "DESCRIPTION", "CUSTOMER_AUTHORIZED_BY_ID", "CUSTOMER_AUTHORIZED_DATE", "COMPANY_AUTHORIZED_BY_ID", "COMPANY_AUTHORIZED_DATE", "TYPE", "BILLING_STREET", "BILLING_CITY", "BILLING_STATE", "BILLING_POSTAL_CODE", "BILLING_COUNTRY", "BILLING_LATITUDE", "BILLING_LONGITUDE", "BILLING_GEOCODE_ACCURACY", "SHIPPING_STREET", "SHIPPING_CITY", "SHIPPING_STATE", "SHIPPING_POSTAL_CODE", "SHIPPING_COUNTRY", "SHIPPING_LATITUDE", "SHIPPING_LONGITUDE", "SHIPPING_GEOCODE_ACCURACY", "NAME", "PO_DATE", "PO_NUMBER", "ORDER_REFERENCE_NUMBER", "BILL_TO_CONTACT_ID", "SHIP_TO_CONTACT_ID", "ACTIVATED_DATE", "ACTIVATED_BY_ID", "STATUS_CODE", "CURRENCY_ISO_CODE", "ORDER_NUMBER", "TOTAL_AMOUNT", "CREATED_DATE", "CREATED_BY_ID", "LAST_MODIFIED_DATE", "LAST_MODIFIED_BY_ID", "IS_DELETED", "SYSTEM_MOD_STAMP", "LAST_VIEWED_DATE", "LAST_REFERENCED_DATE", "PSVC_PAYMENT_METHOD_C", "PSVC_STORE_NUMBER_C", "PSVC_MANUAL_ADJUSTMENT_UPDATED_PRICE_C", "PSVC_USER_WHO_VOIDED_C", "PSVC_VOID_REASON_C", "PSVC_INVOICE_C", "PSVC_AVAILABLE_FOR_VOID_C", "PSVC_ORDER_SMS_ID_C", "PSVC_VOID_DATE_TIME_C", "PSVC_ORDERNUMBER_C", "PSVC_NEW_GROOMING_CUSTOMER_C", "PSVC_TOTAL_AMOUNT_FOR_POS_C", "PSVC_IS_DUMMY_APPOINTMENT_C", "CREATION_CHANNEL_C", "TOTAL_TAX_C", "RECORD_TYPE_ID", "LOAD_TSTMP") SELECT "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."OWNER_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CONTRACT_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ACCOUNT_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PRICEBOOK2_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ORIGINAL_ORDER_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."OPPORTUNITY_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."QUOTE_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."EFFECTIVE_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."END_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."IS_REDUCTION_ORDER" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."STATUS" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."DESCRIPTION" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CUSTOMER_AUTHORIZED_BY_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CUSTOMER_AUTHORIZED_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."COMPANY_AUTHORIZED_BY_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."COMPANY_AUTHORIZED_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."TYPE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_STREET" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_CITY" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_STATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_POSTAL_CODE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_COUNTRY" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_LATITUDE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_LONGITUDE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILLING_GEOCODE_ACCURACY" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_STREET" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_CITY" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_STATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_POSTAL_CODE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_COUNTRY" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_LATITUDE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_LONGITUDE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIPPING_GEOCODE_ACCURACY" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."NAME" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PO_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PO_NUMBER" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ORDER_REFERENCE_NUMBER" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."BILL_TO_CONTACT_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SHIP_TO_CONTACT_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ACTIVATED_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ACTIVATED_BY_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."STATUS_CODE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CURRENCY_ISO_CODE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ORDER_NUMBER" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."TOTAL_AMOUNT" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CREATED_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CREATED_BY_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LAST_MODIFIED_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LAST_MODIFIED_BY_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."IS_DELETED" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."SYSTEM_MOD_STAMP" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LAST_VIEWED_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LAST_REFERENCED_DATE" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_PAYMENT_METHOD_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_STORE_NUMBER_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_MANUAL_ADJUSTMENT_UPDATED_PRICE_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_USER_WHO_VOIDED_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_VOID_REASON_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_INVOICE_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_AVAILABLE_FOR_VOID_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_ORDER_SMS_ID_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_VOID_DATE_TIME_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_ORDERNUMBER_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_NEW_GROOMING_CUSTOMER_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_TOTAL_AMOUNT_FOR_POS_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."PSVC_IS_DUMMY_APPOINTMENT_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."CREATION_CHANNEL_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."TOTAL_TAX_C" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."RECORD_TYPE_ID" , "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."LOAD_TSTMP" FROM "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322" WHERE  ( "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ID")  NOT IN  ( SELECT "SDS_ORDER_PRE"."ID" FROM "SDS_ORDER_PRE" )  AND "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."rowid" IN  (SELECT min("pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."rowid") FROM "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322" GROUP BY "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"."ID")]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+V[INFO] Executed query : [DROP TABLE "pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+Q[INFO] Executed query : [DROP TABLE "pcn_ext_SDS_ORDER_PRE_14164_0_0_1689925358"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+F[INFO] The Integration Service successfully committed the transaction.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+2[INFO] Deinitializing Target = [0] Partition = [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+.[INFO] Number of rows marked as Insert [93879]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Delete [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Update [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] 
+NETEZZA TEMP TABLE LOAD SUMMARY
+===============================
+TempTable: [pcn_temp_Shortcut_to_ORDER_PRE_14164_1689925322]: Partition [1] (Target Instance Name: [[Shortcut_to_ORDER_PRE]])  
+Number of Rows processed by this partition and loaded in to the Temp Table: 93879
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8035
+Load complete time: Fri Jul 21 00:43:21 2023
+LOAD SUMMARY
+============
+WRT_8036 Target: SDS_ORDER_PRE: Partition 1 (Instance Name: [Shortcut_to_ORDER_PRE])
+WRT_8038 Inserted rows - Requested: 93879      Applied: 93879      Rejected: 0          Affected: 93879     
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8043
+*****END LOAD SESSION*****
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8006
+Writer run completed.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24031
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [SQ_Shortcut_to_Order] has completed.
+Total Run Time = [33.392647] secs
+Total Idle Time = [0.000000] secs
+Busy Percentage = [100.000000]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [SQ_Shortcut_to_Order] has completed.
+Total Run Time = [7.493553] secs
+Total Idle Time = [7.025898] secs
+Busy Percentage = [6.240767]
+Transformation-specific statistics for this thread were not accurate enough to report.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Shortcut_to_ORDER_PRE] has completed.
+Total Run Time = [16.763321] secs
+Total Idle Time = [6.640566] secs
+Busy Percentage = [60.386335]
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wg>=
+PETL_24005
+DPETL_24005 Starting post-session tasks. : (Fri Jul 21 00:43:22 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wg>?
+PETL_24091
+"Thread [POST-SESS] has the ID [8].
+POST-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+wg>~
+PETL_24029
+QPETL_24029 Post-session task completed successfully. : (Fri Jul 21 00:43:22 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38510
+3SDK target and group deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 405050 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38019
+2Writer SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 310600 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38018
+2Reader SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6018
+:The session completed with [0] row transformation errors. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24002
+"Parallel Pipeline Engine finished.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24012
+#Session run completed successfully.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6022
+SESSION LOAD SUMMARY
+================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6252
+Source Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SQ_Shortcut_to_Order] (Instance Name: [SQ_Shortcut_to_Order])
+ Output Rows [93885], Affected Rows [93885], Applied Rows [93885], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6253
+Target Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SDS_ORDER_PRE] (Instance Name: [Shortcut_to_ORDER_PRE])
+ Output Rows [93879], Affected Rows [93879], Applied Rows [93879], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6023
+===================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6020
+BSession [s_sds_order_pre] completed at [Fri Jul 21 00:43:23 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1803
+"Files removed from recovery cache.
+DIRECTOR

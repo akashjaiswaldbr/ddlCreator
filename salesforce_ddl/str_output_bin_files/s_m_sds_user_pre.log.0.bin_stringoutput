@@ -1,0 +1,587 @@
+8.1.0
+?http://www.informatica.com/pcsf/logservice:LogCallContext:1.0.2
+IS_GRID_ASCII
+node02_DRT-ETLAPP-P02
+DM_ETL_PROD101
+RS_PROD_INFA101
+BA_Services
+wf_Prism_Daily
+wl_sds_pre
+s_sds_user_pre
+168693
+23333345
+23333346
+95986
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[aR
+VAR_27028
+]Use override value [YESTERDAY] for user-defined workflow/worklet variable:[$$DeltaTimeframe].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[aR
+TM_6014
+DInitializing session [s_sds_user_pre] at [Fri Jul 21 00:30:24 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[aS
+TM_6683
+"Repository Name: [RS_PROD_INFA101]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[aS
+TM_6684
+Server Name: [IS_GRID_ASCII]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[aU
+TM_6686
+Folder: [BA_Services]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[aU
+TM_6685
+CWorkflow: [wf_Prism_Daily] Run Instance Name: [] Run Id: [23333345]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[aV
+TM_6992
+Operating System Type [NT]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[aV
+TM_6101
+*Mapping name: m_sds_user_pre [version 14].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[aq
+TM_6964
+9Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[av
+TM_6827
+x[D:\etlsw\Informatica\10.4.1\server\infa_shared\Storage] will be used as storage directory for session [s_sds_user_pre].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1802
+2Session recovery cache initialization is complete.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+6Using configuration property [EnableDataEncryption,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+8Using configuration property [StoreHAPersistenceInDB,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+@Using configuration property [MasterDTMListenOnAllInterface,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [NetezzaLoginTimeout,60]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [RunCmdInNewConsole,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+NUsing configuration property [SMTPFromAddress,ETL_PRODUCTION@ssg.petsmart.com]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+0Using configuration property [SMTPPortNumber,25]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [SMTPServerAddress,SSGEXCHANGE]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+3Using configuration property [SMTPServerTimeout,30]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [syncNetezzanullwithPCNull,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+=Using configuration property [TransferLogFileBlockSize,32768]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+:Using configuration property [treatNoDataAsEmptyString,No]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+CUsing configuration property [netezzaDisableUseridAsSchemaName,yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+0Using configuration property [JVMMinMemory,512M]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+1Using configuration property [JVMMaxMemory,1024M]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+>Using configuration property [SalesForceConnectionTimeout,120]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6703
+wSession [s_sds_user_pre] is run by 64-bit Integration Service  [node02_DRT-ETLAPP-P02], version [10.4.1], build [0614].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MANAGER] has the ID [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24058
+Running Partition Group [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24000
+&Parallel Pipeline Engine initializing.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MONITOR] has the ID [2].
+MONITOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24001
+!Parallel Pipeline Engine running.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24003
+Initializing session run.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MAPPING] has the ID [3].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1569
+Server Mode: [ASCII]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1570
+AServer Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6151
+#The session sort order is [Binary].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65111
+Current Timezone:[UTC -7:0]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65112
+Current Process ID:[14156]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6156
+Using low precision processing.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6180
+-Deadlock retry logic will not be implemented.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6187
+0Session target-based commit interval is [10000].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42020
+P[INFO] Loaded library : D:\etlsw\Informatica\10.4.1\java\jre\bin\server\jvm.dll.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[bh
+PMJVM_42009
+$[INFO] Created Java VM successfully.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[c'
+SDKS_38029
+=Loaded plug-in 310600: [PowerExchange for Salesforce 10.4.1].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[dk
+SDKS_38024
+'Plug-in 310600 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[dl
+SDKS_38016
++Reader SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[dw
+SDKS_38024
+'Plug-in 405050 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[dx
+SDKS_38017
++Writer SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[dy
+SDKS_38509
+-SDK target and group initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[dy
+TM_6307
+DTM error log disabled. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[dz
+TE_7022
+TShmWriter: Initialized
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6007
+9DTM initialized successfully for session [s_sds_user_pre]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24033
+"All DTM Connection Info: [<NONE>].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24004
+CPETL_24004 Starting pre-session tasks. : (Fri Jul 21 00:30:25 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+!Thread [PRE-SESS] has the ID [4].
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[e:
+PETL_24027
+PPETL_24027 Pre-session task completed successfully. : (Fri Jul 21 00:30:25 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[e:
+PETL_24006
+Starting data movement.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w[e;
+TM_6660
+ITotal Buffer Pool size is 30190288 bytes and Block size is 1675016 bytes.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10057
+ [INFO] No proxy information set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10048
+[INFO] Account[svc-informatica@petsmart.com] logged on salesforce.com at [https://prism-petsmart.my.salesforce.com/services/Soap/u/41.0].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10060
+d[INFO] 'Enable Bulk Query' option is set. Reader will use BULK mode to read the data from Salesforce
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10064
+.[INFO] 'Enable PK Chunking' option is not set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [TRANSF_1_1_1] has the ID [6].
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+H[INFO] Initializing Target [0] ([SDS_USER_PRE]) Group [0] Partition [0].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+C[INFO] Connection Info:  DSN=[NZ_SDS_STAGE], User name=[srvsloader]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Connection successfully established
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+8[INFO] Executed query : [TRUNCATE TABLE  "SDS_USER_PRE"]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+M[INFO] The Operation Selected [Insert]and Update is set as [Update as Insert]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Auto-commit is disabled.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+ [INFO] Pipe created successfully
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+\[INFO] Stop on errors is set to [1]. Session will fail after encountering [1] bad input rows
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [CREATE TABLE "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625" (  "ID" varchar(18)  NOT NULL, "NAME" varchar(80), "LAST_NAME" varchar(80), "FIRST_NAME" varchar(40), "MIDDLE_NAME" varchar(40), "SUFFIX" varchar(40), "USER_NAME" varchar(121), "COMPANY_NAME" varchar(80), "DIVISION" varchar(80), "DEPARTMENT" varchar(80), "TITLE" varchar(80), "STREET" varchar(255), "CITY" varchar(40), "STATE" varchar(80), "POSTAL_CODE" varchar(20), "COUNTRY" varchar(80), "LATITUDE" numeric(18,15), "LONGITUDE" numeric(18,15), "GEOCODE_ACCURACY" varchar(40), "EMAIL" varchar(128), "EMAIL_PREFERENCES_AUTO_BCC" numeric(10,0), "EMAIL_PREFERENCES_AUTO_BCC_STAY_IN_TOUCH" numeric(10,0), "EMAIL_PREFERENCES_STAY_IN_TOUCH_REMINDER" numeric(10,0), "SENDER_EMAIL" varchar(80), "SENDER_NAME" varchar(80), "SIGNATURE" varchar(1333), "STAY_IN_TOUCH_SUBJECT" varchar(80), "STAY_IN_TOUCH_SIGNATURE" varchar(512), "STAY_IN_TOUCH_NOTE" varchar(512), "PHONE" varchar(40), "FAX" varchar(40), "MOBILE_PHONE" varchar(40), "ALIAS" varchar(8), "COMMUNITY_NICK_NAME" varchar(40), "BADGE_TEXT" varchar(80), "IS_ACTIVE" numeric(10,0), "TIME_ZONES_ID_KEY" varchar(40), "LOCALES_ID_KEY" varchar(40), "RECEIVES_INFO_EMAILS" numeric(10,0), "RECEIVES_ADMIN_INFO_EMAILS" numeric(10,0), "EMAIL_ENCODING_KEY" varchar(40), "DEFAULT_CURRENCY_ISO_CODE" varchar(3), "CURRENCY_ISO_CODE" varchar(3), "USER_TYPE" varchar(40), "LANGUAGE_LOCALE_KEY" varchar(40), "EMPLOYEE_NUMBER" varchar(20), "DELEGATED_APPROVER_ID" varchar(18), "MANAGER_ID" varchar(18), "LAST_LOG_IN_DATE" timestamp, "CREATED_DATE" timestamp, "CREATED_BY_ID" varchar(18), "LAST_MODIFIED_DATE" timestamp, "LAST_MODIFIED_BY_ID" varchar(18), "SYSTEM_MOD_STAMP" timestamp, "OFFLINE_TRIAL_EXPIRATION_DATE" timestamp, "OFFLINE_PDA_TRIAL_EXPIRATION_DATE" timestamp, "USER_PERMISSIONS_MARKETING_USER" numeric(10,0), "USER_PERMISSIONS_OFFLINE_USER" numeric(10,0), "USER_PERMISSIONS_AVANT_GO_USER" numeric(10,0), "USER_PERMISSIONS_CALL_CENTER_AUTO_LOGIN" numeric(10,0), "USER_PERMISSIONS_SF_CONTENT_USER" numeric(10,0), "USER_PERMISSIONS_KNOWLEDGE_USER" numeric(10,0), "USER_PERMISSIONS_INTERACTION_USER" numeric(10,0), "USER_PERMISSIONS_SUPPORT_USER" numeric(10,0), "FORECAST_ENABLED" numeric(10,0), "USER_PREFERENCES_ACTIVITY_REMINDERS_POPUP" numeric(10,0), "USER_PREFERENCES_EVENT_REMINDERS_CHECKBOX_DEFAULT" numeric(10,0), "USER_PREFERENCES_TASK_REMINDERS_CHECKBOX_DEFAULT" numeric(10,0), "USER_PREFERENCES_REMINDER_SOUND_OFF" numeric(10,0), "USER_PREFERENCES_DISABLE_ALL_FEEDS_EMAIL" numeric(10,0), "USER_PREFERENCES_DISABLE_FOLLOWERS_EMAIL" numeric(10,0), "USER_PREFERENCES_DISABLE_PROFILE_POST_EMAIL" numeric(10,0), "USER_PREFERENCES_DISABLE_CHANGE_COMMENT_EMAIL" numeric(10,0), "USER_PREFERENCES_DISABLE_LATER_COMMENT_EMAIL" numeric(10,0), "USER_PREFERENCES_DIS_PROF_POST_COMMENT_EMAIL" numeric(10,0), "USER_PREFERENCES_HIDE_CSN_GET_CHATTER_MOBILE_TASK" numeric(10,0), "USER_PREFERENCES_DISABLE_MENTIONS_POST_EMAIL" numeric(10,0), "USER_PREFERENCES_DIS_MENTIONS_COMMENT_EMAIL" numeric(10,0), "USER_PREFERENCES_HIDE_CSN_DESKTOP_TASK" numeric(10,0), "USER_PREFERENCES_HIDE_CHATTER_ON_BOARDING_SPLASH" numeric(10,0), "USER_PREFERENCES_HIDE_SECOND_CHATTER_ON_BOARDING_SPLASH" numeric(10,0), "USER_PREFERENCES_DIS_COMMENT_AFTER_LIKE_EMAIL" numeric(10,0), "USER_PREFERENCES_DISABLE_LIKE_EMAIL" numeric(10,0), "USER_PREFERENCES_SORT_FEED_BY_COMMENT" numeric(10,0), "USER_PREFERENCES_DISABLE_MESSAGE_EMAIL" numeric(10,0), "USER_PREFERENCES_DISABLE_BOOKMARK_EMAIL" numeric(10,0), "USER_PREFERENCES_DISABLE_SHARE_POST_EMAIL" numeric(10,0), "USER_PREFERENCES_ENABLE_AUTO_SUB_FOR_FEEDS" numeric(10,0), "USER_PREFERENCES_DISABLE_FILE_SHARE_NOTIFICATIONS_FOR_API" numeric(10,0), "USER_PREFERENCES_SHOW_TITLE_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_MANAGER_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_EMAIL_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_WORK_PHONE_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_FAX_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_CITY_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_STATE_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_POSTAL_CODE_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_COUNTRY_TO_EXTERNAL_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_PROFILE_PIC_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_TITLE_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_CITY_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_STATE_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_POSTAL_CODE_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_COUNTRY_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_HIDES1_BROWSER_UI" numeric(10,0), "USER_PREFERENCES_DISABLE_ENDORSEMENT_EMAIL" numeric(10,0), "USER_PREFERENCES_PATH_ASSISTANT_COLLAPSED" numeric(10,0), "USER_PREFERENCES_CACHE_DIAGNOSTICS" numeric(10,0), "USER_PREFERENCES_SHOW_EMAIL_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_MANAGER_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_WORK_PHONE_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_FAX_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_GUEST_USERS" numeric(10,0), "USER_PREFERENCES_LIGHTNING_EXPERIENCE_PREFERRED" numeric(10,0), "USER_PREFERENCES_HIDE_END_USER_ONBOARDING_ASSISTANT_MODAL" numeric(10,0), "USER_PREFERENCES_HIDE_LIGHTNING_MIGRATION_MODAL" numeric(10,0), "USER_PREFERENCES_HIDE_SFX_WELCOME_MAT" numeric(10,0), "USER_PREFERENCES_HIDE_BIGGER_PHOTO_CALLOUT" numeric(10,0), "USER_PREFERENCES_GLOBAL_NAV_BAR_WT_SHOWN" numeric(10,0), "USER_PREFERENCES_GLOBAL_NAV_GRID_MENU_WT_SHOWN" numeric(10,0), "USER_PREFERENCES_CREATE_LEX_APPS_WT_SHOWN" numeric(10,0), "USER_PREFERENCES_FAVORITES_WT_SHOWN" numeric(10,0), "USER_PREFERENCES_RECORD_HOME_SECTION_COLLAPSE_WT_SHOWN" numeric(10,0), "USER_PREFERENCES_RECORD_HOME_RESERVED_WT_SHOWN" numeric(10,0), "USER_PREFERENCES_FAVORITE_SHOW_TOP_FAVORITES" numeric(10,0), "USER_PREFERENCES_EXCLUDE_MAIL_APP_ATTACHMENTS" numeric(10,0), "CONTACT_ID" varchar(18), "ACCOUNT_ID" varchar(18), "CALL_CENTER_ID" varchar(18), "EXTENSION" varchar(40), "FEDERATION_IDENTIFIER" varchar(512), "ABOUT_ME" varchar(1000), "FULL_PHOTO_URL" varchar(1024), "SMALL_PHOTO_URL" varchar(1024), "IS_EXT_INDICATOR_VISIBLE" numeric(10,0), "OUT_OF_OFFICE_MESSAGE" varchar(40), "MEDIUM_PHOTO_URL" varchar(1024), "DIGEST_FREQUENCY" varchar(40), "DEFAULT_GROUP_NOTIFICATION_FREQUENCY" varchar(40), "LAST_VIEWED_DATE" timestamp, "LAST_REFERENCED_DATE" timestamp, "BANNER_PHOTO_URL" varchar(1024), "SMALL_BANNER_PHOTO_URL" varchar(1024), "MEDIUM_BANNER_PHOTO_URL" varchar(1024), "IS_PROFILE_PHOTO_ACTIVE" numeric(10,0), "PSVC_HOME_STORE_C" varchar(4), "PSVC_JOB_CODE_C" numeric(4,0), "PSVC_CHANNEL_C" varchar(1300), "PSVC_ASSOCIATE_EMAIL_C" varchar(80), "PSVC_ASSOCIATE_PHONE_C" varchar(40), "PSVC_ASSOCIATE_DISPLAY_NAME_C" varchar(180), "PSVC_ASSOCIATE_PREFERRED_NAME_C" varchar(255), "PSVC_ASSOCIATE_ID_C" varchar(100), "PSVC_EMPLOYEE_GROUP_C" varchar(200), "PSVC_IS_ONLINE_INTEGRATION_C" numeric(10,0), "PSVC_SCHEDULABLE_C" numeric(10,0), "USER_PREFERENCES_PIPELINE_VIEW_HIDE_HELP_POP_OVER" numeric(10,0), "USER_PREFERENCES_SUPPRESS_TASKS_FX_REMINDERS" numeric(10,0), "USER_PREFERENCES_PREVIEW_CUSTOM_THEME" numeric(10,0), "USER_PREFERENCES_HAS_CELEBRATION_BADGE" numeric(10,0), "USER_PREFERENCES_USER_DEBUG_MODE_PREF" numeric(10,0), "USER_PREFERENCES_SRH_OVERRIDE_ACTIVITIES" numeric(10,0), "USER_PREFERENCES_NEWLIGHTNING_REPORT_RUN_PAGE_ENABLED" numeric(10,0), "USER_PREFERENCES_NATIVE_EMAIL_CLIENT" numeric(10,0), "INDIVIDUAL_ID" varchar(18), "PSVC_IS_VIRTUAL_TRAINER_C" numeric(10,0), "LOAD_TSTMP" timestamp ) DISTRIBUTE ON ("ID")]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+}[INFO] Executed query : [CREATE EXTERNAL TABLE "pcn_ext_SDS_USER_PRE_14156_0_0_1689924660" SAMEAS "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625" USING (  DATAOBJECT ('\\.\pipe\PCN_PipeWRT14156_0_0_216123_0310')  DELIMITER 124 SOCKETBUFSIZE 8388608 MAXERRORS 1 CTRLCHARS TRUE CRINSTRING TRUE FILLRECORD TRUE  NULLVALUE ''  ESCAPECHAR '/'  REMOTESOURCE 'ODBC' ENCODING 'internal')]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8270
+LTarget connection group #1 consists of target(s) [SDS_USER_PRE: Partition 1]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8003
+Writer initialization complete.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8005
+Writer run started.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8158
+*****START LOAD SESSION*****
+Load Start Time: Fri Jul 21 00:31:02 2023
+Target tables:
+     SDS_USER_PRE: Partition 1
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10045
+v[INFO] SOQL is [SELECT Id ,Username ,LastName ,FirstName ,MiddleName ,Suffix ,Name ,CompanyName ,Division ,Department ,Title ,Street ,City ,State ,PostalCode ,Country ,Latitude ,Longitude ,GeocodeAccuracy ,Email ,EmailPreferencesAutoBcc ,EmailPreferencesAutoBccStayInTouch ,EmailPreferencesStayInTouchReminder ,SenderEmail ,SenderName ,Signature ,StayInTouchSubject ,StayInTouchSignature ,StayInTouchNote ,Phone ,Fax ,MobilePhone ,Alias ,CommunityNickname ,BadgeText ,IsActive ,TimeZoneSidKey ,LocaleSidKey ,ReceivesInfoEmails ,ReceivesAdminInfoEmails ,EmailEncodingKey ,DefaultCurrencyIsoCode ,CurrencyIsoCode ,UserType ,LanguageLocaleKey ,EmployeeNumber ,DelegatedApproverId ,ManagerId ,LastLoginDate ,CreatedDate ,CreatedById ,LastModifiedDate ,LastModifiedById ,SystemModstamp ,OfflineTrialExpirationDate ,OfflinePdaTrialExpirationDate ,UserPermissionsMarketingUser ,UserPermissionsOfflineUser ,UserPermissionsAvantgoUser ,UserPermissionsCallCenterAutoLogin ,UserPermissionsSFContentUser ,UserPermissionsKnowledgeUser ,UserPermissionsInteractionUser ,UserPermissionsSupportUser ,ForecastEnabled ,UserPreferencesActivityRemindersPopup ,UserPreferencesEventRemindersCheckboxDefault ,UserPreferencesTaskRemindersCheckboxDefault ,UserPreferencesReminderSoundOff ,UserPreferencesDisableAllFeedsEmail ,UserPreferencesDisableFollowersEmail ,UserPreferencesDisableProfilePostEmail ,UserPreferencesDisableChangeCommentEmail ,UserPreferencesDisableLaterCommentEmail ,UserPreferencesDisProfPostCommentEmail ,UserPreferencesHideCSNGetChatterMobileTask ,UserPreferencesDisableMentionsPostEmail ,UserPreferencesDisMentionsCommentEmail ,UserPreferencesHideCSNDesktopTask ,UserPreferencesHideChatterOnboardingSplash ,UserPreferencesHideSecondChatterOnboardingSplash ,UserPreferencesDisCommentAfterLikeEmail ,UserPreferencesDisableLikeEmail ,UserPreferencesSortFeedByComment ,UserPreferencesDisableMessageEmail ,UserPreferencesDisableBookmarkEmail ,UserPreferencesDisableSharePostEmail ,UserPreferencesEnableAutoSubForFeeds ,UserPreferencesDisableFileShareNotificationsForApi ,UserPreferencesShowTitleToExternalUsers ,UserPreferencesShowManagerToExternalUsers ,UserPreferencesShowEmailToExternalUsers ,UserPreferencesShowWorkPhoneToExternalUsers ,UserPreferencesShowMobilePhoneToExternalUsers ,UserPreferencesShowFaxToExternalUsers ,UserPreferencesShowStreetAddressToExternalUsers ,UserPreferencesShowCityToExternalUsers ,UserPreferencesShowStateToExternalUsers ,UserPreferencesShowPostalCodeToExternalUsers ,UserPreferencesShowCountryToExternalUsers ,UserPreferencesShowProfilePicToGuestUsers ,UserPreferencesShowTitleToGuestUsers ,UserPreferencesShowCityToGuestUsers ,UserPreferencesShowStateToGuestUsers ,UserPreferencesShowPostalCodeToGuestUsers ,UserPreferencesShowCountryToGuestUsers ,UserPreferencesHideS1BrowserUI ,UserPreferencesDisableEndorsementEmail ,UserPreferencesPathAssistantCollapsed ,UserPreferencesCacheDiagnostics ,UserPreferencesShowEmailToGuestUsers ,UserPreferencesShowManagerToGuestUsers ,UserPreferencesShowWorkPhoneToGuestUsers ,UserPreferencesShowMobilePhoneToGuestUsers ,UserPreferencesShowFaxToGuestUsers ,UserPreferencesShowStreetAddressToGuestUsers ,UserPreferencesLightningExperiencePreferred ,UserPreferencesHideEndUserOnboardingAssistantModal ,UserPreferencesHideLightningMigrationModal ,UserPreferencesHideSfxWelcomeMat ,UserPreferencesHideBiggerPhotoCallout ,UserPreferencesGlobalNavBarWTShown ,UserPreferencesGlobalNavGridMenuWTShown ,UserPreferencesCreateLEXAppsWTShown ,UserPreferencesFavoritesWTShown ,UserPreferencesRecordHomeSectionCollapseWTShown ,UserPreferencesRecordHomeReservedWTShown ,UserPreferencesFavoritesShowTopFavorites ,UserPreferencesExcludeMailAppAttachments ,ContactId ,AccountId ,CallCenterId ,Extension ,FederationIdentifier ,AboutMe ,FullPhotoUrl ,SmallPhotoUrl ,IsExtIndicatorVisible ,OutOfOfficeMessage ,MediumPhotoUrl ,DigestFrequency ,DefaultGroupNotificationFrequency ,LastViewedDate ,LastReferencedDate ,BannerPhotoUrl ,SmallBannerPhotoUrl ,MediumBannerPhotoUrl ,IsProfilePhotoActive ,PSVC_Home_Store__c ,PSVC_Job_Code__c ,PSVC_Channel__c ,PSVC_Associate_Email__c ,PSVC_Associate_Phone__c ,PSVC_Associate_Display_Name__c ,PSVC_Associate_ID__c ,PSVC_Employee_Group__c ,PSVC_Is_Online_Integration__c ,PSVC_Schedulable__c ,PSVC_Associate_Preferred_Name__c ,PSVC_Is_Virtual_Trainer__c ,UserPreferencesSuppressTaskSFXReminders ,UserPreferencesPreviewCustomTheme ,UserPreferencesHasCelebrationBadge ,UserPreferencesUserDebugModePref ,UserPreferencesSRHOverrideActivities ,UserPreferencesNewLightningReportRunPageEnabled ,UserPreferencesNativeEmailClient ,UserPreferencesPipelineViewHideHelpPopover 
+ FROM User Where CreatedDate  >= YESTERDAY  OR LastModifiedDate  >= YESTERDAY].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\$=
+SalesforceReader_10093
+X[INFO] Status of batch [7512K00000iZGOtQAO] of job Id [7502K00000OcHhjQAF]: [Completed].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10132
+[INFO] Salesforce Bulk API Batch Result Details  :: GETQUERYSTREAM : JOBINFO- 7502K00000OcHhjQAF ,BatchInfo- 7512K00000iZGOtQAO ,ResultId - 7522K00000NNKHt
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8167
+LStart loading table [SDS_USER_PRE: Partition 1] at: Fri Jul 21 00:31:14 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+?[INFO] Opening Pipe [\\.\pipe\PCN_PipeWRT14156_0_0_216123_0310]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+M[INFO] Opened pipe([\\.\pipe\PCN_PipeWRT14156_0_0_216123_0310]) in write mode
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\&O
+DBG_21216
+VFinished transformations for Source Qualifier [SQ_Shortcut_to_User]. Total errors [0] 
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\&P
+WRT_8168
+JEnd loading table [SDS_USER_PRE: Partition 1] at: Fri Jul 21 00:31:14 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\&P
+WRT_8141
+Commit on end-of-data  Fri Jul 21 00:31:14 2023
+===================================================
+WRT_8036 Target: SDS_USER_PRE: Partition 1 (Instance Name: [Shortcut_to_USER_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\&Q
+Net_1762
+A[INFO] Closing pipe ([\\.\pipe\PCN_PipeWRT14156_0_0_216123_0310])
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\&Q
+Net_1762
+[INFO] Closed Pipe
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\':
+Net_1762
+[INFO] Executed query : [INSERT INTO "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625" SELECT * FROM "pcn_ext_SDS_USER_PRE_14156_0_0_1689924660"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+9J[INFO] Executed query : [ create EXTERNAL TABLE 'D:\etlsw\Informatica\10.4.1\server\infa_shared\BadFiles\sds_user_pre.txt' USING (  DELIMITER 124 NULLVALUE ''  ESCAPECHAR '/'  REMOTESOURCE 'ODBC'  ENCODING 'internal' ) AS  select "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ID","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."NAME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_NAME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FIRST_NAME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MIDDLE_NAME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SUFFIX","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_NAME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."COMPANY_NAME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DIVISION","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DEPARTMENT","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."TITLE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STREET","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CITY","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STATE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."POSTAL_CODE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."COUNTRY","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LATITUDE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LONGITUDE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."GEOCODE_ACCURACY","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL_PREFERENCES_AUTO_BCC","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL_PREFERENCES_AUTO_BCC_STAY_IN_TOUCH","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL_PREFERENCES_STAY_IN_TOUCH_REMINDER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SENDER_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SENDER_NAME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SIGNATURE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STAY_IN_TOUCH_SUBJECT","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STAY_IN_TOUCH_SIGNATURE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STAY_IN_TOUCH_NOTE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PHONE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FAX","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MOBILE_PHONE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ALIAS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."COMMUNITY_NICK_NAME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."BADGE_TEXT","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."IS_ACTIVE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."TIME_ZONES_ID_KEY","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LOCALES_ID_KEY","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."RECEIVES_INFO_EMAILS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."RECEIVES_ADMIN_INFO_EMAILS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL_ENCODING_KEY","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DEFAULT_CURRENCY_ISO_CODE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CURRENCY_ISO_CODE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_TYPE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LANGUAGE_LOCALE_KEY","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMPLOYEE_NUMBER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DELEGATED_APPROVER_ID","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MANAGER_ID","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_LOG_IN_DATE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CREATED_DATE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CREATED_BY_ID","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_MODIFIED_DATE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_MODIFIED_BY_ID","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SYSTEM_MOD_STAMP","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."OFFLINE_TRIAL_EXPIRATION_DATE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."OFFLINE_PDA_TRIAL_EXPIRATION_DATE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_MARKETING_USER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_OFFLINE_USER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_AVANT_GO_USER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_CALL_CENTER_AUTO_LOGIN","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_SF_CONTENT_USER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_KNOWLEDGE_USER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_INTERACTION_USER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_SUPPORT_USER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FORECAST_ENABLED","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_ACTIVITY_REMINDERS_POPUP","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_EVENT_REMINDERS_CHECKBOX_DEFAULT","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_TASK_REMINDERS_CHECKBOX_DEFAULT","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_REMINDER_SOUND_OFF","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_ALL_FEEDS_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_FOLLOWERS_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_PROFILE_POST_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_CHANGE_COMMENT_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_LATER_COMMENT_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DIS_PROF_POST_COMMENT_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_CSN_GET_CHATTER_MOBILE_TASK","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_MENTIONS_POST_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DIS_MENTIONS_COMMENT_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_CSN_DESKTOP_TASK","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_CHATTER_ON_BOARDING_SPLASH","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_SECOND_CHATTER_ON_BOARDING_SPLASH","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DIS_COMMENT_AFTER_LIKE_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_LIKE_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SORT_FEED_BY_COMMENT","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_MESSAGE_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_BOOKMARK_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_SHARE_POST_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_ENABLE_AUTO_SUB_FOR_FEEDS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_FILE_SHARE_NOTIFICATIONS_FOR_API","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_TITLE_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_MANAGER_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_EMAIL_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_WORK_PHONE_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_FAX_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_CITY_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_STATE_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_POSTAL_CODE_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_COUNTRY_TO_EXTERNAL_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_PROFILE_PIC_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_TITLE_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_CITY_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_STATE_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_POSTAL_CODE_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_COUNTRY_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDES1_BROWSER_UI","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_ENDORSEMENT_EMAIL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_PATH_ASSISTANT_COLLAPSED","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_CACHE_DIAGNOSTICS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_EMAIL_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_MANAGER_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_WORK_PHONE_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_FAX_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_GUEST_USERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_LIGHTNING_EXPERIENCE_PREFERRED","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_END_USER_ONBOARDING_ASSISTANT_MODAL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_LIGHTNING_MIGRATION_MODAL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_SFX_WELCOME_MAT","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_BIGGER_PHOTO_CALLOUT","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_GLOBAL_NAV_BAR_WT_SHOWN","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_GLOBAL_NAV_GRID_MENU_WT_SHOWN","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_CREATE_LEX_APPS_WT_SHOWN","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_FAVORITES_WT_SHOWN","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_RECORD_HOME_SECTION_COLLAPSE_WT_SHOWN","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_RECORD_HOME_RESERVED_WT_SHOWN","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_FAVORITE_SHOW_TOP_FAVORITES","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_EXCLUDE_MAIL_APP_ATTACHMENTS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CONTACT_ID","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ACCOUNT_ID","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CALL_CENTER_ID","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EXTENSION","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FEDERATION_IDENTIFIER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ABOUT_ME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FULL_PHOTO_URL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SMALL_PHOTO_URL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."IS_EXT_INDICATOR_VISIBLE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."OUT_OF_OFFICE_MESSAGE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MEDIUM_PHOTO_URL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DIGEST_FREQUENCY","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DEFAULT_GROUP_NOTIFICATION_FREQUENCY","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_VIEWED_DATE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_REFERENCED_DATE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."BANNER_PHOTO_URL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SMALL_BANNER_PHOTO_URL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MEDIUM_BANNER_PHOTO_URL","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."IS_PROFILE_PHOTO_ACTIVE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_HOME_STORE_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_JOB_CODE_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_CHANNEL_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_EMAIL_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_PHONE_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_DISPLAY_NAME_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_PREFERRED_NAME_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_ID_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_EMPLOYEE_GROUP_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_IS_ONLINE_INTEGRATION_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_SCHEDULABLE_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_PIPELINE_VIEW_HIDE_HELP_POP_OVER","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SUPPRESS_TASKS_FX_REMINDERS","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_PREVIEW_CUSTOM_THEME","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HAS_CELEBRATION_BADGE","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_USER_DEBUG_MODE_PREF","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SRH_OVERRIDE_ACTIVITIES","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_NEWLIGHTNING_REPORT_RUN_PAGE_ENABLED","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_NATIVE_EMAIL_CLIENT","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."INDIVIDUAL_ID","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_IS_VIRTUAL_TRAINER_C","pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LOAD_TSTMP" from "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625" where "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."rowid" IN (  ( select "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."rowid" from "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625" where "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."rowid" NOT IN  (SELECT min("pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."rowid") FROM "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625" GROUP BY "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ID") ) UNION (  select "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."rowid" from "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625" where ( "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ID")  IN  ( SELECT "SDS_USER_PRE"."ID" FROM "SDS_USER_PRE" )  ))]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\W>
+Net_1762
+NA[INFO] Executed query : [INSERT INTO "SDS_USER_PRE"("ID", "NAME", "LAST_NAME", "FIRST_NAME", "MIDDLE_NAME", "SUFFIX", "USER_NAME", "COMPANY_NAME", "DIVISION", "DEPARTMENT", "TITLE", "STREET", "CITY", "STATE", "POSTAL_CODE", "COUNTRY", "LATITUDE", "LONGITUDE", "GEOCODE_ACCURACY", "EMAIL", "EMAIL_PREFERENCES_AUTO_BCC", "EMAIL_PREFERENCES_AUTO_BCC_STAY_IN_TOUCH", "EMAIL_PREFERENCES_STAY_IN_TOUCH_REMINDER", "SENDER_EMAIL", "SENDER_NAME", "SIGNATURE", "STAY_IN_TOUCH_SUBJECT", "STAY_IN_TOUCH_SIGNATURE", "STAY_IN_TOUCH_NOTE", "PHONE", "FAX", "MOBILE_PHONE", "ALIAS", "COMMUNITY_NICK_NAME", "BADGE_TEXT", "IS_ACTIVE", "TIME_ZONES_ID_KEY", "LOCALES_ID_KEY", "RECEIVES_INFO_EMAILS", "RECEIVES_ADMIN_INFO_EMAILS", "EMAIL_ENCODING_KEY", "DEFAULT_CURRENCY_ISO_CODE", "CURRENCY_ISO_CODE", "USER_TYPE", "LANGUAGE_LOCALE_KEY", "EMPLOYEE_NUMBER", "DELEGATED_APPROVER_ID", "MANAGER_ID", "LAST_LOG_IN_DATE", "CREATED_DATE", "CREATED_BY_ID", "LAST_MODIFIED_DATE", "LAST_MODIFIED_BY_ID", "SYSTEM_MOD_STAMP", "OFFLINE_TRIAL_EXPIRATION_DATE", "OFFLINE_PDA_TRIAL_EXPIRATION_DATE", "USER_PERMISSIONS_MARKETING_USER", "USER_PERMISSIONS_OFFLINE_USER", "USER_PERMISSIONS_AVANT_GO_USER", "USER_PERMISSIONS_CALL_CENTER_AUTO_LOGIN", "USER_PERMISSIONS_SF_CONTENT_USER", "USER_PERMISSIONS_KNOWLEDGE_USER", "USER_PERMISSIONS_INTERACTION_USER", "USER_PERMISSIONS_SUPPORT_USER", "FORECAST_ENABLED", "USER_PREFERENCES_ACTIVITY_REMINDERS_POPUP", "USER_PREFERENCES_EVENT_REMINDERS_CHECKBOX_DEFAULT", "USER_PREFERENCES_TASK_REMINDERS_CHECKBOX_DEFAULT", "USER_PREFERENCES_REMINDER_SOUND_OFF", "USER_PREFERENCES_DISABLE_ALL_FEEDS_EMAIL", "USER_PREFERENCES_DISABLE_FOLLOWERS_EMAIL", "USER_PREFERENCES_DISABLE_PROFILE_POST_EMAIL", "USER_PREFERENCES_DISABLE_CHANGE_COMMENT_EMAIL", "USER_PREFERENCES_DISABLE_LATER_COMMENT_EMAIL", "USER_PREFERENCES_DIS_PROF_POST_COMMENT_EMAIL", "USER_PREFERENCES_HIDE_CSN_GET_CHATTER_MOBILE_TASK", "USER_PREFERENCES_DISABLE_MENTIONS_POST_EMAIL", "USER_PREFERENCES_DIS_MENTIONS_COMMENT_EMAIL", "USER_PREFERENCES_HIDE_CSN_DESKTOP_TASK", "USER_PREFERENCES_HIDE_CHATTER_ON_BOARDING_SPLASH", "USER_PREFERENCES_HIDE_SECOND_CHATTER_ON_BOARDING_SPLASH", "USER_PREFERENCES_DIS_COMMENT_AFTER_LIKE_EMAIL", "USER_PREFERENCES_DISABLE_LIKE_EMAIL", "USER_PREFERENCES_SORT_FEED_BY_COMMENT", "USER_PREFERENCES_DISABLE_MESSAGE_EMAIL", "USER_PREFERENCES_DISABLE_BOOKMARK_EMAIL", "USER_PREFERENCES_DISABLE_SHARE_POST_EMAIL", "USER_PREFERENCES_ENABLE_AUTO_SUB_FOR_FEEDS", "USER_PREFERENCES_DISABLE_FILE_SHARE_NOTIFICATIONS_FOR_API", "USER_PREFERENCES_SHOW_TITLE_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_MANAGER_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_EMAIL_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_WORK_PHONE_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_FAX_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_CITY_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_STATE_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_POSTAL_CODE_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_COUNTRY_TO_EXTERNAL_USERS", "USER_PREFERENCES_SHOW_PROFILE_PIC_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_TITLE_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_CITY_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_STATE_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_POSTAL_CODE_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_COUNTRY_TO_GUEST_USERS", "USER_PREFERENCES_HIDES1_BROWSER_UI", "USER_PREFERENCES_DISABLE_ENDORSEMENT_EMAIL", "USER_PREFERENCES_PATH_ASSISTANT_COLLAPSED", "USER_PREFERENCES_CACHE_DIAGNOSTICS", "USER_PREFERENCES_SHOW_EMAIL_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_MANAGER_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_WORK_PHONE_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_FAX_TO_GUEST_USERS", "USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_GUEST_USERS", "USER_PREFERENCES_LIGHTNING_EXPERIENCE_PREFERRED", "USER_PREFERENCES_HIDE_END_USER_ONBOARDING_ASSISTANT_MODAL", "USER_PREFERENCES_HIDE_LIGHTNING_MIGRATION_MODAL", "USER_PREFERENCES_HIDE_SFX_WELCOME_MAT", "USER_PREFERENCES_HIDE_BIGGER_PHOTO_CALLOUT", "USER_PREFERENCES_GLOBAL_NAV_BAR_WT_SHOWN", "USER_PREFERENCES_GLOBAL_NAV_GRID_MENU_WT_SHOWN", "USER_PREFERENCES_CREATE_LEX_APPS_WT_SHOWN", "USER_PREFERENCES_FAVORITES_WT_SHOWN", "USER_PREFERENCES_RECORD_HOME_SECTION_COLLAPSE_WT_SHOWN", "USER_PREFERENCES_RECORD_HOME_RESERVED_WT_SHOWN", "USER_PREFERENCES_FAVORITE_SHOW_TOP_FAVORITES", "USER_PREFERENCES_EXCLUDE_MAIL_APP_ATTACHMENTS", "CONTACT_ID", "ACCOUNT_ID", "CALL_CENTER_ID", "EXTENSION", "FEDERATION_IDENTIFIER", "ABOUT_ME", "FULL_PHOTO_URL", "SMALL_PHOTO_URL", "IS_EXT_INDICATOR_VISIBLE", "OUT_OF_OFFICE_MESSAGE", "MEDIUM_PHOTO_URL", "DIGEST_FREQUENCY", "DEFAULT_GROUP_NOTIFICATION_FREQUENCY", "LAST_VIEWED_DATE", "LAST_REFERENCED_DATE", "BANNER_PHOTO_URL", "SMALL_BANNER_PHOTO_URL", "MEDIUM_BANNER_PHOTO_URL", "IS_PROFILE_PHOTO_ACTIVE", "PSVC_HOME_STORE_C", "PSVC_JOB_CODE_C", "PSVC_CHANNEL_C", "PSVC_ASSOCIATE_EMAIL_C", "PSVC_ASSOCIATE_PHONE_C", "PSVC_ASSOCIATE_DISPLAY_NAME_C", "PSVC_ASSOCIATE_PREFERRED_NAME_C", "PSVC_ASSOCIATE_ID_C", "PSVC_EMPLOYEE_GROUP_C", "PSVC_IS_ONLINE_INTEGRATION_C", "PSVC_SCHEDULABLE_C", "USER_PREFERENCES_PIPELINE_VIEW_HIDE_HELP_POP_OVER", "USER_PREFERENCES_SUPPRESS_TASKS_FX_REMINDERS", "USER_PREFERENCES_PREVIEW_CUSTOM_THEME", "USER_PREFERENCES_HAS_CELEBRATION_BADGE", "USER_PREFERENCES_USER_DEBUG_MODE_PREF", "USER_PREFERENCES_SRH_OVERRIDE_ACTIVITIES", "USER_PREFERENCES_NEWLIGHTNING_REPORT_RUN_PAGE_ENABLED", "USER_PREFERENCES_NATIVE_EMAIL_CLIENT", "INDIVIDUAL_ID", "PSVC_IS_VIRTUAL_TRAINER_C", "LOAD_TSTMP") SELECT "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ID" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."NAME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_NAME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FIRST_NAME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MIDDLE_NAME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SUFFIX" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_NAME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."COMPANY_NAME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DIVISION" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DEPARTMENT" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."TITLE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STREET" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CITY" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STATE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."POSTAL_CODE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."COUNTRY" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LATITUDE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LONGITUDE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."GEOCODE_ACCURACY" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL_PREFERENCES_AUTO_BCC" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL_PREFERENCES_AUTO_BCC_STAY_IN_TOUCH" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL_PREFERENCES_STAY_IN_TOUCH_REMINDER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SENDER_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SENDER_NAME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SIGNATURE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STAY_IN_TOUCH_SUBJECT" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STAY_IN_TOUCH_SIGNATURE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."STAY_IN_TOUCH_NOTE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PHONE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FAX" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MOBILE_PHONE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ALIAS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."COMMUNITY_NICK_NAME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."BADGE_TEXT" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."IS_ACTIVE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."TIME_ZONES_ID_KEY" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LOCALES_ID_KEY" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."RECEIVES_INFO_EMAILS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."RECEIVES_ADMIN_INFO_EMAILS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMAIL_ENCODING_KEY" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DEFAULT_CURRENCY_ISO_CODE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CURRENCY_ISO_CODE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_TYPE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LANGUAGE_LOCALE_KEY" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EMPLOYEE_NUMBER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DELEGATED_APPROVER_ID" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MANAGER_ID" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_LOG_IN_DATE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CREATED_DATE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CREATED_BY_ID" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_MODIFIED_DATE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_MODIFIED_BY_ID" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SYSTEM_MOD_STAMP" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."OFFLINE_TRIAL_EXPIRATION_DATE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."OFFLINE_PDA_TRIAL_EXPIRATION_DATE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_MARKETING_USER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_OFFLINE_USER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_AVANT_GO_USER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_CALL_CENTER_AUTO_LOGIN" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_SF_CONTENT_USER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_KNOWLEDGE_USER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_INTERACTION_USER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PERMISSIONS_SUPPORT_USER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FORECAST_ENABLED" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_ACTIVITY_REMINDERS_POPUP" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_EVENT_REMINDERS_CHECKBOX_DEFAULT" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_TASK_REMINDERS_CHECKBOX_DEFAULT" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_REMINDER_SOUND_OFF" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_ALL_FEEDS_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_FOLLOWERS_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_PROFILE_POST_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_CHANGE_COMMENT_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_LATER_COMMENT_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DIS_PROF_POST_COMMENT_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_CSN_GET_CHATTER_MOBILE_TASK" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_MENTIONS_POST_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DIS_MENTIONS_COMMENT_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_CSN_DESKTOP_TASK" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_CHATTER_ON_BOARDING_SPLASH" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_SECOND_CHATTER_ON_BOARDING_SPLASH" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DIS_COMMENT_AFTER_LIKE_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_LIKE_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SORT_FEED_BY_COMMENT" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_MESSAGE_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_BOOKMARK_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_SHARE_POST_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_ENABLE_AUTO_SUB_FOR_FEEDS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_FILE_SHARE_NOTIFICATIONS_FOR_API" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_TITLE_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_MANAGER_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_EMAIL_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_WORK_PHONE_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_FAX_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_CITY_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_STATE_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_POSTAL_CODE_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_COUNTRY_TO_EXTERNAL_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_PROFILE_PIC_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_TITLE_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_CITY_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_STATE_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_POSTAL_CODE_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_COUNTRY_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDES1_BROWSER_UI" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_DISABLE_ENDORSEMENT_EMAIL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_PATH_ASSISTANT_COLLAPSED" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_CACHE_DIAGNOSTICS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_EMAIL_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_MANAGER_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_WORK_PHONE_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_MOBILE_PHONE_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_FAX_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SHOW_STREET_ADDRESS_TO_GUEST_USERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_LIGHTNING_EXPERIENCE_PREFERRED" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_END_USER_ONBOARDING_ASSISTANT_MODAL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_LIGHTNING_MIGRATION_MODAL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_SFX_WELCOME_MAT" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HIDE_BIGGER_PHOTO_CALLOUT" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_GLOBAL_NAV_BAR_WT_SHOWN" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_GLOBAL_NAV_GRID_MENU_WT_SHOWN" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_CREATE_LEX_APPS_WT_SHOWN" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_FAVORITES_WT_SHOWN" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_RECORD_HOME_SECTION_COLLAPSE_WT_SHOWN" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_RECORD_HOME_RESERVED_WT_SHOWN" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_FAVORITE_SHOW_TOP_FAVORITES" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_EXCLUDE_MAIL_APP_ATTACHMENTS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CONTACT_ID" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ACCOUNT_ID" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."CALL_CENTER_ID" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."EXTENSION" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FEDERATION_IDENTIFIER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ABOUT_ME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."FULL_PHOTO_URL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SMALL_PHOTO_URL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."IS_EXT_INDICATOR_VISIBLE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."OUT_OF_OFFICE_MESSAGE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MEDIUM_PHOTO_URL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DIGEST_FREQUENCY" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."DEFAULT_GROUP_NOTIFICATION_FREQUENCY" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_VIEWED_DATE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LAST_REFERENCED_DATE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."BANNER_PHOTO_URL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."SMALL_BANNER_PHOTO_URL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."MEDIUM_BANNER_PHOTO_URL" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."IS_PROFILE_PHOTO_ACTIVE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_HOME_STORE_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_JOB_CODE_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_CHANNEL_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_EMAIL_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_PHONE_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_DISPLAY_NAME_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_PREFERRED_NAME_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_ASSOCIATE_ID_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_EMPLOYEE_GROUP_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_IS_ONLINE_INTEGRATION_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_SCHEDULABLE_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_PIPELINE_VIEW_HIDE_HELP_POP_OVER" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SUPPRESS_TASKS_FX_REMINDERS" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_PREVIEW_CUSTOM_THEME" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_HAS_CELEBRATION_BADGE" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_USER_DEBUG_MODE_PREF" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_SRH_OVERRIDE_ACTIVITIES" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_NEWLIGHTNING_REPORT_RUN_PAGE_ENABLED" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."USER_PREFERENCES_NATIVE_EMAIL_CLIENT" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."INDIVIDUAL_ID" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."PSVC_IS_VIRTUAL_TRAINER_C" , "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."LOAD_TSTMP" FROM "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625" WHERE  ( "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ID")  NOT IN  ( SELECT "SDS_USER_PRE"."ID" FROM "SDS_USER_PRE" )  AND "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."rowid" IN  (SELECT min("pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."rowid") FROM "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625" GROUP BY "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"."ID")]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+U[INFO] Executed query : [DROP TABLE "pcn_temp_Shortcut_to_USER_PRE_14156_1689924625"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+P[INFO] Executed query : [DROP TABLE "pcn_ext_SDS_USER_PRE_14156_0_0_1689924660"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X-
+Net_1762
+F[INFO] The Integration Service successfully committed the transaction.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X-
+Net_1762
+2[INFO] Deinitializing Target = [0] Partition = [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X.
+Net_1762
+,[INFO] Number of rows marked as Insert [232]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X.
+Net_1762
+*[INFO] Number of rows marked as Delete [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X.
+Net_1762
+*[INFO] Number of rows marked as Update [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X/
+Net_1762
+[INFO] 
+NETEZZA TEMP TABLE LOAD SUMMARY
+===============================
+TempTable: [pcn_temp_Shortcut_to_USER_PRE_14156_1689924625]: Partition [1] (Target Instance Name: [[Shortcut_to_USER_PRE]])  
+Number of Rows processed by this partition and loaded in to the Temp Table: 232
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X0
+WRT_8035
+Load complete time: Fri Jul 21 00:31:27 2023
+LOAD SUMMARY
+============
+WRT_8036 Target: SDS_USER_PRE: Partition 1 (Instance Name: [Shortcut_to_USER_PRE])
+WRT_8038 Inserted rows - Requested: 232        Applied: 232        Rejected: 0          Affected: 232       
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X0
+WRT_8043
+*****END LOAD SESSION*****
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X1
+WRT_8006
+Writer run completed.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\X4
+PETL_24031
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [SQ_Shortcut_to_User] has completed.
+Total Run Time = [11.882727] secs
+Total Idle Time = [0.000000] secs
+Busy Percentage = [100.000000]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [SQ_Shortcut_to_User] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Shortcut_to_USER_PRE] has completed.
+Total Run Time = [12.830776] secs
+Total Idle Time = [0.054003] secs
+Busy Percentage = [99.579115]
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24005
+DPETL_24005 Starting post-session tasks. : (Fri Jul 21 00:31:28 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+"Thread [POST-SESS] has the ID [8].
+POST-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24029
+QPETL_24029 Post-session task completed successfully. : (Fri Jul 21 00:31:28 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38510
+3SDK target and group deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 405050 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38019
+2Writer SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 310600 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38018
+2Reader SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6018
+:The session completed with [0] row transformation errors. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\\Q
+PETL_24002
+"Parallel Pipeline Engine finished.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24012
+#Session run completed successfully.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6022
+SESSION LOAD SUMMARY
+================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6252
+Source Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SQ_Shortcut_to_User] (Instance Name: [SQ_Shortcut_to_User])
+ Output Rows [232], Affected Rows [232], Applied Rows [232], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6253
+Target Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SDS_USER_PRE] (Instance Name: [Shortcut_to_USER_PRE])
+ Output Rows [232], Affected Rows [232], Applied Rows [232], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6023
+===================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6020
+ASession [s_sds_user_pre] completed at [Fri Jul 21 00:31:29 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w\];
+CMN_1803
+"Files removed from recovery cache.
+DIRECTOR

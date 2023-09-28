@@ -1,0 +1,539 @@
+8.1.0
+?http://www.informatica.com/pcsf/logservice:LogCallContext:1.0.2
+IS_GRID_ASCII
+node02_DRT-ETLAPP-P02
+DM_ETL_PROD101
+RS_PROD_INFA101
+BA_Services
+wf_Prism_Daily
+wl_sds_pre
+s_sds_outgoing_message_c_pre
+168693
+23333345
+23333346
+95949
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+VAR_27028
+]Use override value [YESTERDAY] for user-defined workflow/worklet variable:[$$DeltaTimeframe].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6014
+RInitializing session [s_sds_outgoing_message_c_pre] at [Fri Jul 21 00:33:51 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6683
+"Repository Name: [RS_PROD_INFA101]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6684
+Server Name: [IS_GRID_ASCII]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6686
+Folder: [BA_Services]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6685
+CWorkflow: [wf_Prism_Daily] Run Instance Name: [] Run Id: [23333345]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6992
+Operating System Type [NT]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6101
+8Mapping name: m_sds_outgoing_message_c_pre [version 13].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6964
+9Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6827
+[D:\etlsw\Informatica\10.4.1\server\infa_shared\Storage] will be used as storage directory for session [s_sds_outgoing_message_c_pre].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1802
+2Session recovery cache initialization is complete.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+6Using configuration property [EnableDataEncryption,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+8Using configuration property [StoreHAPersistenceInDB,no]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+@Using configuration property [MasterDTMListenOnAllInterface,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [NetezzaLoginTimeout,60]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+5Using configuration property [RunCmdInNewConsole,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+NUsing configuration property [SMTPFromAddress,ETL_PRODUCTION@ssg.petsmart.com]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+0Using configuration property [SMTPPortNumber,25]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [SMTPServerAddress,SSGEXCHANGE]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+3Using configuration property [SMTPServerTimeout,30]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+<Using configuration property [syncNetezzanullwithPCNull,Yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+=Using configuration property [TransferLogFileBlockSize,32768]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+:Using configuration property [treatNoDataAsEmptyString,No]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+CUsing configuration property [netezzaDisableUseridAsSchemaName,yes]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6708
+>Using configuration property [SalesForceConnectionTimeout,120]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6703
+Session [s_sds_outgoing_message_c_pre] is run by 64-bit Integration Service  [node02_DRT-ETLAPP-P02], version [10.4.1], build [0614].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MANAGER] has the ID [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24058
+Running Partition Group [1].
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24000
+&Parallel Pipeline Engine initializing.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MONITOR] has the ID [2].
+MONITOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24001
+!Parallel Pipeline Engine running.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24003
+Initializing session run.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+ Thread [MAPPING] has the ID [3].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1569
+Server Mode: [ASCII]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1570
+AServer Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6151
+#The session sort order is [Binary].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65111
+Current Timezone:[UTC -7:0]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_65112
+Current Process ID:[10820]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6156
+Using low precision processing.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6180
+-Deadlock retry logic will not be implemented.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6187
+0Session target-based commit interval is [10000].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42020
+P[INFO] Loaded library : D:\etlsw\Informatica\10.4.1\java\jre\bin\server\jvm.dll.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PMJVM_42009
+$[INFO] Created Java VM successfully.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38029
+=Loaded plug-in 310600: [PowerExchange for Salesforce 10.4.1].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38024
+'Plug-in 310600 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38016
++Reader SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38024
+'Plug-in 405050 initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38017
++Writer SDK plug-in initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38509
+-SDK target and group initialization complete.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6307
+DTM error log disabled. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TE_7022
+TShmWriter: Initialized
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6007
+GDTM initialized successfully for session [s_sds_outgoing_message_c_pre]
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24033
+"All DTM Connection Info: [<NONE>].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24004
+CPETL_24004 Starting pre-session tasks. : (Fri Jul 21 00:33:52 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+!Thread [PRE-SESS] has the ID [4].
+PRE-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24027
+PPETL_24027 Pre-session task completed successfully. : (Fri Jul 21 00:33:52 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24006
+Starting data movement.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6660
+ITotal Buffer Pool size is 37788736 bytes and Block size is 2097152 bytes.
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10057
+ [INFO] No proxy information set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceConnection_10048
+[INFO] Account[svc-informatica@petsmart.com] logged on salesforce.com at [https://prism-petsmart.my.salesforce.com/services/Soap/u/41.0].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10060
+d[INFO] 'Enable Bulk Query' option is set. Reader will use BULK mode to read the data from Salesforce
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10064
+.[INFO] 'Enable PK Chunking' option is not set.
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [TRANSF_1_1_1] has the ID [6].
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24091
+%Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+V[INFO] Initializing Target [0] ([SDS_OUTGOING_MESSAGE_C_PRE]) Group [0] Partition [0].
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+C[INFO] Connection Info:  DSN=[NZ_SDS_STAGE], User name=[srvsloader]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Connection successfully established
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+F[INFO] Executed query : [TRUNCATE TABLE  "SDS_OUTGOING_MESSAGE_C_PRE"]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+M[INFO] The Operation Selected [Insert]and Update is set as [Update as Insert]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Auto-commit is disabled.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+ [INFO] Pipe created successfully
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+\[INFO] Stop on errors is set to [1]. Session will fail after encountering [1] bad input rows
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [CREATE TABLE "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832" (  "ID" varchar(18)  NOT NULL, "OWNER_ID" varchar(18), "IS_DELETED" integer, "NAME" varchar(80), "CURRENCY_ISO_CODE" varchar(3), "RECORD_TYPE_ID" varchar(18), "CREATED_DATE" timestamp, "CREATED_BY_ID" varchar(18), "LAST_MODIFIED_DATE" timestamp, "LAST_MODIFIED_BY_ID" varchar(18), "SYSTEM_MOD_STAMP" timestamp, "LAST_VIEWED_DATE" timestamp, "LAST_REFERENCED_DATE" timestamp, "ADDITIONAL_HEADERS_C" varchar(1000), "ALLOWED_TO_RESEND_C" integer, "BODY_C" varchar(20000), "CLASS_NAME_C" varchar(100), "CONTENT_TYPE_C" varchar(255), "FILE_NAME_C" varchar(100), "LAST_TRY_C" timestamp, "MAX_NUM_OF_TRIES_C" numeric(18,0), "MESSAGE_TYPE_C" varchar(255), "METHOD_C" varchar(255), "NEXT_TRY_C" timestamp, "NUMBER_OF_TRIES_C" numeric(18,0), "OBJECT_ID_C" varchar(100), "OBJECT_TYPE_NAME_C" varchar(100), "PARAM1_C" varchar(255), "PARAM2_C" varchar(255), "RESPONSE_BODY_C" varchar(20000), "STATUS_C" varchar(255), "URL_PARAMETERS_C" varchar(20000), "URL_C" varchar(255), "PSVC_SERVICE_APPOINTMENT_C" varchar(18), "PSVC_MESSAGE_LABEL_C" varchar(200), "GROUP_C" varchar(40), "IS_MASTER_C" integer, "PARENT_OUTGOING_MESSAGE_C" varchar(18), "LOAD_TSTMP" timestamp ) DISTRIBUTE ON ("ID")]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [CREATE EXTERNAL TABLE "pcn_ext_SDS_OUTGOING_MESSAGE_C_PRE_10820_0_0_1689924868" SAMEAS "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832" USING (  DATAOBJECT ('\\.\pipe\PCN_PipeWRT10820_0_0_216123_03428')  DELIMITER 124 SOCKETBUFSIZE 8388608 MAXERRORS 1 CTRLCHARS TRUE CRINSTRING TRUE FILLRECORD TRUE  NULLVALUE ''  ESCAPECHAR '/'  REMOTESOURCE 'ODBC' ENCODING 'internal')]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8270
+ZTarget connection group #1 consists of target(s) [SDS_OUTGOING_MESSAGE_C_PRE: Partition 1]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8003
+Writer initialization complete.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8005
+Writer run started.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8158
+*****START LOAD SESSION*****
+Load Start Time: Fri Jul 21 00:34:28 2023
+Target tables:
+     SDS_OUTGOING_MESSAGE_C_PRE: Partition 1
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10045
+[INFO] SOQL is [SELECT Id ,OwnerId ,IsDeleted ,Name ,CurrencyIsoCode ,RecordTypeId ,CreatedDate ,CreatedById ,LastModifiedDate ,LastModifiedById ,SystemModstamp ,LastViewedDate ,LastReferencedDate ,Additional_Headers__c ,Allowed_to_resend__c ,Body__c ,ClassName__c ,Content_Type__c ,File_Name__c ,Last_Try__c ,Max_Num_of_Tries__c ,Message_Type__c ,Method__c ,Next_Try__c ,Number_Of_Tries__c ,Object_Id__c ,Object_Type_Name__c ,Param1__c ,Param2__c ,Response_Body__c ,Status__c ,URL_Parameters__c ,URL__c ,PSVC_Service_Appointment__c ,PSVC_Message_Label__c ,Group__c ,IsMaster__c ,Parent_Outgoing_Message__c 
+ FROM Outgoing_Message__c Where CreatedDate  >= YESTERDAY OR LastModifiedDate  >= YESTERDAY].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10093
+X[INFO] Status of batch [7512K00000iZGPcQAO] of job Id [7502K00000OcHiSQAV]: [Completed].
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SalesforceReader_10132
+[INFO] Salesforce Bulk API Batch Result Details  :: GETQUERYSTREAM : JOBINFO- 7502K00000OcHiSQAV ,BatchInfo- 7512K00000iZGPcQAO ,ResultId - 7522K00000NNKIc
+READER_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+DBG_21216
+eFinished transformations for Source Qualifier [SQ_Shortcut_to_Outgoing_Message__c]. Total errors [0] 
+TRANSF_1_1_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8167
+ZStart loading table [SDS_OUTGOING_MESSAGE_C_PRE: Partition 1] at: Fri Jul 21 00:34:29 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8168
+XEnd loading table [SDS_OUTGOING_MESSAGE_C_PRE: Partition 1] at: Fri Jul 21 00:34:29 2023
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+4[INFO] No data available: Failed to write into pipe.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+@[INFO] Opening Pipe [\\.\pipe\PCN_PipeWRT10820_0_0_216123_03428]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+N[INFO] Opened pipe([\\.\pipe\PCN_PipeWRT10820_0_0_216123_03428]) in write mode
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+B[INFO] Closing pipe ([\\.\pipe\PCN_PipeWRT10820_0_0_216123_03428])
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Closed Pipe
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w_!W
+Net_1762
+[INFO] Executed query : [INSERT INTO "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832" SELECT * FROM "pcn_ext_SDS_OUTGOING_MESSAGE_C_PRE_10820_0_0_1689924868"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+v[INFO] Executed query : [ create EXTERNAL TABLE 'D:\etlsw\Informatica\10.4.1\server\infa_shared\BadFiles\sds_outgoing_message_c_pre.txt' USING (  DELIMITER 124 NULLVALUE ''  ESCAPECHAR '/'  REMOTESOURCE 'ODBC'  ENCODING 'internal' ) AS  select "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ID","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."OWNER_ID","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."IS_DELETED","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."NAME","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CURRENCY_ISO_CODE","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."RECORD_TYPE_ID","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CREATED_DATE","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CREATED_BY_ID","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_MODIFIED_DATE","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_MODIFIED_BY_ID","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."SYSTEM_MOD_STAMP","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_VIEWED_DATE","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_REFERENCED_DATE","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ADDITIONAL_HEADERS_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ALLOWED_TO_RESEND_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."BODY_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CLASS_NAME_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CONTENT_TYPE_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."FILE_NAME_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_TRY_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."MAX_NUM_OF_TRIES_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."MESSAGE_TYPE_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."METHOD_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."NEXT_TRY_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."NUMBER_OF_TRIES_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."OBJECT_ID_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."OBJECT_TYPE_NAME_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PARAM1_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PARAM2_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."RESPONSE_BODY_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."STATUS_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."URL_PARAMETERS_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."URL_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PSVC_SERVICE_APPOINTMENT_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PSVC_MESSAGE_LABEL_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."GROUP_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."IS_MASTER_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PARENT_OUTGOING_MESSAGE_C","pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LOAD_TSTMP" from "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832" where "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."rowid" IN (  ( select "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."rowid" from "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832" where "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."rowid" NOT IN  (SELECT min("pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."rowid") FROM "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832" GROUP BY "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ID") ) UNION (  select "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."rowid" from "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832" where ( "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ID")  IN  ( SELECT "SDS_OUTGOING_MESSAGE_C_PRE"."ID" FROM "SDS_OUTGOING_MESSAGE_C_PRE" )  ))]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+[INFO] Executed query : [INSERT INTO "SDS_OUTGOING_MESSAGE_C_PRE"("ID", "OWNER_ID", "IS_DELETED", "NAME", "CURRENCY_ISO_CODE", "RECORD_TYPE_ID", "CREATED_DATE", "CREATED_BY_ID", "LAST_MODIFIED_DATE", "LAST_MODIFIED_BY_ID", "SYSTEM_MOD_STAMP", "LAST_VIEWED_DATE", "LAST_REFERENCED_DATE", "ADDITIONAL_HEADERS_C", "ALLOWED_TO_RESEND_C", "BODY_C", "CLASS_NAME_C", "CONTENT_TYPE_C", "FILE_NAME_C", "LAST_TRY_C", "MAX_NUM_OF_TRIES_C", "MESSAGE_TYPE_C", "METHOD_C", "NEXT_TRY_C", "NUMBER_OF_TRIES_C", "OBJECT_ID_C", "OBJECT_TYPE_NAME_C", "PARAM1_C", "PARAM2_C", "RESPONSE_BODY_C", "STATUS_C", "URL_PARAMETERS_C", "URL_C", "PSVC_SERVICE_APPOINTMENT_C", "PSVC_MESSAGE_LABEL_C", "GROUP_C", "IS_MASTER_C", "PARENT_OUTGOING_MESSAGE_C", "LOAD_TSTMP") SELECT "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ID" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."OWNER_ID" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."IS_DELETED" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."NAME" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CURRENCY_ISO_CODE" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."RECORD_TYPE_ID" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CREATED_DATE" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CREATED_BY_ID" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_MODIFIED_DATE" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_MODIFIED_BY_ID" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."SYSTEM_MOD_STAMP" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_VIEWED_DATE" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_REFERENCED_DATE" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ADDITIONAL_HEADERS_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ALLOWED_TO_RESEND_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."BODY_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CLASS_NAME_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."CONTENT_TYPE_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."FILE_NAME_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LAST_TRY_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."MAX_NUM_OF_TRIES_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."MESSAGE_TYPE_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."METHOD_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."NEXT_TRY_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."NUMBER_OF_TRIES_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."OBJECT_ID_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."OBJECT_TYPE_NAME_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PARAM1_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PARAM2_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."RESPONSE_BODY_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."STATUS_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."URL_PARAMETERS_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."URL_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PSVC_SERVICE_APPOINTMENT_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PSVC_MESSAGE_LABEL_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."GROUP_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."IS_MASTER_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."PARENT_OUTGOING_MESSAGE_C" , "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."LOAD_TSTMP" FROM "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832" WHERE  ( "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ID")  NOT IN  ( SELECT "SDS_OUTGOING_MESSAGE_C_PRE"."ID" FROM "SDS_OUTGOING_MESSAGE_C_PRE" )  AND "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."rowid" IN  (SELECT min("pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."rowid") FROM "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832" GROUP BY "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"."ID")]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+g[INFO] Executed query : [DROP TABLE "pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+^[INFO] Executed query : [DROP TABLE "pcn_ext_SDS_OUTGOING_MESSAGE_C_PRE_10820_0_0_1689924868"]
+NZ_WRT_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+F[INFO] The Integration Service successfully committed the transaction.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+2[INFO] Deinitializing Target = [0] Partition = [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Insert [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Delete [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+*[INFO] Number of rows marked as Update [0]
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+Net_1762
+;[INFO] 
+NETEZZA TEMP TABLE LOAD SUMMARY
+===============================
+TempTable: [pcn_temp_Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE_10820_1689924832]: Partition [1] (Target Instance Name: [[Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE]])  
+Number of Rows processed by this partition and loaded in to the Temp Table: 0
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8035
+Load complete time: Fri Jul 21 00:34:34 2023
+LOAD SUMMARY
+============
+WRT_8036 Target: SDS_OUTGOING_MESSAGE_C_PRE: Partition 1 (Instance Name: [Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE])
+WRT_8044 No data loaded for this target
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8043
+*****END LOAD SESSION*****
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+WRT_8006
+Writer run completed.
+WRITER_1_*_1
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24031
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [SQ_Shortcut_to_Outgoing_Message__c] has completed.
+Total Run Time = [1.482092] secs
+Total Idle Time = [0.000000] secs
+Busy Percentage = [100.000000]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [SQ_Shortcut_to_Outgoing_Message__c] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE] has completed.
+Total Run Time = [4.462269] secs
+Total Idle Time = [0.000000] secs
+Busy Percentage = [100.000000]
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w_2Q
+PETL_24005
+DPETL_24005 Starting post-session tasks. : (Fri Jul 21 00:34:34 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w_2S
+PETL_24091
+"Thread [POST-SESS] has the ID [8].
+POST-SESS
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24029
+QPETL_24029 Post-session task completed successfully. : (Fri Jul 21 00:34:34 2023)
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38510
+3SDK target and group deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 405050 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38019
+2Writer SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38025
+:Plug-in 310600 deinitialized and unloaded with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+SDKS_38018
+2Reader SDK plug-ins deinitialized with status [0].
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6018
+:The session completed with [0] row transformation errors. 
+MAPPING
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+PETL_24002
+"Parallel Pipeline Engine finished.
+MANAGER
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w_5T
+PETL_24012
+#Session run completed successfully.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6022
+SESSION LOAD SUMMARY
+================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6252
+Source Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SQ_Shortcut_to_Outgoing_Message__c] (Instance Name: [SQ_Shortcut_to_Outgoing_Message__c])
+ Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6253
+Target Load Summary.
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+CMN_1740
+Table: [SDS_OUTGOING_MESSAGE_C_PRE] (Instance Name: [Shortcut_to_SDS_OUTGOING_MESSAGE_C_PRE])
+ Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6023
+===================================================
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+TM_6020
+OSession [s_sds_outgoing_message_c_pre] completed at [Fri Jul 21 00:34:35 2023].
+DIRECTOR
+9http://www.informatica.com/pcsf/logservice:LogEvent:1.0.2
+w_6-
+CMN_1803
+"Files removed from recovery cache.
+DIRECTOR

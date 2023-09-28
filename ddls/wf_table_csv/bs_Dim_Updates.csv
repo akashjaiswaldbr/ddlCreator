@@ -1,0 +1,17 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+bs_Dim_Updates,SITE_PROFILE,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,SITE_PROFILE_RPT,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,SKU_PROFILE,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,SKU_PROFILE_RPT,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,PRODUCT,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,LOC_HIER_LVL,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,DISTRICT,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,REGION,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,INVENTORY_PRE,EDW_PRD,raw,no,raw
+bs_Dim_Updates,PLANOGRAM_PRO,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,POG_STORE_PRO,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,SALES_DAY_SKU_STORE,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,SITE_PROFILE,EDW_PRD,legacy,no,legacy
+bs_Dim_Updates,STX_GFTCRD_PRE,EDW_PRD,raw,no,raw
+bs_Dim_Updates,STX_UPC_PRE,EDW_PRD,raw,no,raw
+bs_Dim_Updates,UPC,EDW_PRD,legacy,no,legacy

@@ -1,0 +1,8 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+bs_Demand_Planning_Day,DP_SITE_VEND_PROFILE,EDW_PRD,legacy,no,legacy
+bs_Demand_Planning_Day,SAP_SKU_LINK_TYPE,EDW_PRD,legacy,no,legacy
+bs_Demand_Planning_Day,DP_SKU_LINK,EDW_PRD,legacy,no,legacy
+bs_Demand_Planning_Day,SITE_PROFILE,EDW_PRD,legacy,no,legacy
+bs_Demand_Planning_Day,SKU_PROFILE,EDW_PRD,legacy,no,legacy
+bs_Demand_Planning_Day,DP_SITE_VEND_PRE,EDW_PRD,raw,no,raw
+bs_Demand_Planning_Day,DP_SKU_LINK_PRE,EDW_PRD,raw,no,raw

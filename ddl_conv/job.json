@@ -1,0 +1,2850 @@
+{
+    "task_key": "s_WM_Ilm_Task_Status",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Ilm_Task_Status.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+},{
+    "task_key": "s_WM_Ilm_Yard_Activity",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Ilm_Yard_Activity.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Item_Cbo",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Item_Cbo.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Item_Facility_Mapping_Wms",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Item_Facility_Mapping_Wms.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Item_Facility_Slotting",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Item_Facility_Slotting.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Item_Group_Wms",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Item_Group_Wms.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Item_Package_Cbo",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Item_Package_Cbo.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Item_Wms",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Item_Wms.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Labor_Activity",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Labor_Activity.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Labor_Criteria",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Labor_Criteria.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Labor_Msg",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Labor_Msg.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Labor_Msg_Crit",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Labor_Msg_Crit.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Labor_Msg_Dtl",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Labor_Msg_Dtl.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Labor_Msg_Dtl_Crit",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Labor_Msg_Dtl_Crit.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Labor_Tran_Dtl_Crit",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Labor_Tran_Dtl_Crit.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Locn_Grp",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Locn_Grp.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Locn_Hdr",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Locn_Hdr.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Lpn",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Lpn.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Lpn_Audit_Results",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Lpn_Audit_Results.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Lpn_Detail",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Lpn_Detail.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Lpn_Facility_Status",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Lpn_Facility_Status.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Lpn_Lock",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Lpn_Lock.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Lpn_Size_Type",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Lpn_Size_Type.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Lpn_Status",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Lpn_Status.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Lpn_Type",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Lpn_Type.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Order_Line_Item",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Order_Line_Item.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Order_Status",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Order_Status.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Orders",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Orders.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Outpt_Lpn",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Outpt_Lpn.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Outpt_Lpn_Detail",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Outpt_Lpn_Detail.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Outpt_Order_Line_Item",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Outpt_Order_Line_Item.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Outpt_Orders",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Outpt_Orders.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Pick_Locn_Dtl",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Pick_Locn_Dtl.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Pick_Locn_Dtl_Slotting",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Pick_Locn_Dtl_Slotting.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Pick_Locn_Hdr",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Pick_Locn_Hdr.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_Pick_Locn_Hdr_Slotting",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_Pick_Locn_Hdr_Slotting.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}{
+    "task_key": "s_WM_",
+    "depends_on": [
+        {
+            "task_key": "DC_38_PRE_set1"
+        },
+        {
+            "task_key": "DC_38_PRE_set2"
+        },
+        {
+            "task_key": "DC_22_PRE_set1"
+        },
+        {
+            "task_key": "DC_22_PRE_set2"
+        },
+        {
+            "task_key": "DC_36_PRE_set1"
+        },
+        {
+            "task_key": "DC_36_PRE_set2"
+        },
+        {
+            "task_key": "DC_14_PRE_set1"
+        },
+        {
+            "task_key": "DC_14_PRE_set2"
+        },
+        {
+            "task_key": "DC_41_PRE_set1"
+        },
+        {
+            "task_key": "DC_41_PRE_set2"
+        },
+        {
+            "task_key": "DC_12_PRE_set1"
+        },
+        {
+            "task_key": "DC_12_PRE_set2"
+        },
+        {
+            "task_key": "DC_10_PRE_set1"
+        },
+        {
+            "task_key": "DC_10_PRE_set2"
+        }
+    ],
+    "spark_python_task": {
+        "python_file": "Datalake/WMS/WMS_TO_SCDS_DAILY/notebooks/m_WM_.py",
+        "parameters": [
+            "qa"
+        ],
+        "source": "GIT"
+    },
+    "job_cluster_key": "wms_to_scds_daily_cluster",
+    "libraries": [
+        {
+            "maven": {
+                "coordinates": "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+            }
+        },
+        {
+            "pypi": {
+                "package": "deepdiff"
+            }
+        }
+    ],
+    "max_retries": 3,
+    "min_retry_interval_millis": 2000,
+    "retry_on_timeout": false,
+    "timeout_seconds": 86400,
+    "email_notifications": {},
+    "notification_settings": {
+        "no_alert_for_skipped_runs": false,
+        "no_alert_for_canceled_runs": false,
+        "alert_on_last_attempt": false
+    },
+    "description": ""
+}

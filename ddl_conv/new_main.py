@@ -30,7 +30,7 @@ def main():
     # environment_list = args.environment.split(",")
     env_list = ['dev'] # ['dev', 'qa', 'prod']
     with open(
-            "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddls/table_to_bucket_mapping/table_bucket_list_mapping.csv",
+            "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/table_to_bucket_mapping/table_bucket_list_mapping.csv",
             mode='r') as table_bucket_mapping_file:
         table_bucket_reader = csv.DictReader(table_bucket_mapping_file)
         table_bucket_mapping = {}
@@ -43,13 +43,12 @@ def main():
     non_exiting_tables = []
     for env in env_list:
         with open(
-                "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddls/wf_table_csv/" + args.wf_name + ".csv",
+                "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/wf_table_csv/" + args.wf_name + ".csv",
                 mode='r') as csv_file:
             csv_reader = csv.DictReader(csv_file)
             for row in csv_reader:
                 # filename = "/Users/pooja.shekhar/Documents/Petsmart/ddl_convertor-main/ddls/nz_ddl/"+row["nz_database"]+"_TABLE_DDL.txt"\\
-                filename = "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddls/nz_ddl/" + row[
-                    "nz_database"] + "_TABLE_DDL.txt"
+                filename = "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/lib/allDDLs/merged_output.txt"
                 #print(row['table_name']+"????")
                 with open(filename, 'r') as f:
                     ddl = f.read()
@@ -89,7 +88,7 @@ def main():
                                    # print(converted_line)
 
                                     with open(
-                                            "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddls/workflows/" + str(
+                                            "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflows/" + str(
                                                 env) + "_" +
                                             str(args.wf_name) + ".txt", "a") as text_file:
                                         ddl = re.sub(r"\(\n\,", "(", converted_line)

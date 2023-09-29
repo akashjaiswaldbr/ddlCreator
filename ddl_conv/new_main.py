@@ -48,7 +48,7 @@ def main():
             csv_reader = csv.DictReader(csv_file)
             for row in csv_reader:
                 # filename = "/Users/pooja.shekhar/Documents/Petsmart/ddl_convertor-main/ddls/nz_ddl/"+row["nz_database"]+"_TABLE_DDL.txt"\\
-                filename = "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/lib/allDDLs/merged_output.txt"
+                filename = "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/lib/allDDLs/distinct_ddl.sql"
                 #print(row['table_name']+"????")
                 with open(filename, 'r') as f:
                     ddl = f.read()

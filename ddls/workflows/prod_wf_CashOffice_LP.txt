@@ -6,9 +6,10 @@
 --*****  Creating table:  "SITE_PROFILE" , ***** Creating table: "SITE_PROFILE"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE SITE_PROFILE 
-(  LOCATION_ID INT not null
+(
+ LOCATION_ID INT not null
 
 , LOCATION_TYPE_ID TINYINT
 
@@ -227,7 +228,8 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/site_profile';
 
 use empl_sensitive;
  CREATE TABLE legacy_EMPLOYEE_PROFILE 
-(  EMPLOYEE_ID INT not null
+(
+ EMPLOYEE_ID INT not null
 
 , EMPL_FIRST_NAME                             STRING 
 
@@ -372,9 +374,10 @@ LOCATION 'gs://petm-bdpl-prod-empl-sensitive-nzlegacy-p1-gcs-gbl/BA_Financials/e
 --*****  Creating table:  "CO_DEPOSIT" , ***** Creating table: "CO_DEPOSIT"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE CO_DEPOSIT 
-(  SALES_DT                                  TIMESTAMP                            not null
+(
+ SALES_DT                                  TIMESTAMP                            not null
 
 , SITE_NBR SMALLINT not null
 
@@ -411,9 +414,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/co_deposit';
 --*****  Creating table:  "CO_HEADER" , ***** Creating table: "CO_HEADER"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE CO_HEADER 
-(  SALES_DT                                  TIMESTAMP                            not null
+(
+ SALES_DT                                  TIMESTAMP                            not null
 
 , SITE_NBR SMALLINT not null
 
@@ -438,9 +442,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/co_header';
 --*****  Creating table:  "CO_VARIANCE" , ***** Creating table: "CO_VARIANCE"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE CO_VARIANCE 
-(  SALES_DT                                  TIMESTAMP                            not null
+(
+ SALES_DT                                  TIMESTAMP                            not null
 
 , SITE_NBR SMALLINT not null
 
@@ -471,9 +476,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/co_variance';
 --*****  Creating table:  "CO_TENDER_TOTAL" , ***** Creating table: "CO_TENDER_TOTAL"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE CO_TENDER_TOTAL 
-(  SALES_DT                                  TIMESTAMP                            not null
+(
+ SALES_DT                                  TIMESTAMP                            not null
 
 , SITE_NBR SMALLINT not null
 
@@ -502,9 +508,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/co_tender_total'
 --*****  Creating table:  "LP_TENDER_VAR_DAY" , ***** Creating table: "LP_TENDER_VAR_DAY"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE LP_TENDER_VAR_DAY 
-(  DAY_DT        TIMESTAMP                            not null
+(
+ DAY_DT        TIMESTAMP                            not null
 
 , LOCATION_ID INT not null
 
@@ -529,9 +536,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/lp_tender_var_da
 --*****  Creating table:  "LP_TENDER_DAY" , ***** Creating table: "LP_TENDER_DAY"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE LP_TENDER_DAY 
-(  DAY_DT        TIMESTAMP                            not null
+(
+ DAY_DT        TIMESTAMP                            not null
 
 , LOCATION_ID INT not null
 
@@ -556,9 +564,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/lp_tender_day';
 --*****  Creating table:  "LP_EMPL_UNKNOWN" , ***** Creating table: "LP_EMPL_UNKNOWN"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE LP_EMPL_UNKNOWN 
-(  EMPLOYEE_ID INT not null
+(
+ EMPLOYEE_ID INT not null
 
 , LOCATION_ID INT
 
@@ -583,9 +592,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/lp_empl_unknown'
 --*****  Creating table:  "CO_DEPOSIT_PRE" , ***** Creating table: "CO_DEPOSIT_PRE"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE CO_DEPOSIT_PRE 
-(  SALES_DT                                  TIMESTAMP                            not null
+(
+ SALES_DT                                  TIMESTAMP                            not null
 
 , SITE_NBR SMALLINT not null
 
@@ -622,9 +632,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/co_deposit_pre';
 --*****  Creating table:  "CO_HEADER_PRE" , ***** Creating table: "CO_HEADER_PRE"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE CO_HEADER_PRE 
-(  SALES_DT                                  TIMESTAMP                            not null
+(
+ SALES_DT                                  TIMESTAMP                            not null
 
 , SITE_NBR SMALLINT not null
 
@@ -649,9 +660,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/co_header_pre';
 --*****  Creating table:  "CO_VARIANCE_PRE" , ***** Creating table: "CO_VARIANCE_PRE"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE CO_VARIANCE_PRE 
-(  SALES_DT                                  TIMESTAMP                            not null
+(
+ SALES_DT                                  TIMESTAMP                            not null
 
 , SITE_NBR SMALLINT not null
 
@@ -665,7 +677,7 @@ use prod_legacy;
 
 , VARIANCE_AMT                              DECIMAL(10,2) 
 
-, LOAD_TSTMP                                TIMESTAMP                           
+, LOAD_TSTMP                                TIMESTAMP                            
 
 )
 USING delta 
@@ -682,9 +694,10 @@ LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Financials/co_variance_pre'
 --*****  Creating table:  "CO_TENDER_TOTAL_PRE" , ***** Creating table: "CO_TENDER_TOTAL_PRE"
 
 
-use prod_legacy;
+use legacy;
  CREATE TABLE CO_TENDER_TOTAL_PRE 
-(  SALES_DT                                  TIMESTAMP                            not null
+(
+ SALES_DT                                  TIMESTAMP                            not null
 
 , SITE_NBR SMALLINT not null
 

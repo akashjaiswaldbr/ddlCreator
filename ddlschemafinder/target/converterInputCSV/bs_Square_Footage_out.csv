@@ -1,0 +1,4 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+bs_Square_Footage,LOCATION,distinct_ddl,legacy,no,legacy
+bs_Square_Footage,STORE_AREA_PRE,distinct_ddl,raw,no,raw
+bs_Square_Footage,LOCATION_AREA,distinct_ddl,legacy,no,legacy

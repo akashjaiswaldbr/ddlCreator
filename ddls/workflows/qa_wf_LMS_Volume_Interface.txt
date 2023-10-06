@@ -1,0 +1,864 @@
+
+
+
+
+
+--*****  Creating table:  "LMS_CATEGORY_REF" , ***** Creating table: "LMS_CATEGORY_REF"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_CATEGORY_REF 
+(
+ SAP_CATEGORY_ID INT not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_category_ref';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_FOLIO_STATUS_REF" , ***** Creating table: "LMS_FOLIO_STATUS_REF"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_FOLIO_STATUS_REF 
+(
+ FOLIO_STATUS_FLAG                                 STRING                 not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_folio_status_ref';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_ITEMS_SOLD" , ***** Creating table: "LMS_ITEMS_SOLD"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_ITEMS_SOLD 
+(
+ POS_LABEL_ID BIGINT not null
+
+, PRODUCT_ID INT not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_items_sold';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_ITEMS_SOLD_LU" , ***** Creating table: "LMS_ITEMS_SOLD_LU"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_ITEMS_SOLD_LU 
+(
+ POS_LABEL_ID BIGINT not null
+
+, POS_LABEL_DESC                                    STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_items_sold_lu';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_LIVE_ITEM_LU" , ***** Creating table: "LMS_LIVE_ITEM_LU"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_LIVE_ITEM_LU 
+(
+ LIVE_ITEM_ID BIGINT not null
+
+, LIVE_ITEM_DESC                                    STRING 
+
+, LOCATION_ID INT not null
+
+, STORE_NBR INT not null
+
+, SUN BIGINT
+
+, MON BIGINT
+
+, TUE BIGINT
+
+, WED BIGINT
+
+, THU BIGINT
+
+, FRI BIGINT
+
+, SAT BIGINT
+
+, SYS_LOAD_DT                                       TIMESTAMP 
+
+, USER_CHANGE_DT                                    TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_live_item_lu';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_LIVEITEM_POSSALES" , ***** Creating table: "LMS_LIVEITEM_POSSALES"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_LIVEITEM_POSSALES 
+(
+ LIVE_ITEM_ID BIGINT not null
+
+, LIVE_ITEM_DESC                                    STRING 
+
+, POS_LABEL_ID BIGINT not null
+
+, POS_LABEL_DESC                                    STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_liveitem_possales';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_PILOT_STRS" , ***** Creating table: "LMS_PILOT_STRS"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_PILOT_STRS 
+(
+ LOCATION_ID INT not null
+
+, STORE_NBR INT
+
+, STORE_NAME                                        STRING 
+
+, FLAG BIGINT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_pilot_strs';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_PRODUCT_REF" , ***** Creating table: "LMS_PRODUCT_REF"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_PRODUCT_REF 
+(
+ PRODUCT_ID INT not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_product_ref';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_RESTOCK_PRE" , ***** Creating table: "LMS_RESTOCK_PRE"
+
+
+use qa_raw;
+ CREATE TABLE LMS_RESTOCK_PRE 
+(
+ DAY_DT        TIMESTAMP                            not null
+
+, LOCATION_ID INT not null
+
+, ACT_BCKSTOCK_DAY INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/INT_Labor_Mgmt/lms_restock_pre';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_RESTOCKING_DRIVERS" , ***** Creating table: "LMS_RESTOCKING_DRIVERS"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_RESTOCKING_DRIVERS 
+(
+ SAP_CLASS_ID BIGINT not null
+
+, GENERIC_DEPT_ID BIGINT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_restocking_drivers';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_RESTOCKING_DRIVERS_LU" , ***** Creating table: "LMS_RESTOCKING_DRIVERS_LU"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_RESTOCKING_DRIVERS_LU 
+(
+ GENERIC_DEPT_ID BIGINT not null
+
+, GENERIC_DEPT                                      STRING 
+
+, DENOM         STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_restocking_drivers_lu';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_ROOMTYPE_REF" , ***** Creating table: "LMS_ROOMTYPE_REF"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_ROOMTYPE_REF 
+(
+ ROOM_TYPE_ID INT not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_roomtype_ref';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_SALES_XREF" , ***** Creating table: "LMS_SALES_XREF"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_SALES_XREF 
+(
+ POS_LABEL_ID BIGINT not null
+
+, SAP_CATEGORY_ID INT not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_sales_xref';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_SALES_XREF_LU" , ***** Creating table: "LMS_SALES_XREF_LU"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_SALES_XREF_LU 
+(
+ POS_LABEL_ID BIGINT not null
+
+, POS_LABEL_DESC                                    STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_sales_xref_lu';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_SKU_REF" , ***** Creating table: "LMS_SKU_REF"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_SKU_REF 
+(
+ SKU_NBR INT not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_sku_ref';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_TP_ITEMS_SOLD" , ***** Creating table: "LMS_TP_ITEMS_SOLD"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_TP_ITEMS_SOLD 
+(
+ POS_LABEL_ID BIGINT not null
+
+, PRODUCT_ID                                        DECIMAL(38,0)                        not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_tp_items_sold';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_TP_ITEMS_SOLD_LU" , ***** Creating table: "LMS_TP_ITEMS_SOLD_LU"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_TP_ITEMS_SOLD_LU 
+(
+ POS_LABEL_ID BIGINT not null
+
+, POS_LABEL_DESC                                    STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_tp_items_sold_lu';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_TRANS_COUPON" , ***** Creating table: "SALES_TRANS_COUPON"
+
+
+use qa_legacy;
+ CREATE TABLE SALES_TRANS_COUPON 
+(
+ DAY_DT        TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, SALES_INSTANCE_ID BIGINT not null
+
+, COUPON_TYPE_ID TINYINT not null
+
+, UPC_ID BIGINT not null
+
+, COUPON_ACCESS_CD                                  STRING                  not null
+
+, POS_TXN_SEQ_NBR SMALLINT not null
+
+, OFFER_ID BIGINT not null
+
+, VOID_TYPE_CD                                      STRING 
+
+, SALES_TYPE_ID TINYINT
+
+, TRANS_TSTMP                                       TIMESTAMP 
+
+, PRODUCT_ID INT not null
+
+, CUST_TRANS_ID BIGINT not null
+
+, CASHIER_NBR INT not null
+
+, KEYED_FLAG                                        STRING                          not null  
+
+, OFFER_CHARGEBACK_ID SMALLINT
+
+, POS_COUPON_AMT                                    DECIMAL(8,2) 
+
+, POS_COUPON_QTY TINYINT
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, DATE_LOADED                                      DATE                                 not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/sales_trans_coupon';
+
+--DISTRIBUTE ON (SALES_INSTANCE_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_TRANS_DISCOUNT" , ***** Creating table: "SALES_TRANS_DISCOUNT"
+
+
+use qa_legacy;
+ CREATE TABLE SALES_TRANS_DISCOUNT 
+(
+ DAY_DT        TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, SALES_INSTANCE_ID BIGINT not null
+
+, UPC_ID BIGINT not null
+
+, DISCOUNT_TYPE_ID TINYINT not null
+
+, TP_INVOICE_NBR BIGINT not null
+
+, PARENT_UPC_ID BIGINT not null 
+
+, COMBO_TYPE_CD                                     STRING                          not null  
+
+, POS_TXN_SEQ_NBR SMALLINT not null
+
+, OFFER_ID BIGINT not null
+
+, VOID_TYPE_CD                                      STRING 
+
+, SALES_TYPE_ID TINYINT
+
+, TRANS_TSTMP                                       TIMESTAMP 
+
+, PRODUCT_ID INT not null
+
+, DISC_CPN_UPC_ID BIGINT
+
+, EMPLOYEE_ID INT
+
+, CUST_TRANS_ID BIGINT not null
+
+, CASHIER_NBR INT not null
+
+, UPC_SEQ_NBR INT
+
+, OFFER_CHARGEBACK_ID SMALLINT
+
+, DISCOUNT_AMT                                      DECIMAL(10,4)                         not null
+
+, DISCOUNT_QTY                                      INT 
+
+, DISCOUNT_RETURN_AMT                               DECIMAL(10,4)                         not null
+
+, DISCOUNT_RETURN_QTY                               INT 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, DATE_LOADED                                      DATE                                 not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/sales_trans_discount';
+
+--DISTRIBUTE ON (SALES_INSTANCE_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_TRANS_SPECIAL" , ***** Creating table: "SALES_TRANS_SPECIAL"
+
+
+use qa_legacy;
+ CREATE TABLE SALES_TRANS_SPECIAL 
+(
+ DAY_DT        TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, SALES_INSTANCE_ID BIGINT not null
+
+, UPC_ID BIGINT not null
+
+, POS_TXN_SEQ_NBR SMALLINT not null
+
+, VOID_TYPE_CD                                      STRING 
+
+, SALES_TYPE_ID TINYINT
+
+, CUST_TRANS_ID BIGINT
+
+, PRODUCT_ID INT not null
+
+, SPECIAL_SALES_AMT                                 DECIMAL(12,2)                         not null
+
+, SPECIAL_SALES_QTY                                 INT                          not null
+
+, SPECIAL_RETURN_AMT                                DECIMAL(12,2)                         not null
+
+, SPECIAL_RETURN_QTY                                INT                          not null
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, DATE_LOADED                                       TIMESTAMP                             not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/sales_trans_special';
+
+--DISTRIBUTE ON (SALES_INSTANCE_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "TP_EVENT" , ***** Creating table: "TP_EVENT"
+
+
+use qa_cust_sensitive;
+ CREATE TABLE legacy_TP_EVENT 
+(
+ TP_INVOICE_NBR BIGINT not null
+
+, CHANGE_DT     TIMESTAMP                             not null
+
+, PARTITION_DT                                      TIMESTAMP                             not null
+
+, TP_PET_NBR BIGINT
+
+, CUST_TRANS_ID BIGINT not null
+
+, TP_CUSTOMER_NBR BIGINT
+
+, TP_EMPLOYEE_ID BIGINT
+
+, LOCATION_ID INT
+
+, TP_EVENT_STATUS_ID INT
+
+, RESERV_CREATE_DT                                  TIMESTAMP 
+
+, RESERV_GROOM_TIME_ID                              TIMESTAMP 
+
+, RESERV_GROOM_DT                                   TIMESTAMP 
+
+, RESERV_TP_EMPLOYEE_ID BIGINT
+
+, CANCEL_DUE_IN_DT                                  TIMESTAMP 
+
+, CANCEL_DUE_OUT_DT                                 TIMESTAMP 
+
+, CANCEL_DT     TIMESTAMP 
+
+, CANCEL_REASON_TX                                  STRING 
+
+, CANCEL_FOLIO_FLAG TINYINT
+
+, ACTUAL_GROOM_DT                                   TIMESTAMP 
+
+, ACTUAL_IN_DT                                      TIMESTAMP 
+
+, ACTUAL_OUT_DT                                     TIMESTAMP 
+
+, ACTUAL_GROOM_TIME_ID                              TIMESTAMP 
+
+, PROMISE_TIME_ID                                   TIMESTAMP 
+
+, ORIGINAL_NBR INT
+
+, REVERSAL_NBR INT
+
+, VOID_TXN_FLAG TINYINT
+
+, REVERSAL_LOGIN_NAME                               STRING 
+
+, TP_MASTER_INVOICE_NBR BIGINT
+
+, TP_BASE_INVOICE_NBR INT
+
+, CHECK_IN_DT                                       TIMESTAMP 
+
+, CHECK_OUT_DT                                      TIMESTAMP 
+
+, GROOM_DT      TIMESTAMP 
+
+, GROOM_COMPLETE_FLAG TINYINT
+
+, ROOM_NUMBER                                       STRING 
+
+, ROOM_ID INT
+
+, ROOM_TYPE_ID INT
+
+, QUICK_SERVICE_NM                                  STRING 
+
+, QUICK_SERVICE_PHONE                               STRING 
+
+, ARRIVE_TIME                                       TIMESTAMP 
+
+, DEPART_TIME                                       TIMESTAMP 
+
+, INVOICE_STATE_ID INT
+
+, REVERSALREASON_ID SMALLINT
+
+, REVERSALREASON_TXT                                STRING 
+
+, LOAD_DT       TIMESTAMP                             not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-cust-sensitive-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/tp_event';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "TP_EVENT_SERVICE" , ***** Creating table: "TP_EVENT_SERVICE"
+
+
+use qa_legacy;
+ CREATE TABLE TP_EVENT_SERVICE 
+(
+ TP_INVOICE_NBR BIGINT not null
+
+, ITEM_ID INT not null
+
+, CHANGE_DT     TIMESTAMP                             not null
+
+, PARTITION_DT                                      TIMESTAMP                             not null
+
+, TP_EMPLOYEE_ID BIGINT
+
+, LOCATION_ID INT
+
+, UPC_ID BIGINT
+
+, ITEM_PRICE                                        DECIMAL(8,2) 
+
+, ITEM_QTY SMALLINT
+
+, RATE_TYPE_ID INT
+
+, COMM_RT       DECIMAL(4,3) 
+
+, PRICEDELTA_ID SMALLINT
+
+, DELTA_AMT     DECIMAL(6,2) 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, LOAD_DT       TIMESTAMP                             not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/tp_event_service';
+
+--DISTRIBUTE ON (TP_INVOICE_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "TP_INVOICE_SERVICE" , ***** Creating table: "TP_INVOICE_SERVICE"
+
+
+use qa_legacy;
+ CREATE TABLE TP_INVOICE_SERVICE 
+(
+ TP_DAY_DT     TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, TP_INVOICE_NBR BIGINT not null
+
+, UPC_ID BIGINT not null
+
+, EMPLOYEE_ID BIGINT
+
+, PRODUCT_ID INT
+
+, TP_ITEM_PRICE                                     DECIMAL(8,2) 
+
+, TP_ITEM_QTY SMALLINT
+
+, ROOM_NUMBER                                       STRING 
+
+, ROOM_TYPE_ID INT
+
+, TP_COMMISSION_AMT                                 DECIMAL(8,2) 
+
+, INVOICE_STATE_ID SMALLINT
+
+, PRICEDELTA_ID SMALLINT
+
+, DELTA_AMT     DECIMAL(6,2) 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/tp_invoice_service';
+
+--DISTRIBUTE ON (TP_INVOICE_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "TP_SERVICE_SCHEDULE" , ***** Creating table: "TP_SERVICE_SCHEDULE"
+
+
+use qa_legacy;
+ CREATE TABLE TP_SERVICE_SCHEDULE 
+(
+ DAY_DT        TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, TP_INVOICE_NBR BIGINT not null
+
+, UPC_ID BIGINT not null
+
+, SERVICE_ITEM_ID BIGINT not null
+
+, FOLIO_STATUS_FLAG                                 STRING 
+
+, PRODUCT_ID INT
+
+, ROOM_NUMBER                                       STRING 
+
+, ROOM_TYPE_ID INT
+
+, SERVICE_SCHEDULE_QTY SMALLINT
+
+, SERVICE_FREQ_ID SMALLINT
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/tp_service_schedule';
+
+--DISTRIBUTE ON (TP_INVOICE_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_VOLUME_HOTEL_PRE" , ***** Creating table: "LMS_VOLUME_HOTEL_PRE"
+
+
+use qa_raw;
+ CREATE TABLE LMS_VOLUME_HOTEL_PRE 
+(
+ DAY_DT        TIMESTAMP 
+
+, LOCATION_ID INT
+
+, WEEK_DT       TIMESTAMP 
+
+, POS_LABEL     STRING 
+
+, DRIVER        STRING 
+
+, ACTIVITY_0615 INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/INT_Labor_Mgmt/lms_volume_hotel_pre';
+
+--DISTRIBUTE ON RANDOM
+
+

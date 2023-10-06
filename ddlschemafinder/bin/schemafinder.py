@@ -22,10 +22,10 @@ def search_exact_match_in_file(file_path, search_value):
 folder_path = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/lib/allDDLs/'
 
 # Input CSV file
-input_csv_file = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/source/wf_Cashoffice_LP.csv'
+input_csv_file = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/source/ddlcreation/wf_SKU_PIM_Attributes.csv'
 
 # Output CSV file
-output_csv_file = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/target/wf_Cashoffice_LP.csv'
+output_csv_file = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/target/ddlcreation/wf_SKU_PIM_Attributes.csv'
 
 # Name of the column in the input CSV file containing values to search
 search_column_name = 'tbl_list'

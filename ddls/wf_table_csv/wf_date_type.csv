@@ -1,0 +1,8 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_date_type,DATE_TYPE_LKUP,distinct_ddl,legacy,no,legacy
+wf_date_type,DATE_TYPE_LKUP_DAYS,distinct_ddl,legacy,no,legacy
+wf_date_type,DATE_TYPE_LKUP_WEEKS,distinct_ddl,legacy,no,legacy
+wf_date_type,DATE_TYPE_DAY,distinct_ddl,legacy,no,legacy
+wf_date_type,DATE_TYPE_WEEK,distinct_ddl,legacy,no,legacy
+wf_date_type,DAYS,distinct_ddl,legacy,no,legacy
+wf_date_type,WEEKS,distinct_ddl,legacy,no,legacy

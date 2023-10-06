@@ -27,7 +27,7 @@ def getMetadata(search_value,wf):
     piiFile = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/lib/metadata/pii.csv'
     schemaMap = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/lib/metadata/schemaMapping.csv'
 
-    piisearchvalue = ['legacy_'+search_value, 'refine_'+search_value]
+    piisearchvalue = ['legacy_'+search_value, 'refine_'+search_value,'refine_'+search_value]
 
     pii = "no"
     with open(piiFile, 'r', newline='', encoding='utf-8') as csv_input_file_pii:
@@ -49,8 +49,9 @@ def getMetadata(search_value,wf):
                 schemaval  =row['Target Schema']
                 break
     
-        if '_PRE' in search_value :
+        if '_PRE' in search_value and pii == "no":
             schemaval ='raw'
+        
 
     tgt_schma=""
     if pii != "no":
@@ -73,10 +74,10 @@ def main():
     parser.add_argument('wf_name', type=str, help='workflow name')
     args = parser.parse_args()
 
-    #print(args)
+    print(args)
 
-    input_csv_file = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/source/' + args.wf_name + ".csv"
-    output_csv_file = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/converterInputCSV/'+ args.wf_name + "_out.csv"
+    input_csv_file = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/source/ddlcreation/' + args.wf_name + ".csv"
+    output_csv_file = '/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/target/converterInputCSV/'+ args.wf_name + "_out.csv"
 
     search_column_name = 'tbl_list'
     results = []

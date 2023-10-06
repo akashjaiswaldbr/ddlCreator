@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the folder containing the files to merge
-folder_path="/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/nz_ddl/"
+folder_path="/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/nz_ddl/tables/"
 
 # Specify the target file where the merged content will be saved
 target_file="/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/lib/allDDLs/merged_output.txt"

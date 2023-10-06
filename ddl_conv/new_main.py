@@ -10,6 +10,8 @@ import itertools
 ## 2. Remove any ::, defaults set for columns
 ###Note - All of it can be done by CTRL+F and replace.
 
+
+
 def main():
     """
 
@@ -25,10 +27,15 @@ def main():
                         help='To decide which env bucket to create table on')
     parser.add_argument('wf_name', type=str,
                         help='workflow name')
+
     # parser.add_argument('pii', type=str, help='if pii or not')
     args = parser.parse_args()
     # environment_list = args.environment.split(",")
-    env_list = ['dev'] # ['dev', 'qa', 'prod']
+    env_list = ['qa'] # ['dev', 'qa', 'prod']
+
+    global wf_name
+    wf_name=args.wf_name
+
     with open(
             "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/table_to_bucket_mapping/table_bucket_list_mapping.csv",
             mode='r') as table_bucket_mapping_file:
@@ -48,7 +55,7 @@ def main():
             csv_reader = csv.DictReader(csv_file)
             for row in csv_reader:
                 # filename = "/Users/pooja.shekhar/Documents/Petsmart/ddl_convertor-main/ddls/nz_ddl/"+row["nz_database"]+"_TABLE_DDL.txt"\\
-                filename = "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/lib/allDDLs/distinct_ddl.sql"
+                filename = "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddlschemafinder/lib/allDDLs/merged_output.txt"
                 #print(row['table_name']+"????")
                 with open(filename, 'r') as f:
                     ddl = f.read()
@@ -71,7 +78,7 @@ def main():
                                 # query_lines = query_lines.append("use " + row["dl_database"] + ";\n")
 
                                 #print(query_lines)
-
+                                #break
                                 for line in query_lines:
                                     if env == "dev" or env == "qa":
                                         database = env + "_" + row["target_schema"]
@@ -85,21 +92,49 @@ def main():
                                     converted_line = convert_ddl(line, args.database_type, schema_to_append,
                                                                  database) + "\n"
                                     
-                                   # print(converted_line)
-
+                                    #print(converted_line)
+                                    global file_name
+                                    file_name =  str(env) + "_" + str(args.wf_name)
                                     with open(
-                                            "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflows/" + str(
+                                            "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflowTmp/" + str(
                                                 env) + "_" +
                                             str(args.wf_name) + ".txt", "a") as text_file:
-                                        ddl = re.sub(r"\(\n\,", "(", converted_line)
-                                        ddl = re.sub("\);", ")\n" + add_metadata_to_ddl.strip() + ";", ddl)
 
-                                        #print(schema_to_append)
+                                       
+                                        
+                                        ddl = re.sub( r'\(n,', r'(', converted_line)
+                                        ddl = re.sub("\);", ")\n" + add_metadata_to_ddl.strip() + ";", ddl)
+                                        #ddl = re.sub( '\(\n,', '(', ddl) ,
+                                        
+                                        ddl_txt = str(ddl)
+
+                                        #print(ddl_txt.split("\n",1))
+
+                                    
 
                                         #if schema_to_append == "":
                                         text_file.write(ddl)
 
 
 
+
+def cleanDDLs(wf_name,file_name):
+    
+    print(wf_name, file_name)
+    with open("/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflowTmp/"+file_name+".txt", "r") as f:
+        
+
+        ddl = f.read()
+
+        cleanddl = re.sub('\(\n,','(\n',ddl)
+        cleanddl = re.sub('default\s+.*\n','\n',cleanddl)
+
+        #print(cleanddl)
+
+        with open("/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflows/"+file_name+".txt", "w+") as t:
+
+            t.write(cleanddl)
+
 if __name__ == "__main__":
     main()
+    cleanDDLs(wf_name,file_name)

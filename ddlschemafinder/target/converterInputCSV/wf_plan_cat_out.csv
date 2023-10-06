@@ -1,0 +1,10 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_plan_cat,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_plan_cat,DAYS,distinct_ddl,legacy,no,legacy
+wf_plan_cat,CURRENCY_TYPE_LKUP,distinct_ddl,legacy,no,legacy
+wf_plan_cat,SAP_CLASS,distinct_ddl,legacy,no,legacy
+wf_plan_cat,SAP_CATEGORY,distinct_ddl,legacy,no,legacy
+wf_plan_cat,SITE_PROFILE_RPT,distinct_ddl,legacy,no,legacy
+wf_plan_cat,SERVICES_MARGIN_PLAN_CTRL,distinct_ddl,legacy,no,legacy
+wf_plan_cat,PLAN_CAT_DAY,distinct_ddl,legacy,no,legacy
+wf_plan_cat,PLAN_CAT_DAY_PRE,distinct_ddl,raw,no,raw

@@ -1,7 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-wf_GetSmart,GS_TRAINING,EDW_PRD,legacy,no,legacy
-wf_GetSmart,GS_TRAVEL,EDW_PRD,legacy,empl_sensitive,empl_sensitive
-wf_GetSmart,GS_POSITION,EDW_PRD,legacy,no,legacy
-wf_GetSmart,GS_TRAINING_TYPE,EDW_PRD,legacy,no,legacy
-wf_GetSmart,GS_TRAINING_STATUS,EDW_PRD,legacy,no,legacy
-wf_GetSmart,SITE_PROFILE,EDW_PRD,legacy,no,legacy

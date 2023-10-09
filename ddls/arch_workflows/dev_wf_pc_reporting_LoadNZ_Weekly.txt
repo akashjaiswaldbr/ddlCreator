@@ -1,0 +1,246 @@
+
+
+
+
+
+--*****  Creating table:  "PC_CARD_REQUEST" , ***** Creating table: "PC_CARD_REQUEST"
+
+
+use dev_legacy;
+ CREATE TABLE PC_CARD_REQUEST 
+(
+ PC_CARD_NAME                                      STRING                 not null
+
+, PC_CARD_USER_CD                                   STRING                  not null
+
+, PC_CARD_TYPE_CD                                   STRING                  not null
+
+, EMPLOYEE_ID INT not null
+
+, PC_CARD_HOLDER_NAME                               STRING 
+
+, PC_CARD_PROFILE_NAME                              STRING                 not null
+
+, COST_CENTER_CD                                    STRING                  not null
+
+, LOCATION_ID INT
+
+, STORE_NBR SMALLINT
+
+, EMBOSS_LINE1_TEXT                                 STRING 
+
+, EMBOSS_LINE2_TEXT                                 STRING 
+
+, APPROVAL_DT                                       TIMESTAMP 
+
+, CARD_TERMS_ACCEPT_FL TINYINT
+
+, DECLINE_REASON_CD                                 STRING 
+
+, REQUEST_CNT TINYINT
+
+, REQUEST_DT                                        TIMESTAMP 
+
+, PC_CREDIT_LIMIT_AMT                               DECIMAL(9,2) 
+
+, PC_SINGL_PURCH_LIMIT_AMT                          DECIMAL(7,2) 
+
+, SUPERVISOR_APPROVAL_CD                            STRING 
+
+, SUPERVISOR_APPROVAL_TSTMP                         TIMESTAMP 
+
+, SUPERVISOR_USER                                   STRING 
+
+, SUPERVISOR_ID INT
+
+, GETSMART_APPROVAL_CD                              STRING 
+
+, GETSMART_APPROVAL_TSTMP                           TIMESTAMP 
+
+, GETSMART_USER                                     STRING 
+
+, TREASURY_APPROVAL_CD                              STRING 
+
+, TREASURY_APPROVAL_TSTMP                           TIMESTAMP 
+
+, TREASURY_USER                                     STRING 
+
+, SUBMISSION_MANUAL_FL TINYINT
+
+, SUBMISSION_TSTMP                                  TIMESTAMP 
+
+, LAST_UPDATE_USER                                  STRING 
+
+, LAST_UPDATE_TSTMP                                 TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Financials/pc_card_request';
+
+--DISTRIBUTE ON (PC_CARD_NAME)
+
+
+
+
+
+
+
+--*****  Creating table:  "PC_CARD_ACCOUNT" , ***** Creating table: "PC_CARD_ACCOUNT"
+
+
+use dev_legacy;
+ CREATE TABLE PC_CARD_ACCOUNT 
+(
+ PC_CARD_NICKNAME                                  STRING                 not null
+
+, EMPLOYEE_ID INT
+
+, PC_CARD_ACCT_LAST4                                STRING                  not null
+
+, PC_CARD_OPEN_DT DATE
+
+, PC_CARD_CREATE_DT DATE
+
+, PC_CARD_DELETE_DT DATE
+
+, PC_CARD_LAST_USED_DT DATE
+
+, GL_DEPARTMENT_CD                                  STRING 
+
+, GL_DEPARTMENT_DESC                                STRING 
+
+, GL_PROFIT_CENTER_GID                              STRING 
+
+, GL_PROFIT_CENTER_CD                               STRING 
+
+, GL_PROFIT_CENTER_DESC                             STRING 
+
+, LOCATION_ID INT
+
+, STORE_NBR SMALLINT
+
+, PC_EMBOSSED_LINE_1                                STRING 
+
+, PC_EMBOSSED_LINE_2                                STRING 
+
+, PC_CARD_STATUS_DESC                               STRING 
+
+, PC_CARD_INACTIVE_FLAG TINYINT
+
+, PC_CARD_ACTIVE_FLAG TINYINT
+
+, PC_CREDIT_LIMIT_AMT                               DECIMAL(10,2) 
+
+, PC_SINGLE_PURCH_LIMIT_AMT                         DECIMAL(10,2) 
+
+, PC_AVAILABLE_CREDIT_AMT                           DECIMAL(10,2) 
+
+, PC_AVAILABLE_FUNDS_AMT                            DECIMAL(10,2) 
+
+, PC_HOLDER_FIRST_NAME                              STRING 
+
+, PC_HOLDER_MIDDLE_NAME                             STRING 
+
+, PC_HOLDER_LAST_NAME                               STRING 
+
+, PC_HOLDER_LOGIN                                   STRING 
+
+, PC_HOLDER_USER_NAME                               STRING 
+
+, PC_HOLDER_ADDRESS_1                               STRING 
+
+, PC_HOLDER_ADDRESS_2                               STRING 
+
+, PC_HOLDER_CITY                                    STRING 
+
+, PC_HOLDER_STATE_CD                                STRING 
+
+, PC_HOLDER_POSTAL_CODE                             STRING 
+
+, PC_HOLDER_COUNTRY_CD                              STRING 
+
+, PC_HOLDER_EMAIL_ADDRESS                           STRING 
+
+, PC_REPLACED_BY_CARD_LAST4                         STRING 
+
+, PC_REPLACES_CARD_LAST4                            STRING 
+
+, PC_INITIAL_LOAD_DT DATE
+
+, PC_LAST_UPDATE_DT DATE
+
+, UPDATE_DT DATE
+
+, LOAD_DT DATE
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Financials/pc_card_account';
+
+--DISTRIBUTE ON (PC_CARD_NICKNAME)
+
+
+
+
+
+
+
+--*****  Creating table:  "GL_DEPARTMENT" , ***** Creating table: "GL_DEPARTMENT"
+
+
+use dev_legacy;
+ CREATE TABLE GL_DEPARTMENT 
+(
+ GL_DEPARTMENT_CD                            STRING                 not null
+
+, GL_DEPARTMENT_DESC                          STRING 
+
+, UPDATE_DT DATE
+
+, LOAD_DT DATE
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Financials/gl_department';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "GL_ACCOUNT_PROFILE" , ***** Creating table: "GL_ACCOUNT_PROFILE"
+
+
+use dev_legacy;
+ CREATE TABLE GL_ACCOUNT_PROFILE 
+(
+ GL_ACCOUNT_GID INT not null
+
+, GL_CHART_OF_ACCOUNTS_CD                     STRING 
+
+, GL_ACCOUNT_NBR INT not null
+
+, GL_ACCOUNT_DESC                             STRING 
+
+, GL_ACCOUNT_GROUP_CD                         STRING 
+
+, GL_ACCOUNT_GROUP_DESC                       STRING 
+
+, GL_BAL_SHEET_IND                            STRING 
+
+, GL_PL_IND                                   STRING 
+
+, UPDATE_DT DATE
+
+, LOAD_DT DATE
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_Financials/gl_account_profile';
+
+--DISTRIBUTE ON RANDOM
+
+

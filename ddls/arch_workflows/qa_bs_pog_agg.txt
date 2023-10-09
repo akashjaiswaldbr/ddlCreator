@@ -1,0 +1,1026 @@
+
+
+
+
+
+--*****  Creating table:  "CURRENCY_DAY" , ***** Creating table: "CURRENCY_DAY"
+
+
+use qa_legacy;
+ CREATE TABLE CURRENCY_DAY 
+(  DAY_DT                                    TIMESTAMP                            not null
+
+, CURRENCY_ID                               STRING                         not null
+
+, DATE_RATE_START                           TIMESTAMP                            not null
+
+, CURRENCY_TYPE                             STRING                        not null
+
+, DATE_RATE_ENDED                           TIMESTAMP 
+
+, EXCHANGE_RATE_PCNT                        DECIMAL(9,6) 
+
+, RATIO_TO                                  DOUBLE 
+
+, RATIO_FROM                                DOUBLE 
+
+, STORE_CTRY_ABBR                           STRING 
+
+, CURRENCY_NBR SMALLINT not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/currency_day';
+
+--DISTRIBUTE ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "DAYS" , ***** Creating table: "DAYS"
+
+
+use qa_legacy;
+ CREATE TABLE DAYS 
+(  DAY_DT                                    TIMESTAMP                            not null
+
+, BUSINESS_DAY_FLAG                         STRING 
+
+, HOLIDAY_FLAG                              STRING 
+
+, DAY_OF_WK_NAME                            STRING 
+
+, DAY_OF_WK_NAME_ABBR                       STRING 
+
+, DAY_OF_WK_NBR TINYINT
+
+, CAL_DAY_OF_MO_NBR TINYINT
+
+, CAL_DAY_OF_YR_NBR SMALLINT
+
+, CAL_WK INT
+
+, CAL_WK_NBR TINYINT
+
+, CAL_MO INT
+
+, CAL_MO_NBR TINYINT
+
+, CAL_MO_NAME                               STRING 
+
+, CAL_MO_NAME_ABBR                          STRING 
+
+, CAL_QTR INT
+
+, CAL_QTR_NBR TINYINT
+
+, CAL_HALF INT
+
+, CAL_YR SMALLINT
+
+, FISCAL_DAY_OF_MO_NBR TINYINT
+
+, FISCAL_DAY_OF_YR_NBR SMALLINT
+
+, FISCAL_WK INT
+
+, FISCAL_WK_NBR TINYINT
+
+, FISCAL_MO INT
+
+, FISCAL_MO_NBR TINYINT
+
+, FISCAL_MO_NAME                            STRING 
+
+, FISCAL_MO_NAME_ABBR                       STRING 
+
+, FISCAL_QTR INT
+
+, FISCAL_QTR_NBR TINYINT
+
+, FISCAL_HALF INT
+
+, FISCAL_YR SMALLINT
+
+, LYR_WEEK_DT                               TIMESTAMP                            not null
+
+, LWK_WEEK_DT                               TIMESTAMP                            not null
+
+, WEEK_DT                                   TIMESTAMP                            not null
+
+, EST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, EST_TIME_CONV_HRS TINYINT not null 
+
+, ES0_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, ES0_TIME_CONV_HRS TINYINT not null 
+
+, CST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, CST_TIME_CONV_HRS TINYINT not null 
+
+, CS0_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, CS0_TIME_CONV_HRS TINYINT not null 
+
+, MST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, MST_TIME_CONV_HRS TINYINT not null 
+
+, MS0_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, MS0_TIME_CONV_HRS TINYINT not null 
+
+, PST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, PST_TIME_CONV_HRS TINYINT not null 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/days';
+
+--DISTRIBUTE ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "INV_INSTOCK_PRICE_WK" , ***** Creating table: "INV_INSTOCK_PRICE_WK"
+
+
+use qa_legacy;
+ CREATE TABLE INV_INSTOCK_PRICE_WK 
+(  WEEK_DT       TIMESTAMP                            not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, FROM_LOCATION_ID INT
+
+, SOURCE_VENDOR_ID BIGINT
+
+, SKU_STATUS_ID                                     STRING 
+
+, STORE_OPEN_IND TINYINT
+
+, OUT_OF_STOCK_CNT TINYINT
+
+, POG_LISTED_IND TINYINT
+
+, POG_CALENDAR_ID INT
+
+, POG_ITEM_CHANGE_TYPE_CD                           STRING 
+
+, POG_IMPLEMENT_DT                                  TIMESTAMP 
+
+, OFF_POG_WEEK_DT                                   TIMESTAMP 
+
+, INV_STATE_ID SMALLINT
+
+, MO_TO_PID_ID SMALLINT
+
+, SAP_LISTED_IND TINYINT
+
+, INLINE_CNT TINYINT
+
+, PLANNER_IND TINYINT
+
+, SUBS_IND TINYINT
+
+, OOS_7_DAY_IND_AVG                                 DECIMAL(4,3) 
+
+, OOS_MON_IND TINYINT
+
+, OOS_TUE_IND TINYINT
+
+, OOS_WED_IND TINYINT
+
+, OOS_THU_IND TINYINT
+
+, OOS_FRI_IND TINYINT
+
+, OOS_SAT_IND TINYINT
+
+, OOS_SUN_IND TINYINT
+
+, INLINE_7_DAY_IND_AVG                              DECIMAL(4,3) 
+
+, MAP_AMT       DECIMAL(9,3) 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, ON_HAND_QTY                                       INT 
+
+, COMMITTED_QTY                                     INT 
+
+, XFER_IN_TRANS_QTY                                 INT 
+
+, ON_ORDER_QTY                                      INT 
+
+, SUM_COST_AMT                                      DECIMAL(9,3) 
+
+, BUM_COST_AMT                                      DECIMAL(9,3) 
+
+, ON_ORDER_CD                                       STRING 
+
+, RETAIL_PRICE_AMT                                  DECIMAL(8,2) 
+
+, SKU_FACINGS_QTY                                   INT 
+
+, SKU_CAPACITY_QTY                                  INT 
+
+, PETPERKS_AMT                                      DECIMAL(8,2) 
+
+, PETPERKS_IND TINYINT
+
+, LOCAL_PRICE_AMT                                   DECIMAL(8,2) 
+
+, LOC_PETPERKS_PRICE_AMT                            DECIMAL(8,2) 
+
+, LOAD_DT       TIMESTAMP 
+
+, OOS_7_DAY_AVG                                     DECIMAL(4,3) 
+
+, POG_7_DAY_AVG                                     DECIMAL(4,3) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/inv_instock_price_wk';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+--ORGANIZE   ON (WEEK_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "MERCH_DISCOUNT_DAY" , ***** Creating table: "MERCH_DISCOUNT_DAY"
+
+
+use qa_legacy;
+ CREATE TABLE MERCH_DISCOUNT_DAY 
+(  DAY_DT        TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, VENDOR_ID BIGINT
+
+, MERCH_DISCOUNT_AMT                                DECIMAL(8,2) 
+
+, MERCH_DISCOUNT_QTY                                DOUBLE 
+
+, MERCH_DISCOUNT_RETURN_AMT                         DECIMAL(8,2) 
+
+, MERCH_DISCOUNT_RETURN_QTY                         DOUBLE 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/merch_discount_day';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "PLANOGRAM_PRO" , ***** Creating table: "PLANOGRAM_PRO"
+
+
+use qa_legacy;
+ CREATE TABLE PLANOGRAM_PRO 
+(  POG_ID INT not null
+
+, POG_DBKEY     DECIMAL(38,0) 
+
+, PROJECT_ID                                        STRING 
+
+, FIXTURE_TYPE INT
+
+, POG_NBR       STRING 
+
+, PROJECT_NAME                                      STRING 
+
+, POG_DESC      STRING 
+
+, POG_IMPLEMENT_DT                                  TIMESTAMP 
+
+, POG_REVIEW_YM                                     TIMESTAMP 
+
+, POG_REV_DT                                        TIMESTAMP 
+
+, FIX_LINEAR_IN                                     DECIMAL(9,2) 
+
+, FIX_CUBIC_IN                                      DECIMAL(12,2) 
+
+, FIX_FLOOR_FT                                      DECIMAL(9,2) 
+
+, MIX_FLAG      STRING 
+
+, US_FLAG       STRING 
+
+, CA_FLAG       STRING 
+
+, POG_STATUS                                        STRING 
+
+, LAST_CHNG_DT                                      TIMESTAMP 
+
+, LISTING_FLAG                                      STRING 
+
+, EVENT_ID INT not null
+
+, POG_DISPLAY_FLAG                                  STRING 
+
+, EFF_START_DT                                      TIMESTAMP 
+
+, EFF_END_DT                                        TIMESTAMP 
+
+, POG_TYPE_CD                                       STRING 
+
+, POG_DIVISION                                      STRING 
+
+, POG_DEPT      STRING 
+
+, DATE_POG_ADDED                                    TIMESTAMP 
+
+, DATE_POG_REFRESHED                                TIMESTAMP 
+
+, DATE_POG_DELETED                                  TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/planogram_pro';
+
+--DISTRIBUTE ON (POG_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "POG_SKU_PRO" , ***** Creating table: "POG_SKU_PRO"
+
+
+use qa_legacy;
+ CREATE TABLE POG_SKU_PRO 
+(  POG_ID INT not null
+
+, PRODUCT_ID INT not null
+
+, SKU_CAPACITY_QTY                                  INT 
+
+, SKU_FACINGS_QTY                                   INT 
+
+, SKU_HEIGHT_IN                                     DECIMAL(7,2) 
+
+, SKU_DEPTH_IN                                      DECIMAL(7,2) 
+
+, SKU_WIDTH_IN                                      DECIMAL(7,2) 
+
+, UNIT_OF_MEASURE                                   STRING 
+
+, TRAY_PACK_NBR INT
+
+, POG_STATUS                                        STRING 
+
+, LAST_CHNG_DT                                      TIMESTAMP 
+
+, PQ_CHNG_DT                                        TIMESTAMP 
+
+, LIST_START_DT                                     TIMESTAMP 
+
+, LIST_END_DT                                       TIMESTAMP 
+
+, PROMO_START_DT                                    TIMESTAMP 
+
+, PROMO_END_DT                                      TIMESTAMP 
+
+, POG_PROMO_QTY                                     INT 
+
+, DATE_POG_ADDED                                    TIMESTAMP 
+
+, DATE_POG_REFRESHED                                TIMESTAMP 
+
+, DATE_POG_DELETED                                  TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/pog_sku_pro';
+
+--DISTRIBUTE ON (PRODUCT_ID, POG_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "POG_STORE_PRO" , ***** Creating table: "POG_STORE_PRO"
+
+
+use qa_legacy;
+ CREATE TABLE POG_STORE_PRO 
+(  POG_ID INT not null
+
+, LOCATION_ID INT not null
+
+, POG_STATUS                                        STRING 
+
+, LAST_CHNG_DT                                      TIMESTAMP 
+
+, POG_CANADIAN                                      STRING 
+
+, POG_EQUINE                                        STRING 
+
+, POG_REGISTER                                      STRING 
+
+, POG_GENERIC_MAP                                   STRING 
+
+, DATE_POG_ADDED                                    TIMESTAMP 
+
+, DATE_POG_REFRESHED                                TIMESTAMP 
+
+, DATE_POG_DELETED                                  TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/pog_store_pro';
+
+--DISTRIBUTE ON (POG_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_DAY_SKU_STORE" , ***** Creating table: "SALES_DAY_SKU_STORE"
+
+
+use qa_legacy;
+ CREATE TABLE SALES_DAY_SKU_STORE 
+(  DAY_DT        TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, SALES_CUST_CAPTURE_CD                             STRING                          not null
+
+, DATE_LOADED                                      DATE                                 not null
+
+, VENDOR_ID BIGINT not null
+
+, PROMO_FLAG TINYINT not null
+
+, WEEK_DT       TIMESTAMP 
+
+, FISCAL_YR SMALLINT
+
+, SKU_VEND_TXN_CNT INT
+
+, SALES_AMT     DECIMAL(8,2) 
+
+, SALES_COST                                        DECIMAL(8,2) 
+
+, SALES_QTY     INT 
+
+, RETURN_AMT                                        DECIMAL(8,2) 
+
+, RETURN_COST                                       DECIMAL(8,2) 
+
+, RETURN_QTY                                        INT 
+
+, DISCOUNT_AMT                                      DECIMAL(9,2) 
+
+, DISCOUNT_QTY                                      INT 
+
+, DISCOUNT_RETURN_AMT                               DECIMAL(9,2) 
+
+, DISCOUNT_RETURN_QTY                               INT 
+
+, POS_COUPON_AMT                                    DECIMAL(8,2) 
+
+, POS_COUPON_QTY                                    INT 
+
+, POS_COUPON_ALLOC_AMT                              DECIMAL(8,2) 
+
+, POS_COUPON_ALLOC_QTY                              INT 
+
+, SPECIAL_SALES_AMT                                 DECIMAL(8,2) 
+
+, SPECIAL_SALES_QTY                                 INT 
+
+, SPECIAL_RETURN_AMT                                DECIMAL(8,2) 
+
+, SPECIAL_RETURN_QTY                                INT 
+
+, SPECIAL_SRVC_AMT                                  DECIMAL(11,2) 
+
+, SPECIAL_SRVC_QTY                                  INT 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/sales_day_sku_store';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_INV_WEEK_POG" , ***** Creating table: "SALES_INV_WEEK_POG"
+
+
+use qa_legacy;
+ CREATE TABLE SALES_INV_WEEK_POG 
+(  WEEK_DT       TIMESTAMP                             not null
+
+, POG_ID INT not null
+
+, COUNTRY_CD                                        STRING                  not null
+
+, NET_SALES_AMT                                     DECIMAL(10,2) 
+
+, NET_SALES_COST                                    DECIMAL(10,2) 
+
+, NET_SALES_QTY                                     DECIMAL(12,3) 
+
+, MERCH_SALES_AMT                                   DECIMAL(10,2) 
+
+, ON_HAND_QTY                                       DECIMAL(12,3) 
+
+, ON_HAND_COST                                      DECIMAL(10,2) 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/sales_inv_week_pog';
+
+--DISTRIBUTE ON (POG_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_INV_WEEK_SKU_STORE_POG" , ***** Creating table: "SALES_INV_WEEK_SKU_STORE_POG"
+
+
+use qa_legacy;
+ CREATE TABLE SALES_INV_WEEK_SKU_STORE_POG 
+(  WEEK_DT       TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, POG_ID INT not null
+
+, NET_SALES_AMT                                     DECIMAL(8,2) 
+
+, NET_SALES_COST                                    DECIMAL(8,2) 
+
+, NET_SALES_QTY                                     DECIMAL(10,3) 
+
+, MERCH_SALES_AMT                                   DECIMAL(8,2) 
+
+, ON_HAND_QTY                                       DECIMAL(10,3) 
+
+, ON_HAND_COST                                      DECIMAL(8,2) 
+
+, POG_INLINE_PLANNER_FLAG                           STRING 
+
+, POG_MULTI_INLINE_FLAG                             STRING 
+
+, POG_MULTI_PLANNER_FLAG                            STRING 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/sales_inv_week_sku_store_pog';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_INV_WEEK_STORE_POG" , ***** Creating table: "SALES_INV_WEEK_STORE_POG"
+
+
+use qa_legacy;
+ CREATE TABLE SALES_INV_WEEK_STORE_POG 
+(  WEEK_DT       TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, POG_ID INT not null
+
+, NET_SALES_AMT                                     DECIMAL(10,2) 
+
+, NET_SALES_COST                                    DECIMAL(10,2) 
+
+, NET_SALES_QTY                                     DECIMAL(12,3) 
+
+, MERCH_SALES_AMT                                   DECIMAL(10,2) 
+
+, ON_HAND_QTY                                       DECIMAL(12,3) 
+
+, ON_HAND_COST                                      DECIMAL(10,2) 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/sales_inv_week_store_pog';
+
+--DISTRIBUTE ON (LOCATION_ID, POG_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SITE_PROFILE" , ***** Creating table: "SITE_PROFILE"
+
+
+use qa_legacy;
+ CREATE TABLE SITE_PROFILE 
+(  LOCATION_ID INT not null
+
+, LOCATION_TYPE_ID TINYINT
+
+, STORE_NBR INT
+
+, STORE_NAME                                        STRING 
+
+, STORE_TYPE_ID                                     STRING 
+
+, STORE_OPEN_CLOSE_FLAG                             STRING 
+
+, COMPANY_ID INT
+
+, REGION_ID BIGINT
+
+, DISTRICT_ID BIGINT
+
+, PRICE_ZONE_ID                                     STRING 
+
+, PRICE_AD_ZONE_ID                                  STRING 
+
+, REPL_DC_NBR INT
+
+, REPL_FISH_DC_NBR INT
+
+, REPL_FWD_DC_NBR INT
+
+, SQ_FEET_RETAIL                                    DOUBLE 
+
+, SQ_FEET_TOTAL                                     DOUBLE 
+
+, SITE_ADDRESS                                      STRING 
+
+, SITE_CITY     STRING 
+
+, STATE_CD      STRING 
+
+, COUNTRY_CD                                        STRING 
+
+, POSTAL_CD     STRING 
+
+, SITE_MAIN_TELE_NO                                 STRING 
+
+, SITE_GROOM_TELE_NO                                STRING 
+
+, SITE_EMAIL_ADDRESS                                STRING 
+
+, SITE_SALES_FLAG                                   STRING 
+
+, EQUINE_MERCH_ID TINYINT
+
+, EQUINE_SITE_ID TINYINT
+
+, EQUINE_SITE_OPEN_DT                               TIMESTAMP 
+
+, GEO_LATITUDE_NBR                                  DECIMAL(12,6) 
+
+, GEO_LONGITUDE_NBR                                 DECIMAL(12,6) 
+
+, PETSMART_DMA_CD                                   STRING 
+
+, LOYALTY_PGM_TYPE_ID TINYINT
+
+, LOYALTY_PGM_STATUS_ID TINYINT
+
+, LOYALTY_PGM_START_DT                              TIMESTAMP 
+
+, LOYALTY_PGM_CHANGE_DT                             TIMESTAMP 
+
+, BP_COMPANY_NBR SMALLINT
+
+, BP_GL_ACCT SMALLINT
+
+, TP_LOC_FLAG                                       STRING 
+
+, TP_ACTIVE_CNT TINYINT
+
+, PROMO_LABEL_CD                                    STRING 
+
+, PARENT_LOCATION_ID INT
+
+, LOCATION_NBR                                      STRING 
+
+, TIME_ZONE_ID                                      STRING 
+
+, DELV_SERVICE_CLASS_ID                             STRING 
+
+, PICK_SERVICE_CLASS_ID                             STRING 
+
+, SITE_LOGIN_ID                                     STRING 
+
+, SITE_MANAGER_ID INT
+
+, SITE_OPEN_YRS_AMT                                 DECIMAL(5,2) 
+
+, HOTEL_FLAG TINYINT
+
+, DAYCAMP_FLAG TINYINT
+
+, VET_FLAG TINYINT
+
+, DIST_MGR_NAME                                     STRING 
+
+, DIST_SVC_MGR_NAME                                 STRING 
+
+, REGION_VP_NAME                                    STRING 
+
+, REGION_TRAINER_NAME                               STRING 
+
+, ASSET_PROTECT_NAME                                STRING 
+
+, SITE_COUNTY                                       STRING 
+
+, SITE_FAX_NO                                       STRING 
+
+, SFT_OPEN_DT                                       TIMESTAMP 
+
+, DM_EMAIL_ADDRESS                                  STRING 
+
+, DSM_EMAIL_ADDRESS                                 STRING 
+
+, RVP_EMAIL_ADDRESS                                 STRING 
+
+, TRADE_AREA                                        STRING 
+
+, FDLPS_NAME                                        STRING 
+
+, FDLPS_EMAIL                                       STRING 
+
+, OVERSITE_MGR_NAME                                 STRING 
+
+, OVERSITE_MGR_EMAIL                                STRING 
+
+, SAFETY_DIRECTOR_NAME                              STRING 
+
+, SAFETY_DIRECTOR_EMAIL                             STRING 
+
+, RETAIL_MANAGER_SAFETY_NAME                        STRING 
+
+, RETAIL_MANAGER_SAFETY_EMAIL                       STRING 
+
+, AREA_DIRECTOR_NAME                                STRING 
+
+, AREA_DIRECTOR_EMAIL                               STRING 
+
+, DC_GENERAL_MANAGER_NAME                           STRING 
+
+, DC_GENERAL_MANAGER_EMAIL                          STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME1                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL1                    STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME2                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL2                    STRING 
+
+, REGIONAL_DC_SAFETY_MGR_NAME                       STRING 
+
+, REGIONAL_DC_SAFETY_MGR_EMAIL                      STRING 
+
+, DC_PEOPLE_SUPERVISOR_NAME                         STRING 
+
+, DC_PEOPLE_SUPERVISOR_EMAIL                        STRING 
+
+, PEOPLE_MANAGER_NAME                               STRING 
+
+, PEOPLE_MANAGER_EMAIL                              STRING 
+
+, ASSET_PROT_DIR_NAME                               STRING 
+
+, ASSET_PROT_DIR_EMAIL                              STRING 
+
+, SR_REG_ASSET_PROT_MGR_NAME                        STRING 
+
+, SR_REG_ASSET_PROT_MGR_EMAIL                       STRING 
+
+, REG_ASSET_PROT_MGR_NAME                           STRING 
+
+, REG_ASSET_PROT_MGR_EMAIL                          STRING 
+
+, ASSET_PROTECT_EMAIL                               STRING 
+
+, TP_START_DT                                       TIMESTAMP 
+
+, OPEN_DT       TIMESTAMP 
+
+, GR_OPEN_DT                                        TIMESTAMP 
+
+, CLOSE_DT      TIMESTAMP 
+
+, HOTEL_OPEN_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Spatial/site_profile';
+
+--DISTRIBUTE ON (LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "POG_AVG_WEEK_SALES_PRE" , ***** Creating table: "POG_AVG_WEEK_SALES_PRE"
+
+
+use qa_raw;
+ CREATE TABLE POG_AVG_WEEK_SALES_PRE 
+(  PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, POG_ID INT not null
+
+, AVG_WK_SALES_QTY                                  INT 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Spatial/pog_avg_week_sales_pre';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "POG_DISTRIB_PRE" , ***** Creating table: "POG_DISTRIB_PRE"
+
+
+use qa_raw;
+ CREATE TABLE POG_DISTRIB_PRE 
+(  PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, POG_ID INT not null
+
+, POG_TYPE_CD                                       STRING                          not null
+
+, INLINE_CNT INT
+
+, PLANNER_CNT INT
+
+, PRODLOC_CNT INT
+
+, POG_PROMO_QTY                                     INT 
+
+, PROMO_START_DT                                    TIMESTAMP 
+
+, PROMO_END_DT                                      TIMESTAMP 
+
+, PRODLOC_PROMO_QTY                                 INT 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Spatial/pog_distrib_pre';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "POG_MERCH_DISCOUNT_WEEK_PRE" , ***** Creating table: "POG_MERCH_DISCOUNT_WEEK_PRE"
+
+
+use qa_raw;
+ CREATE TABLE POG_MERCH_DISCOUNT_WEEK_PRE 
+(  WEEK_DT       TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, MERCH_DISCOUNT_AMT                                DECIMAL(8,2) 
+
+, MERCH_DISCOUNT_QTY                                INT 
+
+, MERCH_DISCOUNT_RETURN_AMT                         DECIMAL(8,2) 
+
+, MERCH_DISCOUNT_RETURN_QTY                         INT 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Spatial/pog_merch_discount_week_pre';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "POG_SALES_WEEK_SKU_STORE_PRE" , ***** Creating table: "POG_SALES_WEEK_SKU_STORE_PRE"
+
+
+use qa_raw;
+ CREATE TABLE POG_SALES_WEEK_SKU_STORE_PRE 
+(  WEEK_DT       TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, POG_ID INT not null
+
+, NET_SALES_AMT                                     DECIMAL(8,2) 
+
+, NET_SALES_COST                                    DECIMAL(8,2) 
+
+, NET_SALES_QTY                                     DECIMAL(10,3) 
+
+, MERCH_SALES_AMT                                   DECIMAL(8,2) 
+
+, POG_TYPE_CD                                       STRING 
+
+, POG_MULTI_INLINE_FLAG                             STRING 
+
+, POG_MULTI_PLANNER_FLAG                            STRING 
+
+, PRODLOC_PROMO_QTY                                 INT 
+
+, INLINE_CNT INT
+
+, PLANNER_CNT INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Spatial/pog_sales_week_sku_store_pre';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+

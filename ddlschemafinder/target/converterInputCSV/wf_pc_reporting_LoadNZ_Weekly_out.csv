@@ -1,5 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-wf_pc_reporting_LoadNZ_Weekly,PC_CARD_REQUEST,distinct_ddl,legacy,no,legacy
-wf_pc_reporting_LoadNZ_Weekly,PC_CARD_ACCOUNT,distinct_ddl,legacy,no,legacy
-wf_pc_reporting_LoadNZ_Weekly,GL_DEPARTMENT,distinct_ddl,legacy,no,legacy
-wf_pc_reporting_LoadNZ_Weekly,GL_ACCOUNT_PROFILE,distinct_ddl,legacy,no,legacy

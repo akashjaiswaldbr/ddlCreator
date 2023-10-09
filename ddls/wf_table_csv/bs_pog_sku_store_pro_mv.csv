@@ -1,6 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-bs_pog_sku_store_pro_mv,MOVEMENT_DAY,EDW_PRD,legacy,no,legacy
-bs_pog_sku_store_pro_mv,MOVEMENT_INFO,EDW_PRD,legacy,no,legacy
-bs_pog_sku_store_pro_mv,MVMT_REPL_DAY,EDW_PRD,legacy,no,legacy
-bs_pog_sku_store_pro_mv,MVMT_WK_LOC_DEPT,EDW_PRD,legacy,no,legacy
-bs_pog_sku_store_pro_mv,SKU_PROFILE,EDW_PRD,legacy,no,legacy

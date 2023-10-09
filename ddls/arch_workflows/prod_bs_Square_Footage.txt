@@ -1,0 +1,220 @@
+
+
+
+
+
+--*****  Creating table:  "LOCATION" , ***** Creating table: "LOCATION"
+
+
+use legacy;
+ CREATE TABLE LOCATION 
+(
+ LOCATION_ID INT not null
+
+, COMPANY_DESC                                      STRING 
+
+, COMPANY_ID INT
+
+, DATE_CLOSED                                       TIMESTAMP 
+
+, DATE_OPEN     TIMESTAMP 
+
+, DATE_LOC_ADDED                                    TIMESTAMP                            
+
+, DATE_LOC_DELETED                                  TIMESTAMP                            
+
+, DATE_LOC_REFRESHED                                TIMESTAMP 
+
+, DISTRICT_DESC                                     STRING 
+
+, DISTRICT_ID                                       STRING 
+
+, PRICE_AD_ZONE_DESC                                STRING 
+
+, PRICE_AD_ZONE_ID                                  STRING 
+
+, PRICE_ZONE_DESC                                   STRING 
+
+, PRICE_ZONE_ID                                     STRING 
+
+, REGION_DESC                                       STRING 
+
+, REGION_ID     STRING 
+
+, REPL_DC_NBR INT 
+
+, REPL_FISH_DC_NBR INT 
+
+, REPL_FWD_DC_NBR INT 
+
+, STORE_CTRY_ABBR                                   STRING                         not null
+
+, STORE_CTRY                                        STRING 
+
+, STORE_NAME                                        STRING 
+
+, STORE_NBR INT
+
+, STORE_OPEN_CLOSE_FLAG                             STRING 
+
+, STORE_STATE_ABBR                                  STRING 
+
+, STORE_TYPE_DESC                                   STRING 
+
+, STORE_TYPE_ID                                     STRING                         not null
+
+, EQUINE_MERCH                                      STRING 
+
+, DATE_GR_OPEN                                      TIMESTAMP 
+
+, SQ_FEET_RETAIL                                    DOUBLE 
+
+, SQ_FEET_TOTAL                                     DOUBLE 
+
+, BP_COMPANY_NBR SMALLINT
+
+, BP_GL_ACCT SMALLINT
+
+, TP_LOC_FLAG                                       STRING 
+
+, TP_ACTIVE_CNT TINYINT
+
+, TP_START_DT                                       TIMESTAMP 
+
+, SITE_ADDRESS                                      STRING 
+
+, SITE_CITY     STRING 
+
+, SITE_POSTAL_CD                                    STRING 
+
+, SITE_MAIN_TELE_NO                                 STRING 
+
+, SITE_GROOM_TELE_NO                                STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Dimension/location';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "STORE_AREA_PRE" , ***** Creating table: "STORE_AREA_PRE"
+
+
+use raw;
+ CREATE TABLE STORE_AREA_PRE 
+(
+ STORE_NBR INT not null
+
+, LOC_AREA_EFF_DT                                   TIMESTAMP 
+
+, AREA_1_SQ_FT_AMT                                  DOUBLE 
+
+, AREA_2_SQ_FT_AMT                                  DOUBLE 
+
+, AREA_3_SQ_FT_AMT                                  DOUBLE 
+
+, AREA_4_SQ_FT_AMT                                  DOUBLE 
+
+, AREA_5_SQ_FT_AMT                                  DOUBLE 
+
+, AREA_6_SQ_FT_AMT                                  DOUBLE 
+
+, AREA_7_SQ_FT_AMT                                  DOUBLE 
+
+, AREA_8_SQ_FT_AMT                                  DOUBLE 
+
+, AREA_9_SQ_FT_AMT                                  DOUBLE 
+
+, AREA_10_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_11_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_12_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_13_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_14_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_15_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_16_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_17_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_18_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_19_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_20_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_21_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_22_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_23_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_24_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_25_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_26_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_27_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_28_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_29_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_30_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_31_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_32_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_33_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_34_SQ_FT_AMT                                 DOUBLE 
+
+, AREA_35_SQ_FT_AMT                                 DOUBLE 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-raw-p1-gcs-gbl/BA_Dimension/store_area_pre';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LOCATION_AREA" , ***** Creating table: "LOCATION_AREA"
+
+
+use legacy;
+ CREATE TABLE LOCATION_AREA 
+(
+ LOCATION_ID INT not null
+
+, AREA_ID INT not null
+
+, LOC_AREA_EFF_DT                                   TIMESTAMP                            not null  
+
+, LOC_AREA_END_DT                                   TIMESTAMP                            
+
+, SQ_FT_AMT     INT 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Dimension/location_area';
+
+--DISTRIBUTE ON (LOCATION_ID)
+
+

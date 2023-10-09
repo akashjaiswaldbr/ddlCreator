@@ -1,4 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-wf_Plan_PB_Brand_Wk,PLAN_PB_BRAND_WK,distinct_ddl,legacy,no,legacy
-wf_Plan_PB_Brand_Wk,PLAN_PB_BRAND_WK_PRE,distinct_ddl,raw,no,raw
-wf_Plan_PB_Brand_Wk,WEEKS,distinct_ddl,legacy,no,legacy

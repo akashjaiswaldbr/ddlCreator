@@ -1,0 +1,2459 @@
+
+
+
+
+
+--*****  Creating table:  "WM_ORDERS" , ***** Creating table: "WM_ORDERS"
+
+
+use legacy;
+ CREATE TABLE WM_ORDERS 
+(  LOCATION_ID INT not null
+
+, WM_ORDER_ID                                BIGINT               not null
+
+, WM_TC_ORDER_ID                             STRING 
+
+, WM_TC_ORDER_ID_U                           STRING 
+
+, WM_TC_COMPANY_ID                           INT 
+
+, WM_BUSINESS_PARTNER_ID                     STRING 
+
+, WM_PARENT_ORDER_ID                         BIGINT 
+
+, WM_C_TMS_PLAN_ID                           INT 
+
+, WM_EXT_PURCHASE_ORDER                      STRING 
+
+, WM_ORDER_TYPE                              STRING 
+
+, WM_ORDER_STATUS                            SMALLINT 
+
+, WM_VAS_ORDER_STATUS                        SMALLINT 
+
+, WM_PURCHASE_ORDER_ID                       BIGINT 
+
+, WM_PURCHASE_ORDER_NBR                      STRING 
+
+, WM_DO_STATUS                               SMALLINT 
+
+, WM_DO_TYPE                                 TINYINT 
+
+, WM_SHIPMENT_ID                             BIGINT 
+
+, WM_TC_SHIPMENT_ID                          STRING 
+
+, WM_REF_SHIPMENT_NBR                        STRING 
+
+, WM_ORDER_SHIPMENT_SEQ                      BIGINT 
+
+, WM_SHIP_GROUP_ID                           STRING 
+
+, WM_SHIP_GROUP_SEQ                          SMALLINT 
+
+, WM_REPL_WAVE_NBR                           STRING 
+
+, WM_PACK_WAVE_NBR                           STRING 
+
+, WM_RTE_WAVE_NBR                            STRING 
+
+, WM_REF_STOP_SEQ                            INT 
+
+, WM_MOVE_TYPE                               TINYINT 
+
+, WM_MOVEMENT_TYPE                           STRING 
+
+, WM_MOVEMENT_OPTION                         TINYINT 
+
+, WM_EST_LPN                                 BIGINT 
+
+, WM_EST_LPN_BRIDGED                         BIGINT 
+
+, WM_CUSTOMER_ID                             BIGINT 
+
+, WM_CUST_BROKER_ACCT_NBR                    STRING 
+
+, WM_ACCT_RCVBL_CD                           STRING 
+
+, WM_ACCT_RCVBL_ACCT_NBR                     STRING 
+
+, WM_FREIGHT_FORWARDER_ACCT_NBR              STRING 
+
+, WM_BILL_OF_LADING_NBR                      STRING 
+
+, WM_BOL_BREAK_ATTR                          STRING 
+
+, WM_ORDER_DATE_TSTMP                        TIMESTAMP 
+
+, WM_ORDER_RECON_TSTMP                       TIMESTAMP 
+
+, WM_ACTUAL_SHIPPED_TSTMP                    TIMESTAMP 
+
+, WM_SCHED_PICKUP_TSTMP                      TIMESTAMP 
+
+, WM_PICKUP_START_TSTMP                      TIMESTAMP 
+
+, WM_PICKUP_END_TSTMP                        TIMESTAMP 
+
+, WM_PICKUP_TZ                               SMALLINT 
+
+, WM_SCHED_DOW                               TINYINT 
+
+, WM_SCHED_DELIVERY_TSTMP                    TIMESTAMP 
+
+, WM_DELIVERY_START_TSTMP                    TIMESTAMP 
+
+, WM_DELIVERY_END_TSTMP                      TIMESTAMP 
+
+, WM_DELIVERY_TZ                             SMALLINT 
+
+, WM_ADVERTIZING_DT DATE
+
+, WM_ORDER_PRINT_TSTMP                       TIMESTAMP 
+
+, WM_MUST_RELEASE_BY_TSTMP                   TIMESTAMP 
+
+, WM_PLAN_DUE_TSTMP                          TIMESTAMP 
+
+, BASELINE_SHIP_VIA                          STRING 
+
+, ORIGINAL_ASSIGNED_SHIP_VIA                 STRING 
+
+, DISTRIBUTION_SHIP_VIA                      STRING 
+
+, DSG_SHIP_VIA                               STRING 
+
+, LINE_HAUL_SHIP_VIA                         STRING 
+
+, WM_BASELINE_CARRIER_ID                     BIGINT 
+
+, WM_ASSIGNED_CARRIER_CD                     STRING 
+
+, WM_DSG_CARRIER_CD                          STRING 
+
+, WM_INBOUND_REGION_ID                       INT 
+
+, WM_OUTBOUND_REGION_ID                      INT 
+
+, WM_DSG_SERVICE_LEVEL_ID                    BIGINT 
+
+, WM_DSG_CARRIER_ID                          BIGINT 
+
+, WM_DSG_EQUIPMENT_ID                        BIGINT 
+
+, WM_DSG_TRACTOR_EQUIPMENT_ID                BIGINT 
+
+, WM_DSG_MOT_ID                              BIGINT 
+
+, WM_BASELINE_MOT_ID                         BIGINT 
+
+, WM_BASELINE_SERVICE_LEVEL_ID               BIGINT 
+
+, WM_ASSIGNED_MOT_ID                         BIGINT 
+
+, WM_ASSIGNED_CARRIER_ID                     BIGINT 
+
+, WM_ASSIGNED_SERVICE_LEVEL_ID               BIGINT 
+
+, WM_ASSIGNED_EQUIPMENT_ID                   BIGINT 
+
+, WM_WAVE_ID                                 BIGINT 
+
+, WM_WAVE_OPTION_ID                          BIGINT 
+
+, WM_PATH_ID                                 BIGINT 
+
+, WM_PATH_SET_ID                             BIGINT 
+
+, WM_DRIVER_TYPE_ID                          BIGINT 
+
+, WM_UN_NUMBER_ID                            BIGINT 
+
+, WM_PRODUCT_CLASS_ID                        INT 
+
+, WM_PROTECTION_LEVEL_ID                     INT 
+
+, WM_MERCHANDIZING_DEPT_ID                   BIGINT 
+
+, WM_FREIGHT_CLASS                           DECIMAL(5,1) 
+
+, WM_COMMODITY_CD_ID                         BIGINT 
+
+, WM_INTL_GOODS_DESC                         STRING 
+
+, WM_SOURCE_ORDER                            STRING 
+
+, WM_CREATION_TYPE                           TINYINT 
+
+, ORDER_STREAM_FLAG                          TINYINT 
+
+, WM_MAJOR_ORDER_CTRL_NBR                    STRING 
+
+, WM_MAJOR_ORDER_GRP_ATTR                    STRING 
+
+, WM_ORDER_CONSOL_PROFILE                    STRING 
+
+, WM_PRIORITY                                SMALLINT 
+
+, WM_EFFECTIVE_RANK                          STRING 
+
+, WM_BATCH_ID                                BIGINT 
+
+, WM_ORDER_LOADING_SEQ                       INT 
+
+, WM_PARTIAL_SHIP_CONFIRM_STATUS             TINYINT 
+
+, WM_CHANNEL_TYPE                            SMALLINT 
+
+, WM_DELIVERY_CHANNEL_ID                     SMALLINT 
+
+, WM_SHIPPING_CHANNEL                        STRING 
+
+, WM_PO_TYPE_ATTR                            STRING 
+
+, WM_LPN_LABEL_TYPE                          STRING 
+
+, WM_PACK_SLIP_TYPE                          STRING 
+
+, WM_BOL_TYPE                                STRING 
+
+, WM_MANIF_TYPE                              STRING 
+
+, WM_EQUIPMENT_TYPE                          SMALLINT 
+
+, WM_CONS_RUN_ID                             BIGINT 
+
+, WM_TRANS_RESP_CD                           STRING 
+
+, WM_BILLING_METHOD                          TINYINT 
+
+, DROP_OFF_PICKUP                            STRING 
+
+, WM_COMPARTMENT_NO                          TINYINT 
+
+, WM_PACKAGING                               STRING 
+
+, WM_CHUTE_ID                                STRING 
+
+, DOCS_ONLY_SHPMT                            STRING 
+
+, FTSR_NBR                                   STRING 
+
+, AES_ITN                                    STRING 
+
+, WM_PROD_SCHED_REF_NBR                      STRING 
+
+, WM_CUBING_STATUS                           SMALLINT 
+
+, NON_MACHINEABLE_FLAG                       TINYINT 
+
+, DYNAMIC_REQUEST_SENT                       BIGINT 
+
+, WM_RELEASE_DESTINATION                     SMALLINT 
+
+, WM_TEMPLATE_ID                             BIGINT 
+
+, OVERRIDE_BILLING_METHOD_FLAG               TINYINT 
+
+, WM_PARENT_TYPE                             TINYINT 
+
+, WM_ADVT_CD                                 STRING 
+
+, WM_LAST_RUN_ID                             BIGINT 
+
+, LANE_NAME                                  STRING 
+
+, WM_GLOBAL_LOCN_NBR                         STRING 
+
+, IMPORTER_DEFN                              STRING 
+
+, WM_LANG_ID                                 STRING 
+
+, MAJOR_MINOR_ORDER                          STRING 
+
+, WM_MHE_ORD_STATE                           STRING 
+
+, PARTIAL_LPN_OPTION                         STRING 
+
+, PARTIES_RELATED                            STRING 
+
+, WM_PRE_STICKER_CD                          STRING 
+
+, WM_MANIFEST_NBR                            STRING 
+
+, DESTINATION_ACTION                         STRING 
+
+, TRANS_PLAN_OWNER                           SMALLINT 
+
+, DELIVERY_OPTIONS                           STRING 
+
+, WM_PRE_BILL_STATUS                         STRING 
+
+, WM_PALLET_CONTENT_LABEL_TYPE               STRING 
+
+, TRANS_PLAN_DIRECTION                       STRING 
+
+, HAZ_OFFER_OR_NAME                          STRING 
+
+, WM_DISTRO_NBR                              STRING 
+
+, WM_INCOTERM_ID                             INT 
+
+, DIRECTION                                  STRING 
+
+, NBR_OF_ZONES                               SMALLINT 
+
+, FIRST_ZONE                                 STRING 
+
+, LAST_ZONE                                  STRING 
+
+, WM_DSG_VOYAGE_FLIGHT                       STRING 
+
+, WM_DSG_TRAILER_NBR                         STRING 
+
+, UPSMI_COST_CENTER                          STRING 
+
+, WM_PICKLIST_ID                             STRING 
+
+, APPLY_LPN_TYPE_FOR_ORDER_FLAG              TINYINT 
+
+, WM_EPI_SERVICE_GROUP                       STRING 
+
+, WM_IMPORTER_OF_RECORD_NBR                  STRING 
+
+, WM_B13A_EXPORT_DECL_NBR                    STRING 
+
+, CANCELLED_FLAG                             TINYINT 
+
+, WM_CANCEL_TSTMP                            TIMESTAMP 
+
+, ORDER_RECEIVED_FLAG                        TINYINT 
+
+, ORIGINAL_ORDER_FLAG                        TINYINT 
+
+, AUTO_APPOINTMENT_FLAG                      TINYINT 
+
+, CUSTOMER_PICKUP_FLAG                       TINYINT 
+
+, D_PO_BOX_FLAG                              TINYINT 
+
+, DIRECT_ALLOWED_FLAG                        TINYINT 
+
+, ALLOW_PRE_BILLING_FLAG                     TINYINT 
+
+, ORDER_RECONCILED_FLAG                      TINYINT 
+
+, SINGLE_UNIT_FLAG                           TINYINT 
+
+, PARTIAL_SHIP_CONFIRM_FLAG                  TINYINT 
+
+, CHASE_ELIGIBLE_FLAG                        TINYINT 
+
+, GUARANTEED_DELIVERY_FLAG                   TINYINT 
+
+, LPN_CUBING_IND                             TINYINT 
+
+, BLOCK_AUTO_CREATE_FLAG                     TINYINT 
+
+, BLOCK_AUTO_CONSOLIDATE_FLAG                TINYINT 
+
+, HAS_ALERTS_FLAG                            TINYINT 
+
+, HAS_EM_NOTIFY_FLAG                         TINYINT 
+
+, HAS_IMPORT_ERROR_FLAG                      TINYINT 
+
+, HAS_NOTES_FLAG                             TINYINT 
+
+, HAS_SOFT_CHECK_ERRORS_FLAG                 TINYINT 
+
+, HAS_SPLIT_FLAG                             TINYINT 
+
+, BOOKING_REQD_FLAG                          TINYINT 
+
+, BACK_ORDERED_IND                           STRING 
+
+, STAGE_IND                                  TINYINT 
+
+, ROUTED_FLAG                                TINYINT 
+
+, DYNAMIC_ROUTING_REQD_FLAG                  TINYINT 
+
+, HAZMAT_FLAG                                TINYINT 
+
+, IMPORTED_FLAG                              TINYINT 
+
+, PARTIALLY_PLANNED_FLAG                     TINYINT 
+
+, PERISHABLE_FLAG                            TINYINT 
+
+, SUSPENDED_FLAG                             TINYINT 
+
+, PALLET_CUBING_FLAG                         TINYINT 
+
+, PRE_PACK_FLAG                              TINYINT 
+
+, IN_TRANSIT_ALLOCATION_FLAG                 TINYINT 
+
+, DELIVERY_REQUIREMENT                       STRING 
+
+, FAILED_GUARANTEED_DELIVERY                 STRING 
+
+, MHE_FLAG                                   TINYINT 
+
+, PNH_FLAG                                   TINYINT 
+
+, PRINT_CANADIAN_CUST_INVOICE_FLAG           TINYINT 
+
+, PRINT_COO_FLAG                             TINYINT 
+
+, PRINT_DOCK_RCPT_FLAG                       TINYINT 
+
+, PRINT_INVOICE_FLAG                         TINYINT 
+
+, PRINT_NAFTA_COO_FLAG                       TINYINT 
+
+, PRINT_OCEAN_BOL_FLAG                       TINYINT 
+
+, PRINT_SED_FLAG                             TINYINT 
+
+, PRINT_SHIPPER_LIST_OF_INSTR_FLAG           TINYINT 
+
+, PRINT_PKG_LIST_FLAG                        TINYINT 
+
+, STORE_NBR                                  STRING 
+
+, WM_DC_CTR_NBR                              STRING 
+
+, WM_ORDER_CONSOL_LOCN_ID                    STRING 
+
+, WM_DSG_HUB_LOCATION_ID                     INT 
+
+, WM_ZONE_SKIP_HUB_LOCATION_ID               INT 
+
+, WM_STAGING_LOCN_ID                         STRING 
+
+, WM_PLAN_O_FACILITY_ID                      BIGINT 
+
+, WM_PLAN_O_FACILITY_ALIAS_ID                STRING 
+
+, WM_O_FACILITY_ID                           INT 
+
+, WM_O_FACILITY_ALIAS_ID                     STRING 
+
+, WM_O_FACILITY_NAME                         STRING 
+
+, WM_O_DOCK_ID                               STRING 
+
+, WM_O_DOCK_DOOR_ID                          BIGINT 
+
+, O_CONTACT                                  STRING 
+
+, O_ADDR_1                                   STRING 
+
+, O_ADDR_2                                   STRING 
+
+, O_ADDR_3                                   STRING 
+
+, O_CITY                                     STRING 
+
+, O_STATE_PROV                               STRING 
+
+, O_POSTAL_CD                                STRING 
+
+, O_COUNTY                                   STRING 
+
+, O_COUNTRY_CD                               STRING 
+
+, O_PHONE_NBR                                STRING 
+
+, O_FAX_NBR                                  STRING 
+
+, O_EMAIL                                    STRING 
+
+, WM_PLAN_D_FACILITY_ID                      INT 
+
+, WM_PLAN_D_FACILITY_ALIAS_ID                STRING 
+
+, WM_D_FACILITY_ID                           INT 
+
+, WM_D_FACILITY_ALIAS_ID                     STRING 
+
+, WM_D_FACILITY_NAME                         STRING 
+
+, WM_D_DOCK_ID                               STRING 
+
+, WM_D_DOCK_DOOR_ID                          BIGINT 
+
+, D_CONTACT                                  STRING 
+
+, D_NAME                                     STRING 
+
+, D_ADDR_1                                   STRING 
+
+, D_ADDR_2                                   STRING 
+
+, D_ADDR_3                                   STRING 
+
+, D_CITY                                     STRING 
+
+, D_STATE_PROV                               STRING 
+
+, D_POSTAL_CD                                STRING 
+
+, D_COUNTY                                   STRING 
+
+, D_COUNTRY_CD                               STRING 
+
+, D_PHONE_NBR                                STRING 
+
+, D_FAX_NBR                                  STRING 
+
+, D_EMAIL                                    STRING 
+
+, WM_PLAN_LEG_D_ALIAS_ID                     STRING 
+
+, WM_PLAN_LEG_O_ALIAS_ID                     STRING 
+
+, WM_BILL_ACCT_NBR                           STRING 
+
+, WM_BILL_FACILITY_ID                        INT 
+
+, WM_BILL_FACILITY_ALIAS_ID                  STRING 
+
+, WM_BILL_TO_FACILITY_NAME                   STRING 
+
+, BILL_TO_TITLE                              STRING 
+
+, BILL_TO_CONTACT_NAME                       STRING 
+
+, BILL_TO_NAME                               STRING 
+
+, BILL_TO_ADDR_1                             STRING 
+
+, BILL_TO_ADDR_2                             STRING 
+
+, BILL_TO_ADDR_3                             STRING 
+
+, BILL_TO_CITY                               STRING 
+
+, BILL_TO_STATE_PROV                         STRING 
+
+, BILL_TO_COUNTY                             STRING 
+
+, BILL_TO_POSTAL_CD                          STRING 
+
+, BILL_TO_COUNTRY_CD                         STRING 
+
+, BILL_TO_PHONE_NBR                          STRING 
+
+, BILL_TO_FAX_NBR                            STRING 
+
+, BILL_TO_EMAIL                              STRING 
+
+, WM_ADDR_CD                                 STRING 
+
+, ADDR_VALID_FLAG                            TINYINT 
+
+, WM_PRIMARY_MAXI_ADDR_NBR                   STRING 
+
+, WM_SECONDARY_MAXI_ADDR_NBR                 STRING 
+
+, WM_RETURN_ADDR_CD                          STRING 
+
+, WM_COD_RETURN_COMPANY_NAME                 STRING 
+
+, WM_RTE_TO                                  STRING 
+
+, WM_RTE_SWC_NBR                             STRING 
+
+, WM_RTE_TYPE_1                              STRING 
+
+, WM_RTE_TYPE_2                              STRING 
+
+, WM_RTE_ATTR                                STRING 
+
+, WM_ORIGIN_SHIP_THRU_FACILITY_ID            INT 
+
+, WM_ORIGIN_SHIP_THRU_FAC_ALIAS_ID           STRING 
+
+, WM_DEST_SHIP_THRU_FACILITY_ID              INT 
+
+, WM_DEST_SHIP_THRU_FAC_ALIAS_ID             STRING 
+
+, WM_INCOTERM_FACILITY_ID                    INT 
+
+, WM_INCOTERM_FACILITY_ALIAS_ID              STRING 
+
+, WM_INCOTERM_LOC_AVA_TSTMP                  TIMESTAMP 
+
+, WM_INCOTERM_LOC_AVA_TIME_ZONE_ID           INT 
+
+, WM_ASSIGNED_STATIC_ROUTE_ID                STRING 
+
+, WM_DSG_STATIC_ROUTE_ID                     STRING 
+
+, WM_STATIC_ROUTE_DELIVERY_TYPE              STRING 
+
+, WM_CONTNT_LABEL_TYPE                       STRING 
+
+, NBR_OF_CONTNT_LABEL                        INT 
+
+, NBR_OF_LABEL                               INT 
+
+, NBR_OF_PAKNG_SLIPS                         INT 
+
+, PACK_SLIP_PRT_CNT                          TINYINT 
+
+, TOTAL_NBR_OF_UNITS                         DECIMAL(15,4) 
+
+, TOTAL_NBR_OF_LPN                           INT 
+
+, TOTAL_NBR_OF_PLT                           INT 
+
+, EST_PALLET_BRIDGED                         BIGINT 
+
+, EST_PALLET                                 BIGINT 
+
+, COD_AMT                                    DECIMAL(13,4) 
+
+, COD_CURRENCY_CD                            STRING 
+
+, COD_FUNDS                                  STRING 
+
+, MONETARY_VALUE                             DECIMAL(16,4) 
+
+, MV_CURRENCY_CD                             STRING 
+
+, MARGIN                                     DECIMAL(13,4) 
+
+, MARGIN_CURRENCY_CD                         STRING 
+
+, DECLARED_VALUE                             DECIMAL(16,4) 
+
+, DV_CURRENCY_CD                             STRING 
+
+, DUTY_AND_TAX                               DECIMAL(13,4) 
+
+, WM_TAX_ID                                  STRING 
+
+, WM_DUTY_TAX_ACCT_NBR                       STRING 
+
+, WM_DUTY_TAX_PAYMENT_TYPE                   TINYINT 
+
+, SHPNG_CHRG                                 DECIMAL(11,2) 
+
+, ORIG_BUDG_COST                             DECIMAL(13,4) 
+
+, BUDG_COST                                  DECIMAL(13,4) 
+
+, BUDG_COST_CURRENCY_CD                      STRING 
+
+, ACTUAL_COST                                DECIMAL(13,4) 
+
+, ACTUAL_COST_CURRENCY_CD                    STRING 
+
+, BASELINE_COST                              DECIMAL(13,4) 
+
+, NORMALIZED_BASELINE_COST                   DECIMAL(13,4) 
+
+, BASELINE_LINEHAUL_COST                     DECIMAL(13,4) 
+
+, BASELINE_ACCESSORIAL_COST                  DECIMAL(13,4) 
+
+, BASELINE_COST_CURRENCY_CD                  STRING 
+
+, WM_REVENUE_LANE_ID                         DECIMAL(13,4) 
+
+, WM_REVENUE_LANE_DETAIL_ID                  DECIMAL(13,4) 
+
+, LINEHAUL_REVENUE                           DECIMAL(13,4) 
+
+, ACCESSORIAL_REVENUE                        DECIMAL(13,4) 
+
+, STOP_OFF_REVENUE                           DECIMAL(13,4) 
+
+, CM_DISCOUNT_REVENUE                        DECIMAL(13,3) 
+
+, FREIGHT_REVENUE                            DECIMAL(13,4) 
+
+, FREIGHT_REVENUE_CURRENCY_CD                STRING 
+
+, WM_WEIGHT_UOM_ID_BASE                      INT 
+
+, REF_FIELD_1                                STRING 
+
+, REF_FIELD_2                                STRING 
+
+, REF_FIELD_3                                STRING 
+
+, REF_FIELD_4                                STRING 
+
+, REF_FIELD_5                                STRING 
+
+, REF_FIELD_6                                STRING 
+
+, REF_FIELD_7                                STRING 
+
+, REF_FIELD_8                                STRING 
+
+, REF_FIELD_9                                STRING 
+
+, REF_FIELD_10                               STRING 
+
+, REF_NUM_1                                  DECIMAL(13,5) 
+
+, REF_NUM_2                                  DECIMAL(13,5) 
+
+, REF_NUM_3                                  DECIMAL(13,5) 
+
+, REF_NUM_4                                  DECIMAL(13,5) 
+
+, REF_NUM_5                                  DECIMAL(13,5) 
+
+, SPL_INSTR_CD_1                             STRING 
+
+, SPL_INSTR_CD_2                             STRING 
+
+, SPL_INSTR_CD_3                             STRING 
+
+, SPL_INSTR_CD_4                             STRING 
+
+, SPL_INSTR_CD_5                             STRING 
+
+, SPL_INSTR_CD_6                             STRING 
+
+, SPL_INSTR_CD_7                             STRING 
+
+, SPL_INSTR_CD_8                             STRING 
+
+, SPL_INSTR_CD_9                             STRING 
+
+, SPL_INSTR_CD_10                            STRING 
+
+, MARK_FOR                                   STRING 
+
+, WM_HIBERNATE_VERSION                       BIGINT 
+
+, WM_CREATED_SOURCE_TYPE                     TINYINT 
+
+, WM_CREATED_SOURCE                          STRING 
+
+, WM_CREATED_TSTMP                           TIMESTAMP 
+
+, WM_LAST_UPDATED_SOURCE_TYPE                TINYINT 
+
+, WM_LAST_UPDATED_SOURCE                     STRING 
+
+, WM_LAST_UPDATED_TSTMP                      TIMESTAMP 
+
+, UPDATE_TSTMP                               TIMESTAMP                   not null
+
+, LOAD_TSTMP                                 TIMESTAMP                   not null  
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/wm_orders';
+
+--DISTRIBUTE ON (WM_ORDER_ID)
+
+--ORGANIZE   ON (LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "WM_ORDER_LINE_ITEM" , ***** Creating table: "WM_ORDER_LINE_ITEM"
+
+
+use legacy;
+ CREATE TABLE WM_ORDER_LINE_ITEM 
+(  LOCATION_ID INT not null
+
+, WM_ORDER_ID                                BIGINT               not null
+
+, WM_LINE_ITEM_ID                            BIGINT               not null
+
+, WM_DESC                                    STRING 
+
+, WM_MASTER_ORDER_ID                         BIGINT 
+
+, WM_MO_LINE_ITEM_ID                         BIGINT 
+
+, WM_ORDER_LINE_ID                           BIGINT 
+
+, WM_PARENT_LINE_ITEM_ID                     BIGINT 
+
+, WM_ITEM_ID                                 INT 
+
+, WM_ITEM_NAME                               STRING 
+
+, WM_ORIGINAL_ORDERED_ITEM_ID                INT 
+
+, WM_TC_COMPANY_ID                           INT 
+
+, WM_TC_ORDER_LINE_ID                        STRING 
+
+, WM_MINOR_ORDER_NBR                         STRING 
+
+, WM_INTERNAL_ORDER_ID                       STRING 
+
+, WM_INTERNAL_ORDER_SEQ_NBR                  INT 
+
+, WM_REF_ORDER_ID                            BIGINT 
+
+, WM_REF_LINE_ITEM_ID                        BIGINT 
+
+, WM_PURCHASE_ORDER_NBR                      STRING 
+
+, WM_PURCHASE_ORDER_LINE_NBR                 STRING 
+
+, WM_EXT_PURCHASE_ORDER                      STRING 
+
+, WM_EXT_SYS_LINE_ITEM_ID                    STRING 
+
+, WM_MERCHANDIZING_DEPT_ID                   BIGINT 
+
+, WM_UN_NBR_ID                               BIGINT 
+
+, WM_PICKUP_REF_NBR                          STRING 
+
+, WM_DELIVERY_REF_NBR                        STRING 
+
+, WM_RTS_ID                                  BIGINT 
+
+, WM_RTS_LINE_ITEM_ID                        BIGINT 
+
+, WM_PROTECTION_LEVEL_ID                     INT 
+
+, WM_PACKAGE_TYPE_ID                         INT 
+
+, WM_COMMODITY_CD_ID                         BIGINT 
+
+, WM_EVENT_CD                                STRING 
+
+, WM_WAVE_NBR                                STRING 
+
+, WM_SHIP_WAVE_NBR                           STRING 
+
+, WM_REPL_WAVE_NBR                           STRING 
+
+, WM_LPN_TYPE                                STRING 
+
+, WM_PRE_RECEIPT_STATUS                      STRING 
+
+, WM_DO_DTL_STATUS                           SMALLINT 
+
+, WM_PROD_STAT                               STRING 
+
+, WM_HARD_ALLOC_REASON_CD                    STRING 
+
+, WM_REASON_CD                               STRING 
+
+, BACK_ORD_REASON                            STRING 
+
+, WM_EXP_INFO_CD                             STRING 
+
+, WM_WAVE_PROC_TYPE                          SMALLINT 
+
+, LINE_TYPE                                  STRING 
+
+, REPL_PROC_TYPE                             SMALLINT 
+
+, REPL_WAVE_RUN_FLAG                         TINYINT 
+
+, WM_ALLOC_TYPE                              STRING 
+
+, WM_BATCH_NBR                               STRING 
+
+, WM_BATCH_REQUIREMENT_TYPE                  STRING 
+
+, WM_CHUTE_ASSIGN_TYPE                       STRING 
+
+, WM_INVN_TYPE                               STRING 
+
+, LPN_BRK_ATTR                               STRING 
+
+, PACK_ZONE                                  STRING 
+
+, WM_PALLET_TYPE                             STRING 
+
+, WM_PICK_LOCN_ASSIGN_TYPE                   STRING 
+
+, WM_PICK_LOCN_ID                            STRING 
+
+, WM_PPACK_GRP_CD                            STRING 
+
+, WM_PRICE_TKT_TYPE                          STRING 
+
+, WM_SHELF_DAYS                              INT 
+
+, WM_FULFILLMENT_TYPE                        STRING 
+
+, WM_ORDER_CONSOL_ATTR                       STRING 
+
+, VAS_PROCESS_TYPE                           STRING 
+
+, WM_SEGMENT_NAME                            STRING 
+
+, WM_EFFECTIVE_RANK                          STRING 
+
+, PRIORITY                                   BIGINT 
+
+, ALLOW_REVIVAL_RECEIPT_ALLOC                STRING 
+
+, RECEIPT_ALLOCATED_FLAG                     TINYINT 
+
+, HAZMAT_FLAG                                TINYINT 
+
+, STACKABLE_FLAG                             TINYINT 
+
+, HAS_ERRORS_FLAG                            TINYINT 
+
+, EMERGENCY_FLAG                             TINYINT 
+
+, SINGLE_UNIT_FLAG                           TINYINT 
+
+, SERIAL_NBR_REQD_FLAG                       TINYINT 
+
+, CHASE_CREATED_LINE_FLAG                    TINYINT 
+
+, GIFT_FLAG                                  TINYINT 
+
+, PARTIAL_FILL_FLAG                          TINYINT 
+
+, LOCKED_FLAG                                TINYINT 
+
+, CANCELLED_FLAG                             TINYINT 
+
+, SKU_GTIN                                   STRING 
+
+, COUNTRY_OF_ORIGIN                          STRING 
+
+, COMMODITY_CLASS                            STRING 
+
+, WM_PRODUCT_CLASS_ID                        INT 
+
+, WM_STORE_DEPT                              STRING 
+
+, WM_MERCH_GRP                               STRING 
+
+, WM_MERCH_TYPE                              STRING 
+
+, CUSTOM_TAG                                 STRING 
+
+, CUSTOMER_ITEM                              STRING 
+
+, WM_SKU_SUB_CD_ID                           STRING 
+
+, WM_SKU_SUB_CD_VALUE                        STRING 
+
+, WM_SUBSTITUTED_PARENT_LINE_ID              BIGINT 
+
+, WM_ALLOCATION_SOURCE                       TINYINT 
+
+, WM_ALLOC_LINE_ID                           INT 
+
+, WM_ALLOCATION_SOURCE_ID                    STRING 
+
+, WM_ALLOCATION_SOURCE_LINE_ID               STRING 
+
+, SKU_BREAK_ATTR                             STRING 
+
+, WM_ASSORT_NBR                              STRING 
+
+, SUBSTITUTION_TYPE                          STRING 
+
+, MANUFACTURING_TSTMP                        TIMESTAMP 
+
+, PICKUP_START_TSTMP                         TIMESTAMP 
+
+, PICKUP_END_TSTMP                           TIMESTAMP 
+
+, DELIVERY_START_TSTMP                       TIMESTAMP 
+
+, DELIVERY_END_TSTMP                         TIMESTAMP 
+
+, PLANNED_SHIP_TSTMP                         TIMESTAMP 
+
+, ACTUAL_SHIPPED_TSTMP                       TIMESTAMP 
+
+, PACK_RATE                                  DECIMAL(13,4) 
+
+, PPACK_QTY                                  DECIMAL(13,4) 
+
+, USER_CANCELED_QTY                          DECIMAL(13,4) 
+
+, ACTUAL_COST                                DECIMAL(13,4) 
+
+, ORIG_BUDG_COST                             DECIMAL(13,4) 
+
+, BUDG_COST                                  DECIMAL(13,4) 
+
+, BUDG_COST_CURRENCY_CD                      STRING 
+
+, ACTUAL_COST_CURRENCY_CD                    STRING 
+
+, TOTAL_MONETARY_VALUE                       DECIMAL(13,4) 
+
+, PRICE                                      DECIMAL(13,4) 
+
+, RETAIL_PRICE                               DECIMAL(16,4) 
+
+, GIFT_CARD_VALUE                            DECIMAL(13,4) 
+
+, UNIT_COST                                  DECIMAL(16,4) 
+
+, UNIT_PRICE_AMT                             DECIMAL(13,4) 
+
+, UNIT_VOL                                   DECIMAL(13,4) 
+
+, UNIT_WT                                    DECIMAL(13,4) 
+
+, UNIT_TAX_AMT                               DECIMAL(16,4) 
+
+, UNIT_MONETARY_VALUE                        DECIMAL(13,4) 
+
+, MV_CURRENCY_CD                             STRING 
+
+, ORIG_ORDER_QTY                             DECIMAL(13,4) 
+
+, ORDER_QTY                                  DECIMAL(13,4) 
+
+, ADJUSTED_ORDER_QTY                         DECIMAL(13,4) 
+
+, ALLOCATED_QTY                              DECIMAL(13,4) 
+
+, SHIPPED_QTY                                DECIMAL(13,4) 
+
+, RECEIVED_QTY                               DECIMAL(13,4) 
+
+, RTL_TO_BE_DISTROED_QTY                     DECIMAL(9,2) 
+
+, UNITS_PAKD                                 DECIMAL(13,4) 
+
+, CUBE_MULTIPLE_QTY                          DECIMAL(13,4) 
+
+, STD_PACK_QTY                               DECIMAL(13,4) 
+
+, STD_PALLET_QTY                             DECIMAL(13,4) 
+
+, STD_SUB_PACK_QTY                           DECIMAL(13,4) 
+
+, STD_BUNDLE_QTY                             DECIMAL(13,4) 
+
+, STD_LPN_QTY                                DECIMAL(13,4) 
+
+, STD_LPN_VOL                                DECIMAL(13,4) 
+
+, STD_LPN_WT                                 DECIMAL(13,4) 
+
+, LPN_SIZE                                   DECIMAL(16,4) 
+
+, QTY_CONV_FACTOR                            DECIMAL(17,8) 
+
+, WM_QTY_UOM_ID                              BIGINT 
+
+, WM_QTY_UOM_ID_BASE                         INT 
+
+, WM_MV_SIZE_UOM_ID                          INT 
+
+, PLANNED_WEIGHT                             DECIMAL(13,4) 
+
+, RECEIVED_WEIGHT                            DECIMAL(13,4) 
+
+, SHIPPED_WEIGHT                             DECIMAL(13,4) 
+
+, WM_WEIGHT_UOM_ID_BASE                      INT 
+
+, WM_WEIGHT_UOM_ID                           INT 
+
+, PLANNED_VOLUME                             DECIMAL(13,4) 
+
+, RECEIVED_VOLUME                            DECIMAL(13,4) 
+
+, SHIPPED_VOLUME                             DECIMAL(13,4) 
+
+, WM_VOLUME_UOM_ID_BASE                      INT 
+
+, WM_VOLUME_UOM_ID                           INT 
+
+, SIZE_1_VALUE                               DECIMAL(13,4) 
+
+, RECEIVED_SIZE_1                            DECIMAL(13,4) 
+
+, SHIPPED_SIZE_1                             DECIMAL(13,4) 
+
+, WM_SIZE_1_UOM_ID                           INT 
+
+, SIZE_2_VALUE                               DECIMAL(13,4) 
+
+, RECEIVED_SIZE_2                            DECIMAL(13,4) 
+
+, SHIPPED_SIZE_2                             DECIMAL(13,4) 
+
+, WM_SIZE_2_UOM_ID                           INT 
+
+, STACK_RANK                                 SMALLINT 
+
+, STACK_LENGTH_VALUE                         DECIMAL(16,4) 
+
+, WM_STACK_LENGTH_STANDARD_UOM               INT 
+
+, STACK_WIDTH_VALUE                          DECIMAL(16,4) 
+
+, WM_STACK_WIDTH_STANDARD_UOM                INT 
+
+, STACK_HEIGHT_VALUE                         DECIMAL(16,4) 
+
+, WM_STACK_HEIGHT_STANDARD_UOM               INT 
+
+, STACK_DIAMETER_VALUE                       DECIMAL(16,4) 
+
+, WM_STACK_DIAMETER_STANDARD_UOM             INT 
+
+, FREIGHT_REVENUE                            DECIMAL(13,4) 
+
+, FREIGHT_REVENUE_CURRENCY_CD                STRING 
+
+, ITEM_ATTR_1                                STRING 
+
+, ITEM_ATTR_2                                STRING 
+
+, ITEM_ATTR_3                                STRING 
+
+, ITEM_ATTR_4                                STRING 
+
+, ITEM_ATTR_5                                STRING 
+
+, CRITCL_DIM_1                               DECIMAL(7,2) 
+
+, CRITCL_DIM_2                               DECIMAL(7,2) 
+
+, CRITCL_DIM_3                               DECIMAL(7,2) 
+
+, REF_BOOLEAN_1                              TINYINT 
+
+, REF_BOOLEAN_2                              TINYINT 
+
+, REF_SYS_CD_1                               STRING 
+
+, REF_SYS_CD_2                               STRING 
+
+, REF_SYS_CD_3                               STRING 
+
+, REF_FIELD_1                                STRING 
+
+, REF_FIELD_2                                STRING 
+
+, REF_FIELD_3                                STRING 
+
+, REF_FIELD_4                                STRING 
+
+, REF_FIELD_5                                STRING 
+
+, REF_FIELD_6                                STRING 
+
+, REF_FIELD_7                                STRING 
+
+, REF_FIELD_8                                STRING 
+
+, REF_FIELD_9                                STRING 
+
+, REF_FIELD_10                               STRING 
+
+, REF_NUM_1                                  DECIMAL(13,5) 
+
+, REF_NUM_2                                  DECIMAL(13,5) 
+
+, REF_NUM_3                                  DECIMAL(13,5) 
+
+, REF_NUM_4                                  DECIMAL(13,5) 
+
+, REF_NUM_5                                  DECIMAL(13,5) 
+
+, WM_HIBERNATE_VERSION                       BIGINT 
+
+, WM_CREATED_SOURCE_TYPE                     TINYINT 
+
+, WM_CREATED_SOURCE                          STRING 
+
+, WM_CREATED_TSTMP                           TIMESTAMP 
+
+, WM_LAST_UPDATED_SOURCE_TYPE                TINYINT 
+
+, WM_LAST_UPDATED_SOURCE                     STRING 
+
+, WM_LAST_UPDATED_TSTMP                      TIMESTAMP 
+
+, UPDATE_TSTMP                               TIMESTAMP                   not null
+
+, LOAD_TSTMP                                 TIMESTAMP                   not null  
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/wm_order_line_item';
+
+--DISTRIBUTE ON (WM_ORDER_ID, WM_LINE_ITEM_ID)
+
+--ORGANIZE   ON (LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "WM_LPN" , ***** Creating table: "WM_LPN"
+
+
+use legacy;
+ CREATE TABLE WM_LPN 
+(  LOCATION_ID INT not null
+
+, WM_LPN_ID                                  BIGINT               not null
+
+, WM_TC_LPN_ID                               STRING 
+
+, WM_PARENT_LPN_ID                           BIGINT 
+
+, WM_TC_PARENT_LPN_ID                        STRING 
+
+, WM_TC_REFERENCE_LPN_ID                     STRING 
+
+, WM_SPLIT_LPN_ID                            BIGINT 
+
+, WM_VENDOR_LPN_NBR                          STRING 
+
+, WM_TC_COMPANY_ID                           INT 
+
+, WM_BUSINESS_PARTNER_ID                     STRING 
+
+, WM_ORDER_ID                                BIGINT 
+
+, WM_INTERNAL_ORDER_ID                       STRING 
+
+, WM_TC_ORDER_ID                             STRING 
+
+, WM_ORDER_SPLIT_ID                          BIGINT 
+
+, WM_CROSSDOCK_TC_ORDER_ID                   STRING 
+
+, WM_WORK_ORD_NBR                            STRING 
+
+, WM_PURCHASE_ORDERS_ID                      BIGINT 
+
+, WM_TC_PURCHASE_ORDERS_ID                   STRING 
+
+, WM_SHIPMENT_ID                             BIGINT 
+
+, WM_TC_SHIPMENT_ID                          STRING 
+
+, WM_ORIGINAL_TC_SHIPMENT_ID                 STRING 
+
+, WM_RECEIVED_TC_SHIPMENT_ID                 STRING 
+
+, WM_ASN_ID                                  BIGINT 
+
+, WM_TC_ASN_ID                               STRING 
+
+, WM_PLANNED_TC_ASN_ID                       STRING 
+
+, WM_MASTER_BOL_NBR                          STRING 
+
+, WM_BOL_NBR                                 STRING 
+
+, WM_LPN_TYPE                                SMALLINT 
+
+, WM_LPN_LABEL_TYPE                          STRING 
+
+, WM_LPN_STATUS                              SMALLINT 
+
+, WM_LPN_STATUS_UPDATED_TSTMP                TIMESTAMP 
+
+, WM_LPN_FACILITY_STATUS                     SMALLINT 
+
+, WM_LPN_FACILITY_STAT_UPDATED_TSTMP         TIMESTAMP 
+
+, WM_LPN_DISP_STATUS                         STRING 
+
+, WM_WAVE_NBR                                STRING 
+
+, WM_WAVE_SEQ_NBR                            INT 
+
+, WM_WAVE_STAT_CD                            TINYINT 
+
+, WM_BUILD_LPN_BATCH_ID                      BIGINT 
+
+, WM_PACK_WAVE_NBR                           STRING 
+
+, WM_PARCEL_SHIPMENT_NBR                     STRING 
+
+, WM_REF_SHIPMENT_NBR                        STRING 
+
+, WM_TRACKING_NBR                            STRING 
+
+, WM_ALT_TRACKING_NBR                        STRING 
+
+, WM_RETURN_TRACKING_NBR                     STRING 
+
+, WM_RETURN_TRACKING_NBR_2                   STRING 
+
+, WM_RETURN_REFERENCE_NBR                    STRING 
+
+, WM_MANIFEST_NBR                            STRING 
+
+, WM_MASTER_PACK_ID                          STRING 
+
+, WM_EPI_PACKAGE_ID                          STRING 
+
+, WM_EPI_PACKAGE_STATUS                      STRING 
+
+, WM_EPI_SHIPMENT_ID                         STRING 
+
+, WM_EPI_MANIFEST_ID                         STRING 
+
+, WM_EPI_DOC_OUTPUT_TYPE                     STRING 
+
+, WM_SHIP_VIA                                STRING 
+
+, WM_INIT_SHIP_VIA                           STRING 
+
+, WM_ORIGINAL_ASSIGNED_SHIP_VIA              STRING 
+
+, WM_PATH_ID                                 BIGINT 
+
+, WM_ROUTING_LANE_ID                         INT 
+
+, WM_ROUTING_LANE_DETAIL_ID                  BIGINT 
+
+, WM_RATING_LANE_ID                          INT 
+
+, WM_RATING_LANE_DETAIL_ID                   BIGINT 
+
+, WM_ROUTE_RULE_ID                           INT 
+
+, WM_STATIC_ROUTE_ID                         INT 
+
+, WM_RTS_ID                                  BIGINT 
+
+, TRAILER_STOP_SEQ_NBR                       INT 
+
+, WM_IDEAL_PICK_TSTMP                        TIMESTAMP 
+
+, WM_LAST_FROZEN_TSTMP                       TIMESTAMP 
+
+, WM_LAST_COUNTED_TSTMP                      TIMESTAMP 
+
+, WM_CALCULATED_CUT_OFF_TSTMP                TIMESTAMP 
+
+, WM_MANUFACTURED_TSTMP                      TIMESTAMP 
+
+, WM_MANUFACT_PLANT_FACILITY_ALIAS           STRING 
+
+, WM_EXPIRATION_DT DATE
+
+, WM_RCVD_TSTMP                              TIMESTAMP 
+
+, WM_INCUBATION_DT DATE
+
+, WM_SHIP_BY_DT DATE
+
+, WM_SCHED_SHIP_TSTMP                        TIMESTAMP 
+
+, WM_SHIPPED_TSTMP                           TIMESTAMP 
+
+, WM_SCHEDULED_DELIVERY_TSTMP                TIMESTAMP 
+
+, WM_PLAN_LOAD_ID                            BIGINT 
+
+, WM_LOADED_TSTMP                            TIMESTAMP 
+
+, WM_LOADER_USER_ID                          STRING 
+
+, WM_LOADED_POSN                             STRING 
+
+, WM_PICKER_USER_ID                          STRING 
+
+, WM_PACKER_USER_ID                          STRING 
+
+, WM_DELV_RECIPIENT_NAME                     STRING 
+
+, WM_DELV_RECEIPT_TSTMP                      TIMESTAMP 
+
+, DELV_ON_TIME_FLAG                          TINYINT 
+
+, DELV_COMPL_FLAG                            TINYINT 
+
+, WM_DISTRIBUTION_LEG_CARRIER_ID             BIGINT 
+
+, WM_DISTRIBUTION_LEG_MODE_ID                INT 
+
+, WM_DISTRIBUTION_LEV_SVCE_LEVEL_ID          INT 
+
+, WM_VOCOLLECT_ASSIGN_ID                     INT 
+
+, WM_VOCO_INTRN_REVERSE_ID                   STRING 
+
+, WM_VOCO_INTRN_REVERSE_PALLET_ID            STRING 
+
+, WM_PICK_SUB_LOCN_ID                        STRING 
+
+, WM_CURR_SUB_LOCN_ID                        STRING 
+
+, WM_PREV_SUB_LOCN_ID                        STRING 
+
+, WM_DEST_SUB_LOCN_ID                        STRING 
+
+, WM_C_FACILITY_ID                           BIGINT 
+
+, WM_C_FACILITY_ALIAS_ID                     STRING 
+
+, WM_O_FACILITY_ID                           BIGINT 
+
+, WM_O_FACILITY_ALIAS_ID                     STRING 
+
+, WM_D_FACILITY_ID                           BIGINT 
+
+, WM_D_FACILITY_ALIAS_ID                     STRING 
+
+, WM_ZONE_SKIP_HUB_FACILITY_ALIAS_ID         STRING 
+
+, WM_ZONE_SKIP_HUB_FACILITY_ID               INT 
+
+, WM_PLANING_DEST_FACILITY_ALIAS_ID          INT 
+
+, WM_PLANING_DEST_FACILITY_ID                INT 
+
+, WM_FINAL_DEST_FACILITY_ALIAS_ID            STRING 
+
+, WM_FINAL_DEST_FACILITY_ID                  BIGINT 
+
+, WM_CHUTE_ID                                STRING 
+
+, WM_CHUTE_ASSIGN_TYPE                       STRING 
+
+, WM_DISPOSITION_TYPE                        STRING 
+
+, WM_DISPOSITION_SOURCE_ID                   INT 
+
+, WM_TRANSITIONAL_INVENTORY_TYPE             SMALLINT 
+
+, WM_CONSUMPTION_SEQUENCE                    STRING 
+
+, WM_CONSUMPTION_PRIORITY                    STRING 
+
+, WM_CONSUMPTION_PRIORITY_TSTMP              TIMESTAMP 
+
+, WM_RETURN_DISPOSITION_CD                   STRING 
+
+, WM_FINAL_DISPOSITION_CD                    STRING 
+
+, WM_PACKAGE_TYPE_ID                         INT 
+
+, WM_LPN_SIZE_TYPE_ID                        INT 
+
+, WM_DELIVERY_TYPE                           STRING 
+
+, WM_PUTAWAY_TYPE                            STRING 
+
+, WM_VARIANCE_TYPE                           SMALLINT 
+
+, WM_BILLING_METHOD                          INT 
+
+, WM_RECEIPT_TYPE                            TINYINT 
+
+, WM_PRE_RECEIPT_STATUS                      STRING 
+
+, WM_EXPORT_LICENSE_NBR                      STRING 
+
+, WM_EXPORT_LICENSE_SYMBOL                   STRING 
+
+, WM_EXPORT_INFO_CD                          STRING 
+
+, WM_PACKWAVE_RULE_ID                        INT 
+
+, WM_CONS_RUN_ID                             BIGINT 
+
+, SPECIAL_PERMITS                            STRING 
+
+, CN22_NBR                                   STRING 
+
+, END_OLPN_TSTMP                             TIMESTAMP 
+
+, XREF_OLPN                                  STRING 
+
+, REGULATION_SET                             STRING 
+
+, LPN_BREAK_ATTR                             STRING 
+
+, WM_LPN_PRINT_GROUP_CD                      STRING 
+
+, SEQ_RULE_PRIORITY                          INT 
+
+, WM_LPN_DIVERT_CD                           STRING 
+
+, INTERNAL_ORDER_CONSOL_ATTR                 STRING 
+
+, WM_WHSE_INTERNAL_EVENT_CD                  STRING 
+
+, WM_SELECTION_RULE_ID                       INT 
+
+, WM_LPN_CREATION_CD                         TINYINT 
+
+, WM_LOAD_SEQUENCE                           INT 
+
+, RATE_ZONE                                  STRING 
+
+, WM_FRT_FORWARDER_ACCT_NBR                  STRING 
+
+, INTL_GOODS_DESC                            STRING 
+
+, SHIPMENT_PRINT_SED                         SMALLINT 
+
+, REPRINT_SHIPPING_LABEL                     SMALLINT 
+
+, WM_PRINTING_RULE_ID                        INT 
+
+, WM_PHYSICAL_ENTITY_CD                      STRING 
+
+, WM_QUAL_AUD_STAT_CD                        TINYINT 
+
+, WM_AUDITOR_USER_ID                         STRING 
+
+, LPN_LEVEL_ROUTING                          TINYINT 
+
+, PENDING_CANCELLATION_FLAG                  TINYINT 
+
+, PALLET_OPEN_FLAG                           TINYINT 
+
+, MASTER_LPN_FLAG                            TINYINT 
+
+, PALLET_MASTER_LPN_FLAG                     TINYINT 
+
+, ACTIVE_LPN_FLAG                            TINYINT 
+
+, LPN_SHIPPED_FLAG                           TINYINT 
+
+, SINGLE_LINE_LPN_FLAG                       TINYINT 
+
+, ALL_PAKD_IN_ONE_FLAG                       TINYINT 
+
+, MHE_LOADED_FLAG                            TINYINT 
+
+, RECEIPT_VARIANCE_FLAG                      TINYINT 
+
+, HAS_ALERTS_FLAG                            TINYINT 
+
+, ERROR_FLAG                                 TINYINT 
+
+, WARNING_FLAG                               TINYINT 
+
+, QA_FLAG                                    TINYINT 
+
+, CONVEYABLE_LPN_FLAG                        TINYINT 
+
+, STD_QTY_FLAG                               TINYINT 
+
+, OVERPACK_ALLOWED_FLAG                      TINYINT 
+
+, STAGE_INDICATOR                            TINYINT 
+
+, INBOUND_OUTBOUND_INDICATOR                 STRING 
+
+, OUT_OF_ZONE_INDICATOR                      STRING 
+
+, LABEL_PRINT_REQD_FLAG                      TINYINT 
+
+, NON_INVENTORY_LPN_FLAG                     TINYINT 
+
+, EPC_MATCH_FLAG                             TINYINT 
+
+, ZONE_SKIPPED_FLAG                          TINYINT 
+
+, SERVICE_LEVEL_INDICATOR                    STRING 
+
+, DOCUMENTS_ONLY                             SMALLINT 
+
+, NON_MACHINEABLE_FLAG                       TINYINT 
+
+, PROCESS_IMMEDIATE_NEEDS_FLAG               TINYINT 
+
+, FAILED_GUARANTEED_DELIVERY                 STRING 
+
+, CHASE_CREATED_FLAG                         TINYINT 
+
+, PROCESSED_FOR_TRLR_MOVES_FLAG              TINYINT 
+
+, EXCEPTION_OLPN_FLAG                        TINYINT 
+
+, HAS_NOTES_FLAG                             TINYINT 
+
+, WM_CUSTOMER_ID                             BIGINT 
+
+, WM_ITEM_ID                                 INT 
+
+, WM_ITEM_NAME                               STRING 
+
+, WM_PALLET_CONTENT_CD                       STRING 
+
+, LPN_NBR_X_OF_Y                             INT 
+
+, PALLET_X_OF_Y                              INT 
+
+, CONTAINER_TYPE                             STRING 
+
+, CONTAINER_SIZE                             STRING 
+
+, SPUR_LANE                                  STRING 
+
+, SPUR_POSITION                              STRING 
+
+, FIRST_ZONE                                 STRING 
+
+, LAST_ZONE                                  STRING 
+
+, NBR_OF_ZONES                               SMALLINT 
+
+, WM_QTY_UOM_ID_BASE                         INT 
+
+, REPRINT_CNT                                TINYINT 
+
+, CASH_ON_DELIVERY_FLAG                      TINYINT 
+
+, CASH_ON_DELIVERY_AMT                       DECIMAL(9,2) 
+
+, CASH_ON_DELIVERY_PAYMENT_METHOD            INT 
+
+, RATED_WEIGHT                               DECIMAL(13,4) 
+
+, RATE_WEIGHT_TYPE                           SMALLINT 
+
+, ESTIMATED_WEIGHT                           DECIMAL(13,4) 
+
+, WEIGHT                                     DECIMAL(16,4) 
+
+, CONTAINS_DRY_ICE_FLAG                      TINYINT 
+
+, DRY_ICE_WT                                 DECIMAL(13,4) 
+
+, WM_WEIGHT_UOM_ID_BASE                      INT 
+
+, ESTIMATED_VOLUME                           DECIMAL(13,4) 
+
+, ACTUAL_VOLUME                              DECIMAL(13,4) 
+
+, WM_VOLUME_UOM_ID_BASE                      INT 
+
+, LENGTH                                     DECIMAL(16,4) 
+
+, WIDTH                                      DECIMAL(16,4) 
+
+, HEIGHT                                     DECIMAL(16,4) 
+
+, OVERSIZE_LENGTH                            SMALLINT 
+
+, WM_CUBE_UOM                                STRING 
+
+, STD_LPN_QTY                                DECIMAL(13,4) 
+
+, TOTAL_LPN_QTY                              DECIMAL(13,4) 
+
+, TIER_QTY                                   DECIMAL(9,2) 
+
+, DIRECTED_QTY                               DECIMAL(9,2) 
+
+, SALVAGE_PACK                               TINYINT 
+
+, SALVAGE_PACK_QTY                           DECIMAL(13,4) 
+
+, PICK_DELIVERY_DURATION                     DECIMAL(5,2) 
+
+, Q_VALUE                                    DECIMAL(2,1) 
+
+, LPN_MONETARY_VALUE                         DECIMAL(11,2) 
+
+, LPN_MONETARY_VALUE_CURR_CD                 STRING 
+
+, BASE_CHARGE                                DECIMAL(9,2) 
+
+, BASE_CHARGE_CURR_CD                        STRING 
+
+, ADDNL_OPTION_CHARGE                        DECIMAL(9,2) 
+
+, ADDNL_OPTION_CHARGE_CURR_CD                STRING 
+
+, INSUR_CHARGE                               DECIMAL(9,2) 
+
+, INSUR_CHARGE_CURR_CD                       STRING 
+
+, ACTUAL_CHARGE                              DECIMAL(9,2) 
+
+, ACTUAL_CHARGE_CURR_CD                      STRING 
+
+, PRE_BULK_BASE_CHARGE                       DECIMAL(9,2) 
+
+, PRE_BULK_BASE_CHARGE_CURR_CD               STRING 
+
+, PRE_BULK_ADD_OPT_CHR                       DECIMAL(9,2) 
+
+, PRE_BULK_ADD_OPT_CHR_CURR_CD               STRING 
+
+, DIST_CHARGE                                DECIMAL(11,2) 
+
+, DIST_CHARGE_CURR_CD                        STRING 
+
+, FREIGHT_CHARGE                             DECIMAL(11,2) 
+
+, FREIGHT_CHARGE_CURR_CD                     STRING 
+
+, REF_FIELD_1                                STRING 
+
+, REF_FIELD_2                                STRING 
+
+, REF_FIELD_3                                STRING 
+
+, REF_FIELD_4                                STRING 
+
+, REF_FIELD_5                                STRING 
+
+, REF_FIELD_6                                STRING 
+
+, REF_FIELD_7                                STRING 
+
+, REF_FIELD_8                                STRING 
+
+, REF_FIELD_9                                STRING 
+
+, REF_FIELD_10                               STRING 
+
+, REF_NUM_1                                  DECIMAL(13,5) 
+
+, REF_NUM_2                                  DECIMAL(13,5) 
+
+, REF_NUM_3                                  DECIMAL(13,5) 
+
+, REF_NUM_4                                  DECIMAL(13,5) 
+
+, REF_NUM_5                                  DECIMAL(13,5) 
+
+, MISC_INSTR_CD_1                            STRING 
+
+, MISC_INSTR_CD_2                            STRING 
+
+, MISC_INSTR_CD_3                            STRING 
+
+, MISC_INSTR_CD_4                            STRING 
+
+, MISC_INSTR_CD_5                            STRING 
+
+, MISC_NUM_1                                 DECIMAL(9,2) 
+
+, MISC_NUM_2                                 DECIMAL(9,2) 
+
+, MARK_FOR                                   STRING 
+
+, WM_HIBERNATE_VERSION                       INT 
+
+, WM_VERSION_NBR                             BIGINT 
+
+, WM_EXT_CREATED_TSTMP                       TIMESTAMP 
+
+, WM_CREATED_SOURCE_TYPE                     SMALLINT 
+
+, WM_CREATED_SOURCE                          STRING 
+
+, WM_CREATED_TSTMP                           TIMESTAMP 
+
+, WM_LAST_UPDATED_SOURCE_TYPE                SMALLINT 
+
+, WM_LAST_UPDATED_SOURCE                     STRING 
+
+, WM_LAST_UPDATED_TSTMP                      TIMESTAMP 
+
+, UPDATE_TSTMP                               TIMESTAMP                   not null
+
+, LOAD_TSTMP                                 TIMESTAMP                   not null  
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/wm_lpn';
+
+--DISTRIBUTE ON (WM_LPN_ID)
+
+--ORGANIZE   ON (LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "PO_HDR_FACT" , ***** Creating table: "PO_HDR_FACT"
+
+
+use legacy;
+ CREATE TABLE PO_HDR_FACT 
+(  PO_GID INT not null
+
+, PO_MSTR_DUE_DT                                    TIMESTAMP                             not null
+
+, PO_NBR BIGINT
+
+, LOCATION_ID INT
+
+, PO_ORIG_ORDER_QTY BIGINT
+
+, PO_ORDER_QTY BIGINT
+
+, PO_SCHED_QTY BIGINT
+
+, PO_ISSUED_QTY BIGINT
+
+, PO_DELV_QTY BIGINT
+
+, PO_RCPT_QTY BIGINT
+
+, PO_ACTUAL_COST                                    DECIMAL(12,4) 
+
+, PO_GROSS_COST                                     DECIMAL(12,4) 
+
+, PO_NET_COST                                       DECIMAL(12,4) 
+
+, PO_RCPT_COST                                      DECIMAL(12,4) 
+
+, PO_FRT_COST                                       DECIMAL(12,4) 
+
+, PO_LINE_CNT BIGINT
+
+, UPDATE_CNT BIGINT
+
+, FROM_LOCATION_ID BIGINT
+
+, VENDOR_ID BIGINT
+
+, GOODS_SUPPLIER_ID                                 STRING 
+
+, ORDERING_ADDRESS_ID                               STRING 
+
+, PO_PICKUP_DT DATE
+
+, PO_DOC_DT     TIMESTAMP 
+
+, INCO_TERM_CD                                      STRING 
+
+, PO_TYPE_ID                                        STRING 
+
+, PO_REF_NBR BIGINT
+
+, PO_REF_TX     STRING 
+
+, TMS_ORDER_GID BIGINT
+
+, TMS_ORDER_CNT BIGINT
+
+, TMS_PICKUP_DT                                     TIMESTAMP 
+
+, TMS_DELV_DT                                       TIMESTAMP 
+
+, CURRENCY_CODE                                     STRING 
+
+, RCPT_EXCH_RATE_PCNT                               DECIMAL(11,6) 
+
+, CREATE_EXCH_RATE_PCNT                             DECIMAL(11,6) 
+
+, LOAD_DT       TIMESTAMP 
+
+, PO_PREMIUM_FLG INT
+
+, PO_QTY_SHORT_FLAG INT
+
+, PO_QTY_OVER_FLAG INT
+
+, PO_RCPT_QTY_VC INT
+
+, PO_ASN_ORDER_QTY INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/po_hdr_fact';
+
+--DISTRIBUTE ON (PO_GID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_PROFILE" , ***** Creating table: "SKU_PROFILE"
+
+
+use legacy;
+ CREATE TABLE SKU_PROFILE 
+(  PRODUCT_ID INT not null
+
+, SKU_NBR INT
+
+, SKU_TYPE      STRING 
+
+, PRIMARY_UPC_ID BIGINT
+
+, STATUS_ID     STRING 
+
+, SUBS_HIST_FLAG                                    STRING 
+
+, SUBS_CURR_FLAG                                    STRING 
+
+, SKU_DESC      STRING 
+
+, ALT_DESC      STRING 
+
+, SAP_CATEGORY_ID INT
+
+, SAP_CLASS_ID INT
+
+, SAP_DEPT_ID INT
+
+, SAP_DIVISION_ID INT
+
+, PRIMARY_VENDOR_ID BIGINT
+
+, PARENT_VENDOR_ID BIGINT
+
+, COUNTRY_CD                                        STRING 
+
+, IMPORT_FLAG                                       STRING 
+
+, HTS_CODE_ID BIGINT
+
+, CONTENTS      DECIMAL(13,3) 
+
+, CONTENTS_UNITS                                    STRING 
+
+, WEIGHT_NET_AMT                                    DECIMAL(9,3) 
+
+, WEIGHT_UOM_CD                                     STRING 
+
+, SIZE_DESC     STRING 
+
+, BUM_QTY       DOUBLE 
+
+, UOM_CD        STRING 
+
+, UNIT_NUMERATOR                                    DOUBLE 
+
+, UNIT_DENOMINATOR                                  DOUBLE 
+
+, BUYER_ID      STRING 
+
+, PURCH_GROUP_ID INT
+
+, PURCH_COST_AMT                                    DECIMAL(8,2) 
+
+, NAT_PRICE_US_AMT                                  DECIMAL(8,2) 
+
+, TAX_CLASS_ID                                      STRING 
+
+, VALUATION_CLASS_CD                                STRING 
+
+, BRAND_CD      STRING 
+
+, BRAND_CLASSIFICATION_ID SMALLINT
+
+, OWNBRAND_FLAG                                     STRING 
+
+, STATELINE_FLAG                                    STRING 
+
+, SIGN_TYPE_CD                                      STRING 
+
+, OLD_ARTICLE_NBR                                   STRING 
+
+, VENDOR_ARTICLE_NBR                                STRING 
+
+, INIT_MKDN_DT                                      TIMESTAMP 
+
+, DISC_START_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, FIRST_SALE_DT                                     TIMESTAMP 
+
+, LAST_SALE_DT                                      TIMESTAMP 
+
+, FIRST_INV_DT                                      TIMESTAMP 
+
+, LAST_INV_DT                                       TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+, BASE_NBR      STRING 
+
+, BP_COLOR_ID                                       STRING 
+
+, BP_SIZE_ID                                        STRING 
+
+, BP_BREED_ID                                       STRING 
+
+, BP_ITEM_CONCATENATED                              STRING 
+
+, BP_AEROSOL_FLAG TINYINT
+
+, BP_HAZMAT_FLAG TINYINT
+
+, CANADIAN_HTS_CD                                   STRING 
+
+, NAT_PRICE_CA_AMT                                  DECIMAL(8,2) 
+
+, NAT_PRICE_PR_AMT                                  DECIMAL(8,2) 
+
+, RTV_DEPT_CD                                       STRING 
+
+, GL_ACCT_NBR INT
+
+, ARTICLE_CATEGORY_ID SMALLINT
+
+, COMPONENT_FLAG                                    STRING 
+
+, ZDISCO_SCHED_TYPE_ID                              STRING                 not null  
+
+, ZDISCO_MKDN_SCHED_ID                              STRING                  not null  
+
+, ZDISCO_PID_DT                                     TIMESTAMP 
+
+, ZDISCO_START_DT                                   TIMESTAMP 
+
+, ZDISCO_INIT_MKDN_DT                               TIMESTAMP 
+
+, ZDISCO_DC_DT                                      TIMESTAMP 
+
+, ZDISCO_STR_DT                                     TIMESTAMP 
+
+, ZDISCO_STR_OWNRSHP_DT                             TIMESTAMP 
+
+, ZDISCO_STR_WRT_OFF_DT                             TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/sku_profile';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SITE_PROFILE" , ***** Creating table: "SITE_PROFILE"
+
+
+use legacy;
+ CREATE TABLE SITE_PROFILE 
+(  LOCATION_ID INT not null
+
+, LOCATION_TYPE_ID TINYINT
+
+, STORE_NBR INT
+
+, STORE_NAME                                        STRING 
+
+, STORE_TYPE_ID                                     STRING 
+
+, STORE_OPEN_CLOSE_FLAG                             STRING 
+
+, COMPANY_ID INT
+
+, REGION_ID BIGINT
+
+, DISTRICT_ID BIGINT
+
+, PRICE_ZONE_ID                                     STRING 
+
+, PRICE_AD_ZONE_ID                                  STRING 
+
+, REPL_DC_NBR INT
+
+, REPL_FISH_DC_NBR INT
+
+, REPL_FWD_DC_NBR INT
+
+, SQ_FEET_RETAIL                                    DOUBLE 
+
+, SQ_FEET_TOTAL                                     DOUBLE 
+
+, SITE_ADDRESS                                      STRING 
+
+, SITE_CITY     STRING 
+
+, STATE_CD      STRING 
+
+, COUNTRY_CD                                        STRING 
+
+, POSTAL_CD     STRING 
+
+, SITE_MAIN_TELE_NO                                 STRING 
+
+, SITE_GROOM_TELE_NO                                STRING 
+
+, SITE_EMAIL_ADDRESS                                STRING 
+
+, SITE_SALES_FLAG                                   STRING 
+
+, EQUINE_MERCH_ID TINYINT
+
+, EQUINE_SITE_ID TINYINT
+
+, EQUINE_SITE_OPEN_DT                               TIMESTAMP 
+
+, GEO_LATITUDE_NBR                                  DECIMAL(12,6) 
+
+, GEO_LONGITUDE_NBR                                 DECIMAL(12,6) 
+
+, PETSMART_DMA_CD                                   STRING 
+
+, LOYALTY_PGM_TYPE_ID TINYINT
+
+, LOYALTY_PGM_STATUS_ID TINYINT
+
+, LOYALTY_PGM_START_DT                              TIMESTAMP 
+
+, LOYALTY_PGM_CHANGE_DT                             TIMESTAMP 
+
+, BP_COMPANY_NBR SMALLINT
+
+, BP_GL_ACCT SMALLINT
+
+, TP_LOC_FLAG                                       STRING 
+
+, TP_ACTIVE_CNT TINYINT
+
+, PROMO_LABEL_CD                                    STRING 
+
+, PARENT_LOCATION_ID INT
+
+, LOCATION_NBR                                      STRING 
+
+, TIME_ZONE_ID                                      STRING 
+
+, DELV_SERVICE_CLASS_ID                             STRING 
+
+, PICK_SERVICE_CLASS_ID                             STRING 
+
+, SITE_LOGIN_ID                                     STRING 
+
+, SITE_MANAGER_ID INT
+
+, SITE_OPEN_YRS_AMT                                 DECIMAL(5,2) 
+
+, HOTEL_FLAG TINYINT
+
+, DAYCAMP_FLAG TINYINT
+
+, VET_FLAG TINYINT
+
+, DIST_MGR_NAME                                     STRING 
+
+, DIST_SVC_MGR_NAME                                 STRING 
+
+, REGION_VP_NAME                                    STRING 
+
+, REGION_TRAINER_NAME                               STRING 
+
+, ASSET_PROTECT_NAME                                STRING 
+
+, SITE_COUNTY                                       STRING 
+
+, SITE_FAX_NO                                       STRING 
+
+, SFT_OPEN_DT                                       TIMESTAMP 
+
+, DM_EMAIL_ADDRESS                                  STRING 
+
+, DSM_EMAIL_ADDRESS                                 STRING 
+
+, RVP_EMAIL_ADDRESS                                 STRING 
+
+, TRADE_AREA                                        STRING 
+
+, FDLPS_NAME                                        STRING 
+
+, FDLPS_EMAIL                                       STRING 
+
+, OVERSITE_MGR_NAME                                 STRING 
+
+, OVERSITE_MGR_EMAIL                                STRING 
+
+, SAFETY_DIRECTOR_NAME                              STRING 
+
+, SAFETY_DIRECTOR_EMAIL                             STRING 
+
+, RETAIL_MANAGER_SAFETY_NAME                        STRING 
+
+, RETAIL_MANAGER_SAFETY_EMAIL                       STRING 
+
+, AREA_DIRECTOR_NAME                                STRING 
+
+, AREA_DIRECTOR_EMAIL                               STRING 
+
+, DC_GENERAL_MANAGER_NAME                           STRING 
+
+, DC_GENERAL_MANAGER_EMAIL                          STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME1                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL1                    STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME2                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL2                    STRING 
+
+, REGIONAL_DC_SAFETY_MGR_NAME                       STRING 
+
+, REGIONAL_DC_SAFETY_MGR_EMAIL                      STRING 
+
+, DC_PEOPLE_SUPERVISOR_NAME                         STRING 
+
+, DC_PEOPLE_SUPERVISOR_EMAIL                        STRING 
+
+, PEOPLE_MANAGER_NAME                               STRING 
+
+, PEOPLE_MANAGER_EMAIL                              STRING 
+
+, ASSET_PROT_DIR_NAME                               STRING 
+
+, ASSET_PROT_DIR_EMAIL                              STRING 
+
+, SR_REG_ASSET_PROT_MGR_NAME                        STRING 
+
+, SR_REG_ASSET_PROT_MGR_EMAIL                       STRING 
+
+, REG_ASSET_PROT_MGR_NAME                           STRING 
+
+, REG_ASSET_PROT_MGR_EMAIL                          STRING 
+
+, ASSET_PROTECT_EMAIL                               STRING 
+
+, TP_START_DT                                       TIMESTAMP 
+
+, OPEN_DT       TIMESTAMP 
+
+, GR_OPEN_DT                                        TIMESTAMP 
+
+, CLOSE_DT      TIMESTAMP 
+
+, HOTEL_OPEN_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/site_profile';
+
+--DISTRIBUTE ON (LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "DP_ORDER_PROJ_DAY" , ***** Creating table: "DP_ORDER_PROJ_DAY"
+
+
+use legacy;
+ CREATE TABLE DP_ORDER_PROJ_DAY 
+(  DAY_DT                                      TIMESTAMP                            not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, FROM_LOCATION_ID INT not null
+
+, SOURCE_VENDOR_ID INT not null
+
+, PURCH_SUPPLIER_SUB_GROUP                    STRING 
+
+, PROJ_ORDER_QTY                              INT 
+
+, LOAD_DT                                     TIMESTAMP                            not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/dp_order_proj_day';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID, FROM_LOCATION_ID, SOURCE_VENDOR_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "DP_DEMAND_DAY" , ***** Creating table: "DP_DEMAND_DAY"
+
+
+use legacy;
+ CREATE TABLE DP_DEMAND_DAY 
+(  DAY_DT                                     DATE                                not null
+
+, LOCATION_ID INT not null
+
+, PRODUCT_ID INT not null
+
+, FROM_LOCATION_ID INT not null
+
+, SOURCE_VENDOR_ID INT
+
+, SOURCE_VENDOR_SUB_GROUP                     STRING 
+
+, ORDERING_NEED_QTY                           DECIMAL(12,4) 
+
+, NEEDED_QTY                                  DECIMAL(12,4) 
+
+, EFFECTIVE_QTY                               DECIMAL(12,4) 
+
+, PROPOSED_QTY                                DECIMAL(12,4) 
+
+, UPDATE_TSTMP                                TIMESTAMP 
+
+, LOAD_TSTMP                                  TIMESTAMP                            
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/dp_demand_day';
+
+--DISTRIBUTE ON (LOCATION_ID, PRODUCT_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "WM_2009_PO_ORDER_DTL" , ***** Creating table: "WM_2009_PO_ORDER_DTL"
+
+
+use legacy;
+ CREATE TABLE WM_2009_PO_ORDER_DTL 
+(  DAY_DT       DATE                                 not null
+
+, LOCATION_ID INT not null
+
+, PRODUCT_ID INT not null
+
+, FROM_LOCATION_ID INT not null
+
+, PO_NBR        STRING                 not null
+
+, PO_DOC_DT DATE
+
+, SHIPPED_QTY                                       DECIMAL(12,4) 
+
+, ORIG_ORDER_QTY                                    DECIMAL(12,4) 
+
+, CANCELED_QTY                                      DECIMAL(12,4) 
+
+, LOCKED_QTY                                        DECIMAL(12,4) 
+
+, LOAD_TSTMP                                        TIMESTAMP                            
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/wm_2009_po_order_dtl';
+
+--DISTRIBUTE ON (LOCATION_ID, PRODUCT_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "WM_2018_PO_ORDER_DTL" , ***** Creating table: "WM_2018_PO_ORDER_DTL"
+
+
+use legacy;
+ CREATE TABLE WM_2018_PO_ORDER_DTL 
+(  DAY_DT       DATE                                 not null
+
+, LOCATION_ID INT not null
+
+, PRODUCT_ID INT not null
+
+, FROM_LOCATION_ID INT not null
+
+, PO_NBR        STRING                 not null
+
+, PO_DOC_DT DATE
+
+, SHIPPED_QTY                                       DECIMAL(12,4) 
+
+, ORIG_ORDER_QTY                                    DECIMAL(12,4) 
+
+, LOAD_TSTMP                                        TIMESTAMP                            
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/wm_2018_po_order_dtl';
+
+--DISTRIBUTE ON (LOCATION_ID, PRODUCT_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "STORE_FILL_RATE" , ***** Creating table: "STORE_FILL_RATE"
+
+
+use legacy;
+ CREATE TABLE STORE_FILL_RATE 
+(  DAY_DT       DATE                                 not null
+
+, LOCATION_ID INT not null
+
+, PRODUCT_ID INT not null
+
+, FROM_LOCATION_ID INT not null
+
+, DP_DEMAND_QTY                                     DECIMAL(12,4) 
+
+, WM_DEMAND_QTY                                     DECIMAL(12,4) 
+
+, RAW_DEMAND_QTY                                    DECIMAL(12,4) 
+
+, WM_SHIPPED_QTY                                    DECIMAL(12,4) 
+
+, LOAD_TSTMP                                        TIMESTAMP                             
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Demand_Planning/store_fill_rate';
+
+--DISTRIBUTE ON (LOCATION_ID, PRODUCT_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+

@@ -1,0 +1,9 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_SKU_PIM_Attributes,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_SKU_PIM_Attributes,SKU_PIM_ATTR_PRE,distinct_ddl,raw,no,raw
+wf_SKU_PIM_Attributes,SKU_PIM_ATTR_TYPE_PRE,distinct_ddl,raw,no,raw
+wf_SKU_PIM_Attributes,SKU_PIM_ATTR_TYPE_VALUES_PRE,distinct_ddl,raw,no,raw
+wf_SKU_PIM_Attributes,SKU_PIM_ATTR,distinct_ddl,legacy,no,legacy
+wf_SKU_PIM_Attributes,SKU_PIM_ATTR_TYPE,distinct_ddl,legacy,no,legacy
+wf_SKU_PIM_Attributes,SKU_PIM_ATTR_TYPE_VALUES,distinct_ddl,legacy,no,legacy
+wf_SKU_PIM_Attributes,SKU_ATTR,distinct_ddl,legacy,no,legacy

@@ -1,8 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-bs_Purchases_Weekly,PURCHASES,EDW_PRD,legacy,no,legacy
-bs_Purchases_Weekly,SITE_PROFILE,EDW_PRD,legacy,no,legacy
-bs_Purchases_Weekly,SKU_PROFILE,EDW_PRD,legacy,no,legacy
-bs_Purchases_Weekly,DAYS,EDW_PRD,legacy,no,legacy
-bs_Purchases_Weekly,PURCH_PERF,EDW_PRD,legacy,no,legacy
-bs_Purchases_Weekly,PURCH_PO_NBR_PRE,EDW_PRD,raw,no,raw
-bs_Purchases_Weekly,PURCH_PO_TYPE_PRE,EDW_PRD,raw,no,raw

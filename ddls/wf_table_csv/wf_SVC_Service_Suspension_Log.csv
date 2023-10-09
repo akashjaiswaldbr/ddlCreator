@@ -1,5 +1,0 @@
-wf_name,table_name,nz_database,dl_database,pii,target_schema,table name in delta lake
-wf_SVC_Service_Suspension_Log,SVC_SERVICE_SUSPENSION_LOG,EDW_PRD,legacy,NO,,SVC_SERVICE_SUSPENSION_LOG
-wf_SVC_Service_Suspension_Log,SVC_SUSPENSION_SUBMITTER_TITLE,EDW_PRD,legacy,NO,,SVC_SUSPENSION_SUBMITTER_TITLE
-wf_SVC_Service_Suspension_Log,SVC_SERVICE_AREA,EDW_PRD,legacy,NO,,SVC_SERVICE_AREA
-wf_SVC_Service_Suspension_Log,SVC_SERVICE_SUSPENSION_REASON,EDW_PRD,legacy,NO,,SVC_SERVICE_SUSPENSION_REASON

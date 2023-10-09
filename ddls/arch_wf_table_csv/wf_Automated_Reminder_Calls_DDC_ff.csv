@@ -1,0 +1,7 @@
+wf_name,table_name,nz_database,dl_database,pii,target_schema
+wf_Automated_Reminder_Calls_DDC_ff,TP_INVOICE_RPT,EDW_PRD,dev_cust_sensitive,YES,refine
+wf_Automated_Reminder_Calls_DDC_ff,TP_INVOICE_SERVICE_RPT,EDW_PRD,dev_cust_sensitive,YES,refine
+wf_Automated_Reminder_Calls_DDC_ff,SITE_PROFILE_RPT,EDW_PRD,dev_legacy,NO,
+wf_Automated_Reminder_Calls_DDC_ff,TP_CUSTOMER,EDW_PRD,dev_cust_sensitive,YES,refine
+wf_Automated_Reminder_Calls_DDC_ff,AUTOMATED_CALL_HOLIDAYS,EDW_PRD,dev_legacy,NO,
+wf_Automated_Reminder_Calls_DDC_ff,TP_CUSTOMER_PHONE,EDW_PRD,dev_cust_sensitive,YES,refine

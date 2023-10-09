@@ -31,7 +31,7 @@ def main():
     # parser.add_argument('pii', type=str, help='if pii or not')
     args = parser.parse_args()
     # environment_list = args.environment.split(",")
-    env_list = ['qa'] # ['dev', 'qa', 'prod']
+    env_list = ['dev', 'qa', 'prod']
 
     global wf_name
     wf_name=args.wf_name
@@ -95,6 +95,7 @@ def main():
                                     #print(converted_line)
                                     global file_name
                                     file_name =  str(env) + "_" + str(args.wf_name)
+
                                     with open(
                                             "/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflowTmp/" + str(
                                                 env) + "_" +
@@ -120,20 +121,28 @@ def main():
 
 def cleanDDLs(wf_name,file_name):
     
+    env_list = ['dev', 'qa', 'prod']
+
     print(wf_name, file_name)
-    with open("/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflowTmp/"+file_name+".txt", "r") as f:
-        
+    
 
-        ddl = f.read()
+    for env in env_list : 
 
-        cleanddl = re.sub('\(\n,','(\n',ddl)
-        cleanddl = re.sub('default\s+.*\n','\n',cleanddl)
+        fname = str(env) + "_" + str(wf_name)
 
-        #print(cleanddl)
+        with open("/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflowTmp/"+fname+".txt", "r") as f:
+            
 
-        with open("/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflows/"+file_name+".txt", "w+") as t:
+            ddl = f.read()
 
-            t.write(cleanddl)
+            cleanddl = re.sub('\(\n,','(\n',ddl)
+            cleanddl = re.sub('default\s+.*\n','\n',cleanddl)
+
+            #print(cleanddl)
+
+            with open("/Users/akash.jaiswal/projects/PetSmart/ddl_convertor-main/ddlCreator/ddls/workflows/"+fname+".txt", "w+") as t:
+
+                t.write(cleanddl)
 
 if __name__ == "__main__":
     main()

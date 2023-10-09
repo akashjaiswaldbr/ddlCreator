@@ -1,5 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-wf_EP_Original_Plan,EP_PLAN_CLASS_WK,distinct_ddl,legacy,no,legacy
-wf_EP_Original_Plan,EP_PF_FT_PL_OP1_000_PRE,distinct_ddl,raw,no,raw
-wf_EP_Original_Plan,EP_PF_FT_PL_RP1_000_PRE,distinct_ddl,raw,no,raw
-wf_EP_Original_Plan,WEEKS,distinct_ddl,legacy,no,legacy

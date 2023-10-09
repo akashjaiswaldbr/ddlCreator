@@ -1,0 +1,1857 @@
+
+
+
+
+
+--*****  Creating table:  "DAYS" , ***** Creating table: "DAYS"
+
+
+use dev_legacy;
+ CREATE TABLE DAYS 
+( DAY_DT                                    TIMESTAMP                            not null
+
+, BUSINESS_DAY_FLAG                         STRING 
+
+, HOLIDAY_FLAG                              STRING 
+
+, DAY_OF_WK_NAME                            STRING 
+
+, DAY_OF_WK_NAME_ABBR                       STRING 
+
+, DAY_OF_WK_NBR TINYINT
+
+, CAL_DAY_OF_MO_NBR TINYINT
+
+, CAL_DAY_OF_YR_NBR SMALLINT
+
+, CAL_WK INT
+
+, CAL_WK_NBR TINYINT
+
+, CAL_MO INT
+
+, CAL_MO_NBR TINYINT
+
+, CAL_MO_NAME                               STRING 
+
+, CAL_MO_NAME_ABBR                          STRING 
+
+, CAL_QTR INT
+
+, CAL_QTR_NBR TINYINT
+
+, CAL_HALF INT
+
+, CAL_YR SMALLINT
+
+, FISCAL_DAY_OF_MO_NBR TINYINT
+
+, FISCAL_DAY_OF_YR_NBR SMALLINT
+
+, FISCAL_WK INT
+
+, FISCAL_WK_NBR TINYINT
+
+, FISCAL_MO INT
+
+, FISCAL_MO_NBR TINYINT
+
+, FISCAL_MO_NAME                            STRING 
+
+, FISCAL_MO_NAME_ABBR                       STRING 
+
+, FISCAL_QTR INT
+
+, FISCAL_QTR_NBR TINYINT
+
+, FISCAL_HALF INT
+
+, FISCAL_YR SMALLINT
+
+, LYR_WEEK_DT                               TIMESTAMP                            not null
+
+, LWK_WEEK_DT                               TIMESTAMP                            not null
+
+, WEEK_DT                                   TIMESTAMP                            not null
+
+, EST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, EST_TIME_CONV_HRS TINYINT not null 
+
+, ES0_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, ES0_TIME_CONV_HRS TINYINT not null 
+
+, CST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, CST_TIME_CONV_HRS TINYINT not null 
+
+, CS0_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, CS0_TIME_CONV_HRS TINYINT not null 
+
+, MST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, MST_TIME_CONV_HRS TINYINT not null 
+
+, MS0_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, MS0_TIME_CONV_HRS TINYINT not null 
+
+, PST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, PST_TIME_CONV_HRS TINYINT not null 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/days';
+
+--DISTRIBUTE ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_PROFILE" , ***** Creating table: "SKU_PROFILE"
+
+
+use dev_legacy;
+ CREATE TABLE SKU_PROFILE 
+( PRODUCT_ID INT not null
+
+, SKU_NBR INT
+
+, SKU_TYPE      STRING 
+
+, PRIMARY_UPC_ID BIGINT
+
+, STATUS_ID     STRING 
+
+, SUBS_HIST_FLAG                                    STRING 
+
+, SUBS_CURR_FLAG                                    STRING 
+
+, SKU_DESC      STRING 
+
+, ALT_DESC      STRING 
+
+, SAP_CATEGORY_ID INT
+
+, SAP_CLASS_ID INT
+
+, SAP_DEPT_ID INT
+
+, SAP_DIVISION_ID INT
+
+, PRIMARY_VENDOR_ID BIGINT
+
+, PARENT_VENDOR_ID BIGINT
+
+, COUNTRY_CD                                        STRING 
+
+, IMPORT_FLAG                                       STRING 
+
+, HTS_CODE_ID BIGINT
+
+, CONTENTS      DECIMAL(13,3) 
+
+, CONTENTS_UNITS                                    STRING 
+
+, WEIGHT_NET_AMT                                    DECIMAL(9,3) 
+
+, WEIGHT_UOM_CD                                     STRING 
+
+, SIZE_DESC     STRING 
+
+, BUM_QTY       DOUBLE 
+
+, UOM_CD        STRING 
+
+, UNIT_NUMERATOR                                    DOUBLE 
+
+, UNIT_DENOMINATOR                                  DOUBLE 
+
+, BUYER_ID      STRING 
+
+, PURCH_GROUP_ID INT
+
+, PURCH_COST_AMT                                    DECIMAL(8,2) 
+
+, NAT_PRICE_US_AMT                                  DECIMAL(8,2) 
+
+, TAX_CLASS_ID                                      STRING 
+
+, VALUATION_CLASS_CD                                STRING 
+
+, BRAND_CD      STRING 
+
+, BRAND_CLASSIFICATION_ID SMALLINT
+
+, OWNBRAND_FLAG                                     STRING 
+
+, STATELINE_FLAG                                    STRING 
+
+, SIGN_TYPE_CD                                      STRING 
+
+, OLD_ARTICLE_NBR                                   STRING 
+
+, VENDOR_ARTICLE_NBR                                STRING 
+
+, INIT_MKDN_DT                                      TIMESTAMP 
+
+, DISC_START_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, FIRST_SALE_DT                                     TIMESTAMP 
+
+, LAST_SALE_DT                                      TIMESTAMP 
+
+, FIRST_INV_DT                                      TIMESTAMP 
+
+, LAST_INV_DT                                       TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+, BASE_NBR      STRING 
+
+, BP_COLOR_ID                                       STRING 
+
+, BP_SIZE_ID                                        STRING 
+
+, BP_BREED_ID                                       STRING 
+
+, BP_ITEM_CONCATENATED                              STRING 
+
+, BP_AEROSOL_FLAG TINYINT
+
+, BP_HAZMAT_FLAG TINYINT
+
+, CANADIAN_HTS_CD                                   STRING 
+
+, NAT_PRICE_CA_AMT                                  DECIMAL(8,2) 
+
+, NAT_PRICE_PR_AMT                                  DECIMAL(8,2) 
+
+, RTV_DEPT_CD                                       STRING 
+
+, GL_ACCT_NBR INT
+
+, ARTICLE_CATEGORY_ID SMALLINT
+
+, COMPONENT_FLAG                                    STRING 
+
+, ZDISCO_SCHED_TYPE_ID                              STRING                 not null  
+
+, ZDISCO_MKDN_SCHED_ID                              STRING                  not null  
+
+, ZDISCO_PID_DT                                     TIMESTAMP 
+
+, ZDISCO_START_DT                                   TIMESTAMP 
+
+, ZDISCO_INIT_MKDN_DT                               TIMESTAMP 
+
+, ZDISCO_DC_DT                                      TIMESTAMP 
+
+, ZDISCO_STR_DT                                     TIMESTAMP 
+
+, ZDISCO_STR_OWNRSHP_DT                             TIMESTAMP 
+
+, ZDISCO_STR_WRT_OFF_DT                             TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/sku_profile';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SITE_PROFILE" , ***** Creating table: "SITE_PROFILE"
+
+
+use dev_legacy;
+ CREATE TABLE SITE_PROFILE 
+( LOCATION_ID INT not null
+
+, LOCATION_TYPE_ID TINYINT
+
+, STORE_NBR INT
+
+, STORE_NAME                                        STRING 
+
+, STORE_TYPE_ID                                     STRING 
+
+, STORE_OPEN_CLOSE_FLAG                             STRING 
+
+, COMPANY_ID INT
+
+, REGION_ID BIGINT
+
+, DISTRICT_ID BIGINT
+
+, PRICE_ZONE_ID                                     STRING 
+
+, PRICE_AD_ZONE_ID                                  STRING 
+
+, REPL_DC_NBR INT
+
+, REPL_FISH_DC_NBR INT
+
+, REPL_FWD_DC_NBR INT
+
+, SQ_FEET_RETAIL                                    DOUBLE 
+
+, SQ_FEET_TOTAL                                     DOUBLE 
+
+, SITE_ADDRESS                                      STRING 
+
+, SITE_CITY     STRING 
+
+, STATE_CD      STRING 
+
+, COUNTRY_CD                                        STRING 
+
+, POSTAL_CD     STRING 
+
+, SITE_MAIN_TELE_NO                                 STRING 
+
+, SITE_GROOM_TELE_NO                                STRING 
+
+, SITE_EMAIL_ADDRESS                                STRING 
+
+, SITE_SALES_FLAG                                   STRING 
+
+, EQUINE_MERCH_ID TINYINT
+
+, EQUINE_SITE_ID TINYINT
+
+, EQUINE_SITE_OPEN_DT                               TIMESTAMP 
+
+, GEO_LATITUDE_NBR                                  DECIMAL(12,6) 
+
+, GEO_LONGITUDE_NBR                                 DECIMAL(12,6) 
+
+, PETSMART_DMA_CD                                   STRING 
+
+, LOYALTY_PGM_TYPE_ID TINYINT
+
+, LOYALTY_PGM_STATUS_ID TINYINT
+
+, LOYALTY_PGM_START_DT                              TIMESTAMP 
+
+, LOYALTY_PGM_CHANGE_DT                             TIMESTAMP 
+
+, BP_COMPANY_NBR SMALLINT
+
+, BP_GL_ACCT SMALLINT
+
+, TP_LOC_FLAG                                       STRING 
+
+, TP_ACTIVE_CNT TINYINT
+
+, PROMO_LABEL_CD                                    STRING 
+
+, PARENT_LOCATION_ID INT
+
+, LOCATION_NBR                                      STRING 
+
+, TIME_ZONE_ID                                      STRING 
+
+, DELV_SERVICE_CLASS_ID                             STRING 
+
+, PICK_SERVICE_CLASS_ID                             STRING 
+
+, SITE_LOGIN_ID                                     STRING 
+
+, SITE_MANAGER_ID INT
+
+, SITE_OPEN_YRS_AMT                                 DECIMAL(5,2) 
+
+, HOTEL_FLAG TINYINT
+
+, DAYCAMP_FLAG TINYINT
+
+, VET_FLAG TINYINT
+
+, DIST_MGR_NAME                                     STRING 
+
+, DIST_SVC_MGR_NAME                                 STRING 
+
+, REGION_VP_NAME                                    STRING 
+
+, REGION_TRAINER_NAME                               STRING 
+
+, ASSET_PROTECT_NAME                                STRING 
+
+, SITE_COUNTY                                       STRING 
+
+, SITE_FAX_NO                                       STRING 
+
+, SFT_OPEN_DT                                       TIMESTAMP 
+
+, DM_EMAIL_ADDRESS                                  STRING 
+
+, DSM_EMAIL_ADDRESS                                 STRING 
+
+, RVP_EMAIL_ADDRESS                                 STRING 
+
+, TRADE_AREA                                        STRING 
+
+, FDLPS_NAME                                        STRING 
+
+, FDLPS_EMAIL                                       STRING 
+
+, OVERSITE_MGR_NAME                                 STRING 
+
+, OVERSITE_MGR_EMAIL                                STRING 
+
+, SAFETY_DIRECTOR_NAME                              STRING 
+
+, SAFETY_DIRECTOR_EMAIL                             STRING 
+
+, RETAIL_MANAGER_SAFETY_NAME                        STRING 
+
+, RETAIL_MANAGER_SAFETY_EMAIL                       STRING 
+
+, AREA_DIRECTOR_NAME                                STRING 
+
+, AREA_DIRECTOR_EMAIL                               STRING 
+
+, DC_GENERAL_MANAGER_NAME                           STRING 
+
+, DC_GENERAL_MANAGER_EMAIL                          STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME1                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL1                    STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME2                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL2                    STRING 
+
+, REGIONAL_DC_SAFETY_MGR_NAME                       STRING 
+
+, REGIONAL_DC_SAFETY_MGR_EMAIL                      STRING 
+
+, DC_PEOPLE_SUPERVISOR_NAME                         STRING 
+
+, DC_PEOPLE_SUPERVISOR_EMAIL                        STRING 
+
+, PEOPLE_MANAGER_NAME                               STRING 
+
+, PEOPLE_MANAGER_EMAIL                              STRING 
+
+, ASSET_PROT_DIR_NAME                               STRING 
+
+, ASSET_PROT_DIR_EMAIL                              STRING 
+
+, SR_REG_ASSET_PROT_MGR_NAME                        STRING 
+
+, SR_REG_ASSET_PROT_MGR_EMAIL                       STRING 
+
+, REG_ASSET_PROT_MGR_NAME                           STRING 
+
+, REG_ASSET_PROT_MGR_EMAIL                          STRING 
+
+, ASSET_PROTECT_EMAIL                               STRING 
+
+, TP_START_DT                                       TIMESTAMP 
+
+, OPEN_DT       TIMESTAMP 
+
+, GR_OPEN_DT                                        TIMESTAMP 
+
+, CLOSE_DT      TIMESTAMP 
+
+, HOTEL_OPEN_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/site_profile';
+
+--DISTRIBUTE ON (LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_PROFILE_RPT" , ***** Creating table: "SKU_PROFILE_RPT"
+
+
+use dev_legacy;
+ CREATE TABLE SKU_PROFILE_RPT 
+( PRODUCT_ID INT not null
+
+, SKU_NBR INT
+
+, SKU_TYPE      STRING 
+
+, PRIMARY_UPC_ID BIGINT
+
+, STATUS_ID     STRING 
+
+, STATUS_NAME                                       STRING 
+
+, SUBS_HIST_FLAG                                    STRING 
+
+, SUBS_CURR_FLAG                                    STRING 
+
+, SKU_DESC      STRING 
+
+, ALT_DESC      STRING 
+
+, SAP_CATEGORY_ID INT
+
+, SAP_CATEGORY_DESC                                 STRING 
+
+, GL_CATEGORY_CD                                    STRING 
+
+, GL_CATEGORY_DESC                                  STRING 
+
+, BUS_UNIT_ID INT
+
+, BUS_UNIT_DESC                                     STRING 
+
+, SVP_ID INT
+
+, SVP_DESC      STRING 
+
+, VP_ID INT
+
+, VP_NM         STRING 
+
+, VP_DESC       STRING 
+
+, CATEGORY_BUYER_ID INT
+
+, CATEGORY_BUYER_NM                                 STRING 
+
+, CA_BUYER_ID INT
+
+, CA_BUYER_NM                                       STRING 
+
+, DIRECTOR_ID INT
+
+, DIRECTOR_DESC                                     STRING 
+
+, CA_DIRECTOR_ID INT
+
+, CA_DIRECTOR_DESC                                  STRING 
+
+, PRICING_ROLE_ID INT
+
+, PRICING_ROLE_DESC                                 STRING 
+
+, SAP_CLASS_ID INT
+
+, SAP_CLASS_DESC                                    STRING 
+
+, SAP_DEPT_ID INT
+
+, SAP_DEPT_DESC                                     STRING 
+
+, CONSUM_ID BIGINT
+
+, CONSUM_DESC                                       STRING 
+
+, SEGMENT_ID BIGINT
+
+, SEGMENT_DESC                                      STRING 
+
+, SAP_DIVISION_ID INT
+
+, SAP_DIVISION_DESC                                 STRING 
+
+, PRIMARY_VENDOR_ID BIGINT
+
+, PRIMARY_VENDOR_NAME                               STRING 
+
+, VENDOR_SUBRANGE_CD                                STRING 
+
+, PURCH_GROUP_ID BIGINT
+
+, PURCH_GROUP_NAME                                  STRING 
+
+, PARENT_VENDOR_ID BIGINT
+
+, PARENT_VENDOR_NAME                                STRING 
+
+, COUNTRY_CD                                        STRING 
+
+, COUNTRY_NAME                                      STRING 
+
+, IMPORT_FLAG                                       STRING 
+
+, IMPORT_DESC                                       STRING 
+
+, HTS_CODE_ID BIGINT
+
+, HTS_CODE_DESC                                     STRING 
+
+, CONTENTS      DECIMAL(13,3) 
+
+, CONTENTS_UNITS                                    STRING 
+
+, WEIGHT_NET_AMT                                    DECIMAL(9,3) 
+
+, WEIGHT_UOM_CD                                     STRING 
+
+, SIZE_DESC     STRING 
+
+, BUM_QTY       DECIMAL(15,10) 
+
+, UOM_CD        STRING 
+
+, UNIT_NUMERATOR                                    DECIMAL(15,10) 
+
+, UNIT_DENOMINATOR                                  DECIMAL(15,10) 
+
+, BUYER_ID      STRING 
+
+, BUYER_NAME                                        STRING 
+
+, PURCH_COST_AMT                                    DECIMAL(8,2) 
+
+, NAT_PRICE_US_AMT                                  DECIMAL(8,2) 
+
+, TAX_CLASS_ID                                      STRING 
+
+, TAX_CLASS_DESC                                    STRING 
+
+, VALUATION_CLASS_CD                                STRING 
+
+, VALUATION_CLASS_DESC                              STRING 
+
+, BRAND_CD      STRING 
+
+, BRAND_NAME                                        STRING 
+
+, BRAND_CLASSIFICATION_ID SMALLINT
+
+, BRAND_CLASSIFICATION_NAME                         STRING 
+
+, OWNBRAND_FLAG                                     STRING 
+
+, OWNBRAND_DESC                                     STRING 
+
+, STATELINE_FLAG                                    STRING 
+
+, SIGN_TYPE_CD                                      STRING 
+
+, SIGN_TYPE_DESC                                    STRING 
+
+, OLD_ARTICLE_NBR                                   STRING 
+
+, VENDOR_ARTICLE_NBR                                STRING 
+
+, INIT_MKDN_DT                                      TIMESTAMP 
+
+, DISC_START_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, FIRST_SALE_DT                                     TIMESTAMP 
+
+, LAST_SALE_DT                                      TIMESTAMP 
+
+, FIRST_INV_DT                                      TIMESTAMP 
+
+, LAST_INV_DT                                       TIMESTAMP 
+
+, BASE_NBR      STRING 
+
+, BP_COLOR_ID                                       STRING 
+
+, BP_SIZE_ID                                        STRING 
+
+, BP_BREED_ID                                       STRING 
+
+, BP_ITEM_CONCATENATED                              STRING 
+
+, CANADIAN_HTS_CD                                   STRING 
+
+, NAT_PRICE_CA_AMT                                  DECIMAL(8,2) 
+
+, NAT_PRICE_PR_AMT                                  DECIMAL(8,2) 
+
+, RTV_DEPT_CD                                       STRING 
+
+, RTV_DESC      STRING 
+
+, HAZ_FLAG      STRING 
+
+, AEROSOL_FLAG                                      STRING 
+
+, GL_ACCT_NBR INT
+
+, ARTICLE_CATEGORY_ID SMALLINT
+
+, ARTICLE_CATEGORY_DESC                             STRING 
+
+, ARTICLE_CATEGORY_CD                               STRING 
+
+, COMPONENT_FLAG                                    STRING 
+
+, ZDISCO_SCHED_TYPE_ID                              STRING                 not null
+
+, ZDISCO_SCHED_TYPE_DESC                            STRING 
+
+, ZDISCO_MKDN_SCHED_ID                              STRING                  not null
+
+, ZDISCO_MKDN_SCHED_DESC                            STRING 
+
+, ZDISCO_PID_DT                                     TIMESTAMP 
+
+, ZDISCO_START_DT                                   TIMESTAMP 
+
+, ZDISCO_INIT_MKDN_DT                               TIMESTAMP 
+
+, ZDISCO_DC_DT                                      TIMESTAMP 
+
+, ZDISCO_STR_DT                                     TIMESTAMP 
+
+, ZDISCO_STR_OWNRSHP_DT                             TIMESTAMP 
+
+, ZDISCO_STR_WRT_OFF_DT                             TIMESTAMP 
+
+, OPT_DEMAND_GROUP                                  STRING 
+
+, OPT_PRODUCT_LINE                                  STRING 
+
+, OPT_PRICE_FAMILY                                  STRING 
+
+, OPT_EFFECTIVE_SIZE                                DECIMAL(9,2) 
+
+, OPT_SELL_UNITS                                    DECIMAL(9,2) 
+
+, OPT_UNIT_PRICE                                    DECIMAL(9,2) 
+
+, OPT_MOD_PRICE                                     DECIMAL(9,2) 
+
+, OPT_MOD_COST                                      DECIMAL(9,2) 
+
+, OPT_IS_NEW                                        STRING 
+
+, OPT_ERROR_CODE                                    STRING 
+
+, OPT_RELATIONSHIP                                  STRING 
+
+, OPT_METRIC                                        STRING 
+
+, OPT_DIFF      DECIMAL(9,2) 
+
+, OPT_ASSOC_PROD                                    STRING 
+
+, OPT_DELETE_OPTION                                 STRING 
+
+, DISC_SKU_NBR INT
+
+, AVG_SALES     DECIMAL(13,3) 
+
+, COPY_SKU_NBR INT
+
+, COPY_SKU_PCT SMALLINT
+
+, PROCUREMENT_RULE_CD                               STRING 
+
+, PROCUREMENT_RULE_DESC                             STRING 
+
+, CATEGORY_ANALYST_ID INT
+
+, CATEGORY_ANALYST_NM                               STRING 
+
+, CATEGORY_REPLENISHMENT_MGR_ID INT
+
+, CATEGORY_REPLENISHMENT_MGR_NM                     STRING 
+
+, CREATED_BY                                        STRING 
+
+, SHELF_LIFE_REM_CNT                                INT 
+
+, TEMP_SKU      STRING 
+
+, CONTENTS_METRICS                                  DECIMAL(17,3) 
+
+, CONTENTS_UNITS_METRICS                            STRING 
+
+, FLAVOR_CD     STRING 
+
+, FLAVOR_DESC                                       STRING 
+
+, BASIC_MATERIAL                                    STRING 
+
+, CONTAINER_CD                                      STRING 
+
+, CONTAINER_DESC                                    STRING 
+
+, RX_FLAG       STRING 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/sku_profile_rpt';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "POG_SKU_STORE" , ***** Creating table: "POG_SKU_STORE"
+
+
+use dev_legacy;
+ CREATE TABLE POG_SKU_STORE 
+( PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, POG_NBR       STRING                  not null
+
+, POG_DBKEY INT not null
+
+, LISTING_START_DT                                 DATE                                 not null
+
+, LISTING_END_DT DATE
+
+, POSITIONS_CNT INT
+
+, FACINGS_CNT INT
+
+, CAPACITY_CNT INT
+
+, PRESENTATION_QTY INT
+
+, POG_TYPE_CD                                       STRING 
+
+, POG_SKU_POSITION_STATUS_ID                        TINYINT 
+
+, DELETE_FLAG                                       TINYINT 
+
+, SAP_LAST_CHANGE_TSTMP                             TIMESTAMP 
+
+, UPDATE_TSTMP                                      TIMESTAMP 
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/pog_sku_store';
+
+--DISTRIBUTE ON (POG_DBKEY)
+
+
+
+
+
+
+
+--*****  Creating table:  "CKB_SPC_PERFORMANCE" , ***** Creating table: "CKB_SPC_PERFORMANCE"
+
+
+use dev_legacy;
+ CREATE TABLE CKB_SPC_PERFORMANCE 
+( CKB_DB_PLANOGRAM_KEY INT not null
+
+, CKB_DB_PRODUCT_KEY INT not null
+
+, CKB_DB_PERFORMANCE_KEY INT not null
+
+, PRICE                                  DECIMAL(19,4) 
+
+, CASE_COST                              DECIMAL(19,4) 
+
+, FACINGS INT
+
+, UNITS SMALLINT
+
+, CAPACITY INT
+
+, LINEAR                                 DECIMAL(17,8) 
+
+, SQUARE                                 DECIMAL(17,8) 
+
+, CUBIC                                  DECIMAL(17,8) 
+
+, SALES                                  DECIMAL(19,4) 
+
+, UNIT_COST                              DECIMAL(19,4) 
+
+, UNIT_PROFIT                            DECIMAL(19,4) 
+
+, PROFIT                                 DECIMAL(19,4) 
+
+, LINEAR_PCT                             DECIMAL(17,8) 
+
+, SQUARE_PCT                             DECIMAL(17,8) 
+
+, CUBIC_PCT                              DECIMAL(17,8) 
+
+, LINEAR_PCT_USED                        DECIMAL(17,8) 
+
+, SQUARE_PCT_USED                        DECIMAL(17,8) 
+
+, CUBIC_PCT_USED                         DECIMAL(17,8) 
+
+, SPC_PERF_CHANGE_DESC                   STRING 
+
+, AVG_SALES_DLRS                         DECIMAL(17,8) 
+
+, AVG_MARGIN_DLRS                        DECIMAL(17,8) 
+
+, SUM_SALES_DLRS                         DECIMAL(17,8) 
+
+, SUM_MARGIN_DLRS                        DECIMAL(17,8) 
+
+, SUM_UNITS INT
+
+, NUMBER_OF_STORES SMALLINT
+
+, NUMBER_OF_WEEKS_SOLD SMALLINT
+
+, AO_CLUSTER_DBKEY                       DECIMAL(17,8) 
+
+, AO_AVG_SALES_DLRS                      DECIMAL(19,4) 
+
+, AO_AVG_MARGIN_DLRS                     DECIMAL(19,4) 
+
+, AO_AVG_UNITS                           DECIMAL(19,4) 
+
+, AO_SUM_SALES_DLRS                      DECIMAL(19,4) 
+
+, AO_SUM_MARGIN_DLRS                     DECIMAL(19,4) 
+
+, AO_SUM_UNITS INT
+
+, PREVIOUS_LOCATION_ID SMALLINT
+
+, PREVIOUS_POSITIONS SMALLINT
+
+, PREVIOUS_FACINGS SMALLINT
+
+, PREVIOUS_X                             DECIMAL(17,8) 
+
+, PREVIOUS_Y                             DECIMAL(17,8) 
+
+, PREVIOUS_CAPACITY SMALLINT
+
+, CPI_RANK SMALLINT
+
+, RECOMMENDED_FACINGS SMALLINT
+
+, ASSORTMENT_STRATEGY                    STRING 
+
+, ASSORTMENT_TACTIC                      STRING 
+
+, ASSORTMENT_REASON                      STRING 
+
+, ASSORTMENT_ACTION                      STRING 
+
+, NUMBER_OF_POSITIONS SMALLINT
+
+, CLUSTER_NAME                           STRING 
+
+, ASSORTMENT_NOTE                        STRING 
+
+, RECOMMENDED_ORIENTATION SMALLINT
+
+, RECOMMENDED_MERCH_STYLE SMALLINT
+
+, IGNORE_RECOMMENDATIONS SMALLINT
+
+, PRIORITY SMALLINT
+
+, PRIORITY_DESC                          STRING 
+
+, DEL_FLAG SMALLINT
+
+, LOAD_DT DATE
+
+, UPDATE_DT DATE
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/ckb_spc_performance';
+
+--DISTRIBUTE ON (CKB_DB_PLANOGRAM_KEY)
+
+--ORGANIZE   ON (CKB_DB_PRODUCT_KEY)
+
+
+
+
+
+
+
+--*****  Creating table:  "CKB_FLR_PERFORMANCE" , ***** Creating table: "CKB_FLR_PERFORMANCE"
+
+
+use dev_legacy;
+ CREATE TABLE CKB_FLR_PERFORMANCE 
+( CKB_DB_FLOOR_PLAN_KEY INT not null
+
+, CKB_DB_PLANOGRAM_KEY INT not null
+
+, CKB_DB_FLOOR_PERFORMANCE_KEY INT not null
+
+, LINEAR                                 DECIMAL(17,8) 
+
+, SQUARE                                 DECIMAL(17,8) 
+
+, CUBIC                                  DECIMAL(17,8) 
+
+, LINEAR_PCT                             DECIMAL(17,8) 
+
+, SQUARE_PCT                             DECIMAL(17,8) 
+
+, LINEAR_PCT_USED                        DECIMAL(17,8) 
+
+, SQUARE_PCT_USED                        DECIMAL(17,8) 
+
+, TRAFIC_FLOW INT
+
+, NUMBER_OF_FIXTURES INT
+
+, NUMBER_OF_SECTIONS INT
+
+, NUMBER_OF_PRODUCTS_ALLOC INT
+
+, DB_FROM_EFF_DT                         TIMESTAMP 
+
+, DB_TO_EFF_DT                           TIMESTAMP 
+
+, DB_STATUS INT
+
+, ACTIVE INT
+
+, DEL_FLAG SMALLINT
+
+, LOAD_DT DATE
+
+, UPDATE_DT DATE
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/ckb_flr_performance';
+
+--DISTRIBUTE ON (CKB_DB_FLOOR_PERFORMANCE_KEY)
+
+--ORGANIZE   ON (CKB_DB_PLANOGRAM_KEY)
+
+
+
+
+
+
+
+--*****  Creating table:  "IKB_FLR_FLOORPLAN" , ***** Creating table: "IKB_FLR_FLOORPLAN"
+
+
+use dev_legacy;
+ CREATE TABLE IKB_FLR_FLOORPLAN 
+( DBKEY INT not null
+
+, DB_TMTSP                                    TIMESTAMP 
+
+, DBUSER                                      STRING 
+
+, DBCURRENTUSER                               STRING 
+
+, DBSTATUS INT
+
+, DBGUID                                      STRING 
+
+, DB_FROM_EFF_DT                              TIMESTAMP 
+
+, DB_TO_EFF_DT                                TIMESTAMP 
+
+, NAME                                        STRING 
+
+, STORE_NBR INT
+
+, LOCATION_ID INT
+
+, PENDING_DT                                  TIMESTAMP 
+
+, LIVE_DT                                     TIMESTAMP 
+
+, FINISHED_DT                                 TIMESTAMP 
+
+, DBKEY1 INT
+
+, DBKEY2 INT
+
+, DBKEY3 INT
+
+, DBKEY4 INT
+
+, DBKEY5 INT
+
+, DBKEY6 INT
+
+, DBKEY7 INT
+
+, DBKEY8 INT
+
+, DBKEY9 INT
+
+, DBKEY10 INT
+
+, WIDTH                                       DECIMAL(14,7) 
+
+, CEILINGHEIGHT                               DECIMAL(14,7) 
+
+, DEPTH                                       DECIMAL(14,7) 
+
+, CEILINGCOLOR INT
+
+, CHANGED INT
+
+, DRAWFLOOR INT
+
+, FLOORCOLOR INT
+
+, DRAWGRID INT
+
+, VERTICALSPACING INT
+
+, LINETYPE INT
+
+, GRIDCOLOR INT
+
+, AUTOCREATED INT
+
+, SHAPEID                                     STRING 
+
+, BITMAPID                                    STRING 
+
+, NUMBEROFFIXTURES INT
+
+, NUMBEROFDRAWINGS                            STRING 
+
+, HORIZONTALSPACING INT
+
+, FDOOR_LOC                                   STRING 
+
+, RDOCK_LOC                                   STRING 
+
+, HOTEL_LOC                                   STRING 
+
+, VET_LOC                                     STRING 
+
+, GROOM_LOC                                   STRING 
+
+, TRAIN_LOC                                   STRING 
+
+, REG_LOC                                     STRING 
+
+, FISH_SYS_LOC                                STRING 
+
+, BIRD_SA_HABITAT_TYPE                        STRING 
+
+, VERSION_REASON                              STRING 
+
+, VERSION_COMMENT                             STRING 
+
+, COUNTRY                                     STRING 
+
+, FP_TYPE                                     STRING 
+
+, ADOPTION_CENTER                             STRING 
+
+, FPSLM_NAME                                  STRING 
+
+, BUILDING_PROTOTYPE                          STRING 
+
+, MERCH_PROTOTYPE                             STRING 
+
+, PETSMART                                    STRING 
+
+, FRONT_DRIVE                                 DECIMAL(15,6) 
+
+, REAR_DRIVE                                  DECIMAL(15,6) 
+
+, VALUE3                                      DECIMAL(15,6) 
+
+, MERCH_WIDTH                                 DECIMAL(15,6) 
+
+, MERCH_DEPTH                                 DECIMAL(15,6) 
+
+, VALUE6                                      DECIMAL(15,6) 
+
+, VALUE7                                      DECIMAL(15,6) 
+
+, VALUE8                                      DECIMAL(15,6) 
+
+, VALUE9                                      DECIMAL(15,6) 
+
+, VALUE10                                     DECIMAL(15,6) 
+
+, VALUE11                                     DECIMAL(15,6) 
+
+, VALUE12                                     DECIMAL(15,6) 
+
+, VALUE13                                     DECIMAL(15,6) 
+
+, VALUE14                                     DECIMAL(15,6) 
+
+, VALUE15                                     DECIMAL(15,6) 
+
+, VALUE16                                     DECIMAL(15,6) 
+
+, VALUE17                                     DECIMAL(15,6) 
+
+, VALUE18                                     DECIMAL(15,6) 
+
+, VALUE19                                     DECIMAL(15,6) 
+
+, VALUE20                                     DECIMAL(15,6) 
+
+, VALUE21                                     DECIMAL(15,6) 
+
+, STORE_COUNT                                 DECIMAL(15,6) 
+
+, VALUE23                                     DECIMAL(15,6) 
+
+, VALUE24                                     DECIMAL(15,6) 
+
+, VALUE25                                     DECIMAL(15,6) 
+
+, VALUE26                                     DECIMAL(15,6) 
+
+, VALUE27                                     DECIMAL(15,6) 
+
+, VALUE28                                     DECIMAL(15,6) 
+
+, VALUE29                                     DECIMAL(15,6) 
+
+, VALUE30                                     DECIMAL(15,6) 
+
+, VALUE31                                     DECIMAL(15,6) 
+
+, VALUE32                                     DECIMAL(15,6) 
+
+, VALUE33                                     DECIMAL(15,6) 
+
+, VALUE34                                     DECIMAL(15,6) 
+
+, VALUE35                                     DECIMAL(15,6) 
+
+, VALUE36                                     DECIMAL(15,6) 
+
+, VALUE37                                     DECIMAL(15,6) 
+
+, VALUE38                                     DECIMAL(15,6) 
+
+, VALUE39                                     DECIMAL(15,6) 
+
+, VALUE40                                     DECIMAL(15,6) 
+
+, VALUE41                                     DECIMAL(15,6) 
+
+, VALUE42                                     DECIMAL(15,6) 
+
+, VALUE43                                     DECIMAL(15,6) 
+
+, VALUE44                                     DECIMAL(15,6) 
+
+, VALUE45                                     DECIMAL(15,6) 
+
+, VALUE46                                     DECIMAL(15,6) 
+
+, VALUE47                                     DECIMAL(15,6) 
+
+, VALUE48                                     DECIMAL(15,6) 
+
+, VALUE49                                     DECIMAL(15,6) 
+
+, VALUE50                                     DECIMAL(15,6) 
+
+, UNIQUE_FP INT
+
+, HORIZONTAL_LAYOUT INT
+
+, FLAG3 INT
+
+, FLAG4 INT
+
+, FLAG5 INT
+
+, FLAG6 INT
+
+, FLAG7 INT
+
+, FLAG8 INT
+
+, FLAG9 INT
+
+, FLAG10 INT
+
+, FILLPATTERN INT
+
+, NUMBER_FLD INT
+
+, FILENAME                                    STRING 
+
+, LAYOUTFILENAME                              STRING 
+
+, NOTES                                       STRING 
+
+, THREEDFLOORIMAGE                            STRING 
+
+, THREEDCEILINGIMAGE                          STRING 
+
+, CEILINGTILEX                                DECIMAL(7,2) 
+
+, CEILINGTILEZ                                DECIMAL(7,2) 
+
+, FLOORTILEX                                  DECIMAL(7,2) 
+
+, FLOORTILEZ                                  DECIMAL(7,2) 
+
+, WARNINGS_CNT INT
+
+, GLN     STRING 
+
+, WARNING                                     STRING 
+
+, WARNINGNUMBER INT
+
+, SOURCE INT
+
+, STATUS                                      STRING 
+
+, TEXTUREPATHS                                STRING 
+
+, PLANOGRAMSPLITDEFAULT INT
+
+, DBPROFUSIONVERSION INT
+
+, DBVERSIONKEY INT
+
+, DESC15                                      STRING 
+
+, DESC17                                      STRING 
+
+, DESC18                                      STRING 
+
+, DESC19                                      STRING 
+
+, DESC22                                      STRING 
+
+, DESC23                                      STRING 
+
+, DESC24                                      STRING 
+
+, DESC25                                      STRING 
+
+, DESC26                                      STRING 
+
+, DESC27                                      STRING 
+
+, DESC28                                      STRING 
+
+, DESC29                                      STRING 
+
+, DESC30                                      STRING 
+
+, DESC31                                      STRING 
+
+, DESC32                                      STRING 
+
+, DESC33                                      STRING 
+
+, DESC34                                      STRING 
+
+, DESC35                                      STRING 
+
+, DESC36                                      STRING 
+
+, DESC37                                      STRING 
+
+, DESC38                                      STRING 
+
+, DESC39                                      STRING 
+
+, DESC40                                      STRING 
+
+, DESC41                                      STRING 
+
+, DESC42                                      STRING 
+
+, DESC43                                      STRING 
+
+, DESC44                                      STRING 
+
+, DESC45                                      STRING 
+
+, DESC46                                      STRING 
+
+, DESC47                                      STRING 
+
+, DESC48                                      STRING 
+
+, DESC49                                      STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/ikb_flr_floorplan';
+
+--DISTRIBUTE ON (DBKEY)
+
+
+
+
+
+
+
+--*****  Creating table:  "CKB_STR_STORE_FLOORPLAN" , ***** Creating table: "CKB_STR_STORE_FLOORPLAN"
+
+
+use dev_legacy;
+ CREATE TABLE CKB_STR_STORE_FLOORPLAN 
+( CKB_DB_STORE_FLOOR_PLAN_KEY INT not null
+
+, CKB_DB_STORE_KEY INT not null
+
+, CKB_DB_FLOOR_PLAN_KEY INT not null
+
+, LOAD_DT DATE
+
+, UPDATE_DT DATE
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/ckb_str_store_floorplan';
+
+--DISTRIBUTE ON RANDOM
+
+--ORGANIZE   ON (CKB_DB_STORE_KEY, CKB_DB_FLOOR_PLAN_KEY)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_DAY_SKU_STORE_RPT" , ***** Creating table: "SALES_DAY_SKU_STORE_RPT"
+
+
+use dev_legacy;
+ CREATE TABLE SALES_DAY_SKU_STORE_RPT 
+( DAY_DT        TIMESTAMP                             not null
+
+, PRODUCT_ID INT not null
+
+, LOCATION_ID INT not null
+
+, SALES_CUST_CAPTURE_CD                             STRING                          not null
+
+, WEEK_DT       TIMESTAMP 
+
+, FISCAL_YR SMALLINT
+
+, SKU_NBR INT
+
+, STORE_NBR INT
+
+, OPT_SALES_TYPE_ID TINYINT
+
+, VENDOR_ID BIGINT
+
+, PROMO_FLAG TINYINT
+
+, STATUS_ID     STRING 
+
+, BRAND_NAME                                        STRING 
+
+, OWNBRAND_FLAG                                     STRING 
+
+, SKU_VEND_TXN_CNT INT
+
+, NET_SALES_AMT                                     DECIMAL(11,2) 
+
+, NET_SALES_QTY                                     INT 
+
+, NET_MARGIN_AMT                                    DECIMAL(12,3) 
+
+, SALES_AMT     DECIMAL(8,2) 
+
+, SALES_COST                                        DECIMAL(8,2) 
+
+, SALES_QTY     INT 
+
+, RETURN_AMT                                        DECIMAL(8,2) 
+
+, RETURN_COST                                       DECIMAL(8,2) 
+
+, RETURN_QTY                                        INT 
+
+, CLEARANCE_AMT                                     DECIMAL(10,2) 
+
+, CLEARANCE_QTY                                     INT 
+
+, CLEARANCE_RETURN_AMT                              DECIMAL(10,2) 
+
+, CLEARANCE_RETURN_QTY                              INT 
+
+, DISCOUNT_AMT                                      DECIMAL(9,2) 
+
+, DISCOUNT_QTY                                      INT 
+
+, DISCOUNT_RETURN_AMT                               DECIMAL(9,2) 
+
+, DISCOUNT_RETURN_QTY                               INT 
+
+, POS_COUPON_AMT                                    DECIMAL(8,2) 
+
+, POS_COUPON_QTY                                    INT 
+
+, POS_COUPON_ALLOC_AMT                              DECIMAL(8,2) 
+
+, POS_COUPON_ALLOC_QTY                              INT 
+
+, SPECIAL_SALES_AMT                                 DECIMAL(8,2) 
+
+, SPECIAL_SALES_QTY                                 INT 
+
+, SPECIAL_RETURN_AMT                                DECIMAL(8,2) 
+
+, SPECIAL_RETURN_QTY                                INT 
+
+, SPECIAL_SRVC_AMT                                  DECIMAL(11,2) 
+
+, SPECIAL_SRVC_QTY                                  INT 
+
+, MA_SALES_AMT                                      DECIMAL(9,3) 
+
+, MA_SALES_QTY BIGINT
+
+, MA_TRANS_AMT                                      DECIMAL(12,3) 
+
+, MA_TRANS_COST                                     DECIMAL(12,3) 
+
+, MA_TRANS_QTY BIGINT
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/sales_day_sku_store_rpt';
+
+--DISTRIBUTE ON (PRODUCT_ID, LOCATION_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "FP_SKU_CHANGE_STATUS_WEEK_PREVIOUS" , ***** Creating table: "FP_SKU_CHANGE_STATUS_WEEK_PREVIOUS"
+
+
+use dev_legacy;
+ CREATE TABLE FP_SKU_CHANGE_STATUS_WEEK_PREVIOUS 
+( LOAD_DT                                    DATE                                not null
+
+, POG_DBKEY INT not null
+
+, FLOORPLAN_DBKEY INT not null
+
+, LOCATION_ID INT not null
+
+, PRODUCT_ID INT not null
+
+, STORE_NBR INT
+
+, POG_GROUP                                   STRING 
+
+, SKU_NBR INT
+
+, SKU_FACINGS_QTY                             INT 
+
+, POG_EFF_FROM_DT DATE
+
+, POG_EFF_TO_DT DATE
+
+, FLOORPLAN_EFF_FROM_DT DATE
+
+, FLOORPLAN_EFF_TO_DT DATE
+
+, POG_CNT TINYINT
+
+, SKU_CHANGE_STATUS_CD                        STRING 
+
+, DAY_DT DATE
+
+, LOAD_TSTMP                                  TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/fp_sku_change_status_week_previous';
+
+--DISTRIBUTE ON (POG_DBKEY, FLOORPLAN_DBKEY, LOCATION_ID, PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "IKB_PROJECT_CALENDAR" , ***** Creating table: "IKB_PROJECT_CALENDAR"
+
+
+use dev_legacy;
+ CREATE TABLE IKB_PROJECT_CALENDAR 
+( IKB_PROJECT_ID INT not null
+
+, IKB_PROJECT_TYPE                            STRING                not null
+
+, IKB_PROJECT_DESC                            STRING 
+
+, IKB_PROJECT_LIVE_DT DATE
+
+, ECR_PROCESS_START_DT DATE
+
+, CATEGORY_REVIEW_DT DATE
+
+, IKB_POG_IMPLEMENT_DT DATE
+
+, UPDATE_TSTMP                                TIMESTAMP 
+
+, LOAD_TSTMP                                  TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/ikb_project_calendar';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "FP_SKU_CHANGE_STATUS_WEEK" , ***** Creating table: "FP_SKU_CHANGE_STATUS_WEEK"
+
+
+use dev_legacy;
+ CREATE TABLE FP_SKU_CHANGE_STATUS_WEEK 
+( LOAD_DT                                    DATE                                not null
+
+, POG_DBKEY INT not null
+
+, FLOORPLAN_DBKEY INT not null
+
+, LOCATION_ID INT not null
+
+, PRODUCT_ID INT not null
+
+, STORE_NBR INT
+
+, POG_GROUP                                   STRING 
+
+, SKU_NBR INT
+
+, SKU_FACINGS_QTY                             INT 
+
+, POG_EFF_FROM_DT DATE
+
+, POG_EFF_TO_DT DATE
+
+, FLOORPLAN_EFF_FROM_DT DATE
+
+, FLOORPLAN_EFF_TO_DT DATE
+
+, POG_CNT TINYINT
+
+, SKU_CHANGE_STATUS_CD                        STRING 
+
+, DAY_DT DATE
+
+, LOAD_TSTMP                                  TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/fp_sku_change_status_week';
+
+--DISTRIBUTE ON (DAY_DT, LOCATION_ID, PRODUCT_ID)
+
+--ORGANIZE   ON (LOAD_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "FP_SKU_CURRENT_LAST_STATUS" , ***** Creating table: "FP_SKU_CURRENT_LAST_STATUS"
+
+
+use dev_legacy;
+ CREATE TABLE FP_SKU_CURRENT_LAST_STATUS 
+( DAY_DT DATE
+
+, LOCATION_ID INT
+
+, PRODUCT_ID INT
+
+, LAST_SKU_CHANGE_STATUS_CD                   STRING 
+
+, LAST_CHANGE_DT DATE
+
+, POG_TYPE_CD                                 STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/fp_sku_current_last_status';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "IKB_SNAPSHOT_DAY" , ***** Creating table: "IKB_SNAPSHOT_DAY"
+
+
+use dev_legacy;
+ CREATE TABLE IKB_SNAPSHOT_DAY 
+( SNAPSHOT_DT                                 TIMESTAMP                            not null
+
+, SNAPSHOT_START_DT                           TIMESTAMP 
+
+, RUN_DT                                      TIMESTAMP 
+
+, FISCAL_MO INT
+
+, FISCAL_QTR INT
+
+, SNAPSHOT_STATUS                             STRING 
+
+, UPDATE_DT                                   TIMESTAMP 
+
+, LOAD_DT                                     TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Merchandising/ikb_snapshot_day';
+
+--DISTRIBUTE ON RANDOM
+
+--ORGANIZE   ON (SNAPSHOT_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "CKB_POG_SKU_PRE" , ***** Creating table: "CKB_POG_SKU_PRE"
+
+
+use dev_raw;
+ CREATE TABLE CKB_POG_SKU_PRE 
+( POG_DBKEY INT not null
+
+, SKU_NBR INT not null
+
+, SKU_FACINGS_QTY INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/INT_Merchandising/ckb_pog_sku_pre';
+
+--DISTRIBUTE ON (POG_DBKEY)
+
+--ORGANIZE   ON (POG_DBKEY)
+
+
+
+
+
+
+
+--*****  Creating table:  "CKB_FP_POG_PRE" , ***** Creating table: "CKB_FP_POG_PRE"
+
+
+use dev_raw;
+ CREATE TABLE CKB_FP_POG_PRE 
+( FLOORPLAN_DBKEY INT not null
+
+, POG_DBKEY INT not null
+
+, PARENT_POG_DBKEY INT
+
+, FLOORPLAN_NM                           STRING 
+
+, FLOORPLAN_LOCATION                     STRING 
+
+, POG_GROUP                              STRING 
+
+, POG_CKB_STATUS_ID INT
+
+, FLOORPLAN_CKB_STATUS_ID INT
+
+, FLOORPLAN_EFF_FROM_DT DATE
+
+, FLOORPLAN_EFF_TO_DT DATE
+
+, POG_EFF_TO_DT DATE
+
+, POG_EFF_FROM_DT DATE
+
+, POG_DBVERSIONKEY INT
+
+, DB_TIME                                TIMESTAMP 
+
+, DB_USER                                STRING 
+
+, POG_TYPE_CD                            STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/INT_Merchandising/ckb_fp_pog_pre';
+
+--DISTRIBUTE ON (FLOORPLAN_DBKEY)
+
+--ORGANIZE   ON (FLOORPLAN_DBKEY)
+
+

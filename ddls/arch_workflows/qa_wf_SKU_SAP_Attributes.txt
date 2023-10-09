@@ -1,0 +1,800 @@
+
+
+
+
+
+--*****  Creating table:  "SKU_PROFILE" , ***** Creating table: "SKU_PROFILE"
+
+
+use qa_legacy;
+ CREATE TABLE SKU_PROFILE 
+(
+ PRODUCT_ID INT not null
+
+, SKU_NBR INT
+
+, SKU_TYPE      STRING 
+
+, PRIMARY_UPC_ID BIGINT
+
+, STATUS_ID     STRING 
+
+, SUBS_HIST_FLAG                                    STRING 
+
+, SUBS_CURR_FLAG                                    STRING 
+
+, SKU_DESC      STRING 
+
+, ALT_DESC      STRING 
+
+, SAP_CATEGORY_ID INT
+
+, SAP_CLASS_ID INT
+
+, SAP_DEPT_ID INT
+
+, SAP_DIVISION_ID INT
+
+, PRIMARY_VENDOR_ID BIGINT
+
+, PARENT_VENDOR_ID BIGINT
+
+, COUNTRY_CD                                        STRING 
+
+, IMPORT_FLAG                                       STRING 
+
+, HTS_CODE_ID BIGINT
+
+, CONTENTS      DECIMAL(13,3) 
+
+, CONTENTS_UNITS                                    STRING 
+
+, WEIGHT_NET_AMT                                    DECIMAL(9,3) 
+
+, WEIGHT_UOM_CD                                     STRING 
+
+, SIZE_DESC     STRING 
+
+, BUM_QTY       DOUBLE 
+
+, UOM_CD        STRING 
+
+, UNIT_NUMERATOR                                    DOUBLE 
+
+, UNIT_DENOMINATOR                                  DOUBLE 
+
+, BUYER_ID      STRING 
+
+, PURCH_GROUP_ID INT
+
+, PURCH_COST_AMT                                    DECIMAL(8,2) 
+
+, NAT_PRICE_US_AMT                                  DECIMAL(8,2) 
+
+, TAX_CLASS_ID                                      STRING 
+
+, VALUATION_CLASS_CD                                STRING 
+
+, BRAND_CD      STRING 
+
+, BRAND_CLASSIFICATION_ID SMALLINT
+
+, OWNBRAND_FLAG                                     STRING 
+
+, STATELINE_FLAG                                    STRING 
+
+, SIGN_TYPE_CD                                      STRING 
+
+, OLD_ARTICLE_NBR                                   STRING 
+
+, VENDOR_ARTICLE_NBR                                STRING 
+
+, INIT_MKDN_DT                                      TIMESTAMP 
+
+, DISC_START_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, FIRST_SALE_DT                                     TIMESTAMP 
+
+, LAST_SALE_DT                                      TIMESTAMP 
+
+, FIRST_INV_DT                                      TIMESTAMP 
+
+, LAST_INV_DT                                       TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+, BASE_NBR      STRING 
+
+, BP_COLOR_ID                                       STRING 
+
+, BP_SIZE_ID                                        STRING 
+
+, BP_BREED_ID                                       STRING 
+
+, BP_ITEM_CONCATENATED                              STRING 
+
+, BP_AEROSOL_FLAG TINYINT
+
+, BP_HAZMAT_FLAG TINYINT
+
+, CANADIAN_HTS_CD                                   STRING 
+
+, NAT_PRICE_CA_AMT                                  DECIMAL(8,2) 
+
+, NAT_PRICE_PR_AMT                                  DECIMAL(8,2) 
+
+, RTV_DEPT_CD                                       STRING 
+
+, GL_ACCT_NBR INT
+
+, ARTICLE_CATEGORY_ID SMALLINT
+
+, COMPONENT_FLAG                                    STRING 
+
+, ZDISCO_SCHED_TYPE_ID                              STRING                 not null  
+
+, ZDISCO_MKDN_SCHED_ID                              STRING                  not null  
+
+, ZDISCO_PID_DT                                     TIMESTAMP 
+
+, ZDISCO_START_DT                                   TIMESTAMP 
+
+, ZDISCO_INIT_MKDN_DT                               TIMESTAMP 
+
+, ZDISCO_DC_DT                                      TIMESTAMP 
+
+, ZDISCO_STR_DT                                     TIMESTAMP 
+
+, ZDISCO_STR_OWNRSHP_DT                             TIMESTAMP 
+
+, ZDISCO_STR_WRT_OFF_DT                             TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Dimension/sku_profile';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_SAP_ATTR" , ***** Creating table: "SKU_SAP_ATTR"
+
+
+use qa_legacy;
+ CREATE TABLE SKU_SAP_ATTR 
+(
+ PRODUCT_ID INT not null
+
+, SKU_NBR INT not null
+
+, SKU_SAP_PROD_GROUP_ID INT
+
+, SKU_SAP_PROD_GROUP_DESC                           STRING 
+
+, SKU_SAP_FAMILY_ID INT
+
+, SKU_SAP_FAMILY_DESC                               STRING 
+
+, SKU_SAP_PPU_GROUP_ID INT
+
+, SKU_SAP_PPU_GROUP_DESC                            STRING 
+
+, SKU_SAP_PRVT_LABEL_ID INT
+
+, SKU_SAP_PRVT_LABEL_DESC                           STRING 
+
+, SKU_SAP_PRVT_LABEL_TIER_ID INT
+
+, SKU_SAP_PRVT_LABEL_TIER_DESC                      STRING 
+
+, SKU_SAP_PRVT_LABEL_PARENT_TIER_ID INT
+
+, SKU_SAP_PRVT_LABEL_PARENT_TIER_DESC               STRING 
+
+, SKU_SAP_MAP_ID INT
+
+, SKU_SAP_MAP_DESC                                  STRING 
+
+, SKU_SAP_KOI_ID INT
+
+, SKU_SAP_KOI_DESC                                  STRING 
+
+, UPDATE_TSTMP                                      TIMESTAMP 
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Dimension/sku_sap_attr';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_ATTR" , ***** Creating table: "SKU_ATTR"
+
+
+use qa_legacy;
+ CREATE TABLE SKU_ATTR 
+(
+ PRODUCT_ID INT not null
+
+, SKU_ATTR1_ID INT
+
+, SKU_ATTR1_DESC                                    STRING 
+
+, SKU_ATTR2_ID INT
+
+, SKU_ATTR2_DESC                                    STRING 
+
+, SKU_ATTR3_ID INT
+
+, SKU_ATTR3_DESC                                    STRING 
+
+, SKU_ATTR4_ID INT
+
+, SKU_ATTR4_DESC                                    STRING 
+
+, SKU_ATTR5_ID INT
+
+, SKU_ATTR5_DESC                                    STRING 
+
+, SKU_ATTR6_ID INT
+
+, SKU_ATTR6_DESC                                    STRING 
+
+, SKU_ATTR7_ID INT
+
+, SKU_ATTR7_DESC                                    STRING 
+
+, SKU_ATTR8_ID INT
+
+, SKU_ATTR8_DESC                                    STRING 
+
+, SKU_ATTR9_ID INT
+
+, SKU_ATTR9_DESC                                    STRING 
+
+, SKU_ATTR10_ID INT
+
+, SKU_ATTR10_DESC                                   STRING 
+
+, SKU_ATTR11_ID INT
+
+, SKU_ATTR11_DESC                                   STRING 
+
+, SKU_ATTR12_ID INT
+
+, SKU_ATTR12_DESC                                   STRING 
+
+, SKU_ATTR13_ID INT
+
+, SKU_ATTR13_DESC                                   STRING 
+
+, SKU_ATTR14_ID INT
+
+, SKU_ATTR14_DESC                                   STRING 
+
+, SKU_ATTR15_ID INT
+
+, SKU_ATTR15_DESC                                   STRING 
+
+, SKU_ATTR16_ID INT
+
+, SKU_ATTR16_DESC                                   STRING 
+
+, SKU_ATTR17_ID INT
+
+, SKU_ATTR17_DESC                                   STRING 
+
+, SKU_ATTR18_ID INT
+
+, SKU_ATTR18_DESC                                   STRING 
+
+, SKU_ATTR19_ID INT
+
+, SKU_ATTR19_DESC                                   STRING 
+
+, SKU_ATTR20_ID INT
+
+, SKU_ATTR20_DESC                                   STRING 
+
+, SKU_ATTR21_ID INT
+
+, SKU_ATTR21_DESC                                   STRING 
+
+, SKU_ATTR22_ID INT
+
+, SKU_ATTR22_DESC                                   STRING 
+
+, SKU_ATTR23_ID INT
+
+, SKU_ATTR23_DESC                                   STRING 
+
+, SKU_ATTR24_ID INT
+
+, SKU_ATTR24_DESC                                   STRING 
+
+, SKU_ATTR25_ID INT
+
+, SKU_ATTR25_DESC                                   STRING 
+
+, SKU_ATTR26_ID INT
+
+, SKU_ATTR26_DESC                                   STRING 
+
+, SKU_ATTR27_ID INT
+
+, SKU_ATTR27_DESC                                   STRING 
+
+, SKU_ATTR28_ID INT
+
+, SKU_ATTR28_DESC                                   STRING 
+
+, SKU_ATTR29_ID INT
+
+, SKU_ATTR29_DESC                                   STRING 
+
+, SKU_ATTR30_ID INT
+
+, SKU_ATTR30_DESC                                   STRING 
+
+, SKU_ATTR31_ID INT
+
+, SKU_ATTR31_DESC                                   STRING 
+
+, SKU_ATTR32_ID INT
+
+, SKU_ATTR32_DESC                                   STRING 
+
+, SKU_ATTR33_ID INT
+
+, SKU_ATTR33_DESC                                   STRING 
+
+, SKU_ATTR34_ID INT
+
+, SKU_ATTR34_DESC                                   STRING 
+
+, SKU_ATTR35_ID INT
+
+, SKU_ATTR35_DESC                                   STRING 
+
+, SKU_ATTR36_ID INT
+
+, SKU_ATTR36_DESC                                   STRING 
+
+, SKU_ATTR37_ID INT
+
+, SKU_ATTR37_DESC                                   STRING 
+
+, SKU_ATTR38_ID INT
+
+, SKU_ATTR38_DESC                                   STRING 
+
+, SKU_ATTR39_ID INT
+
+, SKU_ATTR39_DESC                                   STRING 
+
+, SKU_ATTR40_ID INT
+
+, SKU_ATTR40_DESC                                   STRING 
+
+, SKU_ATTR41_ID INT
+
+, SKU_ATTR41_DESC                                   STRING 
+
+, SKU_ATTR42_ID INT
+
+, SKU_ATTR42_DESC                                   STRING 
+
+, SKU_ATTR43_ID INT
+
+, SKU_ATTR43_DESC                                   STRING 
+
+, SKU_ATTR44_ID INT
+
+, SKU_ATTR44_DESC                                   STRING 
+
+, SKU_ATTR45_ID INT
+
+, SKU_ATTR45_DESC                                   STRING 
+
+, SKU_ATTR46_ID INT
+
+, SKU_ATTR46_DESC                                   STRING 
+
+, SKU_ATTR47_ID INT
+
+, SKU_ATTR47_DESC                                   STRING 
+
+, SKU_ATTR48_ID INT
+
+, SKU_ATTR48_DESC                                   STRING 
+
+, SKU_ATTR49_ID INT
+
+, SKU_ATTR49_DESC                                   STRING 
+
+, SKU_ATTR50_ID INT
+
+, SKU_ATTR50_DESC                                   STRING 
+
+, UPDATE_TSTMP                                      TIMESTAMP 
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Dimension/sku_attr';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_SAP_ATTR_PRE" , ***** Creating table: "SKU_SAP_ATTR_PRE"
+
+
+use qa_raw;
+ CREATE TABLE SKU_SAP_ATTR_PRE 
+(
+ PRODUCT_ID INT not null
+
+, SKU_NBR INT not null
+
+, SKU_SAP_PROD_GROUP_ID INT
+
+, SKU_SAP_PROD_GROUP_DESC                           STRING 
+
+, SKU_SAP_FAMILY_ID INT
+
+, SKU_SAP_FAMILY_DESC                               STRING 
+
+, SKU_SAP_PPU_GROUP_ID INT
+
+, SKU_SAP_PPU_GROUP_DESC                            STRING 
+
+, SKU_SAP_PRVT_LABEL_ID INT
+
+, SKU_SAP_PRVT_LABEL_DESC                           STRING 
+
+, SKU_SAP_PRVT_LABEL_TIER_ID INT
+
+, SKU_SAP_PRVT_LABEL_TIER_DESC                      STRING 
+
+, SKU_SAP_PRVT_LABEL_PARENT_TIER_ID INT
+
+, SKU_SAP_PRVT_LABEL_PARENT_TIER_DESC               STRING 
+
+, SKU_SAP_MAP_ID INT
+
+, SKU_SAP_MAP_DESC                                  STRING 
+
+, SKU_SAP_KOI_ID INT
+
+, SKU_SAP_KOI_DESC                                  STRING 
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Dimension/sku_sap_attr_pre';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SAP_ZTPIM_MAP_PRE" , ***** Creating table: "SAP_ZTPIM_MAP_PRE"
+
+
+use qa_raw;
+ CREATE TABLE SAP_ZTPIM_MAP_PRE 
+(
+ MANDT         STRING 
+
+, ARTICLE       STRING 
+
+, MAP_PRICE     DECIMAL(11,2) 
+
+, CREATED_BY                                        STRING 
+
+, LAST_CHANGED_BY                                   STRING 
+
+, LAST_CHANGED_DATE                                 STRING 
+
+, DATAB         STRING 
+
+, DATBI         STRING 
+
+, LOAD_TSTMP                                        TIMESTAMP                             not null  
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Dimension/sap_ztpim_map_pre';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_MAP_PRICE" , ***** Creating table: "SKU_MAP_PRICE"
+
+
+use qa_legacy;
+ CREATE TABLE SKU_MAP_PRICE 
+(
+ PRODUCT_ID INT not null
+
+, VALID_FROM_DT                                    DATE                                 not null
+
+, VALID_TO_DT                                      DATE                                 not null
+
+, MAP_PRICE_AMT                                     DECIMAL(11,2) 
+
+, DELETE_FLAG                                       TINYINT                          not null  
+
+, CREATED_BY                                        STRING 
+
+, LAST_CHANGED_BY                                   STRING 
+
+, LAST_CHANGED_DT DATE
+
+, UPDATE_TSTMP                                      TIMESTAMP                             not null  
+
+, LOAD_TSTMP                                        TIMESTAMP                             not null  
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Dimension/sku_map_price';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SKU_ATTR" , ***** Creating table: "SKU_ATTR"
+
+
+use qa_legacy;
+ CREATE TABLE SKU_ATTR 
+(
+ PRODUCT_ID INT not null
+
+, SKU_ATTR1_ID INT
+
+, SKU_ATTR1_DESC                                    STRING 
+
+, SKU_ATTR2_ID INT
+
+, SKU_ATTR2_DESC                                    STRING 
+
+, SKU_ATTR3_ID INT
+
+, SKU_ATTR3_DESC                                    STRING 
+
+, SKU_ATTR4_ID INT
+
+, SKU_ATTR4_DESC                                    STRING 
+
+, SKU_ATTR5_ID INT
+
+, SKU_ATTR5_DESC                                    STRING 
+
+, SKU_ATTR6_ID INT
+
+, SKU_ATTR6_DESC                                    STRING 
+
+, SKU_ATTR7_ID INT
+
+, SKU_ATTR7_DESC                                    STRING 
+
+, SKU_ATTR8_ID INT
+
+, SKU_ATTR8_DESC                                    STRING 
+
+, SKU_ATTR9_ID INT
+
+, SKU_ATTR9_DESC                                    STRING 
+
+, SKU_ATTR10_ID INT
+
+, SKU_ATTR10_DESC                                   STRING 
+
+, SKU_ATTR11_ID INT
+
+, SKU_ATTR11_DESC                                   STRING 
+
+, SKU_ATTR12_ID INT
+
+, SKU_ATTR12_DESC                                   STRING 
+
+, SKU_ATTR13_ID INT
+
+, SKU_ATTR13_DESC                                   STRING 
+
+, SKU_ATTR14_ID INT
+
+, SKU_ATTR14_DESC                                   STRING 
+
+, SKU_ATTR15_ID INT
+
+, SKU_ATTR15_DESC                                   STRING 
+
+, SKU_ATTR16_ID INT
+
+, SKU_ATTR16_DESC                                   STRING 
+
+, SKU_ATTR17_ID INT
+
+, SKU_ATTR17_DESC                                   STRING 
+
+, SKU_ATTR18_ID INT
+
+, SKU_ATTR18_DESC                                   STRING 
+
+, SKU_ATTR19_ID INT
+
+, SKU_ATTR19_DESC                                   STRING 
+
+, SKU_ATTR20_ID INT
+
+, SKU_ATTR20_DESC                                   STRING 
+
+, SKU_ATTR21_ID INT
+
+, SKU_ATTR21_DESC                                   STRING 
+
+, SKU_ATTR22_ID INT
+
+, SKU_ATTR22_DESC                                   STRING 
+
+, SKU_ATTR23_ID INT
+
+, SKU_ATTR23_DESC                                   STRING 
+
+, SKU_ATTR24_ID INT
+
+, SKU_ATTR24_DESC                                   STRING 
+
+, SKU_ATTR25_ID INT
+
+, SKU_ATTR25_DESC                                   STRING 
+
+, SKU_ATTR26_ID INT
+
+, SKU_ATTR26_DESC                                   STRING 
+
+, SKU_ATTR27_ID INT
+
+, SKU_ATTR27_DESC                                   STRING 
+
+, SKU_ATTR28_ID INT
+
+, SKU_ATTR28_DESC                                   STRING 
+
+, SKU_ATTR29_ID INT
+
+, SKU_ATTR29_DESC                                   STRING 
+
+, SKU_ATTR30_ID INT
+
+, SKU_ATTR30_DESC                                   STRING 
+
+, SKU_ATTR31_ID INT
+
+, SKU_ATTR31_DESC                                   STRING 
+
+, SKU_ATTR32_ID INT
+
+, SKU_ATTR32_DESC                                   STRING 
+
+, SKU_ATTR33_ID INT
+
+, SKU_ATTR33_DESC                                   STRING 
+
+, SKU_ATTR34_ID INT
+
+, SKU_ATTR34_DESC                                   STRING 
+
+, SKU_ATTR35_ID INT
+
+, SKU_ATTR35_DESC                                   STRING 
+
+, SKU_ATTR36_ID INT
+
+, SKU_ATTR36_DESC                                   STRING 
+
+, SKU_ATTR37_ID INT
+
+, SKU_ATTR37_DESC                                   STRING 
+
+, SKU_ATTR38_ID INT
+
+, SKU_ATTR38_DESC                                   STRING 
+
+, SKU_ATTR39_ID INT
+
+, SKU_ATTR39_DESC                                   STRING 
+
+, SKU_ATTR40_ID INT
+
+, SKU_ATTR40_DESC                                   STRING 
+
+, SKU_ATTR41_ID INT
+
+, SKU_ATTR41_DESC                                   STRING 
+
+, SKU_ATTR42_ID INT
+
+, SKU_ATTR42_DESC                                   STRING 
+
+, SKU_ATTR43_ID INT
+
+, SKU_ATTR43_DESC                                   STRING 
+
+, SKU_ATTR44_ID INT
+
+, SKU_ATTR44_DESC                                   STRING 
+
+, SKU_ATTR45_ID INT
+
+, SKU_ATTR45_DESC                                   STRING 
+
+, SKU_ATTR46_ID INT
+
+, SKU_ATTR46_DESC                                   STRING 
+
+, SKU_ATTR47_ID INT
+
+, SKU_ATTR47_DESC                                   STRING 
+
+, SKU_ATTR48_ID INT
+
+, SKU_ATTR48_DESC                                   STRING 
+
+, SKU_ATTR49_ID INT
+
+, SKU_ATTR49_DESC                                   STRING 
+
+, SKU_ATTR50_ID INT
+
+, SKU_ATTR50_DESC                                   STRING 
+
+, UPDATE_TSTMP                                      TIMESTAMP 
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Dimension/sku_attr';
+
+--DISTRIBUTE ON (PRODUCT_ID)
+
+

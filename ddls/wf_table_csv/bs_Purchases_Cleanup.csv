@@ -1,3 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-bs_Purchases_Cleanup,PURCHASES,EDW_PRD,legacy,no,legacy
-bs_Purchases_Cleanup,OPEN_PO_PRE,EDW_PRD,raw,no,raw

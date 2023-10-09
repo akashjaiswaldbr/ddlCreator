@@ -1,0 +1,5 @@
+wf_name,table_name,nz_database,dl_database,pii,target_schema,table name in delta lake
+wf_GetSmart_PetTraining,GS_PT_HISTORY,EDW_PRD,dev_legacy,NO,,GS_PT_HISTORY
+wf_GetSmart_PetTraining,GS_PT_TRAINING,EDW_PRD,dev_legacy,NO,,GS_PT_TRAINING
+wf_GetSmart_PetTraining,GS_PT_TRAINING_TYPE,EDW_PRD,dev_legacy,NO,,GS_PT_TRAINING_TYPE
+wf_GetSmart_PetTraining,GS_PT_TRAVEL,EDW_PRD,dev_legacy,NO,,GS_PT_TRAVEL

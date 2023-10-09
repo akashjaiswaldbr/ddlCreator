@@ -1,0 +1,757 @@
+CREATE TABLE  SCDS_STG_PRD .WM_E_DEPT_PRE
+
+(
+
+     DC_NBR                             numeric(3,0)               not null,
+
+     DEPT_ID                            numeric(9,0)               not null,
+
+     DEPT_CODE                          character varying(10),
+
+    DESCRIPTION                        character varying(100),
+
+     CREATE_DATE_TIME                   timestamp,
+
+     MOD_DATE_TIME                      timestamp,
+
+     USER_ID                            character varying(50),
+
+     WHSE                               character varying(3),
+
+     MISC_TXT_1                         character varying(20),
+
+     MISC_TXT_2                         character varying(20),
+
+     MISC_NUM_1                         numeric(20,7),
+
+     MISC_NUM_2                         numeric(20,7),
+
+     PERF_GOAL                          numeric(9,2),
+
+     VERSION_ID                         numeric(6,0),
+
+     CREATED_DTTM                       timestamp,
+
+     LAST_UPDATED_DTTM                  timestamp,
+
+     LOAD_TSTMP                         timestamp                  default "TIMESTAMP"('now(0)'::"VARCHAR")
+
+)
+
+DISTRIBUTE ON RANDOM
+
+ORGANIZE   ON (DC_NBR)
+
+;
+
+
+
+\echo
+
+\echo *****  Adding Primary Key Constraint:  WM_E_DEPT_PRE
+
+ALTER TABLE WM_E_DEPT_PRE ADD PRIMARY KEY (DC_NBR, DEPT_ID);
+
+
+
+CREATE TABLE  SCDS_PRD.WM_E_DEPT
+
+(
+
+     LOCATION_ID                            integer                    not null,
+
+     WM_DEPT_ID                             numeric(9,0)               not null,
+
+     WM_WHSE                                character varying(3),
+
+     WM_DEPT_CD                             character varying(10),
+
+     WM_DEPT_DESC                           character varying(100),
+
+     PERF_GOAL                              numeric(9,2),
+
+     MISC_TXT_1                             character varying(20),
+
+     MISC_TXT_2                             character varying(20),
+
+     MISC_NUM_1                             numeric(20,7),
+
+     MISC_NUM_2                             numeric(20,7),
+
+     WM_USER_ID                             character varying(50),
+
+     WM_VERSION_ID                          numeric(6,0),
+
+     WM_CREATED_TSTMP                       timestamp,
+
+     WM_LAST_UPDATED_TSTMP                  timestamp,
+
+     WM_CREATE_TSTMP                        timestamp,
+
+     WM_MOD_TSTMP                           timestamp,
+
+     UPDATE_TSTMP                           timestamp                  not null,
+
+     LOAD_TSTMP                             timestamp                  not null
+
+)
+
+DISTRIBUTE ON RANDOM
+
+;
+
+
+
+\echo
+
+\echo *****  Adding Primary Key Constraint:  WM_E_DEPT
+
+ALTER TABLE WM_E_DEPT ADD Constraint WM_E_DEPT_PK1 PRIMARY KEY (LOCATION_ID, WM_DEPT_ID);
+
+
+
+CREATE TABLE  SCDS_PRD .WM_E_CONSOL_PERF_SMRY
+
+(
+
+     LOCATION_ID                            integer                    not null,
+
+     WM_PERF_SMRY_TRAN_ID                   numeric(20,0)              not null,
+
+     WM_WHSE                                character varying(3),
+
+     WM_LOGIN_USER_ID                       character varying(50),
+
+     WM_JOB_FUNCTION_NAME                   character varying(50),
+
+     CLOCK_IN_TSTMP                         timestamp,
+
+     CLOCK_OUT_TSTMP                        timestamp,
+
+     CLOCK_IN_STATUS                        numeric(3,0),
+
+     START_TSTMP                            timestamp,
+
+     END_TSTMP                              timestamp,
+
+     WHSE_TSTMP                             timestamp,
+
+     TEAM_BEGIN_TSTMP                       timestamp,
+
+     WM_SHIFT_CD                            character varying(5),
+
+     WM_REPORT_SHIFT_CD                     character varying(5),
+
+     WM_USER_ID                             character varying(50),
+
+     WM_SPVSR_LOGIN_USER_ID                 character varying(50),
+
+     WM_DEPT_CD                             character varying(10),
+
+     WM_RESOURCE_GROUP_ID                   character varying(50),
+
+     WM_COMP_ASSIGNMENT_ID                  character varying(45),
+
+     WM_REFLECTIVE_CD                       character varying(15),
+
+     WM_EMP_PERF_SMRY_ID                    numeric(20,0),
+
+     WM_LOCN_GRP_ATTR                       character varying(24),
+
+     WM_VERSION_ID                          numeric(6,0),
+
+     WM_OPS_CD                              character varying(15),
+
+     WM_TEAM_CD                             character varying(15),
+
+     WM_REF_NBR                             character varying(50),
+
+     DEFAULT_JF_FLAG                        numeric(9,0),
+
+     EVENT_CNT                              numeric(9,0),
+
+     TOTAL_SAM                              numeric(20,7),
+
+     TOTAL_PAM                              numeric(13,5),
+
+     TOTAL_TIME                             numeric(13,5),
+
+     TOTAL_QTY                              numeric(13,5),
+
+     OSDL                                   numeric(13,5),
+
+     OSIL                                   numeric(13,5),
+
+     NSDL                                   numeric(13,5),
+
+     SIL                                    numeric(13,5),
+
+     UDIL                                   numeric(13,5),
+
+     UIL                                    numeric(13,5),
+
+     ADJ_OSDL                               numeric(13,5),
+
+     ADJ_OSIL                               numeric(13,5),
+
+     ADJ_UDIL                               numeric(13,5),
+
+     ADJ_NSDL                               numeric(13,5),
+
+     PAID_BRK                               numeric(13,5),
+
+     UNPAID_BRK                             numeric(13,5),
+
+     REF_OSDL                               numeric(13,5),
+
+     REF_OSIL                               numeric(13,5),
+
+     REF_UDIL                               numeric(13,5),
+
+     REF_NSDL                               numeric(13,5),
+
+     REF_ADJ_OSDL                           numeric(13,5),
+
+     REF_ADJ_OSIL                           numeric(13,5),
+
+     REF_ADJ_UDIL                           numeric(13,5),
+
+     REF_ADJ_NSDL                           numeric(13,5),
+
+     REF_SAM                                numeric(13,5),
+
+     REF_PAM                                numeric(13,5),
+
+     LABOR_COST_RATE                        numeric(20,7),
+
+     THRUPUT_MIN                            numeric(20,7),
+
+     PAID_OVERLAP_OSDL                      numeric(20,7),
+
+    UNPAID_OVERLAP_OSDL                    numeric(20,7),
+
+     PAID_OVERLAP_NSDL                      numeric(20,7),
+
+     UNPAID_OVERLAP_NSDL                    numeric(20,7),
+
+     PAID_OVERLAP_OSIL                      numeric(20,7),
+
+     UNPAID_OVERLAP_OSIL                    numeric(20,7),
+
+     PAID_OVERLAP_UDIL                      numeric(20,7),
+
+     UNPAID_OVERLAP_UDIL                    numeric(20,7),
+
+     DISPLAY_UOM_QTY                        numeric(20,7),
+
+     DISPLAY_UOM                            character varying(50),
+
+     MISC_1                                 character varying(30),
+
+     MISC_2                                 character varying(30),
+
+     MISC_TXT_1                             character varying(20),
+
+     MISC_TXT_2                             character varying(20),
+
+     MISC_NBR_1                             numeric(13,5),
+
+     MISC_NUM_1                             numeric(20,7),
+
+     MISC_NUM_2                             numeric(20,7),
+
+     LEVEL_1                                character varying(50),
+
+     LEVEL_2                                character varying(50),
+
+     LEVEL_3                                character varying(50),
+
+     LEVEL_4                                character varying(50),
+
+     LEVEL_5                                character varying(50),
+
+     WM_EVNT_CTGRY_1                        character varying(50),
+
+     WM_EVNT_CTGRY_2                        character varying(50),
+
+     WM_EVNT_CTGRY_3                        character varying(50),
+
+     WM_EVNT_CTGRY_4                        character varying(50),
+
+     WM_EVNT_CTGRY_5                        character varying(50),
+
+     WM_CREATE_TSTMP                        timestamp,
+
+     WM_MOD_TSTMP                           timestamp,
+
+     UPDATE_TSTMP                           timestamp                  not null,
+
+     LOAD_TSTMP                             timestamp                  not null
+
+)
+
+DISTRIBUTE ON (WM_PERF_SMRY_TRAN_ID)
+
+ORGANIZE   ON (LOCATION_ID)
+
+;
+
+
+
+\echo
+
+\echo *****  Adding Primary Key Constraint:  WM_E_CONSOL_PERF_SMRY
+
+ALTER TABLE SCDS_PRD .WM_E_CONSOL_PERF_SMRY ADD Constraint WM_E_CONSOL_PERF_SMRY_PK1 PRIMARY KEY (LOCATION_ID, WM_PERF_SMRY_TRAN_ID);
+
+
+
+CREATE TABLE  SCDS_PRD.WM_UCL_USER
+
+(
+
+     LOCATION_ID                               integer                     not null,
+
+     WM_UCL_USER_ID                            numeric(18,0)               not null,
+
+     WM_COMPANY_ID                             numeric(9,0),
+
+     WM_LOCATION_ID                            numeric(18,0),
+
+     WM_LOCALE_ID                              numeric(4,0),
+
+     WM_USER_TYPE_ID                           numeric(4,0),
+
+     ACTIVE_FLAG                               numeric(1,0),
+
+     USER_NAME                                 character varying(50)       not null,
+
+     TAX_ID_NBR                                character varying(15),
+
+     COMMON_NAME                               character varying(100),
+
+     USER_PREFIX                               character varying(16),
+
+     USER_TITLE                                character varying(50),
+
+     USER_FIRST_NAME                           character varying(50),
+
+     USER_MIDDLE_NAME                          character varying(50),
+
+     USER_LAST_NAME                            character varying(50),
+
+     BIRTH_DT                                  date,
+
+     GENDER_ID                                 character varying(1),
+
+     EMPLOYEE_START_DT                         date,
+
+     ADDR_1                                    character varying(75),
+
+     ADDR_2                                    character varying(75),
+
+     CITY                                      character varying(50),
+
+     STATE_PROV_CD                             character varying(4),
+
+     POSTAL_CD                                 character varying(10),
+
+     COUNTRY_CD                                character varying(4),
+
+     USER_EMAIL_1                              character varying(75),
+
+     USER_EMAIL_2                              character varying(75),
+
+     PHONE_NBR                                 character varying(32),
+
+     FAX_NBR                                   character varying(32),
+
+     WM_EXTERNAL_USER_ID                       character varying(50),
+
+     COPY_FROM_USER                            character varying(50),
+
+     WM_SECURITY_POLICY_GROUP_ID               numeric(10,0),
+
+     DEFAULT_WM_BUSINESS_UNIT_ID               numeric(9,0),
+
+     DEFAULT_WM_WHSE_REGION_ID                 numeric(9,0),
+
+     WM_CHANNEL_ID                             numeric(18,0),
+
+     WM_COMM_METHOD_ID_DURING_BH_1             numeric(4,0),
+
+     WM_COMM_METHOD_ID_DURING_BH_2             numeric(4,0),
+
+     WM_COMM_METHOD_ID_AFTER_BH_1              numeric(4,0),
+
+     WM_COMM_METHOD_ID_AFTER_BH_2              numeric(4,0),
+
+     PASSWORD_MANAGED_INTERNALLY_FLAG          numeric(1,0),
+
+     LOGGED_IN_FLAG                            numeric(1,0),
+
+     LAST_LOGIN_TSTMP                          timestamp,
+
+     NUMBER_OF_INVALID_LOGINS                  numeric(4,0),
+
+     PASSWORD_RESET_TSTMP                      timestamp,
+
+     LAST_PASSWORD_CHANGE_TSTMP                timestamp,
+
+     WM_HIBERNATE_VERSION                      numeric(10,0),
+
+     WM_CREATED_SOURCE_TYPE_ID                 numeric(4,0),
+
+     WM_CREATED_SOURCE                         character varying(50),
+
+     WM_CREATED_TSTMP                          timestamp,
+
+     WM_LAST_UPDATED_SOURCE_TYPE_ID            numeric(4,0),
+
+     WM_LAST_UPDATED_SOURCE                    character varying(50),
+
+     WM_LAST_UPDATED_TSTMP                     timestamp,
+
+     UPDATE_TSTMP                              timestamp                   not null,
+
+     LOAD_TSTMP                                timestamp                   not null
+
+)
+
+DISTRIBUTE ON RANDOM
+
+;
+
+
+
+\echo
+
+\echo *****  Adding Primary Key Constraint:  WM_UCL_USER
+
+ALTER TABLE SCDS_PRD .WM_UCL_USER ADD Constraint WM_UCL_USER_PK1_NEW PRIMARY KEY (LOCATION_ID, USER_NAME);
+
+
+
+CREATE TABLE  SCDS_STG_PRD.WM_E_CONSOL_PERF_SMRY_PRE
+
+(
+
+     DC_NBR                             numeric(3,0)               not null,
+
+     PERF_SMRY_TRAN_ID                  numeric(20,0)              not null,
+
+     WHSE                               character varying(3),
+
+     LOGIN_USER_ID                      character varying(50),
+
+     JOB_FUNCTION_NAME                  character varying(50),
+
+     SPVSR_LOGIN_USER_ID                character varying(50),
+
+     DEPT_CODE                          character varying(10),
+
+     CLOCK_IN_DATE                      timestamp,
+
+     CLOCK_IN_STATUS                    numeric(3,0),
+
+     TOTAL_SAM                          numeric(20,7),
+
+     TOTAL_PAM                          numeric(13,5),
+
+     TOTAL_TIME                         numeric(13,5),
+
+     OSDL                               numeric(13,5),
+
+     OSIL                               numeric(13,5),
+
+     NSDL                               numeric(13,5),
+
+     SIL                                numeric(13,5),
+
+     UDIL                               numeric(13,5),
+
+     UIL                                numeric(13,5),
+
+     ADJ_OSDL                           numeric(13,5),
+
+     ADJ_OSIL                           numeric(13,5),
+
+     ADJ_UDIL                           numeric(13,5),
+
+     ADJ_NSDL                           numeric(13,5),
+
+     PAID_BRK                           numeric(13,5),
+
+     UNPAID_BRK                         numeric(13,5),
+
+     REF_OSDL                           numeric(13,5),
+
+     REF_OSIL                           numeric(13,5),
+
+     REF_UDIL                           numeric(13,5),
+
+     REF_NSDL                           numeric(13,5),
+
+     REF_ADJ_OSDL                       numeric(13,5),
+
+     REF_ADJ_OSIL                       numeric(13,5),
+
+     REF_ADJ_UDIL                       numeric(13,5),
+
+     REF_ADJ_NSDL                       numeric(13,5),
+
+     MISC_NUMBER_1                      numeric(13,5),
+
+     CREATE_DATE_TIME                   timestamp,
+
+     MOD_DATE_TIME                      timestamp,
+
+     USER_ID                            character varying(50),
+
+     MISC_1                             character varying(30),
+
+     MISC_2                             character varying(30),
+
+     CLOCK_OUT_DATE                     timestamp,
+
+     SHIFT_CODE                         character varying(5),
+
+     EVENT_COUNT                        numeric(9,0),
+
+     START_DATE_TIME                    timestamp,
+
+     END_DATE_TIME                      timestamp,
+
+     LEVEL_1                            character varying(50),
+
+     LEVEL_2                            character varying(50),
+
+     LEVEL_3                            character varying(50),
+
+     LEVEL_4                            character varying(50),
+
+     LEVEL_5                            character varying(50),
+
+     WHSE_DATE                          timestamp,
+
+     OPS_CODE                           character varying(15),
+
+     REF_SAM                            numeric(13,5),
+
+     REF_PAM                            numeric(13,5),
+
+     REPORT_SHIFT                       character varying(5),
+
+     MISC_TXT_1                         character varying(20),
+
+     MISC_TXT_2                         character varying(20),
+
+     MISC_NUM_1                         numeric(20,7),
+
+     MISC_NUM_2                         numeric(20,7),
+
+     EVNT_CTGRY_1                       character varying(50),
+
+     EVNT_CTGRY_2                       character varying(50),
+
+     EVNT_CTGRY_3                       character varying(50),
+
+     EVNT_CTGRY_4                       character varying(50),
+
+     EVNT_CTGRY_5                       character varying(50),
+
+     LABOR_COST_RATE                    numeric(20,7),
+
+     PAID_OVERLAP_OSDL                  numeric(20,7),
+
+     UNPAID_OVERLAP_OSDL                numeric(20,7),
+
+     PAID_OVERLAP_NSDL                  numeric(20,7),
+
+     UNPAID_OVERLAP_NSDL                numeric(20,7),
+
+     PAID_OVERLAP_OSIL                  numeric(20,7),
+
+     UNPAID_OVERLAP_OSIL                numeric(20,7),
+
+     PAID_OVERLAP_UDIL                  numeric(20,7),
+
+     UNPAID_OVERLAP_UDIL                numeric(20,7),
+
+     VERSION_ID                         numeric(6,0),
+
+     TEAM_CODE                          character varying(15),
+
+     DEFAULT_JF_FLAG                    numeric(9,0),
+
+     EMP_PERF_SMRY_ID                   numeric(20,0),
+
+     TOTAL_QTY                          numeric(13,5),
+
+     REF_NBR                            character varying(50),
+
+     TEAM_BEGIN_TIME                    timestamp,
+
+     THRUPUT_MIN                        numeric(20,7),
+
+     DISPLAY_UOM_QTY                    numeric(20,7),
+
+     DISPLAY_UOM                        character varying(50),
+
+     LOCN_GRP_ATTR                      character varying(24),
+
+     RESOURCE_GROUP_ID                  character varying(50),
+
+     COMP_ASSIGNMENT_ID                 character varying(45),
+
+     REFLECTIVE_CODE                    character varying(15),
+
+     LOAD_TSTMP                         timestamp                  default "TIMESTAMP"('now(0)'::"VARCHAR")
+
+)
+
+DISTRIBUTE ON (PERF_SMRY_TRAN_ID)
+
+ORGANIZE   ON (DC_NBR)
+
+;
+
+
+
+\echo
+
+\echo *****  Adding Primary Key Constraint:  WM_E_CONSOL_PERF_SMRY_PRE
+
+ALTER TABLE SCDS_STG_PRD .WM_E_CONSOL_PERF_SMRY_PRE ADD PRIMARY KEY (DC_NBR, PERF_SMRY_TRAN_ID);
+
+
+
+\echo *****  Creating table:  "WM_UCL_USER_PRE"
+
+
+
+CREATE TABLE  SCDS_STG_PRD.WM_UCL_USER_PRE
+
+(
+
+     DC_NBR                             numeric(3,0)                not null,
+
+     UCL_USER_ID                        numeric(18,0)               not null,
+
+     COMPANY_ID                         numeric(9,0),
+
+     USER_NAME                          character varying(50),
+
+     USER_PASSWORD                      character varying(255),
+
+     IS_ACTIVE                          numeric(4,0),
+
+     CREATED_SOURCE_TYPE_ID             numeric(4,0),
+
+     CREATED_SOURCE                     character varying(50),
+
+     CREATED_DTTM                       timestamp,
+
+     LAST_UPDATED_SOURCE_TYPE_ID        numeric(4,0),
+
+     LAST_UPDATED_SOURCE                character varying(50),
+
+     LAST_UPDATED_DTTM                  timestamp,
+
+     USER_TYPE_ID                       numeric(4,0),
+
+     LOCALE_ID                          numeric(4,0),
+
+     LOCATION_ID                        numeric(18,0),
+
+     USER_FIRST_NAME                    character varying(50),
+
+     USER_MIDDLE_NAME                   character varying(50),
+
+     USER_LAST_NAME                     character varying(50),
+
+     USER_PREFIX                        character varying(16),
+
+     USER_TITLE                         character varying(50),
+
+     TELEPHONE_NUMBER                   character varying(32),
+
+     FAX_NUMBER                         character varying(32),
+
+     ADDRESS_1                          character varying(75),
+
+     ADDRESS_2                          character varying(75),
+
+     CITY                               character varying(50),
+
+     STATE_PROV_CODE                    character varying(4),
+
+     POSTAL_CODE                        character varying(10),
+
+     COUNTRY_CODE                       character varying(4),
+
+     USER_EMAIL_1                       character varying(75),
+
+     USER_EMAIL_2                       character varying(75),
+
+     COMM_METHOD_ID_DURING_BH_1         numeric(4,0),
+
+     COMM_METHOD_ID_DURING_BH_2         numeric(4,0),
+
+     COMM_METHOD_ID_AFTER_BH_1          numeric(4,0),
+
+     COMM_METHOD_ID_AFTER_BH_2          numeric(4,0),
+
+     COMMON_NAME                        character varying(100),
+
+     LAST_PASSWORD_CHANGE_DTTM          timestamp,
+
+     LOGGED_IN                          numeric(9,0),
+
+     LAST_LOGIN_DTTM                    timestamp,
+
+     DEFAULT_BUSINESS_UNIT_ID           numeric(9,0),
+
+     DEFAULT_WHSE_REGION_ID             numeric(9,0),
+
+     CHANNEL_ID                         numeric(18,0),
+
+     HIBERNATE_VERSION                  numeric(10,0),
+
+     NUMBER_OF_INVALID_LOGINS           numeric(4,0),
+
+     TAX_ID_NBR                         character varying(15),
+
+     EMP_START_DATE                     timestamp,
+
+     BIRTH_DATE                         timestamp,
+
+     GENDER_ID                          character varying(1),
+
+     PASSWORD_RESET_DATE_TIME           timestamp,
+
+     PASSWORD_TOKEN                     character varying(255),
+
+     ISPASSWORDMANAGEDINTERNALLY        numeric(1,0),
+
+     COPY_FROM_USER                     character varying(50),
+
+     EXTERNAL_USER_ID                   character varying(50),
+
+     SECURITY_POLICY_GROUP_ID           numeric(10,0),
+
+     LOAD_TSTMP                         timestamp                   default "TIMESTAMP"('now(0)'::"VARCHAR")
+
+)
+
+DISTRIBUTE ON RANDOM
+
+;
+
+
+
+\echo
+
+\echo *****  Adding Primary Key Constraint:  WM_UCL_USER_PRE
+
+ALTER TABLE SCDS_STG_PRD.WM_UCL_USER_PRE ADD PRIMARY KEY (DC_NBR, UCL_USER_ID);

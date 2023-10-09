@@ -1,0 +1,9 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_Label_Price_ACTUAL,LABEL_DAY_STORE_SKU,distinct_ddl,legacy,no,legacy
+wf_Label_Price_ACTUAL,LABEL_SIZE,distinct_ddl,legacy,no,legacy
+wf_Label_Price_ACTUAL,LABEL_TYPE,distinct_ddl,legacy,no,legacy
+wf_Label_Price_ACTUAL,LABEL_POG_TYPE,distinct_ddl,legacy,no,legacy
+wf_Label_Price_ACTUAL,ZTB_LABEL_CHGS_PRE,distinct_ddl,raw,no,raw
+wf_Label_Price_ACTUAL,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_Label_Price_ACTUAL,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_Label_Price_ACTUAL,DAY,distinct_ddl,legacy,no,legacy

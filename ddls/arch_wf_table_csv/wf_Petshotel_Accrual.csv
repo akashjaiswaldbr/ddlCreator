@@ -1,0 +1,4 @@
+wf_name,table_name,nz_database,dl_database,pii,target_schema,table name in delta lake
+wf_Petshotel_Accrual,PETSHOTEL_ACCRUAL,EDW_PRD,refine,NO,,PETSHOTEL_ACCRUAL
+wf_Petshotel_Accrual,PETSHOTEL_EXCH_RATE_PRE,EDW_PRD,raw,NO,,PETSHOTEL_EXCH_RATE_PRE
+wf_Petshotel_Accrual,SKU_PROFILE,EDW_PRD,legacy,NO,,SKU_PROFILE

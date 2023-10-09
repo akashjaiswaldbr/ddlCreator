@@ -1,0 +1,9 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_ORA2NZ_EDU_Replication_Daily,EDU_ASSESSMENTS,EDW_PRD,legacy,no,legacy
+wf_ORA2NZ_EDU_Replication_Daily,EDU_RESULT,EDW_PRD,legacy,no,legacy
+wf_ORA2NZ_EDU_Replication_Daily,EDU_CERT_SUMMARY,EDW_PRD,legacy,no,legacy
+wf_ORA2NZ_EDU_Replication_Daily,EDU_CERT_SITE_DAILY,EDW_PRD,legacy,no,legacy
+wf_ORA2NZ_EDU_Replication_Daily,EDU_CERT_DAILY,EDW_PRD,legacy,no,legacy
+wf_ORA2NZ_EDU_Replication_Daily,USR_STORE_ATTRIBUTES,EDW_PRD,legacy,no,legacy
+wf_ORA2NZ_EDU_Replication_Daily,USR_ASSESSMENT_EXCEPTIONS,EDW_PRD,legacy,no,legacy
+wf_ORA2NZ_EDU_Replication_Daily,EDU_SKILLSOFT_LEARNING_EXEMPTIONS,EDW_PRD,legacy,no,legacy

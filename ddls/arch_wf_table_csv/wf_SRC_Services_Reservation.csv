@@ -1,0 +1,4 @@
+wf_name,table_name,nz_database,dl_database,pii,target_schema
+wf_SRC_Services_Reservation,SRC_SERVICES_RESERVATION,EDW_PRD,cust_sensitive,YES,legacy
+wf_SRC_Services_Reservation,SRC_SERVICES_RESERVATION_PRE,EDW_PRD,cust_sensitive,YES,raw
+wf_SRC_Services_Reservation,SKU_PROFILE_RPT,EDW_PRD,dev_legacy,NO,

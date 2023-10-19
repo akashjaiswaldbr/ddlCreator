@@ -1,0 +1,44 @@
+
+
+
+
+
+--*****  Creating table:  "LMS_SKU_REF_PRE" , ***** Creating table: "LMS_SKU_REF_PRE"
+
+
+use dev_raw;
+ CREATE TABLE LMS_SKU_REF_PRE 
+(
+ SKU_NBR       STRING                not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/INT_Labor_Mgmt/lms_sku_ref_pre';
+
+--DISTRIBUTE ON (SKU_NBR, DRIVER)
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_SKU_REF" , ***** Creating table: "LMS_SKU_REF"
+
+
+use dev_legacy;
+ CREATE TABLE LMS_SKU_REF 
+(
+ SKU_NBR INT not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_sku_ref';
+
+--DISTRIBUTE ON RANDOM
+
+

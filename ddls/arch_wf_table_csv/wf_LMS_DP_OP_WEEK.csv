@@ -1,0 +1,4 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_LMS_DP_OP_WEEK,SAP_CLASS,distinct_ddl,legacy,no,legacy
+wf_LMS_DP_OP_WEEK,LMS_PILOT_STRS,distinct_ddl,legacy,no,legacy
+wf_LMS_DP_OP_WEEK,LMS_CUSTOM_DRIVERS,distinct_ddl,legacy,no,legacy

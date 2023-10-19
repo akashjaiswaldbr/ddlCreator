@@ -1,0 +1,44 @@
+
+
+
+
+
+--*****  Creating table:  "LMS_SALES_XREF_REF" , ***** Creating table: "LMS_SALES_XREF_REF"
+
+
+use legacy;
+ CREATE TABLE LMS_SALES_XREF_REF 
+(
+ POS_LABEL_ID BIGINT not null
+
+, SAP_CATEGORY_ID INT not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_sales_xref_ref';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_SALES_XREF" , ***** Creating table: "LMS_SALES_XREF"
+
+
+use legacy;
+ CREATE TABLE LMS_SALES_XREF 
+(
+ POS_LABEL_ID BIGINT not null
+
+, SAP_CATEGORY_ID INT not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_sales_xref';
+
+--DISTRIBUTE ON RANDOM
+
+

@@ -1,0 +1,140 @@
+
+
+
+
+
+--*****  Creating table:  "USR_ALT1_TIER" , ***** Creating table: "USR_ALT1_TIER"
+
+
+use legacy;
+ CREATE TABLE USR_ALT1_TIER 
+(
+ ALT1_TIER_ID INT not null
+
+, ALT1_TIER_NUM                                    national  STRING        not null
+
+, ALT1_TIER_NAME                                   national  STRING       not null
+
+, ALT1_TIER_DESC                                   national  STRING       not null
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_StoreOps/usr_alt1_tier';
+
+--DISTRIBUTE ON (ALT1_TIER_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "USR_HR_STORE_SALES_TIER" , ***** Creating table: "USR_HR_STORE_SALES_TIER"
+
+
+use legacy;
+ CREATE TABLE USR_HR_STORE_SALES_TIER 
+(
+ LOCATION_ID INT
+
+, STORE_NBR INT not null
+
+, CORE_WK_AVG_SALES_AMT                             DECIMAL(18,2)                         not null
+
+, TIER_ID INT not null
+
+, ALT1_TIER_ID INT
+
+, ALT2_TIER_ID INT
+
+, ALT3_TIER_ID INT
+
+, ALT4_TIER_ID INT
+
+, ALT5_TIER_ID INT
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_StoreOps/usr_hr_store_sales_tier';
+
+--DISTRIBUTE ON (STORE_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "USR_HR_STORE_TIER" , ***** Creating table: "USR_HR_STORE_TIER"
+
+
+use legacy;
+ CREATE TABLE USR_HR_STORE_TIER 
+(
+ TIER_ID INT not null
+
+, TIER_NUM     national  STRING        not null
+
+, TIER_NAME    national  STRING       not null
+
+, TIER_DESC    national  STRING       not null
+
+, MIN_AVG_WK_SALES_AMT                              DECIMAL(18,2)                         not null
+
+, MAX_AVG_WK_SALES_AMT                              DECIMAL(18,2)                         not null
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_StoreOps/usr_hr_store_tier';
+
+--DISTRIBUTE ON (TIER_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "USR_SCORECARD_TIER_PLAN" , ***** Creating table: "USR_SCORECARD_TIER_PLAN"
+
+
+use legacy;
+ CREATE TABLE USR_SCORECARD_TIER_PLAN 
+(
+ ALT1_TIER_ID INT not null
+
+, OFFERED_ASSIST_PLAN_PCT                           DECIMAL(3,2) 
+
+, OFFERED_ASSIST_THOLD_PCT                          DECIMAL(3,2) 
+
+, INQUIRE_PET_PLAN_PCT                              DECIMAL(3,2) 
+
+, INQUIRE_PET_THOLD_PCT                             DECIMAL(3,2) 
+
+, RECOMMENDED_PLAN_PCT                              DECIMAL(3,2) 
+
+, RECOMMENDED_THOLD_PCT                             DECIMAL(3,2) 
+
+, PET_ASSESSMENT_PLAN_PCT                           DECIMAL(3,2) 
+
+, PET_ASSESSMENT_THOLD_PCT                          DECIMAL(3,2) 
+
+, TOTAL_STORE_RECOMMENDED_PLAN_PCT                  DECIMAL(3,2) 
+
+, TOTAL_STORE_RECOMMENDED_THOLD_PCT                 DECIMAL(3,2) 
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_StoreOps/usr_scorecard_tier_plan';
+
+--DISTRIBUTE ON (ALT1_TIER_ID)
+
+

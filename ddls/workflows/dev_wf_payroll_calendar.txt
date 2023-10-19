@@ -1,0 +1,56 @@
+
+
+
+
+
+--*****  Creating table:  "PS_PAY_CALENDAR_PRE" , ***** Creating table: "PS_PAY_CALENDAR_PRE"
+
+
+use dev_raw;
+ CREATE TABLE PS_PAY_CALENDAR_PRE 
+(
+ CHECK_DATE                                        STRING 
+
+, DATE_MODIF                                        STRING 
+
+, PAY_START     STRING 
+
+, PAY_END       STRING 
+
+, TAX_COMPANY                                       STRING 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/BA_HCM/ps_pay_calendar_pre';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "PS_PAYROLL_CALENDAR" , ***** Creating table: "PS_PAYROLL_CALENDAR"
+
+
+use dev_legacy;
+ CREATE TABLE PS_PAYROLL_CALENDAR 
+(
+ CHECK_DT      TIMESTAMP                             not null
+
+, PS_TAX_COMPANY_CD                                 STRING                  not null
+
+, PAY_PERIOD_PARAMETER                              STRING                  not null
+
+, PERIOD_START_DT                                   TIMESTAMP 
+
+, PERIOD_END_DT                                     TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/BA_HCM/ps_payroll_calendar';
+
+--DISTRIBUTE ON RANDOM
+
+

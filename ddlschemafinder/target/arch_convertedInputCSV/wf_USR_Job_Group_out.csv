@@ -1,0 +1,2 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_USR_Job_Group,USR_JOB_GROUP,distinct_ddl,legacy,no,legacy

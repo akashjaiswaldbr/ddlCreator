@@ -1,7 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-wf_QuietroomVisibility,SITE_PROFILE,distinct_ddl,legacy,no,legacy
-wf_QuietroomVisibility,SKU_PROFILE,distinct_ddl,legacy,no,legacy
-wf_QuietroomVisibility,VENDOR_PROFILE,distinct_ddl,legacy,no,legacy
-wf_QuietroomVisibility,MOVE_REASON,distinct_ddl,legacy,no,legacy
-wf_QuietroomVisibility,SAP_ZTB_RF_AUDIT_PRE,distinct_ddl,raw,no,raw
-wf_QuietroomVisibility,MOVEMENT_LIVE_PET,distinct_ddl,legacy,no,legacy

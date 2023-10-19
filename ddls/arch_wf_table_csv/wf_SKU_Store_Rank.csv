@@ -1,0 +1,8 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_SKU_Store_Rank,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_SKU_Store_Rank,USER_RANKING_HIERARCHY,distinct_ddl,legacy,no,legacy
+wf_SKU_Store_Rank,SALES_DAY_SKU_STORE,distinct_ddl,legacy,no,legacy
+wf_SKU_Store_Rank,DM_DEPT_SEGMENTS,distinct_ddl,legacy,no,legacy
+wf_SKU_Store_Rank,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_SKU_Store_Rank,SKU_RANK,distinct_ddl,legacy,no,legacy
+wf_SKU_Store_Rank,STORE_RANK,distinct_ddl,legacy,no,legacy

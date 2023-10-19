@@ -1,0 +1,5 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_banfield_kpis,BANFIELD_SITE,distinct_ddl,legacy,no,legacy
+wf_banfield_kpis,BANFIELD_KPIS_HIST,distinct_ddl,legacy,no,legacy
+wf_banfield_kpis,BANFIELD_KPIS,distinct_ddl,legacy,no,legacy
+wf_banfield_kpis,DAYS,distinct_ddl,legacy,no,legacy

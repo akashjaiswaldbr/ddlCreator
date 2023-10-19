@@ -1,0 +1,6 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_Order_Visibility_SAP_PM,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_Order_Visibility_SAP_PM,ZTB_ROLLOUT_USER_PRE,distinct_ddl,raw,no,raw
+wf_Order_Visibility_SAP_PM,ZTB_ORDER_VISIB_PRE,distinct_ddl,raw,no,raw
+wf_Order_Visibility_SAP_PM,SAP_WMS_ROLLOUT,distinct_ddl,legacy,no,legacy
+wf_Order_Visibility_SAP_PM,ORDER_VISIB,distinct_ddl,legacy,no,legacy

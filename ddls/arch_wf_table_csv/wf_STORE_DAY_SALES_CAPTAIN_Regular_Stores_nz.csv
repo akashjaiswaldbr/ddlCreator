@@ -1,0 +1,2 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_STORE_DAY_SALES_CAPTAIN_Regular_Stores_nz,STORE_DAY_SALES_CAPTAIN,distinct_ddl,legacy,no,legacy

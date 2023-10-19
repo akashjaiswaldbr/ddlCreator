@@ -1,0 +1,4 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_UDH_SKU_STYLE,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_UDH_SKU_STYLE,UDH_SKU_STYLE_PRE,distinct_ddl,raw,no,raw
+wf_UDH_SKU_STYLE,UDH_SKU_STYLE,distinct_ddl,legacy,no,legacy

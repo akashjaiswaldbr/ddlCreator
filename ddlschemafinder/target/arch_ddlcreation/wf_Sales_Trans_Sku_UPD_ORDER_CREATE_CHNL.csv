@@ -1,0 +1,10 @@
+Value,File Name
+SALES_TRANS_UPC,merged_output.txt
+SALES_INSTANCE_SKEY,merged_output.txt
+SALES_TRANS_RETURN,merged_output.txt
+SALES_TRANS_SKU,merged_output.txt
+SKU_PROFILE_RPT,merged_output.txt
+CMA_USR_PET_TRAINING_SKU,merged_output.txt
+SALES_TRANS_SKU,merged_output.txt
+SALES_TRANS_COMPONENT,merged_output.txt
+CMA_ETL_AUDIT_TBL,merged_output.txt

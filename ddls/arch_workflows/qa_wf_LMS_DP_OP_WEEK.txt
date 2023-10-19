@@ -1,0 +1,72 @@
+
+
+
+
+
+--*****  Creating table:  "SAP_CLASS" , ***** Creating table: "SAP_CLASS"
+
+
+use qa_legacy;
+ CREATE TABLE SAP_CLASS 
+(
+ SAP_CLASS_ID INT not null
+
+, SAP_CLASS_DESC                                    STRING 
+
+, SAP_DEPT_ID INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Merchandising/sap_class';
+
+--DISTRIBUTE ON (SAP_CLASS_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_PILOT_STRS" , ***** Creating table: "LMS_PILOT_STRS"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_PILOT_STRS 
+(
+ LOCATION_ID INT not null
+
+, STORE_NBR INT
+
+, STORE_NAME                                        STRING 
+
+, FLAG BIGINT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Merchandising/lms_pilot_strs';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_CUSTOM_DRIVERS" , ***** Creating table: "LMS_CUSTOM_DRIVERS"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_CUSTOM_DRIVERS 
+(
+ GENERIC_DEPT_ID BIGINT
+
+, SAP_CLASS_ID INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Merchandising/lms_custom_drivers';
+
+--DISTRIBUTE ON RANDOM
+
+

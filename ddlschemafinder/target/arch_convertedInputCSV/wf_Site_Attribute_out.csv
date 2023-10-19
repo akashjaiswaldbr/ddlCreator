@@ -1,0 +1,7 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_Site_Attribute,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_Site_Attribute,DISTRICT,distinct_ddl,legacy,no,legacy
+wf_Site_Attribute,REGION,distinct_ddl,legacy,no,legacy
+wf_Site_Attribute,SITE_HIERARCHY_HIST,distinct_ddl,legacy,no,legacy
+wf_Site_Attribute,SITE_DM_HIST,distinct_ddl,legacy,no,legacy
+wf_Site_Attribute,SITE_EAGLE_STATUS,distinct_ddl,legacy,no,legacy

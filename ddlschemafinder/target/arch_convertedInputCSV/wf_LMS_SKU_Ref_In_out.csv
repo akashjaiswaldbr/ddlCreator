@@ -1,0 +1,13 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_LMS_SKU_Ref_In,LMS_SKU_REF_PRE,distinct_ddl,raw,no,raw
+wf_LMS_SKU_Ref_In,LMS_SKU_REF,distinct_ddl,legacy,no,legacy
+wf_LMS_SKU_Ref_In,LMS_SALES_XREF_REF,distinct_ddl,legacy,no,legacy
+wf_LMS_SKU_Ref_In,LMS_SALES_XREF,distinct_ddl,legacy,no,legacy
+wf_LMS_SKU_Ref_In,LMS_FOLIO_STATUS_REF_PRE,distinct_ddl,raw,no,raw
+wf_LMS_SKU_Ref_In,LMS_FOLIO_STATUS_REF,distinct_ddl,legacy,no,legacy
+wf_LMS_SKU_Ref_In,LMS_CATEGORY_REF_PRE,distinct_ddl,raw,no,raw
+wf_LMS_SKU_Ref_In,LMS_CATEGORY_REF,distinct_ddl,legacy,no,legacy
+wf_LMS_SKU_Ref_In,LMS_ROOMTYPE_REF_PRE,distinct_ddl,raw,no,raw
+wf_LMS_SKU_Ref_In,LMS_ROOMTYPE_REF,distinct_ddl,legacy,no,legacy
+wf_LMS_SKU_Ref_In,LMS_PRODUCT_REF_PRE,distinct_ddl,raw,no,raw
+wf_LMS_SKU_Ref_In,LMS_PRODUCT_REF,distinct_ddl,legacy,no,legacy

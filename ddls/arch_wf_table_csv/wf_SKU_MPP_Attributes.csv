@@ -1,0 +1,3 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_SKU_MPP_Attributes,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_SKU_MPP_Attributes,SKU_MPP_PRICE,distinct_ddl,legacy,no,legacy

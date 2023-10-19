@@ -1,0 +1,256 @@
+
+
+
+
+
+--*****  Creating table:  BANFIELD_SITE , ***** Creating table: BANFIELD_SITE
+
+
+use legacy;
+ CREATE TABLE BANFIELD_SITE 
+(
+ BANF_LOCATION_ID INT not null
+
+, BANF_LOCATION_NM                       STRING 
+
+, BANF_REGION_ID INT
+
+, BANF_REGION_NM                         STRING 
+
+, BANF_MARKET_ID INT
+
+, BANF_MARKET_NM                         STRING 
+
+, UPDATE_TSTMP                           TIMESTAMP 
+
+, LOAD_TSTMP                             TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Portal_Integration/banfield_site';
+
+--DISTRIBUTE ON (BANF_LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  BANFIELD_KPIS_HIST , ***** Creating table: BANFIELD_KPIS_HIST
+
+
+use legacy;
+ CREATE TABLE BANFIELD_KPIS_HIST 
+(
+ BANF_LOCATION_ID INT not null
+
+, BANF_YEAR SMALLINT not null
+
+, BANF_PERIOD TINYINT not null
+
+, STORE_NBR INT
+
+, BANF_LOCATION_NM                     STRING 
+
+, BANF_SALES_PCT                       DECIMAL(10,4) 
+
+, BANF_SALES_PCT_LYTD                  DECIMAL(10,4) 
+
+, BANF_OSAT_PCT                        DECIMAL(10,4) 
+
+, BANF_OSAT_PCT_LYTD                   DECIMAL(10,4) 
+
+, BANF_OWP_PLAN_GROWTH_PCT             DECIMAL(10,4) 
+
+, BANF_OWP_PLAN_GROWTH_PCT_LYTD        DECIMAL(10,4) 
+
+, BANF_ADOPTION_CONSULT_QTY INT
+
+, BANF_ADOPTION_CONSULT_QTY_LYTD INT
+
+, BANF_PUPPY_CONSULT_QTY INT
+
+, BANF_PUPPY_CONSULT_QTY_LYTD INT
+
+, BANF_OSAT_OWP_PCT                    DECIMAL(10,4) 
+
+, BANF_OSAT_OWP_PCT_LYTD               DECIMAL(10,4) 
+
+, LOAD_TSTMP                           TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Portal_Integration/banfield_kpis_hist';
+
+--DISTRIBUTE ON (BANF_YEAR, BANF_PERIOD)
+
+
+
+
+
+
+
+--*****  Creating table:  BANFIELD_KPIS , ***** Creating table: BANFIELD_KPIS
+
+
+use legacy;
+ CREATE TABLE BANFIELD_KPIS 
+(
+ BANF_LOCATION_ID INT not null
+
+, BANF_YEAR SMALLINT
+
+, BANF_PERIOD TINYINT
+
+, STORE_NBR INT
+
+, BANF_LOCATION_NM                     STRING 
+
+, DATE_TYPE_ID INT
+
+, BANF_SALES_PCT                       DECIMAL(10,4) 
+
+, BANF_SALES_PCT_LYTD                  DECIMAL(10,4) 
+
+, BANF_OSAT_PCT                        DECIMAL(10,4) 
+
+, BANF_OSAT_PCT_LYTD                   DECIMAL(10,4) 
+
+, BANF_OWP_PLAN_GROWTH_PCT             DECIMAL(10,4) 
+
+, BANF_OWP_PLAN_GROWTH_PCT_LYTD        DECIMAL(10,4) 
+
+, BANF_ADOPTION_CONSULT_QTY INT
+
+, BANF_ADOPTION_CONSULT_QTY_LYTD INT
+
+, BANF_PUPPY_CONSULT_QTY INT
+
+, BANF_PUPPY_CONSULT_QTY_LYTD INT
+
+, BANF_OSAT_OWP_PCT                    DECIMAL(10,4) 
+
+, BANF_OSAT_OWP_PCT_LYTD               DECIMAL(10,4) 
+
+, LOAD_TSTMP                           TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Portal_Integration/banfield_kpis';
+
+--DISTRIBUTE ON (BANF_LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  DAYS , ***** Creating table: DAYS
+
+
+use legacy;
+ CREATE TABLE DAYS 
+(
+ DAY_DT                                    TIMESTAMP                            not null
+
+, BUSINESS_DAY_FLAG                         STRING 
+
+, HOLIDAY_FLAG                              STRING 
+
+, DAY_OF_WK_NAME                            STRING 
+
+, DAY_OF_WK_NAME_ABBR                       STRING 
+
+, DAY_OF_WK_NBR TINYINT
+
+, CAL_DAY_OF_MO_NBR TINYINT
+
+, CAL_DAY_OF_YR_NBR SMALLINT
+
+, CAL_WK INT
+
+, CAL_WK_NBR TINYINT
+
+, CAL_MO INT
+
+, CAL_MO_NBR TINYINT
+
+, CAL_MO_NAME                               STRING 
+
+, CAL_MO_NAME_ABBR                          STRING 
+
+, CAL_QTR INT
+
+, CAL_QTR_NBR TINYINT
+
+, CAL_HALF INT
+
+, CAL_YR SMALLINT
+
+, FISCAL_DAY_OF_MO_NBR TINYINT
+
+, FISCAL_DAY_OF_YR_NBR SMALLINT
+
+, FISCAL_WK INT
+
+, FISCAL_WK_NBR TINYINT
+
+, FISCAL_MO INT
+
+, FISCAL_MO_NBR TINYINT
+
+, FISCAL_MO_NAME                            STRING 
+
+, FISCAL_MO_NAME_ABBR                       STRING 
+
+, FISCAL_QTR INT
+
+, FISCAL_QTR_NBR TINYINT
+
+, FISCAL_HALF INT
+
+, FISCAL_YR SMALLINT
+
+, LYR_WEEK_DT                               TIMESTAMP                            not null
+
+, LWK_WEEK_DT                               TIMESTAMP                            not null
+
+, WEEK_DT                                   TIMESTAMP                            not null
+
+, EST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, EST_TIME_CONV_HRS TINYINT not null 
+
+, ES0_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, ES0_TIME_CONV_HRS TINYINT not null 
+
+, CST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, CST_TIME_CONV_HRS TINYINT not null 
+
+, CS0_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, CS0_TIME_CONV_HRS TINYINT not null 
+
+, MST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, MST_TIME_CONV_HRS TINYINT not null 
+
+, MS0_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, MS0_TIME_CONV_HRS TINYINT not null 
+
+, PST_TIME_CONV_AMT                         DECIMAL(6,6)                         not null  
+
+, PST_TIME_CONV_HRS TINYINT not null 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Portal_Integration/days';
+
+--DISTRIBUTE ON (DAY_DT)
+
+

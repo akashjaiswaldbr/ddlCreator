@@ -1,0 +1,10 @@
+Value,File Name
+EMPLOYEE_PROFILE,merged_output.txt
+SALES_TRANS_TXN,merged_output.txt
+SALES_TRANS_DISCOUNT,merged_output.txt
+STX_DISCOUNT_PRE,merged_output.txt
+STX_TXN_KEY_PRE,merged_output.txt
+TP_ARCHIVE_SERVICE_DAY_PRE,merged_output.txt
+TP_FOLIO_PRE,merged_output.txt
+TP_RESERVATION_DAY_PRE,merged_output.txt
+LP_EMPL_UNKNOWN,merged_output.txt

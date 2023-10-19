@@ -1,0 +1,44 @@
+
+
+
+
+
+--*****  Creating table:  "LMS_FOLIO_STATUS_REF_PRE" , ***** Creating table: "LMS_FOLIO_STATUS_REF_PRE"
+
+
+use raw;
+ CREATE TABLE LMS_FOLIO_STATUS_REF_PRE 
+(
+ FOLIO_STATUS_FLAG                                 STRING                 not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-raw-p1-gcs-gbl/INT_Labor_Mgmt/lms_folio_status_ref_pre';
+
+--DISTRIBUTE ON (FOLIO_STATUS_FLAG, DRIVER)
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_FOLIO_STATUS_REF" , ***** Creating table: "LMS_FOLIO_STATUS_REF"
+
+
+use legacy;
+ CREATE TABLE LMS_FOLIO_STATUS_REF 
+(
+ FOLIO_STATUS_FLAG                                 STRING                 not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_folio_status_ref';
+
+--DISTRIBUTE ON RANDOM
+
+

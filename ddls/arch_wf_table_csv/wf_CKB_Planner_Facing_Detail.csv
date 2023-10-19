@@ -1,0 +1,4 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_CKB_Planner_Facing_Detail,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_CKB_Planner_Facing_Detail,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_CKB_Planner_Facing_Detail,CKB_PLANNER_DETAIL_HIST,distinct_ddl,legacy,no,legacy

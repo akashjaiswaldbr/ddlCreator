@@ -1,0 +1,44 @@
+
+
+
+
+
+--*****  Creating table:  "LMS_ROOMTYPE_REF_PRE" , ***** Creating table: "LMS_ROOMTYPE_REF_PRE"
+
+
+use qa_raw;
+ CREATE TABLE LMS_ROOMTYPE_REF_PRE 
+(
+ ROOM_TYPE_ID                                      STRING                not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/INT_Labor_Mgmt/lms_roomtype_ref_pre';
+
+--DISTRIBUTE ON (ROOM_TYPE_ID, DRIVER)
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_ROOMTYPE_REF" , ***** Creating table: "LMS_ROOMTYPE_REF"
+
+
+use qa_legacy;
+ CREATE TABLE LMS_ROOMTYPE_REF 
+(
+ ROOM_TYPE_ID INT not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_roomtype_ref';
+
+--DISTRIBUTE ON RANDOM
+
+

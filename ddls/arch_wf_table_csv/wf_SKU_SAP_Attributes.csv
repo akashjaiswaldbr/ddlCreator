@@ -1,0 +1,8 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_SKU_SAP_Attributes,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_SKU_SAP_Attributes,SKU_SAP_ATTR,distinct_ddl,legacy,no,legacy
+wf_SKU_SAP_Attributes,SKU_ATTR,distinct_ddl,legacy,no,legacy
+wf_SKU_SAP_Attributes,SKU_SAP_ATTR_PRE,distinct_ddl,raw,no,raw
+wf_SKU_SAP_Attributes,SAP_ZTPIM_MAP_PRE,distinct_ddl,raw,no,raw
+wf_SKU_SAP_Attributes,SKU_MAP_PRICE,distinct_ddl,legacy,no,legacy
+wf_SKU_SAP_Attributes,SKU_ATTR,distinct_ddl,legacy,no,legacy

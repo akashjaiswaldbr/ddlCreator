@@ -1,0 +1,7 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_ckb_spc_rpt,CKB_SPC_PLANOGRAM,distinct_ddl,legacy,no,legacy
+wf_ckb_spc_rpt,CKB_SPC_FIXTURE,distinct_ddl,legacy,no,legacy
+wf_ckb_spc_rpt,CKB_SPC_POSITION,distinct_ddl,legacy,no,legacy
+wf_ckb_spc_rpt,CKB_SPC_PRODUCT,distinct_ddl,legacy,no,legacy
+wf_ckb_spc_rpt,CKB_SPC_PERFORMANCE,distinct_ddl,legacy,no,legacy
+wf_ckb_spc_rpt,CKB_SPC_RPT,distinct_ddl,legacy,no,legacy

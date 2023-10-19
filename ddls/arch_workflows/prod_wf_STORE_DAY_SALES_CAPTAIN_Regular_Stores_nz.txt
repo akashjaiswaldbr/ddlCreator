@@ -1,0 +1,46 @@
+
+
+
+
+
+--*****  Creating table:  "STORE_DAY_SALES_CAPTAIN" , ***** Creating table: "STORE_DAY_SALES_CAPTAIN"
+
+
+use legacy;
+ CREATE TABLE STORE_DAY_SALES_CAPTAIN 
+(
+ DAY_DT DATE
+
+, STORE_NBR INT
+
+, LOCATION_ID INT
+
+, EMPLOYEE_ID INT
+
+, JOB_CD INT
+
+, RECORD_TRACKER_ID BIGINT
+
+, START_DATE_TIME                                   TIMESTAMP 
+
+, END_DATE_TIME                                     TIMESTAMP 
+
+, DELETE_FLAG INT
+
+, LOAD_DT       TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, DEPT_CD INT
+
+, HOURS         DOUBLE 
+
+, TRAINING_FLAG INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Store_Ops/store_day_sales_captain';
+
+--DISTRIBUTE ON (RECORD_TRACKER_ID)
+
+

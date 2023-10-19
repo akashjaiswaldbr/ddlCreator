@@ -1,0 +1,6 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_Traffic_Counters_Early_Load,SITE_TRAFFIC_CONTROL,distinct_ddl,legacy,no,legacy
+wf_Traffic_Counters_Early_Load,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_Traffic_Counters_Early_Load,SITE_TRAFFIC_PRE,distinct_ddl,raw,no,raw
+wf_Traffic_Counters_Early_Load,SITE_TRAFFIC_DELETE,distinct_ddl,legacy,no,legacy
+wf_Traffic_Counters_Early_Load,SITE_TRAFFIC,distinct_ddl,legacy,no,legacy

@@ -1,0 +1,6 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_m_map_VC_ASN_SUCCESSFUL_DAY_INS_UPD,SITE_PROFILE_RPT,distinct_ddl,legacy,no,legacy
+wf_m_map_VC_ASN_SUCCESSFUL_DAY_INS_UPD,SKU_PROFILE_RPT,distinct_ddl,legacy,no,legacy
+wf_m_map_VC_ASN_SUCCESSFUL_DAY_INS_UPD,PO_LN_FACT,distinct_ddl,legacy,no,legacy
+wf_m_map_VC_ASN_SUCCESSFUL_DAY_INS_UPD,VC_ASN_SUCCESSFUL_DAY_PRE,distinct_ddl,raw,no,raw
+wf_m_map_VC_ASN_SUCCESSFUL_DAY_INS_UPD,VC_ASN_SUCCESSFUL_DAY,distinct_ddl,legacy,no,legacy

@@ -1,0 +1,4 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_WMS_Tier3_Lookup_Tables_Load,WMS_JOB_FUNCTION,distinct_ddl,legacy,no,legacy
+wf_WMS_Tier3_Lookup_Tables_Load,WMS_INV_NEED_TYPE,distinct_ddl,legacy,no,legacy
+wf_WMS_Tier3_Lookup_Tables_Load,WM_E_JOB_FUNCTION,distinct_ddl,legacy,no,legacy

@@ -1,0 +1,4 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_LMS_Folio_Status_Ref_In,LMS_FOLIO_STATUS_REF_PRE,distinct_ddl,raw,no,raw
+wf_LMS_Folio_Status_Ref_In,LMS_FOLIO_STATUS_REF,distinct_ddl,legacy,no,legacy
+

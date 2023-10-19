@@ -1,0 +1,8 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_SVCS_Plan_Units_Sales,DAYS,distinct_ddl,legacy,no,legacy
+wf_SVCS_Plan_Units_Sales,SITE_PROFILE_RPT,distinct_ddl,legacy,no,legacy
+wf_SVCS_Plan_Units_Sales,SVCS_PLAN_UNITS_EXCH_RATE,distinct_ddl,legacy,no,legacy
+wf_SVCS_Plan_Units_Sales,SAP_CLASS,distinct_ddl,legacy,no,legacy
+wf_SVCS_Plan_Units_Sales,SVCS_PLAN_STORE_DAY_PRE,distinct_ddl,raw,no,raw
+wf_SVCS_Plan_Units_Sales,SVCS_PLAN_UNITS_EXCH_RATE,distinct_ddl,legacy,no,legacy
+wf_SVCS_Plan_Units_Sales,SVCS_PLAN_UNITS_SALES_DAY,distinct_ddl,legacy,no,legacy

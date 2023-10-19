@@ -1,0 +1,44 @@
+
+
+
+
+
+--*****  Creating table:  "LMS_PRODUCT_REF_PRE" , ***** Creating table: "LMS_PRODUCT_REF_PRE"
+
+
+use raw;
+ CREATE TABLE LMS_PRODUCT_REF_PRE 
+(
+ PRODUCT_ID                                        STRING                not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-raw-p1-gcs-gbl/INT_Labor_Mgmt/lms_product_ref_pre';
+
+--DISTRIBUTE ON (PRODUCT_ID, DRIVER)
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_PRODUCT_REF" , ***** Creating table: "LMS_PRODUCT_REF"
+
+
+use legacy;
+ CREATE TABLE LMS_PRODUCT_REF 
+(
+ PRODUCT_ID INT not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_product_ref';
+
+--DISTRIBUTE ON RANDOM
+
+

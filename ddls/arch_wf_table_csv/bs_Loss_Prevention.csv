@@ -1,0 +1,10 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+bs_Loss_Prevention,EMPLOYEE_PROFILE,distinct_ddl,legacy,empl_protected,empl_protected
+bs_Loss_Prevention,SALES_TRANS_TXN,distinct_ddl,legacy,no,legacy
+bs_Loss_Prevention,SALES_TRANS_DISCOUNT,distinct_ddl,legacy,no,legacy
+bs_Loss_Prevention,STX_DISCOUNT_PRE,distinct_ddl,raw,no,raw
+bs_Loss_Prevention,STX_TXN_KEY_PRE,distinct_ddl,raw,no,raw
+bs_Loss_Prevention,TP_ARCHIVE_SERVICE_DAY_PRE,distinct_ddl,raw,no,raw
+bs_Loss_Prevention,TP_FOLIO_PRE,distinct_ddl,raw,no,raw
+bs_Loss_Prevention,TP_RESERVATION_DAY_PRE,distinct_ddl,raw,no,raw
+bs_Loss_Prevention,LP_EMPL_UNKNOWN,distinct_ddl,legacy,no,legacy

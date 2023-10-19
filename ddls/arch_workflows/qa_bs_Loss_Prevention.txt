@@ -1,0 +1,714 @@
+
+
+
+
+
+--*****  Creating table:  "EMPLOYEE_PROFILE" , ***** Creating table: "EMPLOYEE_PROFILE"
+
+
+use qa_empl_protected;
+ CREATE TABLE legacy_EMPLOYEE_PROFILE 
+(
+ EMPLOYEE_ID INT not null
+
+, EMPL_FIRST_NAME                             STRING 
+
+, EMPL_MIDDLE_NAME                            STRING 
+
+, EMPL_LAST_NAME                              STRING 
+
+, EMPL_BIRTH_DT                               TIMESTAMP 
+
+, GENDER_CD                                   STRING 
+
+, PS_MARITAL_STATUS_CD                        STRING 
+
+, ETHNIC_GROUP_ID                             STRING 
+
+, EMPL_ADDR_1                                 STRING 
+
+, EMPL_ADDR_2                                 STRING 
+
+, EMPL_CITY                                   STRING 
+
+, EMPL_STATE                                  STRING 
+
+, EMPL_PROVINCE                               STRING 
+
+, EMPL_ZIPCODE                                STRING 
+
+, COUNTRY_CD                                  STRING 
+
+, EMPL_HOME_PHONE                             STRING 
+
+, EMPL_EMAIL_ADDR                             STRING 
+
+, EMPL_LOGIN_ID                               STRING 
+
+, BADGE_NBR                                   STRING 
+
+, EMPL_STATUS_CD                              STRING 
+
+, STATUS_CHG_DT                               TIMESTAMP 
+
+, FULLPT_FLAG                                 STRING 
+
+, FULLPT_CHG_DT                               TIMESTAMP 
+
+, EMPL_TYPE_CD                                STRING 
+
+, PS_REG_TEMP_CD                              STRING 
+
+, EMPL_CATEGORY_CD                            STRING 
+
+, EMPL_GROUP_CD                               STRING 
+
+, EMPL_SUBGROUP_CD                            STRING 
+
+, EMPL_HIRE_DT                                TIMESTAMP 
+
+, EMPL_REHIRE_DT                              TIMESTAMP 
+
+, EMPL_TERM_DT                                TIMESTAMP 
+
+, TERM_REASON_CD                              STRING 
+
+, EMPL_SENORITY_DT                            TIMESTAMP 
+
+, PS_ACTION_DT                                TIMESTAMP 
+
+, PS_ACTION_CD                                STRING 
+
+, PS_ACTION_REASON_CD                         STRING 
+
+, LOCATION_ID INT
+
+, LOCATION_CHG_DT                             TIMESTAMP 
+
+, STORE_NBR INT
+
+, STORE_DEPT_NBR                              STRING 
+
+, COMPANY_ID INT
+
+, PS_PERSONNEL_AREA_ID                        STRING 
+
+, PS_PERSONNEL_SUBAREA_ID                     STRING 
+
+, PS_DEPT_CD                                  STRING 
+
+, PS_DEPT_CHG_DT                              TIMESTAMP 
+
+, PS_POSITION_ID INT
+
+, POSITION_CHG_DT                             TIMESTAMP 
+
+, PS_SUPERVISOR_ID INT
+
+, JOB_CODE INT
+
+, JOB_CODE_CHG_DT                             TIMESTAMP 
+
+, EMPL_JOB_ENTRY_DT                           TIMESTAMP 
+
+, PS_GRADE_ID SMALLINT
+
+, EMPL_STD_BONUS_PCT                          DECIMAL(5,2) 
+
+, EMPL_OVR_BONUS_PCT                          DECIMAL(5,2) 
+
+, EMPL_RATING                                 DECIMAL(5,2) 
+
+, PAY_RATE_CHG_DT                             TIMESTAMP 
+
+, PS_PAYROLL_AREA_CD                          STRING 
+
+, PS_TAX_COMPANY_CD                           STRING 
+
+, PS_COMP_FREQ_CD                             STRING 
+
+, COMP_RATE_AMT                               DECIMAL(15,2) 
+
+, ANNUAL_RATE_LOC_AMT                         DECIMAL(15,2) 
+
+, HOURLY_RATE_LOC_AMT                         DECIMAL(12,2) 
+
+, CURRENCY_ID                                 STRING 
+
+, EXCH_RATE_PCT                               DECIMAL(9,6) 
+
+, LOAD_TSTMP                                  TIMESTAMP                            
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-empl-protected-nzlegacy-p1-gcs-gbl/BA_Audit_and_Control/employee_profile';
+
+--DISTRIBUTE ON (EMPLOYEE_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_TRANS_TXN" , ***** Creating table: "SALES_TRANS_TXN"
+
+
+use qa_legacy;
+ CREATE TABLE SALES_TRANS_TXN 
+(
+ DAY_DT        TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, SALES_INSTANCE_ID BIGINT not null
+
+, SALES_TYPE_ID TINYINT
+
+, VOID_TYPE_CD                                      STRING 
+
+, TXN_WAS_POST_VOIDED_FLAG TINYINT not null
+
+, SALES_MID_VOID_REASON_CD                          STRING 
+
+, CUST_TRANS_ID BIGINT not null
+
+, TRANS_TSTMP                                       TIMESTAMP                             not null
+
+, TXN_END_TSTMP                                     TIMESTAMP 
+
+, REGISTER_NBR SMALLINT not null
+
+, TRANSACTION_NBR BIGINT not null
+
+, TXN_CONTROL_ID                                    STRING 
+
+, ORDER_NBR BIGINT not null
+
+, ORDER_SEQ_NBR BIGINT not null
+
+, ORDER_CHANNEL                                     STRING 
+
+, ORDER_ASSIST_LOCATION_ID INT
+
+, ORDER_FULFILLMENT_CHANNEL                         STRING 
+
+, ORDER_CREATION_CHANNEL                            STRING 
+
+, ORDER_CREATION_DEVICE_TYPE                        STRING 
+
+, ORDER_CREATION_DEVICE_WIDTH                       INT 
+
+, TXN_SEGMENT                                       STRING 
+
+, PAYMENT_DEVICE_TYPE                               STRING 
+
+, BP_SOURCE_CD INT
+
+, TRANS_FLAG TINYINT
+
+, SALES_CUST_CAPTURE_CD                             STRING 
+
+, ZIP_CODE      STRING                         not null
+
+, EMPLOYEE_ID INT
+
+, CASHIER_NBR INT not null
+
+, MANAGER_NBR INT
+
+, TAX_EXEMPT_ID                                     STRING 
+
+, COMM_TILL_FLG TINYINT
+
+, SPECIAL_ORD_NBR BIGINT
+
+, PETPERK_OVERRIDE_NBR                              DECIMAL(20,0) 
+
+, PETPERK_EMAIL_IND TINYINT
+
+, PETPERK_FIRST_NAME_IND TINYINT
+
+, PETPERK_LAST_NAME_IND TINYINT
+
+, PETPERK_PHONE_NBR_IND TINYINT
+
+, LOYALTY_NBR BIGINT
+
+, LOYALTY_REDEMPTION_ID                             STRING 
+
+, LUID          STRING 
+
+, POINTS_REDEEMED                                   BIGINT 
+
+, BASE_POINTS_EARNED                                BIGINT 
+
+, BONUS_POINTS_EARNED                               BIGINT 
+
+, POINT_BALANCE                                     BIGINT 
+
+, POINTS_DEDUCTED                                   BIGINT 
+
+, CDC_DCOL_RAW_TXT                                  STRING 
+
+, CDC_EMAIL_ID TINYINT
+
+, CDC_FIRST_NAME_ID TINYINT
+
+, CDC_LAST_NAME_ID TINYINT
+
+, CDC_PHONE_NBR_ID TINYINT
+
+, PHONE_TYPE                                        STRING 
+
+, OPT_OUT_EMAIL_FLAG                                STRING 
+
+, OPT_OUT_TEXT_FLAG                                 STRING 
+
+, DIGITAL_RECEIPT_ANSWER_CD                         STRING 
+
+, OFFLINE_CUST_LKP_IND TINYINT
+
+, POS_OFFLINE_REASON_ID INT
+
+, SALES_AMT     DECIMAL(8,2) 
+
+, SALES_COST                                        DECIMAL(8,2) 
+
+, SALES_QTY     INT 
+
+, RETURN_AMT                                        DECIMAL(8,2) 
+
+, RETURN_COST                                       DECIMAL(8,2) 
+
+, RETURN_QTY SMALLINT
+
+, SPECIAL_SRVC_AMT                                  DECIMAL(8,2) 
+
+, SPECIAL_SRVC_QTY                                  INT 
+
+, NET_COUPON_AMT                                    DECIMAL(8,2) 
+
+, NET_COUPON_QTY SMALLINT
+
+, NET_SALES_AMT                                     DECIMAL(8,2) 
+
+, NET_SALES_COST                                    DECIMAL(8,2) 
+
+, NET_SALES_QTY                                     INT 
+
+, NET_DISC_AMT                                      DECIMAL(8,2) 
+
+, NET_DISC_QTY                                      INT 
+
+, NET_MERCH_DISC_AMT                                DECIMAL(8,2) 
+
+, NET_MERCH_DISC_QTY                                INT 
+
+, NET_SPECIAL_SALES_AMT                             DECIMAL(8,2) 
+
+, NET_SPECIAL_SALES_QTY                             INT 
+
+, NET_SALES_TAX_AMT                                 DECIMAL(8,2) 
+
+, NET_PAYMENT_AMT                                   DECIMAL(8,2) 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, UPDATE_TSTMP                                      TIMESTAMP 
+
+, DATE_LOADED                                       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Audit_and_Control/sales_trans_txn';
+
+--DISTRIBUTE ON (SALES_INSTANCE_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "SALES_TRANS_DISCOUNT" , ***** Creating table: "SALES_TRANS_DISCOUNT"
+
+
+use qa_legacy;
+ CREATE TABLE SALES_TRANS_DISCOUNT 
+(
+ DAY_DT        TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, SALES_INSTANCE_ID BIGINT not null
+
+, UPC_ID BIGINT not null
+
+, DISCOUNT_TYPE_ID TINYINT not null
+
+, TP_INVOICE_NBR BIGINT not null
+
+, PARENT_UPC_ID BIGINT not null 
+
+, COMBO_TYPE_CD                                     STRING                          not null  
+
+, POS_TXN_SEQ_NBR SMALLINT not null
+
+, OFFER_ID BIGINT not null
+
+, VOID_TYPE_CD                                      STRING 
+
+, SALES_TYPE_ID TINYINT
+
+, TRANS_TSTMP                                       TIMESTAMP 
+
+, PRODUCT_ID INT not null
+
+, DISC_CPN_UPC_ID BIGINT
+
+, EMPLOYEE_ID INT
+
+, CUST_TRANS_ID BIGINT not null
+
+, CASHIER_NBR INT not null
+
+, UPC_SEQ_NBR INT
+
+, OFFER_CHARGEBACK_ID SMALLINT
+
+, DISCOUNT_AMT                                      DECIMAL(10,4)                         not null
+
+, DISCOUNT_QTY                                      INT 
+
+, DISCOUNT_RETURN_AMT                               DECIMAL(10,4)                         not null
+
+, DISCOUNT_RETURN_QTY                               INT 
+
+, EXCH_RATE_PCT                                     DECIMAL(9,6) 
+
+, DATE_LOADED                                      DATE                                 not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Audit_and_Control/sales_trans_discount';
+
+--DISTRIBUTE ON (SALES_INSTANCE_ID)
+
+--ORGANIZE   ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "STX_DISCOUNT_PRE" , ***** Creating table: "STX_DISCOUNT_PRE"
+
+
+use qa_raw;
+ CREATE TABLE STX_DISCOUNT_PRE 
+(
+ DAY_DT        TIMESTAMP                             not null
+
+, TXN_KEY_GID BIGINT not null
+
+, SEQ_NBR SMALLINT not null
+
+, DW_DISCOUNT_TYPE_ID TINYINT not null
+
+, OFFER_ID BIGINT not null
+
+, UPC_ID BIGINT
+
+, POS_DISCOUNT_TYPE_CD                              STRING 
+
+, POS_DISCOUNT_TYPE_ID TINYINT not null
+
+, PROMO_DISC_TYPE                                   STRING 
+
+, DISC_ASSOCIATE_NBR INT
+
+, DISC_CPN_UPC_ID BIGINT
+
+, SERVICE_INVOICE_NBR BIGINT
+
+, VOID_TYPE_CD                                      STRING 
+
+, UPC_DISC_PCT                                      DECIMAL(6,4) 
+
+, UPC_SEQ_NBR INT
+
+, OFFER_CHARGEBACK_ID SMALLINT
+
+, DISC_AMT      DECIMAL(10,4) 
+
+, DISC_QTY INT
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Audit_and_Control/stx_discount_pre';
+
+--DISTRIBUTE ON (TXN_KEY_GID)
+
+
+
+
+
+
+
+--*****  Creating table:  "STX_TXN_KEY_PRE" , ***** Creating table: "STX_TXN_KEY_PRE"
+
+
+use qa_raw;
+ CREATE TABLE STX_TXN_KEY_PRE 
+(
+ DAY_DT        TIMESTAMP                             not null
+
+, TXN_KEY_GID BIGINT not null
+
+, DS_ORDER_SEQ_NBR BIGINT not null
+
+, TXN_TSTMP     TIMESTAMP                             not null
+
+, SITE_NBR SMALLINT not null
+
+, REGISTER_NBR SMALLINT not null
+
+, TXN_NBR BIGINT not null
+
+, DS_ORDER_NBR BIGINT not null
+
+, LOCATION_ID INT not null
+
+, TIME_ID       TIMESTAMP                             not null
+
+, CASHIER_NBR INT
+
+, POSTAL_CD     STRING 
+
+, COUNTRY_CD                                        STRING 
+
+, SALES_TYPE_ID TINYINT
+
+, POST_VOIDED_FLAG TINYINT
+
+, COMM_TILL_FLAG TINYINT
+
+, DS_CHANNEL                                        STRING 
+
+, DS_ASSIST_SITE_NBR SMALLINT
+
+, DS_CURRENCY_CD                                    STRING 
+
+, SALES_MID_VOID_REASON_CD                          STRING 
+
+, TXN_SEGMENT                                       STRING 
+
+, PAYMENT_DEVICE_TYPE                               STRING 
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Audit_and_Control/stx_txn_key_pre';
+
+--DISTRIBUTE ON (TXN_KEY_GID)
+
+
+
+
+
+
+
+--*****  Creating table:  "TP_ARCHIVE_SERVICE_DAY_PRE" , ***** Creating table: "TP_ARCHIVE_SERVICE_DAY_PRE"
+
+
+use qa_raw;
+ CREATE TABLE TP_ARCHIVE_SERVICE_DAY_PRE 
+(
+ TP_INVOICE_NBR BIGINT not null
+
+, ITEM_ID INT not null
+
+, CHANGE_DT     TIMESTAMP                             not null
+
+, ITEM_PRICE                                        DECIMAL(8,2) 
+
+, ITEM_QTY SMALLINT
+
+, TP_EMPLOYEE_ID BIGINT
+
+, LOCATION_ID INT
+
+, UPC_ID BIGINT
+
+, LOAD_DT       TIMESTAMP 
+
+, RATE_TYPE_ID INT
+
+, COMM_RT       DECIMAL(4,3) 
+
+, PRICEDELTAID SMALLINT
+
+, DELTAAMOUNT                                       DECIMAL(6,2) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Audit_and_Control/tp_archive_service_day_pre';
+
+--DISTRIBUTE ON (TP_INVOICE_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "TP_FOLIO_PRE" , ***** Creating table: "TP_FOLIO_PRE"
+
+
+use qa_raw;
+ CREATE TABLE TP_FOLIO_PRE 
+(
+ LOCATION_ID INT not null
+
+, TP_INVOICE_NBR BIGINT not null
+
+, TP_PET_NBR BIGINT not null
+
+, TP_CUSTOMER_NBR BIGINT not null
+
+, STORE_NBR INT not null
+
+, FOLIOID INT not null
+
+, PETID INT
+
+, DUEOUTDATE                                        TIMESTAMP 
+
+, CHECKINDATE                                       TIMESTAMP 
+
+, GROOMDATE     TIMESTAMP 
+
+, GROOMERNAME                                       STRING 
+
+, ACTUALINDATE                                      TIMESTAMP 
+
+, GROOMTIME     TIMESTAMP 
+
+, ROOM_NUMBER                                       STRING 
+
+, ROOM_ID INT
+
+, PROMISETIME                                       TIMESTAMP 
+
+, ASSOCIATEID INT
+
+, ORIGINALKEY INT
+
+, REVERSALKEY INT
+
+, OWNERID INT
+
+, ROOM_TYPE_ID INT
+
+, ARRIVETIME                                        TIMESTAMP 
+
+, DEPARTTIME                                        TIMESTAMP 
+
+, TIME_STAMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Audit_and_Control/tp_folio_pre';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "TP_RESERVATION_DAY_PRE" , ***** Creating table: "TP_RESERVATION_DAY_PRE"
+
+
+use qa_raw;
+ CREATE TABLE TP_RESERVATION_DAY_PRE 
+(
+ TP_INVOICE_NBR BIGINT not null
+
+, CHANGE_DT     TIMESTAMP                             not null
+
+, TP_PET_NBR BIGINT
+
+, TP_CUSTOMER_NBR BIGINT
+
+, TP_EVENT_STATUS_ID INT
+
+, RESERV_CREATE_DT                                  TIMESTAMP 
+
+, RESERV_GROOM_TIME_ID                              TIMESTAMP 
+
+, RESERV_GROOM_DT                                   TIMESTAMP 
+
+, RESERV_TP_EMPLOYEE_ID BIGINT
+
+, LOCATION_ID INT
+
+, LOAD_DT       TIMESTAMP 
+
+, DUE_IN_DT     TIMESTAMP 
+
+, DUE_OUT_DT                                        TIMESTAMP 
+
+, ROOM_NUMBER                                       STRING 
+
+, ROOM_ID INT
+
+, PROMISE_TIME                                      TIMESTAMP 
+
+, ROOM_TYPE_ID INT
+
+, ARRIVE_TIME                                       TIMESTAMP 
+
+, DEPART_TIME                                       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-raw-p1-gcs-gbl/BA_Audit_and_Control/tp_reservation_day_pre';
+
+--DISTRIBUTE ON (TP_INVOICE_NBR)
+
+
+
+
+
+
+
+--*****  Creating table:  "LP_EMPL_UNKNOWN" , ***** Creating table: "LP_EMPL_UNKNOWN"
+
+
+use qa_legacy;
+ CREATE TABLE LP_EMPL_UNKNOWN 
+(
+ EMPLOYEE_ID INT not null
+
+, LOCATION_ID INT
+
+, EMPL_FIRST_NAME                                   STRING 
+
+, EMPL_LAST_NAME                                    STRING 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Audit_and_Control/lp_empl_unknown';
+
+--DISTRIBUTE ON (EMPLOYEE_ID)
+
+

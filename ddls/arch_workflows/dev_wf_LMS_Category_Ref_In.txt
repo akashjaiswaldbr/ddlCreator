@@ -1,0 +1,44 @@
+
+
+
+
+
+--*****  Creating table:  "LMS_CATEGORY_REF_PRE" , ***** Creating table: "LMS_CATEGORY_REF_PRE"
+
+
+use dev_raw;
+ CREATE TABLE LMS_CATEGORY_REF_PRE 
+(
+ SAP_CATEGORY_ID                                   STRING                        not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-raw-p1-gcs-gbl/INT_Labor_Mgmt/lms_category_ref_pre';
+
+--DISTRIBUTE ON (SAP_CATEGORY_ID, DRIVER)
+
+
+
+
+
+
+
+--*****  Creating table:  "LMS_CATEGORY_REF" , ***** Creating table: "LMS_CATEGORY_REF"
+
+
+use dev_legacy;
+ CREATE TABLE LMS_CATEGORY_REF 
+(
+ SAP_CATEGORY_ID INT not null
+
+, DRIVER        STRING                not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-dev-nzlegacy-p1-gcs-gbl/INT_Labor_Mgmt/lms_category_ref';
+
+--DISTRIBUTE ON RANDOM
+
+

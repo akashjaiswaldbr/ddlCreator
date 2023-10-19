@@ -1,0 +1,24 @@
+
+
+
+
+
+--*****  Creating table:  "USR_ASSESSMENT_EXCEPTIONS" , ***** Creating table: "USR_ASSESSMENT_EXCEPTIONS"
+
+
+use qa_legacy;
+ CREATE TABLE USR_ASSESSMENT_EXCEPTIONS 
+(
+ ASSESSMENT_ID BIGINT not null
+
+, NO_FORKLIFT_FLAG INT
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-qa-nzlegacy-p1-gcs-gbl/BA_Education/usr_assessment_exceptions';
+
+--DISTRIBUTE ON (ASSESSMENT_ID)
+
+

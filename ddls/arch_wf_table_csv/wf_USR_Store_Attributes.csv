@@ -1,0 +1,6 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_USR_Store_Attributes,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_USR_Store_Attributes,SALES_DAY_SKU_STORE,distinct_ddl,legacy,no,legacy
+wf_USR_Store_Attributes,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_USR_Store_Attributes,USR_STORE_ATTRIBUTES_PRE,distinct_ddl,raw,no,raw
+wf_USR_Store_Attributes,USR_STORE_ATTRIBUTES,distinct_ddl,legacy,no,legacy

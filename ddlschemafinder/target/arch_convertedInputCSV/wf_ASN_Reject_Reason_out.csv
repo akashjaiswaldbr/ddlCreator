@@ -1,0 +1,4 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_ASN_Reject_Reason,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_ASN_Reject_Reason,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_ASN_Reject_Reason,ASN_REJECT_RSN,distinct_ddl,legacy,no,legacy

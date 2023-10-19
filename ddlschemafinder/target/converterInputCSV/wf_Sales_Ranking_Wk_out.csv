@@ -1,0 +1,15 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_Sales_Ranking_Wk,WEEKS,distinct_ddl,legacy,no,legacy
+wf_Sales_Ranking_Wk,SALES_DAY_SKU_STORE_RPT,distinct_ddl,legacy,no,legacy
+wf_Sales_Ranking_Wk,SKU_PROFILE,distinct_ddl,legacy,no,legacy
+wf_Sales_Ranking_Wk,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_Sales_Ranking_Wk,SLSCMP_STORE,distinct_ddl,legacy,no,legacy
+wf_Sales_Ranking_Wk,USR_STORE_DIVISIONS,distinct_ddl,legacy,no,legacy
+wf_Sales_Ranking_Wk,SALES_RANKING_CODE,distinct_ddl,legacy,no,legacy
+wf_Sales_Ranking_Wk,SALES_RANKING_CODE_HOTEL,distinct_ddl,legacy,no,legacy
+wf_Sales_Ranking_Wk,SALES_RANKING_DATE_PRE,distinct_ddl,raw,no,raw
+wf_Sales_Ranking_Wk,SALES_RANKING_SALES_PRE,distinct_ddl,raw,no,raw
+wf_Sales_Ranking_Wk,SALES_RANKING_TOTALS_PRE,distinct_ddl,raw,no,raw
+wf_Sales_Ranking_Wk,SALES_RANKING_RUNNING_SUM_PRE,distinct_ddl,raw,no,raw
+wf_Sales_Ranking_Wk,SALES_RANKING_WK_PRE,distinct_ddl,raw,no,raw
+wf_Sales_Ranking_Wk,SALES_RANKING_WK,distinct_ddl,legacy,no,legacy

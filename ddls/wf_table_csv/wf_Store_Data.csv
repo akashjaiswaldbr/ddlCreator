@@ -1,2 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-wf_Store_Data,STORE_DATA,distinct_ddl,legacy,no,legacy

@@ -1,0 +1,30 @@
+
+
+
+
+
+--*****  Creating table:  "USR_JOB_GROUP" , ***** Creating table: "USR_JOB_GROUP"
+
+
+use legacy;
+ CREATE TABLE USR_JOB_GROUP 
+(
+ JOB_CODE INT not null
+
+, JOB_CODE_DESC                                     STRING 
+
+, JOB_GROUP     STRING 
+
+, JOB_GROUP_SORT INT
+
+, LOAD_TSTMP                                        TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_HCM/usr_job_group';
+
+--DISTRIBUTE ON (JOB_CODE, JOB_GROUP)
+
+--ORGANIZE   ON (JOB_CODE, JOB_GROUP)
+
+

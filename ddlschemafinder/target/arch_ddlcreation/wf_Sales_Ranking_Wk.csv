@@ -1,0 +1,14 @@
+Value,File Name
+WEEKS,merged_output.txt
+SALES_DAY_SKU_STORE_RPT,merged_output.txt
+SKU_PROFILE,merged_output.txt
+SITE_PROFILE,merged_output.txt
+SLSCMP_STORE,merged_output.txt
+USR_STORE_DIVISIONS,merged_output.txt
+SALES_RANKING_CODE,merged_output.txt
+SALES_RANKING_DATE_PRE,merged_output.txt
+SALES_RANKING_SALES_PRE,merged_output.txt
+SALES_RANKING_TOTALS_PRE,merged_output.txt
+SALES_RANKING_RUNNING_SUM_PRE,merged_output.txt
+SALES_RANKING_WK_PRE,merged_output.txt
+SALES_RANKING_WK,merged_output.txt

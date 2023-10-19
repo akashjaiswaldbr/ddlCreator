@@ -1,0 +1,5 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_ps2_labor_plan,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_ps2_labor_plan,CURRENCY_DAY,distinct_ddl,legacy,no,legacy
+wf_ps2_labor_plan,PS2_LABOR_PLAN_WK_PRE,distinct_ddl,raw,no,raw
+wf_ps2_labor_plan,PS2_LABOR_PLAN_WK,distinct_ddl,legacy,no,legacy

@@ -1,4 +1,0 @@
-wf_name,table_name,nz_database,schema,pii,target_schema
-wf_m_DP_VEND_SUBGROUP_INS,SITE_PROFILE_RPT,distinct_ddl,legacy,no,legacy
-wf_m_DP_VEND_SUBGROUP_INS,DP_VEND_SUBGROUP_PRE,distinct_ddl,raw,no,raw
-wf_m_DP_VEND_SUBGROUP_INS,DP_VEND_SUBGROUP,distinct_ddl,legacy,no,legacy

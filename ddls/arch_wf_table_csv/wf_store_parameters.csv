@@ -1,0 +1,6 @@
+wf_name,table_name,nz_database,schema,pii,target_schema
+wf_store_parameters,WEEKS,distinct_ddl,legacy,no,legacy
+wf_store_parameters,SITE_PROFILE,distinct_ddl,legacy,no,legacy
+wf_store_parameters,NON_DISCOUNT_UPC,distinct_ddl,legacy,no,legacy
+wf_store_parameters,STORE_TAX_RATE,distinct_ddl,legacy,no,legacy
+wf_store_parameters,STORE_TIME_ZONE,distinct_ddl,legacy,no,legacy

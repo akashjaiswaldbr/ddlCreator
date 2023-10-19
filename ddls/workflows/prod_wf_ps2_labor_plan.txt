@@ -1,0 +1,346 @@
+
+
+
+
+
+--*****  Creating table:  "SITE_PROFILE" , ***** Creating table: "SITE_PROFILE"
+
+
+use legacy;
+ CREATE TABLE SITE_PROFILE 
+(
+ LOCATION_ID INT not null
+
+, LOCATION_TYPE_ID TINYINT
+
+, STORE_NBR INT
+
+, STORE_NAME                                        STRING 
+
+, STORE_TYPE_ID                                     STRING 
+
+, STORE_OPEN_CLOSE_FLAG                             STRING 
+
+, COMPANY_ID INT
+
+, REGION_ID BIGINT
+
+, DISTRICT_ID BIGINT
+
+, PRICE_ZONE_ID                                     STRING 
+
+, PRICE_AD_ZONE_ID                                  STRING 
+
+, REPL_DC_NBR INT
+
+, REPL_FISH_DC_NBR INT
+
+, REPL_FWD_DC_NBR INT
+
+, SQ_FEET_RETAIL                                    DOUBLE 
+
+, SQ_FEET_TOTAL                                     DOUBLE 
+
+, SITE_ADDRESS                                      STRING 
+
+, SITE_CITY     STRING 
+
+, STATE_CD      STRING 
+
+, COUNTRY_CD                                        STRING 
+
+, POSTAL_CD     STRING 
+
+, SITE_MAIN_TELE_NO                                 STRING 
+
+, SITE_GROOM_TELE_NO                                STRING 
+
+, SITE_EMAIL_ADDRESS                                STRING 
+
+, SITE_SALES_FLAG                                   STRING 
+
+, EQUINE_MERCH_ID TINYINT
+
+, EQUINE_SITE_ID TINYINT
+
+, EQUINE_SITE_OPEN_DT                               TIMESTAMP 
+
+, GEO_LATITUDE_NBR                                  DECIMAL(12,6) 
+
+, GEO_LONGITUDE_NBR                                 DECIMAL(12,6) 
+
+, PETSMART_DMA_CD                                   STRING 
+
+, LOYALTY_PGM_TYPE_ID TINYINT
+
+, LOYALTY_PGM_STATUS_ID TINYINT
+
+, LOYALTY_PGM_START_DT                              TIMESTAMP 
+
+, LOYALTY_PGM_CHANGE_DT                             TIMESTAMP 
+
+, BP_COMPANY_NBR SMALLINT
+
+, BP_GL_ACCT SMALLINT
+
+, TP_LOC_FLAG                                       STRING 
+
+, TP_ACTIVE_CNT TINYINT
+
+, PROMO_LABEL_CD                                    STRING 
+
+, PARENT_LOCATION_ID INT
+
+, LOCATION_NBR                                      STRING 
+
+, TIME_ZONE_ID                                      STRING 
+
+, DELV_SERVICE_CLASS_ID                             STRING 
+
+, PICK_SERVICE_CLASS_ID                             STRING 
+
+, SITE_LOGIN_ID                                     STRING 
+
+, SITE_MANAGER_ID INT
+
+, SITE_OPEN_YRS_AMT                                 DECIMAL(5,2) 
+
+, HOTEL_FLAG TINYINT
+
+, DAYCAMP_FLAG TINYINT
+
+, VET_FLAG TINYINT
+
+, DIST_MGR_NAME                                     STRING 
+
+, DIST_SVC_MGR_NAME                                 STRING 
+
+, REGION_VP_NAME                                    STRING 
+
+, REGION_TRAINER_NAME                               STRING 
+
+, ASSET_PROTECT_NAME                                STRING 
+
+, SITE_COUNTY                                       STRING 
+
+, SITE_FAX_NO                                       STRING 
+
+, SFT_OPEN_DT                                       TIMESTAMP 
+
+, DM_EMAIL_ADDRESS                                  STRING 
+
+, DSM_EMAIL_ADDRESS                                 STRING 
+
+, RVP_EMAIL_ADDRESS                                 STRING 
+
+, TRADE_AREA                                        STRING 
+
+, FDLPS_NAME                                        STRING 
+
+, FDLPS_EMAIL                                       STRING 
+
+, OVERSITE_MGR_NAME                                 STRING 
+
+, OVERSITE_MGR_EMAIL                                STRING 
+
+, SAFETY_DIRECTOR_NAME                              STRING 
+
+, SAFETY_DIRECTOR_EMAIL                             STRING 
+
+, RETAIL_MANAGER_SAFETY_NAME                        STRING 
+
+, RETAIL_MANAGER_SAFETY_EMAIL                       STRING 
+
+, AREA_DIRECTOR_NAME                                STRING 
+
+, AREA_DIRECTOR_EMAIL                               STRING 
+
+, DC_GENERAL_MANAGER_NAME                           STRING 
+
+, DC_GENERAL_MANAGER_EMAIL                          STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME1                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL1                    STRING 
+
+, ASST_DC_GENERAL_MANAGER_NAME2                     STRING 
+
+, ASST_DC_GENERAL_MANAGER_EMAIL2                    STRING 
+
+, REGIONAL_DC_SAFETY_MGR_NAME                       STRING 
+
+, REGIONAL_DC_SAFETY_MGR_EMAIL                      STRING 
+
+, DC_PEOPLE_SUPERVISOR_NAME                         STRING 
+
+, DC_PEOPLE_SUPERVISOR_EMAIL                        STRING 
+
+, PEOPLE_MANAGER_NAME                               STRING 
+
+, PEOPLE_MANAGER_EMAIL                              STRING 
+
+, ASSET_PROT_DIR_NAME                               STRING 
+
+, ASSET_PROT_DIR_EMAIL                              STRING 
+
+, SR_REG_ASSET_PROT_MGR_NAME                        STRING 
+
+, SR_REG_ASSET_PROT_MGR_EMAIL                       STRING 
+
+, REG_ASSET_PROT_MGR_NAME                           STRING 
+
+, REG_ASSET_PROT_MGR_EMAIL                          STRING 
+
+, ASSET_PROTECT_EMAIL                               STRING 
+
+, TP_START_DT                                       TIMESTAMP 
+
+, OPEN_DT       TIMESTAMP 
+
+, GR_OPEN_DT                                        TIMESTAMP 
+
+, CLOSE_DT      TIMESTAMP 
+
+, HOTEL_OPEN_DT                                     TIMESTAMP 
+
+, ADD_DT        TIMESTAMP 
+
+, DELETE_DT     TIMESTAMP 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Plan/site_profile';
+
+--DISTRIBUTE ON (LOCATION_ID)
+
+
+
+
+
+
+
+--*****  Creating table:  "CURRENCY_DAY" , ***** Creating table: "CURRENCY_DAY"
+
+
+use legacy;
+ CREATE TABLE CURRENCY_DAY 
+(
+ DAY_DT                                    TIMESTAMP                            not null
+
+, CURRENCY_ID                               STRING                         not null
+
+, DATE_RATE_START                           TIMESTAMP                            not null
+
+, CURRENCY_TYPE                             STRING                        not null
+
+, DATE_RATE_ENDED                           TIMESTAMP 
+
+, EXCHANGE_RATE_PCNT                        DECIMAL(9,6) 
+
+, RATIO_TO                                  DOUBLE 
+
+, RATIO_FROM                                DOUBLE 
+
+, STORE_CTRY_ABBR                           STRING 
+
+, CURRENCY_NBR SMALLINT not null
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Plan/currency_day';
+
+--DISTRIBUTE ON (DAY_DT)
+
+
+
+
+
+
+
+--*****  Creating table:  "PS2_LABOR_PLAN_WK_PRE" , ***** Creating table: "PS2_LABOR_PLAN_WK_PRE"
+
+
+use raw;
+ CREATE TABLE PS2_LABOR_PLAN_WK_PRE 
+(
+ WEEK_DT       TIMESTAMP                             not null
+
+, STORE_NBR INT not null
+
+, VERSION       STRING                 not null
+
+, BUSINESS_AREA                                     STRING                 not null
+
+, PLAN_SALARY_HRS                                   DECIMAL(9,2) 
+
+, PLAN_SALARY_AMT_LOC                               DECIMAL(9,2) 
+
+, PLAN_HRLY_MGR_HRS                                 DECIMAL(9,2) 
+
+, PLAN_HRLY_MGR_AMT_LOC                             DECIMAL(9,2) 
+
+, PLAN_HRLY_ASSOC_HRS                               DECIMAL(9,2) 
+
+, PLAN_HRLY_ASSOC_AMT_LOC                           DECIMAL(9,2) 
+
+, PLAN_EXCHANGE_RATE                                DECIMAL(9,6) 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-raw-p1-gcs-gbl/BA_Plan/ps2_labor_plan_wk_pre';
+
+--DISTRIBUTE ON RANDOM
+
+
+
+
+
+
+
+--*****  Creating table:  "PS2_LABOR_PLAN_WK" , ***** Creating table: "PS2_LABOR_PLAN_WK"
+
+
+use legacy;
+ CREATE TABLE PS2_LABOR_PLAN_WK 
+(
+ WEEK_DT       TIMESTAMP                             not null
+
+, LOCATION_ID INT not null
+
+, VERSION       STRING                 not null
+
+, BUSINESS_AREA                                     STRING                 not null
+
+, PLAN_SALARY_HRS                                   DECIMAL(9,2) 
+
+, PLAN_SALARY_AMT_LOC                               DECIMAL(9,2) 
+
+, PLAN_HRLY_MGR_HRS                                 DECIMAL(9,2) 
+
+, PLAN_HRLY_MGR_AMT_LOC                             DECIMAL(9,2) 
+
+, PLAN_HRLY_ASSOC_HRS                               DECIMAL(9,2) 
+
+, PLAN_HRLY_ASSOC_AMT_LOC                           DECIMAL(9,2) 
+
+, COUNTRY_CODE                                      STRING 
+
+, PLAN_EXCHANGE_RATE                                DECIMAL(9,6) 
+
+, ACTUAL_EXCHANGE_RATE                              DECIMAL(9,6) 
+
+, UPDATE_DT     TIMESTAMP 
+
+, LOAD_DT       TIMESTAMP 
+
+)
+USING delta 
+LOCATION 'gs://petm-bdpl-prod-nzlegacy-p1-gcs-gbl/BA_Plan/ps2_labor_plan_wk';
+
+--DISTRIBUTE ON (LOCATION_ID)
+
+
